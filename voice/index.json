@@ -3060,6 +3060,24 @@
    "text": "Vypustíme nové kamarády do tvého kousku moře?",
    "voice": "Candy - Young and Sweet"
   },
+  "ui.rotatePhone": {
+   "bytes": 12790,
+   "file": "cs/ui.rotatePhone.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "339bc5c30ccb513ad3413653db9e1f5c66d9bd15",
+   "text": "Otoč telefon na šířku.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.rotateTablet": {
+   "bytes": 11745,
+   "file": "cs/ui.rotateTablet.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "72e00db2d8363598a932aef1a273e7e62f473df5",
+   "text": "Otoč iPad na šířku.",
+   "voice": "Candy - Young and Sweet"
+  },
   "ui.safetyDive": {
    "bytes": 19896,
    "file": "cs/ui.safetyDive.mp3",
@@ -6077,6 +6095,22 @@
    "provider": "edge",
    "sha1": "3c695bb97a8390629a51524f033a89c06f3a28ac",
    "text": "Shall we let the new friends into your piece of sea?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.rotatePhone": {
+   "bytes": 16128,
+   "file": "en/ui.rotatePhone.mp3",
+   "provider": "edge",
+   "sha1": "86dd8c1d7941b48683703f26bd0213aefb57dc76",
+   "text": "Turn the phone sideways.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.rotateTablet": {
+   "bytes": 16704,
+   "file": "en/ui.rotateTablet.mp3",
+   "provider": "edge",
+   "sha1": "dc698cd217df604e9fc0238be701733d04abee59",
+   "text": "Turn the iPad sideways.",
    "voice": "en-GB-MaisieNeural"
   },
   "ui.safetyDive": {
