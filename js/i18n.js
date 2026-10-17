@@ -139,6 +139,7 @@ export const strings = {
     'group.say.ostnokozec': '{N} není ryba, je to ostnokožec.',
     'group.say.zahavec': '{N} není ryba, je to žahavec.',
     'say.no': 'Ne.',
+    'say.langHello': 'Teď mluvím česky.',
     'zoneIn.utes': 'na korálovém útesu', 'zoneIn.chaluhy': 'v chaluhovém lese', 'zoneIn.sire-more': 'v širém moři', 'zoneIn.hlubiny': 'v hlubinách',
   },
   en: {
@@ -244,6 +245,7 @@ export const strings = {
     'group.say.ostnokozec': 'The {n} is not a fish, it is an echinoderm.',
     'group.say.zahavec': 'The {n} is not a fish, it is a cnidarian, like a jellyfish.',
     'say.no': 'No.',
+    'say.langHello': 'Now I speak English.',
     'zoneIn.utes': 'on the coral reef', 'zoneIn.chaluhy': 'in the kelp forest', 'zoneIn.sire-more': 'in the open ocean', 'zoneIn.hlubiny': 'in the deep sea',
   },
 };

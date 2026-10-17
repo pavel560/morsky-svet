@@ -1,7 +1,8 @@
 // Mořský svět — Kvíz „Kdo jsem?“ (BRIEF §4.5): 5 questions. Level 1: name / riddle → pick 1 of 3.
 // Level 2 adds „Je to ryba?“ (yes/no) and „Kdo je větší?“. No score, no „wrong“: 1st miss = gentle hint,
 // 2nd miss = the choice narrows (one wrong option leaves), never a lit-up answer.
-import { species, byId, charEl } from './assets.js';
+import { species, byId, charEl, hasArt } from './assets.js';
+import { mountScene, BG_ANIM } from './scene.js';
 import { groupKey } from './dive/world.js';
 import { h, icon, esc, say, replay, shuffle, sleep, nameOf, anim, reduced } from './ui.js';
 import { t, getLang } from './i18n.js';
@@ -43,21 +44,31 @@ export function mount(root) {
   const found = species.filter((s) => store.isFound(s.id));
   const pool = found.length >= 4 ? found : levelPool.length >= 3 ? levelPool : species;
   const el = h(`<div class="quiz">
+    <div class="quiz-bg"></div>
     <div class="topbar">
-      <button class="btn round main paper" data-act="home" aria-label="${esc(t('nav.home'))}">${icon('home')}</button>
-      <h1 class="title-pill">${esc(t('quiz.title'))}</h1>
+      <button class="btn round main paper" data-act="home" data-ta="nav.home" aria-label="${esc(t('nav.home'))}">${icon('home')}</button>
+      <h1 class="sr-only title-pill" data-t="quiz.title">${esc(t('quiz.title'))}</h1>
       <div class="quiz-progress" aria-hidden="true">${Array.from({ length: ROUNDS }, () => '<i></i>').join('')}</div>
-      <button class="btn round main paper" data-act="replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
+      <button class="btn round main paper" data-act="replay" data-ta="nav.replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
     </div>
     <div class="quiz-stage"></div></div>`);
   root.append(el);
+  mountScene(el.querySelector('.quiz-bg'), 'quiz-bg', BG_ANIM);
   S = { el, stage: el.querySelector('.quiz-stage'), qs: plan(pool, lvl), i: 0, misses: 0, busy: false, lvl };
   el.addEventListener('click', onClick);
+  addEventListener('langchange', onLang);
   window.__morsky.quiz = { current: () => S && { ...S.qs[S.i], target: S.qs[S.i]?.target.id, options: S.qs[S.i]?.options.map((o) => o.id), i: S.i } };
   say(['ui.quizIntro']).then(() => { if (S && S.i === 0) ask(); });
   show();
 }
-export function unmount() { S = null; if (window.__morsky) delete window.__morsky.quiz; }
+/** Language switched mid-quiz: the prompt text and option names follow; the question stays the same. */
+function onLang() {
+  if (!S || S.i >= ROUNDS) return;
+  const span = S.stage.querySelector('.q-prompt span'); if (span) span.textContent = promptText(S.qs[S.i]);
+  for (const b of S.stage.querySelectorAll('.q-opt')) b.setAttribute('aria-label', nameOf(species.find((x) => x.id === b.dataset.v)));
+  for (const b of S.stage.querySelectorAll('.yes-no')) b.setAttribute('aria-label', t(b.dataset.v === 'yes' ? 'quiz.yes' : 'quiz.no'));
+}
+export function unmount() { removeEventListener('langchange', onLang); S = null; if (window.__morsky) delete window.__morsky.quiz; }
 
 function promptIds(q) {
   const id = q.target.id; const lang = getLang();
@@ -79,7 +90,8 @@ function show() {
   } else {
     html = `<div class="q-opts n${q.options.length}">${q.options.map((o) => `<button class="q-opt" data-act="ans" data-v="${esc(o.id)}" aria-label="${esc(nameOf(o))}"></button>`).join('')}</div>`;
   }
-  S.stage.innerHTML = `<button class="btn q-prompt" data-act="prompt">${icon('speaker')}<span>${esc(promptText(q))}</span></button>${html}`;
+  S.stage.innerHTML = `<div class="q-head"><div class="q-guide"></div><button class="btn q-prompt" data-act="prompt"><span>${esc(promptText(q))}</span>${icon('speaker')}</button></div>${html}`;
+  if (hasArt('guide-turtle')) S.stage.querySelector('.q-guide').append(charEl('guide-turtle'));
   if (q.type === 'isFish') S.stage.querySelector('.q-art').append(charEl(q.target.id));
   else for (const b of S.stage.querySelectorAll('.q-opt')) b.append(charEl(b.dataset.v));
   if (S.i > 0) ask();

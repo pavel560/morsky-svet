@@ -10,7 +10,7 @@ export const TRASH_COUNT_MAX = 10;
 export const UI_SAY = ['greet', 'safetyDive', 'safetyLook', 'diveIntro', 'deeper', 'findMore', 'darker', 'lamp', 'deepDone', 'surface',
   'endFound', 'endNone', 'release', 'trashTake', 'seaIntro', 'seaEmpty', 'seaUnknown', 'seaNight', 'seaDay', 'quizIntro', 'quizTry',
   'quizShow', 'quizRight0', 'quizRight1', 'quizRight2', 'quizBigger', 'quizDone', 'habitatIntro', 'habitatWrong', 'habitatDone',
-  'level2', 'tired', 'parentsHold', 'photoMissing', 'no'];
+  'level2', 'tired', 'parentsHold', 'photoMissing', 'no', 'langHello'];
 
 /** Species named in the plural (a school): their sentences take plural grammar. `plural: true` in data also works. */
 export const PLURAL_IDS = new Set(['sardinky']);

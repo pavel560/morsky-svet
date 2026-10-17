@@ -26,6 +26,28 @@ Rebuild everything: `cd design && python3 build_diver.py && python3 build_creatu
 
 ---
 
+## 0a. Verze 2 (2026-10-18) — změny pro programátora (čti první)
+
+**Nothing renamed or removed.** Every class name, file name, `data-*` attribute and the floor-tile stitch rule
+(`data-in` / `data-out` / `data-floor-y`, tile sizes) is unchanged, so the engine keeps working as is. What changed:
+
+1. **Redrawn in place (same files, same contract):** all `art/ponor/*` layers and floor tiles, `caustics.svg`,
+   the three `patch-*.svg`, `my-sea-day.svg`, `my-sea-night.svg`, `cross-section.svg`, `home.svg`.
+   - Floor tiles never draw outside their 2048 × 1024 box any more (kelp was cut at the tile top because floor tiles
+     are `<img>`).
+   - `caustics.svg` is now a thin organic net drawn at .42 inside the file; the engine's `.caustic-strip` (opacity .32)
+     can stay — the old blob tile was what read as wallpaper.
+   - `home.svg` v2 keeps `data-waterline` and `data-turtle` (new value: `310 476`) — `placeTurtle()` works unchanged.
+   - `cross-section.svg` keeps `g.band[data-zone][data-y0][data-y1]` with the same band edges.
+2. **New files (wire them up):** `art/title.svg` (start scene), `art/logo-cs.svg` + `art/logo-en.svg`,
+   `art/play-bubble.svg`, `art/door-sea.svg`, `art/door-quiz.svg`, `art/door-habitat.svg`, `art/quiz-bg.svg`,
+   `art/summary-bg.svg`. Contracts in §10.
+3. **New icon symbols:** `i-flag-cz-btn`, `i-flag-en-btn` in `ui-icons.svg` (round waving-flag badges for the 64 px
+   language button; show the flag of the language you will switch **to**).
+4. **Build order:** `build_diver → build_creatures → build_sea → build_ui → build_v2 → build_comps`
+   (`build_v2` owns `home.svg` and `cross-section.svg` now). `design/extract_glyphs.py` is a one-off helper (needs
+   fontTools + brotli, e.g. the brain `.venv`) that wrote `design/logo_glyphs.json`; all build scripts stay stdlib-only.
+
 ## 0. Kontrakt pro programátora — změny
 
 Everything in BRIEF §6 „Kresba“ holds exactly (class names, `data-pivot`, anchors, creatures face right, diver
@@ -317,3 +339,104 @@ and on-device iPad performance of the glow-clone approach.
    species and the floor glow group above `--z-dark` and give their bodies a dark tint while outside the lamp circle.
 2. **Diver skin tone:** answered — yes; four swatches proposed in §6.2 (`--skin-options`), parent picks.
 3. **Kdo kde bydlí?** art and comp exist; build only if time allows (brief §4.6).
+
+
+---
+
+## 9. Verze 2 — vizuální audit (2026-10-18)
+
+Compared side by side: Houbičky comps (`houbicky/design/comp-vyprava.png`, `comp-card-*`) against the **real e2e
+captures** of Mořský svět v1 (`dev/screens/1024x768-*.png`) and my own real-engine shots (served with `serve.py`,
+driven with Playwright through `window.__morsky`).
+
+| Gap in v1 (as rendered by the engine) | Houbičky had | v2 fix |
+|---|---|---|
+| Caustic tile = thick blob rings at .32 over the whole sunlit band → reads as wallpaper | n/a | thin organic light net, faint by itself; only where the engine already limits the strip |
+| Sea fans = translucent lattice in an outline → read as nets/shells | branching ferns, leaves | gorgonians redrawn as living branching plants with polyp dots, no envelope |
+| Reef sparse, items in a row, flat sand | dense forest floor, moss, litter | 4 coral clusters per tile with open sand between them for crawlers; soft corals, sea whips, button polyps, coralline crusts on rocks |
+| No texture | speckles on caps, soil cut with stones | gouache **speckle** on rocks, corals, sponges; sand grains everywhere; sunlit lip under the floor line; cut with strata + pebbles |
+| Weak depth | 4 planes, atmospheric haze | far layers = 2 hazy reef/kelp planes + light pools + haze band above the floor; mid = water-tinted ink |
+| Little foreground framing | ferns in front | near layer framing clumps (rock + corals + seagrass, kelp, dark rocks with glowing bamboo coral), all `g.near-item` → faded by the engine when they overlap a tappable |
+| Kelp cut off in a hard line (chaluhy) | — | floor-tile kelp height ≤ floor y − 40 |
+| Open sea empty, a shapeless dark "whale" band | — | real humpback silhouette, manta, dolphin pod, bait ball, 4 far schools, small far jellies, stronger light pools + sunburst |
+| Deep = dark with a few dots | — | siphonophore chains, comb-jelly ovals, glowing bamboo corals, sea lilies, frilly sponge vases, more floor glow |
+| Start = flat gradient + title; home plain cards | rich title scene, illustrated doors | §10 |
+| Quiz/summary on flat gradients; Můj kousek moře = flat sand band | — | `quiz-bg.svg`, `summary-bg.svg`, my-sea day/night rebuilt as a framed reef garden |
+
+**Kept:** creatures and the diver (their volume and faces already match Houbičky's craft — the gap was the world, not
+the characters).
+
+**Still weaker than Houbičky (honest):** there is no warm golden-hour key light under water (the sea is cool by nature;
+warmth comes from the sun on the start/home and the golden light at the end of the dive), and the deep stays dark by
+design, so its richness only shows inside the lamp circle.
+
+## 10. Verze 2 — úvod a Loďka
+
+**Comps:** `comp-start-v2.png`, `comp-home-v2.png` (1024 × 768 @2×). Also re-rendered: all `comp-ponor-*`,
+`comp-my-sea-*`, `comp-quiz` (on `quiz-bg`), `comp-summary-v2`, `comp-kdo-kde-bydli`.
+
+### 10.1 Start screen (`art/title.svg` + `logo-*.svg` + `play-bubble.svg`)
+Split view at the waterline (`data-waterline="520"`): sky, sun, clouds, gulls, island with a palm and lighthouse, the boat
+with the girl on the bow and the turtle beside it; below: rays, a far humpback, a fish school, a jellyfish, kelp, a
+coral floor, bubbles; a dolphin leaping through the surface. Layout (DOM over the scene):
+- **Logo** top centre, width `min(64vw, 660px)` — `logo-cs.svg` / `logo-en.svg` by language. Lettering = Grandstander
+  800 outlines with a sun gradient („Mořský“) and a sea gradient („svět“), ink outline, inner highlight, wave swash.
+  The Czech diacritics are drawn, not typed: **háček = a chubby coral/turquoise wave-V, čárka = a water drop**.
+- **Play** = `play-bubble.svg`, centre at 50 % / 56 %, size `calc(var(--touch-hero) * 1.4)` (168 px), half in the water.
+- **Safety line** bottom centre, translucent paper pill with the parents icon.
+- **Language button** 64 px top-left with `i-flag-en-btn` (or `-cz-btn`).
+
+### 10.2 Home „Loďka“ v2 (`art/home.svg` + `door-*.svg`)
+Logo small at the top centre (replaces the title pill), parents 64 + flag 64 top-left, speaker 88 top-right, the boat
+centre-left, „Ponořit se!“ pill on the right straddling the waterline, the three **doors as objects** on the seabed:
+`door-sea.svg` (a glass bowl with her own little sea), `door-quiz.svg` (**an open clam with a „?“ pearl** — not a message
+in a bottle: in this game a bottle in the sea is trash she collects, so a bottle door would teach the opposite),
+`door-habitat.svg` (a sea map scroll with the four floors and a compass). Each door button = the object (136 px) +
+a paper label pill; whole button ≥ 88 px. Peeking animals (octopus behind a rock, crab, seahorse, clownfish) sit away
+from the doors and are scenery (not tappable).
+
+### 10.3 Animatable groups + animation spec
+All pivots in viewBox units (`data-pivot`), same rules as §0.1. Every loop uses `--ease-swim`, random phase, ≤ 1 Hz.
+
+| Group (file) | Motion | Duration |
+|---|---|---|
+| `.sun-rays` (title, home) | rotate 0 → 12° and back; `.sun-glow` opacity .8 ↔ 1 | 14 s / 5 s |
+| `.cloud-N` | translateX ±40 units | 30–45 s |
+| `.gull-N` | drift along x ± 120 + bob ±8; `.wing` rotate ±18° (pivot at the shoulder) | 9 s / 0.9 s |
+| `.boat` | bob translateY ±5 + rotate ±1.5° (pivot = waterline centre) | 4.2 s |
+| `.flag` (in `.boat`) | skewY ±6° | 1.6 s |
+| `.waves-front`, `.refraction` | translateX ±18 in opposite phase | 6 s |
+| `.uw-rays .ray-N` | opacity .6 ↔ 1, skewX ±3° | 7–11 s |
+| `.school` | drift x ±60, each `.fish` bob ±4 | 12 s / 2 s |
+| `.jelly` (title) | squash 1 ↔ .92 + rise 20 units | 2.2 s |
+| `.whale-far` (title) | glide x −80 → +80 | 40 s |
+| `.kelp` / `.kelp-seg`, `.sway` | as in §7 | 6 s |
+| `.bubbles .bubble` | rise to the waterline + fade, restart below | 3–5 s |
+| `.dolphin` + `.splash` (title) | every ~8 s jump along `data-arc="x0 y0 x1 y1 h"` (parabola, rotate with tangent), splash scale 0 → 1 → 0 on entry and exit | 1.6 s jump |
+| `.turtle` (title), `.peek-*` (home) | bob ±4, octopus peeks out ±10 units every ~6 s | 3 s |
+| logo `.letter` | bob ±4 units in a wave, each letter 120 ms later | 2.4 s |
+| logo `.logo-bubbles .logo-bubble` | rise 30 units + fade, staggered | 3 s |
+| play `.bubble-body` | breathe scale 1 ↔ 1.04; `.bubble-shine` rotate ±8°; `.satellites` rise | 2 s / 4 s |
+| door `.door-body` | bob ±3; `door-quiz .door-glint` opacity .3 ↔ 1; `door-habitat .door-needle` rotate ±10° | 3 s / 2.4 s |
+
+**Reduced motion:** everything static except a single 1-time fade-in of the logo; no dolphin jump (show the static
+mid-leap from the art), no parallax, bubbles hidden, glints steady. Tap feedback stays (scale .96 for 120 ms).
+
+### 10.4 Sizes
+All scenes are 1600 × 1000 with `xMidYMid slice` (my-sea: `xMidYMax`): at 1024 × 768 the visible x range is 133–1467,
+at 1180 × 820 it is 80–1520, at 16:10 the full width; the full height is always visible. Every essential element
+(boat, girl, turtle, doors' seabed, logo area) sits inside x 133–1467.
+
+### 10.5 Verification (v2)
+- verified against screenshot at `design/comp-start-v2.png` (first pass: sun collided with the logo's „t“, a gull sat
+  under the swash, the turtle was cut at the right edge → moved)
+- verified against screenshot at `design/comp-home-v2.png` (first pass: octopus peeker on top of the bowl door, a tube
+  sponge read as legs under the map, a gull on the snorkel, zig-zag labels → fixed)
+- verified against screenshot at `design/comp-ponor-utes.png`, `comp-ponor-chaluhy.png`, `comp-ponor-sire-more.png`,
+  `comp-ponor-hlubiny.png`, `comp-quiz.png`, `comp-summary-v2.png`, `comp-kdo-kde-bydli.png`, `comp-my-sea-day.png`,
+  `comp-my-sea-night.png`
+- **real engine** (Playwright + Chrome against `serve.py`, scratch shots, not committed): all four dive zones with the
+  camera on the seabed, start, home, Můj kousek moře. They showed the kelp cut-off fix, the textured floor and the
+  gorgonians in place; the open sea's "dark oval" turned out to be the old whale silhouette → redrawn.
+- **Unverified:** motion (no real-time capture), 1180 × 820 / 16:10 v2 screenshots, and the engine wiring of the new
+  files (title, logo, doors, quiz/summary backgrounds) — those need the programmer's pass.

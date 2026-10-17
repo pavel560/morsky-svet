@@ -21,12 +21,15 @@ export async function mount(root, params = {}) {
   const el = h(`<div class="sea${sc.night ? ' night' : ''}">
     <div class="sea-scene"><div class="sea-bg day"></div><div class="sea-bg night"></div><div class="sea-life"></div></div>
     <div class="topbar">
-      <button class="btn round main paper" data-act="home" aria-label="${esc(t('nav.home'))}">${icon('home')}</button>
-      <h1 class="title-pill">${esc(t('sea.title'))}</h1>
-      <button class="btn round main paper daynight" data-act="night" aria-pressed="${sc.night}" aria-label="${esc(t(sc.night ? 'sea.day' : 'sea.night'))}">${icon(sc.night ? 'day' : 'night')}</button>
-      <button class="btn round main paper" data-act="replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
+      <button class="btn round main paper" data-act="home" data-ta="nav.home" aria-label="${esc(t('nav.home'))}">${icon('home')}</button>
+      <h1 class="sr-only title-pill" data-t="sea.title">${esc(t('sea.title'))}</h1>
+      <div class="daynight-seg" role="group">
+        <button class="dn-btn${sc.night ? '' : ' on'}" data-act="day" data-ta="sea.day" aria-pressed="${!sc.night}" aria-label="${esc(t('sea.day'))}">${icon('day')}</button>
+        <button class="dn-btn daynight${sc.night ? ' on' : ''}" data-act="night" data-ta="sea.night" aria-pressed="${sc.night}" aria-label="${esc(t('sea.night'))}">${icon('night')}</button>
+      </div>
+      <button class="btn round main paper" data-act="replay" data-ta="nav.replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
     </div>
-    <div class="drawer" role="list" aria-label="${esc(t('sea.drawer'))}"></div>
+    <div class="drawer" role="list" data-ta="sea.drawer" aria-label="${esc(t('sea.drawer'))}"></div>
   </div>`);
   root.append(el);
   for (const k of ['day', 'night']) if (hasArt(`my-sea-${k}`)) el.querySelector(`.sea-bg.${k}`).append(charEl(`my-sea-${k}`));
@@ -37,12 +40,16 @@ export async function mount(root, params = {}) {
   renderDrawer();
   el.addEventListener('click', onClick);
   S.scene.addEventListener('pointerup', onSceneTap);
+  addEventListener('langchange', onLang);
   S.raf = requestAnimationFrame(frame);
   const found = store.foundCount();
   say(found ? ['ui.seaIntro'] : ['ui.seaEmpty']);
   window.__morsky.sea = { placed: () => S?.placed.map((p) => ({ id: p.id, x: p.nx, y: p.ny })), place: (id, nx, ny) => { place(id, nx, ny); } };
 }
-export function unmount() { if (!S) return; cancelAnimationFrame(S.raf); S = null; if (window.__morsky) delete window.__morsky.sea; }
+function onLang() {          // creature names in the drawer + the day/night label follow the language
+  if (!S) return; renderDrawer();
+}
+export function unmount() { removeEventListener('langchange', onLang); if (!S) return; cancelAnimationFrame(S.raf); S = null; if (window.__morsky) delete window.__morsky.sea; }
 
 function renderDrawer() {
   const placedIds = new Set(S.placed.map((p) => p.id));
@@ -115,11 +122,12 @@ function onClick(e) {
   const a = b.dataset.act; sound.play('tap');
   if (a === 'home') go('home');
   else if (a === 'replay') replay();
-  else if (a === 'night') {
-    const night = !S.el.classList.contains('night');
+  else if (a === 'night' || a === 'day') {
+    // the moon button toggles (tap again = day) so a single control also works; the sun button always means day
+    const night = a === 'night' ? !S.el.classList.contains('night') : false;
+    if (night === S.el.classList.contains('night') && a === 'day') return;
     S.el.classList.toggle('night', night);
-    b.setAttribute('aria-pressed', String(night)); b.setAttribute('aria-label', t(night ? 'sea.day' : 'sea.night'));
-    b.innerHTML = icon(night ? 'day' : 'night');
+    for (const x of S.el.querySelectorAll('.dn-btn')) { const on = (x.dataset.act === 'night') === night; x.classList.toggle('on', on); x.setAttribute('aria-pressed', String(on)); }
     save(); say([night ? 'ui.seaNight' : 'ui.seaDay']);
   }
 }

@@ -49,8 +49,8 @@ process.on('uncaughtException', (e) => { console.log(results.join('\n')); consol
 const check = (name, ok, extra = '') => { results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${extra && !ok ? `  — ${extra}` : ''}`); return ok; };
 const FAKE_SPEECH = () => {
   const V = [{ name: 'Zuzana (Enhanced)', lang: 'cs-CZ', voiceURI: 'cs', localService: true }, { name: 'Serena (Enhanced)', lang: 'en-GB', voiceURI: 'en', localService: true }];
-  window.__spoken = []; window.__ids = []; window.__tts = []; window.__files = []; let cur = null;
-  addEventListener('speech:say', (e) => { window.__spoken.push(e.detail.text); window.__ids.push(...e.detail.ids); });
+  window.__spoken = []; window.__langs = []; window.__ids = []; window.__tts = []; window.__files = []; let cur = null;
+  addEventListener('speech:say', (e) => { window.__spoken.push(e.detail.text); window.__langs.push(e.detail.lang); window.__ids.push(...e.detail.ids); });
   addEventListener('speech:file', (e) => window.__files.push(e.detail));
   const synth = new EventTarget();
   Object.assign(synth, { speaking: false, pending: false, paused: false, getVoices: () => V,
@@ -95,7 +95,7 @@ const overlap = (a, b) => a && b && a.l < b.r && a.r > b.l && a.t < b.b && a.b >
 /** Visible creatures whose centre sits under a HUD control (top bar, back, Plav dál, caption). */
 async function hudOffenders(page) {
   return page.evaluate(() => {
-    const huds = ['.goal-bar', '.hud-home', '.hud-replay', '.hud-back', '.hud-fwd', '#caption.show'].map((q) => document.querySelector(q)).filter((e) => e && e.getClientRects().length)
+    const huds = ['.goal-bar', '.hud-home', '.hud-replay', '.hud-back', '.hud-net', '.hud-fwd', '.hud-fwd-label', '#caption.show'].map((q) => document.querySelector(q)).filter((e) => e && e.getClientRects().length)
       .map((e) => e.getBoundingClientRect());
     const out = [];
     for (const c of document.querySelectorAll('.dv-world:not(.dv-glow) .cr:not(.off)')) {
@@ -121,18 +121,24 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   const tag = `${vp.width}x${vp.height}`;
   const { ctx, page } = await session(vp);
   await page.goto(`${BASE}/`);
-  await page.waitForSelector('.start-layer .play');
+  await page.waitForSelector('.start-layer .play-bubble-btn');
   check(`${tag} start: safety line on the start screen`, (await page.textContent('.start-safety')).includes('jen s dospělým'));
+  check(`${tag} start v2: title scene, logo, play bubble`, (await page.locator('.start-layer .scene-static').count()) === 1 && (await page.locator('.start-logo svg[data-lang="cs"]').count()) === 1 && (await minTarget(page, '.play-bubble-btn')) >= 120);
+  check(`${tag} start: play bubble clear of the boat, logo and safety line`, await page.evaluate(() => {
+    const p = document.querySelector('.play-bubble-btn').getBoundingClientRect(); const ov = (q) => { const r = q.getBoundingClientRect(); return p.left < r.right && p.right > r.left && p.top < r.bottom && p.bottom > r.top; };
+    const boat = document.querySelector('.start-layer .scene-live .boat');
+    return !ov(document.querySelector('.start-logo')) && !ov(document.querySelector('.start-safety')) && !(boat && ov(boat)); }));
   await shot(page, `${tag}-0-start`);
-  await page.click('.start-layer .play');
+  await page.click('.start-layer .play-bubble-btn');
   await page.waitForSelector('.home .dive-btn'); await wait(page, 500);
   check(`${tag} home: greeting + safety spoken`, (await ids(page)).includes('ui.greet') && (await ids(page)).includes('ui.safetyDive'));
-  check(`${tag} home: recordings used (voice/ files), no TTS fallback`, (await page.evaluate(() => window.__files.length)) > 0);
-  check(`${tag} home: hero button ≥ 88 px, every button ≥ 64 px`, (await minTarget(page, '.home .dive-btn')) >= 88 && (await minTarget(page, '.home .btn')) >= 64, String(await minTarget(page, '.home .btn')));
+  check(`${tag} home: recordings used (voice/ files), no TTS fallback`, await page.waitForFunction(() => window.__files.length > 0, null, { timeout: 5000 }).then(() => true, () => false));
+  check(`${tag} home: hero button ≥ 88 px, doors ≥ 88 px, every button ≥ 64 px`, (await minTarget(page, '.home .dive-btn')) >= 88 && (await minTarget(page, '.home .door')) >= 88 && (await minTarget(page, '.home .btn')) >= 64, `${await minTarget(page, '.home .door')} / ${await minTarget(page, '.home .btn')}`);
+  check(`${tag} home v2: scene (static + live layer), logo, three illustrated doors`, (await page.locator('.home .scene-static').count()) === 1 && (await page.locator('.home .scene-live').count()) === 1 && (await page.locator('.home-logo svg').count()) === 1 && (await page.locator('.home .door .door-obj > svg').count()) === 3);
   check(`${tag} home: icons rendered from the sprite`, await page.evaluate(() => !!document.querySelector('#sprite symbol#i-home')));
   await shot(page, `${tag}-1-home`);
   check(`${tag} home: the turtle's caption covers no door or button`, await page.evaluate(() => { const c = document.getElementById('caption').getBoundingClientRect();
-    return ![...document.querySelectorAll('.home .btn, .home-safety')].some((b) => { const r = b.getBoundingClientRect(); return c.left < r.right && c.right > r.left && c.top < r.bottom && c.bottom > r.top; }); }));
+    return ![...document.querySelectorAll('.home .btn, .home .door, .home-safety')].some((b) => { const r = b.getBoundingClientRect(); return c.left < r.right && c.right > r.left && c.top < r.bottom && c.bottom > r.top; }); }));
 
   // parents gate: a short tap only says "for grown-ups"
   await page.click('.parents-btn'); await wait(page, 300);
@@ -146,9 +152,11 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   check(`${tag} dive: creatures spawned for every zone`, new Set(st.creatures.map((c) => c.zone)).size === 4 && st.creatures.length >= 12, String(st.creatures.length));
   check(`${tag} dive: HUD targets ≥ 64 px, „Plav dál“ ≥ 88 px`, (await minTarget(page, '.dv-hud .btn')) >= 64 && (await minTarget(page, '.hud-fwd')) >= 88);
   check(`${tag} dive: intro line spoken`, (await ids(page)).includes('ui.diveIntro'));
-  await wait(page, 1500);
-  st = await dive(page, 'D.state()');
-  check(`${tag} dive: ≥ 30 fps headless software rendering (measured ${st.fps})`, st.fps >= 30, String(st.fps));
+  await wait(page, 3500);                                   // settle: first rasterisation of the big tiles is a one-off
+  const fps2 = () => page.evaluate(() => new Promise((res) => { let n = 0; const t0 = performance.now(); const f = () => { n++; if (performance.now() - t0 < 2000) requestAnimationFrame(f); else res(Math.round(n / 2)); }; requestAnimationFrame(f); }));
+  const samples = [await fps2(), await fps2(), await fps2()].sort((x, y) => x - y); const steady = samples[1];
+  const need = vp.width === 1024 ? 50 : 45;     // headless software rendering; real iPad still to be checked by hand
+  check(`${tag} dive: steady fps headless, median of 3 ≥ ${need} (samples ${samples.join('/')})`, steady >= need, String(samples));
   await shot(page, `${tag}-2-dive-utes`);
   st = await dive(page, 'D.state()');
   check(`${tag} framing at start: seabed at ${Math.round(st.floorScreen * 100)} % of the view (70–80 %)`, st.floorScreen >= 0.68 && st.floorScreen <= 0.82);
@@ -170,6 +178,15 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   await page.mouse.move(fb.x + fb.width / 2, fb.y + fb.height / 2); await page.mouse.down(); await wait(page, 1300); await page.mouse.up(); await wait(page, 300);
   st = await dive(page, 'D.state()');
   check(`${tag} dive: hold „Plav dál“ → swims on`, st.x > x1 + 200, `${x1} → ${st.x}`);
+  if (vp.width === 1024 || vp.width === 1180) {
+    await dive(page, 'D.openGates()'); await dive(page, 'D.teleport(D.state().zones[1].x0 - 900, 450)'); await wait(page, 1500);
+    const fbx = await page.locator('.hud-fwd').boundingBox(); await page.mouse.move(fbx.x + fbx.width / 2, fbx.y + fbx.height / 2); await page.mouse.down();
+    const cross = await page.evaluate(() => new Promise((res) => { let n = 0; const t0 = performance.now(); const f = () => { n++; if (performance.now() - t0 < 4000) requestAnimationFrame(f); else res(Math.round(n / 4)); }; requestAnimationFrame(f); }));
+    await page.mouse.up();
+    check(`${tag} dive: swimming across the reef→kelp boundary ≥ 30 fps headless (measured ${cross})`, cross >= 30, String(cross));
+    await page.reload(); await page.waitForSelector('.start-layer .play-bubble-btn'); await page.click('.start-layer .play-bubble-btn');
+    await page.waitForSelector('.home .dive-btn'); await page.click('.dive-btn'); await page.waitForFunction(() => window.__morsky.dive?.state()); await wait(page, 1200);
+  }
   // the closed gate stops her and the turtle asks to find more
   await dive(page, 'D.teleport(D.state().zones[1].x0 - 400, 400)');
   await page.mouse.move(fb.x + fb.width / 2, fb.y + fb.height / 2); await page.mouse.down();
@@ -239,6 +256,7 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   await page.mouse.click(ts.x, ts.y); await wait(page, 3200);
   st = await dive(page, 'D.state()');
   check(`${tag} trash: tap → into the net, place brightens, turtle thanks`, st.trash === 1 && st.trashSpots[0].done && (await page.locator('.patch.clean').count()) >= 1 && (await ids(page)).includes(`trash.${tr0.id}`), `trash ${st.trash}, under the tap: ${under}, at ${Math.round(ts.x)},${Math.round(ts.y)}`);
+  check(`${tag} trash: the net counter shows 1`, (await page.textContent('.hud-net .net-n')) === '1');
   await shot(page, `${tag}-4-trash-clean`);
   // other zones
   await dive(page, 'D.openGates()');
@@ -293,7 +311,7 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   await page.locator('.daynight').click(); await wait(page, 600);
   check(`${tag} sea: night mode`, await page.evaluate(() => document.querySelector('.sea').classList.contains('night')) && (await ids(page)).includes('ui.seaNight'));
   await shot(page, `${tag}-7-sea-night`);
-  await page.reload(); await page.waitForSelector('.start-layer .play'); await page.click('.start-layer .play');
+  await page.reload(); await page.waitForSelector('.start-layer .play-bubble-btn'); await page.click('.start-layer .play-bubble-btn');
   await page.evaluate(() => window.__morsky.go('sea')); await page.waitForSelector('.sea .drawer-item'); await wait(page, 500);
   placed = await page.evaluate(() => window.__morsky.sea.placed().length);
   check(`${tag} sea: placement + night survive a reload`, placed === 2 && await page.evaluate(() => document.querySelector('.sea').classList.contains('night')));
@@ -369,7 +387,7 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
 // ============================================================ B. portrait iPad
 {
   const { ctx, page } = await session({ width: 768, height: 1024 });
-  await page.goto(`${BASE}/`); await page.waitForSelector('.start-layer .play');
+  await page.goto(`${BASE}/`); await page.waitForSelector('.start-layer .play-bubble-btn');
   check('portrait: „Otoč iPad na šířku“ covers the game', await page.evaluate(() => getComputedStyle(document.getElementById('rotate')).display !== 'none' && document.getElementById('rotate').textContent.includes('Otoč iPad')));
   await shot(page, '768x1024-portrait');
   await ctx.close();
@@ -412,6 +430,71 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   let diveOk = false;
   if (booted) { await page.click('.dive-btn'); diveOk = await page.waitForFunction(() => window.__morsky.dive?.state()?.creatures.length > 0, null, { timeout: 10000 }).then(() => true, () => false); }
   check('offline: the game boots and dives with the network off', booted && diveOk);
+  await ctx.close();
+}
+
+
+// ============================================================ F. language switch (flag button) at both iPad sizes
+async function flagClear(page) {
+  return page.evaluate(() => {
+    const f = document.getElementById('lang-btn'); if (!f || !f.getClientRects().length) return { visible: false };
+    const r = f.getBoundingClientRect();
+    const hits = [...document.querySelectorAll('.btn, .door, .daynight-seg, .hud-fwd-label, .goal-bar, .title-pill:not(.sr-only), .gauge, .q-prompt, .q-opt, .drawer, .home-safety, .start-logo, .home-logo, .play-bubble-btn, .start-safety, .quiz-progress')]
+      .filter((e) => e !== f && !f.contains(e) && e.getClientRects().length && getComputedStyle(e).visibility !== 'hidden')
+      .filter((e) => { const q = e.getBoundingClientRect(); return q.width && r.left < q.right && r.right > q.left && r.top < q.bottom && r.bottom > q.top; })
+      .map((e) => e.className.baseVal ?? e.className);
+    return { visible: true, size: Math.min(r.width, r.height), hits };
+  });
+}
+for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
+  const tag = `${vp.width}x${vp.height} lang`;
+  const { ctx, page } = await session(vp);
+  await page.goto(`${BASE}/`); await page.waitForSelector('.start-layer .play-bubble-btn');
+  let fc = await flagClear(page);
+  check(`${tag}: flag button on the start screen, ≥ 64 px, collides with nothing`, fc.visible && fc.size >= 64 && !fc.hits.length, JSON.stringify(fc));
+  await page.click('#lang-btn'); await wait(page, 300);
+  check(`${tag}: start screen switches to English at once (logo + labels)`, (await page.getAttribute('.start-logo', 'aria-label')) === 'Ocean World' && (await page.locator('.start-logo svg[data-lang="en"]').count()) === 1 && (await page.evaluate(() => document.documentElement.lang)) === 'en');
+  await page.click('#lang-btn'); await wait(page, 200);
+  await page.click('.start-layer .play-bubble-btn'); await page.waitForSelector('.home .dive-btn'); await wait(page, 500);
+  fc = await flagClear(page);
+  check(`${tag}: flag on Loďka collides with nothing`, fc.visible && !fc.hits.length, JSON.stringify(fc));
+  check(`${tag}: it shows the OTHER language's flag (English while Czech), designer's i-flag-en-btn`, (await page.getAttribute('#lang-btn', 'aria-label')) === 'English' && (await page.innerHTML('#lang-btn')).includes('#i-flag-en-btn'));
+  await page.click('#lang-btn'); await wait(page, 600);
+  const last = await page.evaluate(() => ({ id: window.__ids.at(-1), lang: window.__langs.at(-1), text: window.__spoken.at(-1) }));
+  check(`${tag}: tap → the turtle says one line in English`, last.id === 'ui.langHello' && last.lang === 'en' && /English/.test(last.text), JSON.stringify(last));
+  check(`${tag}: home texts switch (logo, pill, doors, safety)`, (await page.locator('.home-logo svg[data-lang="en"]').count()) === 1 && (await page.textContent('.dive-btn [data-t]')) === 'Dive in!' && (await page.textContent('.door[data-act="quiz"] .door-label')) === 'Quiz' && (await page.textContent('.home-safety')).includes('grown-up'));
+  check(`${tag}: stored + parents' corner in sync`, (await page.evaluate(() => window.__morsky.store.get('lang'))) === 'en');
+  await shot(page, `${vp.width}x${vp.height}-11-home-en`);
+  // dive in English: card + summary
+  await page.click('.dive-btn'); await page.waitForFunction(() => window.__morsky.dive?.state()); await wait(page, 900);
+  fc = await flagClear(page);
+  check(`${tag}: flag in the dive HUD collides with nothing`, fc.visible && !fc.hits.length, JSON.stringify(fc));
+  await page.evaluate(() => { window.__morsky.openCard('klaun'); }); await page.waitForSelector('.card-layer'); await wait(page, 400);
+  const en = species.find((x) => x.id === 'klaun').name.en;
+  check(`${tag}: card in English (name + spoken group line)`, (await page.textContent('.sp-name')) === en && /fish/i.test(await page.evaluate(() => window.__spoken.at(-1))));
+  await shot(page, `${vp.width}x${vp.height}-11-card-en`);
+  await page.evaluate(() => window.__morsky.closeCard());
+  await dive(page, 'D.find("klaun")'); await dive(page, 'D.surface()'); await page.waitForSelector('.dive-summary', { timeout: 8000 });
+  check(`${tag}: end-of-dive summary in English`, (await page.textContent('.sum-title')) === 'Who we met' && (await page.textContent('.sum-safety')).includes('grown-up'));
+  await page.click('.dive-summary [data-act="home"]'); await page.waitForSelector('.home .dive-btn');
+  // sea + quiz
+  await page.evaluate(() => window.__morsky.go('sea')); await page.waitForSelector('.sea .drawer-item'); await wait(page, 300);
+  fc = await flagClear(page);
+  check(`${tag}: Můj kousek moře in English, flag collides with nothing`, (await page.textContent('.sea .title-pill')) === 'My piece of sea' && fc.visible && !fc.hits.length, JSON.stringify(fc));
+  await page.evaluate(() => window.__morsky.go('quiz')); await page.waitForSelector('.q-prompt'); await wait(page, 500);
+  fc = await flagClear(page);
+  const qp = await page.textContent('.q-prompt span');
+  check(`${tag}: quiz in English (title + prompt), flag collides with nothing`, (await page.textContent('.quiz .title-pill')) === 'Who am I?' && /^(Where|Is|Who|I |My |.*Who am I\?)/.test(qp) && fc.visible && !fc.hits.length, `${qp} ${JSON.stringify(fc)}`);
+  await shot(page, `${vp.width}x${vp.height}-11-quiz-en`);
+  await page.click('#lang-btn'); await wait(page, 400);
+  check(`${tag}: switching back mid-quiz → Czech title + prompt, same question`, (await page.textContent('.quiz .title-pill')) === 'Kdo jsem?' && (await page.textContent('.q-prompt span')) !== qp);
+  await page.click('#lang-btn'); await wait(page, 200);
+  await page.reload(); await page.waitForSelector('.start-layer .play-bubble-btn');
+  check(`${tag}: the choice survives a reload`, (await page.getAttribute('.start-logo', 'aria-label')) === 'Ocean World');
+  await page.click('.start-layer .play-bubble-btn'); await page.evaluate(() => window.__morsky.go('parents')); await page.waitForSelector('.parents-screen');
+  check(`${tag}: parents' corner shows English selected; flag hidden there`, (await page.getAttribute('.seg-btn[data-act="lang"][data-v="en"]', 'aria-pressed')) === 'true' && !(await page.isVisible('#lang-btn')));
+  await page.click('.seg-btn[data-act="lang"][data-v="cs"]'); await page.click('[data-act="home"]'); await page.waitForSelector('.home .dive-btn');
+  check(`${tag}: changing it in the parents' corner updates the flag`, (await page.getAttribute('#lang-btn', 'aria-label')) === 'English');
   await ctx.close();
 }
 

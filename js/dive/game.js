@@ -14,6 +14,7 @@ import { go } from '../router.js';
 import { effectiveLevel, checkLevelUp } from '../levels.js';
 import { maybeTired } from '../tired.js';
 import { celebrate } from '../confetti.js';
+import { mountScene, BG_ANIM } from '../scene.js';
 import { phraseText } from '../speech.js';
 import { getLang } from '../i18n.js';
 
@@ -134,13 +135,15 @@ export async function mount(root) {
       <div class="dv-par near"></div>
     </div>
     <div class="dv-hud">
-      <button class="btn round main paper hud-home" data-act="surface" aria-label="${esc(t('dive.surface'))}">${icon('up')}</button>
-      <div class="goal-bar" role="group" aria-label="${esc(t('dive.goal'))}"><div class="goal-chips"></div><div class="goal-dots"></div></div>
-      <button class="btn round main paper hud-replay" data-act="replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
-      <div class="gauge" aria-label="${esc(t('dive.depth'))}"><div class="gauge-track"></div><div class="gauge-diver"><span class="gauge-m"></span></div></div>
-      <button class="btn round touch paper hud-back" data-act="back" aria-label="${esc(t('dive.back'))}">${icon('back')}</button>
-      <button class="btn round hero primary hud-fwd" data-act="fwd" aria-label="${esc(t('dive.forward'))}">${icon('swim-on')}</button>
-      <button class="btn round hero primary hud-up" data-act="up" aria-label="${esc(t('dive.surface'))}" hidden>${icon('up')}</button>
+      <button class="btn round main paper hud-home" data-act="surface" data-ta="dive.surface" aria-label="${esc(t('dive.surface'))}">${icon('up')}</button>
+      <div class="goal-bar" role="group" data-ta="dive.goal" aria-label="${esc(t('dive.goal'))}"><span class="goal-zone" data-zone="utes">${icon('zone-utes')}</span><div class="goal-chips"></div><div class="goal-dots"></div></div>
+      <button class="btn round main paper hud-replay" data-act="replay" data-ta="nav.replay" aria-label="${esc(t('nav.replay'))}">${icon('speaker')}</button>
+      <div class="gauge" aria-label="${esc(t('dive.depth'))}"><div class="gauge-track"></div><div class="gauge-diver"><span class="gauge-mask">${icon('depth')}</span><span class="gauge-m"></span></div></div>
+      <button class="btn round touch paper hud-back" data-act="back" data-ta="dive.back" aria-label="${esc(t('dive.back'))}">${icon('back')}</button>
+      <button class="btn round touch paper hud-net" data-act="net" data-ta="dive.trash" aria-label="${esc(t('dive.trash'))}">${icon('net')}<span class="net-n">0</span></button>
+      <span class="hud-fwd-label" data-t="dive.forward" aria-hidden="true">${esc(t('dive.forward'))}</span>
+      <button class="btn round hero primary hud-fwd" data-act="fwd" data-ta="dive.forward" aria-label="${esc(t('dive.forward'))}">${icon('swim-on')}</button>
+      <button class="btn round hero primary hud-up" data-act="up" data-ta="dive.surface" aria-label="${esc(t('dive.surface'))}" hidden>${icon('up')}</button>
     </div>
   </div>`);
   root.append(view);
@@ -194,7 +197,7 @@ export async function mount(root) {
     parts: new Particles($('.dv-particles')), raf: 0, last: performance.now(), t: 0, rm,
     cam: { x: 0, y: -120 }, s: 1, vw: 1024, vh: 768, hold: 0, holdStart: 0, steer: null,
     found: new Set(), newFound: [], trashTaken: 0, goalMet: [false, false, false, false], zoneIdx: -1,
-    depthSaid: 0, lastSpeech: 0, bumpSaid: 0, pending: false, ending: false, free: false, stopped: false,
+    depthSaid: 0, lastSpeech: 0, bumpSaid: -Infinity, pending: false, ending: false, free: false, stopped: false,
     stops: waterStops(), waterKey: '', gaugeY: -1, lampOn: false, fwdPulse: false,
     parF: { far: num('--parallax-far', 0.25), mid: num('--parallax-mid', 0.55), near: num('--parallax-near', 1.25) },
     deepDim: cssVar('--deep-dim'), fps: { n: 0, t0: performance.now(), last: 0 },
@@ -209,6 +212,7 @@ export async function mount(root) {
   bindInput();
   addEventListener('resize', layout);
   addEventListener('speech:say', onSpeech);
+  addEventListener('langchange', onDiveLang);
   addEventListener('keydown', onKey); addEventListener('keyup', onKeyUp);
   S.raf = requestAnimationFrame(frame);
   setTimeout(() => { if (S && !S.ending) say(['ui.diveIntro']); }, 400);
@@ -218,11 +222,17 @@ export async function mount(root) {
 export function unmount() {
   if (!S) return;
   cancelAnimationFrame(S.raf); S.stopped = true;
-  removeEventListener('resize', layout); removeEventListener('speech:say', onSpeech);
+  removeEventListener('resize', layout); removeEventListener('speech:say', onSpeech); removeEventListener('langchange', onDiveLang);
   removeEventListener('keydown', onKey); removeEventListener('keyup', onKeyUp);
   document.querySelector('.dive-summary')?.remove();
   S = null;
   if (window.__morsky) delete window.__morsky.dive;
+}
+
+function onDiveLang() {        // chip names + gauge label follow the language; the dive itself goes on
+  if (!S) return;
+  for (const b of S.$('.goal-chips').children) b.setAttribute('aria-label', nameOf(byId.get(b.dataset.id)));
+  S.gaugeLabel = null; S.gaugeY = -1;
 }
 
 function onSpeech(e) {
@@ -351,6 +361,7 @@ function bindInput() {
     const a = b.dataset.act;
     if (a === 'replay') replay();
     else if (a === 'surface' || a === 'up') { sound.play('tap'); surface(); }
+    else if (a === 'net') { sound.play('tap'); say([`ui.trashCount.${Math.min(10, S.trashTaken)}`]); }
     else if (a === 'chip') {
       const id = b.dataset.id; sound.play('tap');
       say(S.found.has(id) ? [`sp.${id}.name`] : [`sp.${id}.where`]);
@@ -428,6 +439,7 @@ async function tapTrash(tr) {
   while (S && !S.stopped && performance.now() - t0 < 2500 && Math.hypot(S.diver.x - tr.x, S.diver.y - tr.y) > 220) await sleep(60);
   if (!S || S.stopped) return;
   tr.done = true; S.trashTaken += 1;
+  { const n = S.$('.net-n'); n.textContent = String(S.trashTaken); n.classList.remove('bump'); void n.offsetWidth; n.classList.add('bump'); }
   sound.play('pop');
   // fly into the net (anchor-net), then the place comes alive
   const d = S.diver; const nx = d.x - d.w / 2 + (d.dir > 0 ? d.anch.net.fx : 1 - d.anch.net.fx) * d.w; const ny = d.y - d.h / 2 + d.anch.net.fy * d.h;
@@ -658,6 +670,7 @@ function enterZone(k) {
   const first = S.zoneIdx < k && !S.announced?.[k];
   S.zoneIdx = k; S.announced = { ...(S.announced || {}), [k]: true };
   S.view.dataset.zone = W.ZONE_IDS[k];
+  { const gz = S.$('.goal-zone'); gz.dataset.zone = W.ZONE_IDS[k]; gz.innerHTML = icon(`zone-${W.ZONE_IDS[k]}`); }
   renderGoal(k);
   S.$('.hud-fwd').classList.remove('pulse');
   if (!first || S.ending || k === 0) return;
@@ -696,6 +709,7 @@ async function summary() {
   store.recordDive({ trash: S.trashTaken });
   const fresh = S.newFound.slice();
   const layer = h(`<div class="dive-summary" role="dialog" aria-modal="true" aria-label="${esc(t('dive.summary'))}">
+    <div class="sum-bg"></div>
     <div class="sum-card">
       <h2 class="sum-title">${esc(t('dive.summary'))}</h2>
       <ul class="sum-found">${ids.map((id) => `<li class="sum-cr${fresh.includes(id) ? ' new' : ''}" data-id="${esc(id)}"><div class="sum-art"></div><span>${esc(nameOf(byId.get(id)))}</span></li>`).join('')}</ul>
@@ -706,6 +720,7 @@ async function summary() {
         <button class="btn round main paper" data-act="home" aria-label="${esc(t('nav.home'))}">${icon('home')}</button>
       </div>
     </div></div>`);
+  mountScene(layer.querySelector('.sum-bg'), 'summary-bg', BG_ANIM);
   for (const li of layer.querySelectorAll('.sum-cr')) if (hasArt(li.dataset.id)) li.querySelector('.sum-art').append(charEl(li.dataset.id));
   document.getElementById('overlay').append(layer);
   layer.addEventListener('click', (e) => {

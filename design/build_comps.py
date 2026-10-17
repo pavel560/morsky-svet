@@ -497,8 +497,7 @@ def quiz():
     css = (".choice{position:absolute;top:330px;width:270px;height:270px;background:var(--paper);border:var(--stroke-ink) solid var(--ink);border-radius:var(--r-lg);"
            "box-shadow:var(--shadow-lift);display:grid;place-items:center;z-index:var(--z-ui)} .choice>div{width:220px;height:200px}")
     html = head("Kvíz — Kdo jsem?", css)
-    html += water("utes") + f'<div class="layer" style="left:0;width:100%;z-index:1;opacity:.7">{inl(os.path.join(PON, "rays.svg"))}</div>'
-    html += layer_tiles("utes", "far", 300, .25, 2, opacity=.8)
+    html += f'<div class="layer" style="left:0;width:100%;z-index:1">{inl(os.path.join(ART, "quiz-bg.svg"))}</div>'
     html += f'<div class="btn m" style="left:16px;top:16px">{icon("i-home")}</div>'
     # progress: five bubbles (no score) — two done
     html += '<div class="pill" style="left:calc(50% - 150px);top:18px;width:300px;height:64px;display:flex;align-items:center;justify-content:center;gap:16px">'
@@ -558,6 +557,89 @@ def contact_sheet():
     return html + FOOT
 
 
+# ================================================================== v2: start + home
+def start_v2(lang="cs"):
+    css = (".logo{position:absolute;left:50%;top:26px;width:min(64vw,660px);transform:translateX(-50%);z-index:var(--z-ui);filter:drop-shadow(0 6px 10px rgb(20 50 80 / .25))}"
+           ".logo svg{width:100%;height:auto;display:block;overflow:visible}"
+           ".play{position:absolute;left:50%;top:56%;width:calc(var(--touch-hero) * 1.4);height:calc(var(--touch-hero) * 1.4);transform:translate(-50%,-50%);z-index:var(--z-ui)}"
+           ".play svg{width:100%;height:100%;overflow:visible}"
+           ".safety{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:var(--z-ui);display:flex;align-items:center;gap:10px;"
+           "padding:8px 20px 8px 10px;border-radius:var(--r-pill);background:rgb(253 246 233 / .9);border:2px solid var(--paper-edge);"
+           "font:var(--fw-text-bold) var(--fs-small)/1.2 var(--font-text);color:var(--ink-soft);box-shadow:var(--shadow-paper)}"
+           ".safety svg{width:30px;height:30px;color:var(--grp-ryba)}"
+           ".flag{position:absolute;left:16px;top:16px;width:var(--touch-min);height:var(--touch-min);z-index:var(--z-ui)}"
+           ".flag svg{width:100%;height:100%}")
+    html = head("Úvod v2", css)
+    html += f'<div class="layer" style="left:0;width:100%">{inl(os.path.join(ART, "title.svg"))}</div>'
+    html += f'<div class="logo">{inl(os.path.join(ART, f"logo-{lang}.svg"))}</div>'
+    html += f'<div class="play">{inl(os.path.join(ART, "play-bubble.svg"))}</div>'
+    html += f'<div class="flag">{icon("i-flag-en-btn" if lang == "cs" else "i-flag-cz-btn")}</div>'
+    html += f'<div class="safety">{icon("i-parents")}Pod vodu se potápíme jen s dospělým.</div>'
+    return html + FOOT
+
+
+def home_v2():
+    css = (".door{position:absolute;display:flex;flex-direction:column;align-items:center;gap:2px;z-index:var(--z-ui);width:170px}"
+           ".door .obj2{width:136px;height:136px} .door .obj2 svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 6px 6px rgb(10 40 60 / .25))}"
+           ".door b{font:var(--fw-display) var(--fs-small)/1.1 var(--font-display);background:var(--paper);border:var(--stroke-ink) solid var(--ink);"
+           "border-radius:var(--r-pill);padding:6px 14px;box-shadow:var(--shadow-paper);white-space:nowrap}"
+           ".dive{position:absolute;right:28px;top:380px;z-index:var(--z-ui);display:flex;align-items:center;gap:14px;background:var(--primary);"
+           "border:var(--stroke-ink-heavy) solid var(--ink);border-radius:var(--r-pill);padding:10px 30px 10px 10px;box-shadow:0 5px 0 var(--primary-edge),0 16px 30px rgb(10 30 60 / .35)}"
+           ".dive span{width:var(--touch-main);height:var(--touch-main);border-radius:50%;background:var(--paper);border:var(--stroke-ink) solid var(--ink);display:grid;place-items:center}"
+           ".dive b{font:var(--fw-display) var(--fs-title)/1 var(--font-display)}"
+           ".tpill{position:absolute;left:50%;top:16px;transform:translateX(-50%);width:300px;z-index:var(--z-ui)} .tpill svg{width:100%;height:auto;overflow:visible}"
+           ".bub{position:absolute;left:88px;top:110px;max-width:330px;background:var(--paper);border:var(--stroke-ink) solid var(--ink);border-radius:var(--r-md);"
+           "padding:10px 16px;font:var(--fw-text) var(--fs-body)/1.3 var(--font-text);box-shadow:var(--shadow-lift);z-index:var(--z-ui)}"
+           ".bub b{color:var(--good);font-family:var(--font-display)}")
+    html = head("Loďka v2", css)
+    t = read(os.path.join(ART, "home.svg"))
+    html += f'<div class="layer" style="left:0;width:100%">{inl(os.path.join(ART, "home.svg"))}</div>'
+    tx, ty = [float(v) for v in re.search(r'data-turtle="([^"]+)"', t).group(1).split()]
+    k = 768 / 1000
+    ox = (1024 - 1600 * k) / 2
+    html += creature("guide-turtle", tx * k + ox, ty * k + 6, 130, z=5)
+    html += f'<div class="btn m" style="left:16px;top:16px;color:var(--ink-soft)">{icon("i-parents")}</div>'
+    html += f'<div style="position:absolute;left:96px;top:16px;width:var(--touch-min);height:var(--touch-min);z-index:var(--z-ui)">{icon("i-flag-en-btn", "style=width:100%;height:100%")}</div>'
+    html += f'<div class="tpill">{inl(os.path.join(ART, "logo-cs.svg"))}</div>'
+    html += f'<div class="btn main" style="right:16px;top:12px">{icon("i-speaker")}</div>'
+    html += (f'<div class="dive"><span>{icon("i-down", "style=width:56%;height:56%")}</span><b>Ponořit se!</b></div>')
+    for i, (name, lbl) in enumerate((("door-sea", "Můj kousek moře"), ("door-quiz", "Kvíz"), ("door-habitat", "Kdo kde bydlí?"))):
+        x = 150 + i * 190
+        html += f'<div class="door" style="left:{x - 85}px;top:556px"><div class="obj2">{inl(os.path.join(ART, name + ".svg"))}</div><b>{lbl}</b></div>'
+    html += (f'<div class="pill" style="right:20px;bottom:16px;padding:6px 16px 6px 10px;display:flex;align-items:center;gap:8px;font:var(--fw-text-bold) var(--fs-small)/1.2 var(--font-text);color:var(--ink-soft)">'
+             f'{icon("i-parents", "style=width:26px;height:26px")}Pod vodu se potápíme jen s dospělým.</div>')
+    return html + FOOT
+
+
+def bg_comp(name, title):
+    html = head(title)
+    html += f'<div class="layer" style="left:0;width:100%">{inl(os.path.join(ART, name + ".svg"))}</div>'
+    return html + FOOT
+
+
+def summary_v2():
+    css = (".sum{position:absolute;left:70px;right:70px;top:46px;bottom:46px;background:rgb(253 246 233 / .94);border:var(--stroke-ink) solid var(--ink);"
+           "border-radius:var(--r-lg);box-shadow:var(--shadow-lift);z-index:var(--z-card);padding:18px 30px;box-sizing:border-box}"
+           ".sum h2{margin:0;text-align:center;font:var(--fw-display) var(--fs-title)/1 var(--font-display)} .row{display:flex;justify-content:center;gap:14px;margin-top:16px}"
+           ".it{width:130px;text-align:center;font:var(--fw-display) var(--fs-small)/1.1 var(--font-display)} .it .bx{height:96px;border-radius:var(--r-md);background:var(--paper-deep);display:grid;place-items:center;margin-bottom:6px}"
+           ".it .bx>div{width:110px;height:84px} .it.new .bx{box-shadow:var(--halo-found)}")
+    html = head("Konec ponoru", css)
+    html += f'<div class="layer" style="left:0;width:100%">{inl(os.path.join(ART, "summary-bg.svg"))}</div>'
+    html += '<div class="sum"><h2>Koho jsme potkali</h2><div class="row">'
+    for cid, new in (("klaun", 1), ("konik", 1), ("hvezdice", 1), ("das", 0), ("dumbo", 0)):
+        nm = SPECIES.get(cid, {}).get("name", {}).get("cs", cid)
+        html += f'<div class="it{" new" if new else ""}"><div class="bx"><div>{inl(os.path.join(ART, cid + ".svg"), style="width:100%;height:100%")}</div></div>{nm}</div>'
+    html += ('</div><div style="display:flex;justify-content:center;gap:40px;margin-top:22px;font:var(--fw-text-bold) var(--fs-body)/1.2 var(--font-text)">'
+             f'<span style="display:flex;align-items:center;gap:10px"><span style="width:44px;height:44px;color:var(--grp-ryba)">{icon("i-net", "style=width:100%;height:100%")}</span>Uklizené odpadky: 1</span>'
+             f'<span style="display:flex;align-items:center;gap:10px;color:var(--ink-soft)"><span style="width:40px;height:40px">{icon("i-parents", "style=width:100%;height:100%")}</span>Pod vodu se potápíme jen s dospělým.</span></div>'
+             '<div style="display:flex;justify-content:center;align-items:center;gap:18px;margin-top:26px">'
+             '<div style="display:flex;align-items:center;gap:14px;background:var(--primary);border:var(--stroke-ink-heavy) solid var(--ink);border-radius:var(--r-pill);padding:10px 30px 10px 10px;box-shadow:0 5px 0 var(--primary-edge)">'
+             f'<span style="width:var(--touch-main);height:var(--touch-main);border-radius:50%;background:var(--paper);border:var(--stroke-ink) solid var(--ink);display:grid;place-items:center">{icon("i-collection", "style=width:56%;height:56%")}</span>'
+             '<b style="font:var(--fw-display) var(--fs-title)/1 var(--font-display)">Vypustit kamarády</b></div>'
+             f'<div class="btn main" style="position:relative">{icon("i-home")}</div></div></div>')
+    return html + FOOT
+
+
 COMPS = {
     "comp-home": home,
     "comp-ponor-utes": ponor_utes,
@@ -571,6 +653,9 @@ COMPS = {
     "comp-quiz": quiz,
     "comp-kdo-kde-bydli": who_where,
     "contact-sheet": contact_sheet,
+    "comp-start-v2": start_v2,
+    "comp-home-v2": home_v2,
+    "comp-summary-v2": summary_v2,
 }
 
 if __name__ == "__main__":

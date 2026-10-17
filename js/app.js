@@ -1,9 +1,10 @@
 // Mořský svět — boot: data + art, start tap (sound unlock), routing, rotate prompt, diver colours.
-import { loadAll, svgEl, species, zones, trash, voiceIndex } from './assets.js';
+import { loadAll, loadArt, svgEl, charEl, hasArt, species, zones, trash, voiceIndex } from './assets.js';
+import { mountScene, toScreen, startDolphin, logoEl, TITLE_ANIM } from './scene.js';
 import { buildCatalogue } from './phrases.js';
 import { register, go } from './router.js';
 import { h, icon, esc, say, mountCaption, cssVar } from './ui.js';
-import { t, applyI18n } from './i18n.js';
+import { t, applyI18n, getLang } from './i18n.js';
 import * as speech from './speech.js';
 import * as sound from './sound.js';
 import { registerServiceWorker } from './pwa.js';
@@ -16,6 +17,7 @@ import * as parents from './parents.js';
 import { openCard, closeCard } from './card.js';
 import * as store from './store.js';
 import * as session from './session.js';
+import { mountLangButton } from './langbtn.js';
 
 register('home', home); register('dive', dive); register('sea', sea); register('quiz', quiz); register('habitat', habitat); register('parents', parents);
 
@@ -29,31 +31,52 @@ export function applyLook() {
   }
 }
 
+/** Start screen (DESIGN §10.1): the title scene, the logo, the play bubble in open water, the safety line.
+ *  The first tap unlocks sound + speech on the iPad. */
+const PLAY_AT = [640, 680];          // scene units: open water left of the fish school, clear of the boat, oar and dolphin arc
 function startScreen() {
   const layer = h(`<div class="start-layer">
-    <div class="start-card">
-      <h1 class="start-title">${esc(t('app.name'))}</h1>
-      <button class="btn round hero primary play" aria-label="${esc(t('start.play'))}">${icon('play')}</button>
-      <p class="start-safety">${esc(t('say.safetyDive'))}</p>
-    </div></div>`);
+    <div class="start-scene"></div>
+    <div class="logo-wrap start-logo" role="img" data-ta="app.name" aria-label="${esc(t('app.name'))}"></div>
+    <button class="play-bubble-btn" data-ta="start.play" aria-label="${esc(t('start.play'))}"></button>
+    <p class="start-safety">${icon('parents')}<span data-t="say.safetyDive">${esc(t('say.safetyDive'))}</span></p>
+  </div>`);
   document.getElementById('overlay').append(layer);
-  layer.querySelector('.play').addEventListener('click', async () => {
+  const sc = mountScene(layer.querySelector('.start-scene'), 'title', TITLE_ANIM);
+  const logo = layer.querySelector('.start-logo');
+  const drawLogo = () => logo.replaceChildren(logoEl(getLang()));
+  drawLogo();
+  const play = layer.querySelector('.play-bubble-btn');
+  if (hasArt('play-bubble')) play.append(charEl('play-bubble')); else play.innerHTML = icon('play');
+  const place = () => {
+    if (!sc) return;
+    const p = toScreen(sc, PLAY_AT[0], PLAY_AT[1], innerWidth, innerHeight);
+    play.style.left = `${p.x.toFixed(0)}px`; play.style.top = `${p.y.toFixed(0)}px`;
+  };
+  place(); addEventListener('resize', place);
+  const stopDolphin = startDolphin(sc);
+  addEventListener('langchange', drawLogo);
+  play.addEventListener('click', async () => {
     sound.unlock(); speech.unlockAudio(); speech.prime(true); sound.play('bubble');
     layer.classList.add('leaving');
-    setTimeout(() => layer.remove(), 380);
+    setTimeout(() => { layer.remove(); stopDolphin(); removeEventListener('resize', place); removeEventListener('langchange', drawLogo); }, 380);
     await go('home');
     say(['ui.greet', 'ui.safetyDive']);
   });
 }
 
 async function boot() {
-  try { await loadAll(); } catch (err) {
+  try {
+    await loadAll();
+    await Promise.all(['title', 'home', 'logo-cs', 'logo-en', 'play-bubble', 'door-sea', 'door-quiz', 'door-habitat', 'quiz-bg', 'summary-bg'].map(loadArt));
+  } catch (err) {
     document.getElementById('screen').append(h(`<p class="boot-error">${esc(t('common.loading'))} ${esc(err.message)}</p>`));
     throw err;
   }
   speech.setVoice({ catalogue: buildCatalogue(species, { zones, trash }), index: voiceIndex });
   try { document.getElementById('sprite').append(svgEl('ui-icons', { unique: false })); } catch { /* no icons yet */ }
   mountCaption();
+  mountLangButton();
   applyI18n(); applyLook();
   addEventListener('store:change', (e) => { if (['hair', 'suit', 'skin', '*'].includes(e.detail?.key)) applyLook(); });
   const rot = document.getElementById('rotate');

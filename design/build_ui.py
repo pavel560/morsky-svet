@@ -239,42 +239,92 @@ def home():
 
 # ================================================================== Můj kousek moře
 def my_sea(night=False):
+    """v2: a little reef garden framed on both sides, open in the middle for her animals."""
     a = Art("mysea-n" if night else "mysea-d", seed=311)
     W, H = 1600, 1000
     FY = 780
+    dk = (lambda c: mix(c, "#0d1a3a", .58)) if night else (lambda c: c)
+    tc = lambda col: tuple(dk(c) for c in col)
     if night:
         water = a.linear("w", [(0, "#1d3f78"), (.5, "#12305d"), (1, "#0a1a36")], 0, 0, 0, H)
     else:
-        water = a.linear("w", [(0, "#8fe3dc"), (.45, "#3fc0c4"), (1, "#239fb0")], 0, 0, 0, H)
+        water = a.linear("w", [(0, "#a6ece4"), (.4, "#5fd0cc"), (1, "#2aa3b3")], 0, 0, 0, H)
     body = f'<rect width="{W}" height="{H}" fill="{water}"/>'
     if night:
-        moon = a.radial("m", [(0, "#f3f0ff", .9), (.2, "#cfd8ff", .45), (1, "#cfd8ff", 0)], user=(1150, 0, 420))
+        moon = a.radial("m", [(0, "#f3f0ff", .9), (.2, "#cfd8ff", .45), (1, "#cfd8ff", 0)], user=(1150, 0, 460))
         body += f'<rect width="{W}" height="{H}" fill="{moon}"/>'
-        rng = random.Random(7)
-        for _ in range(70):
-            x, y = rng.uniform(0, W), rng.uniform(40, FY - 40)
-            c = rng.choice(("#6ff3ff", "#b9a1ff", "#9dffc8"))
-            body += f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rng.uniform(1.6, 3.4))}" fill="{c}" opacity=".75"/>'
     else:
+        for x, y, rx, ry, op in ((420, 120, 420, 150, .22), (1180, 90, 460, 160, .2)):
+            g = a.radial("lp", [(0, "#ffffff", op), (1, "#ffffff", 0)], cx="50%", cy="50%", r="50%")
+            body += f'<ellipse cx="{x}" cy="{y}" rx="{rx}" ry="{ry}" fill="{g}"/>'
         for x, w in ((300, 120), (700, 80), (1100, 150), (1450, 90)):
             g = a.linear("r", [(0, "#fffce1", .5), (1, "#fffce1", 0)], 0, 0, 0, FY)
-            body += f'<path d="M{x - w / 2} 0L{x + w / 2} 0L{x + w * .3 - 160} {FY + 40}L{x - w - 160} {FY + 40}Z" fill="{g}"/>'
+            body += grp("ray", f'<path d="M{x - w / 2} 0L{x + w / 2} 0L{x + w * .3 - 160} {FY + 40}L{x - w - 160} {FY + 40}Z" fill="{g}"/>', (x, 0))
     surf = "".join(f" L{f(x)} {f(30 + 8 * math.sin(x / 60))}" for x in range(W, -1, -20))
     body += f'<path d="M0 0H{W}{surf}Z" fill="{"#2a4f8c" if night else "#d3f4ff"}" opacity=".7"/>'
+    # hazy far reef planes (no ink)
+    far1, far2 = (dk(mix("#3fc0c4", "#8fe3dc", .4)), dk(mix("#3fc0c4", "#239fb0", .5)))
+    for y0, col, op, sd in ((690, far1, .5, 3), (735, far2, .7, 4)):
+        rng = random.Random(sd)
+        pts = [(x, y0 + 18 * math.sin(x / 170 + sd)) for x in range(-20, W + 21, 20)]
+        body += f'<path d="M{" L".join(f"{f(x)} {f(y)}" for x, y in pts)} L{W + 20} {H} L-20 {H}Z" fill="{col}" opacity="{op}"/>'
+        for x in range(60, W, 150):
+            xx, hh = x + rng.uniform(-30, 30), rng.uniform(50, 120)
+            yy = y0 + 18 * math.sin(xx / 170 + sd) + 6
+            body += "".join(f'<path d="M{f(xx)} {f(yy)}Q{f(xx + math.cos(math.radians(60 + k * 15)) * hh * .3)} {f(yy - hh * .5)} {f(xx + math.cos(math.radians(60 + k * 15)) * hh * .9)} {f(yy - math.sin(math.radians(60 + k * 15)) * hh)}" fill="none" stroke="{col}" stroke-width="{f(hh * .1)}" stroke-linecap="round" opacity="{op}"/>' for k in range(5))
+    # sand: textured, ripples, pebbles, shells
     floor_pts = [(x, FY + 26 * math.sin(x / 260 + .6) + 8 * math.sin(x / 70)) for x in range(-20, W + 21, 20)]
-    sand = ("#3b4a78", "#53628f", "#262f55") if night else ("#f1d9a6", "#fbecc8", "#d8b77a")
+    yat = lambda x: FY + 26 * math.sin(x / 260 + .6) + 8 * math.sin(x / 70)
+    sand = tc(("#f1d9a6", "#fbecc8", "#d8b77a"))
     g = a.linear("s", [(0, sand[1]), (.08, sand[0]), (1, sand[2])], 0, FY - 30, 0, H)
-    body += f'<path d="M{" L".join(f"{f(x)} {f(y)}" for x, y in floor_pts)} L{W + 20} {H} L-20 {H}Z" fill="{g}" stroke="{INK}" stroke-width="3"/>'
-    dk = (lambda c: mix(c, "#0d1a3a", .55)) if night else (lambda c: c)
-    rk = tuple(dk(c) for c in (sea.ROCK, sea.ROCK_L, sea.ROCK_D))
-    deco = sea.rock(a, 330, FY + 40, 420, 230, rk) + sea.rock(a, 520, FY + 30, 180, 90, rk)
-    deco += sea.rock(a, 1380, FY + 30, 260, 120, rk)
-    for i, (x, h) in enumerate(((150, 260), (640, 200), (1240, 240), (1520, 180))):
-        deco += sea.kelp(a, x, FY + 10, h, 40 + i, col=tuple(dk(c) for c in (sea.KELP, sea.KELP_L, sea.KELP_D)), segs=3, cls="sway")
-    deco += sea.seagrass(a, 900, FY + 10, 80, 8, col=dk("#6aa04a"), light=dk("#9cc96e"), sway_cls="sway")
-    deco += sea.seagrass(a, 1080, FY + 16, 60, 6, col=dk("#6aa04a"), light=dk("#9cc96e"), sway_cls="sway")
-    deco += sea.shell(a, 760, FY + 50, 1.4, dk("#ffd9c0")) + sea.shell(a, 1180, FY + 70, 1.1, dk("#ffe6b0"))
+    fd = f'M{" L".join(f"{f(x)} {f(y)}" for x, y in floor_pts)} L{W + 20} {H} L-20 {H}Z'
+    body += f'<path d="{fd}" fill="{g}"/>'
+    rng = random.Random(9)
+    body += sea.speckle(a, fd, (0, FY - 40, W, H), 700, (sand[1], sand[2], dk("#ffffff")), (.9, 2.4), 9, .55)
+    body += f'<path d="M{" L".join(f"{f(x)} {f(y + 9)}" for x, y in floor_pts)}" fill="none" stroke="{dk("#fff6dc")}" stroke-width="14" opacity=".6"/>'
+    body += f'<path d="M{" L".join(f"{f(x)} {f(y)}" for x, y in floor_pts)}" fill="none" stroke="{INK}" stroke-width="3"/>'
+    for _ in range(26):
+        x = rng.uniform(40, W - 40)
+        y = yat(x) + rng.uniform(24, 180)
+        w = rng.uniform(30, 70)
+        body += f'<path d="M{f(x - w / 2)} {f(y)}q{f(w / 4)} -6 {f(w / 2)} 0t{f(w / 2)} 0" fill="none" stroke="{sand[2]}" stroke-width="2.6" stroke-linecap="round" opacity=".8"/>'
+    for _ in range(26):
+        x = rng.uniform(20, W - 20)
+        y = yat(x) + rng.uniform(10, 200)
+        r = rng.uniform(4, 10)
+        body += f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(r)}" ry="{f(r * .62)}" fill="{dk(rng.choice(("#c9b48c", "#a9967a", "#e3d2ad")))}" stroke="{INK}" stroke-width="1.3"/>'
+    # coral garden, left edge
+    deco = sea.fan_coral(a, 90, yat(90) + 6, 260, tc(sea.CORAL["violet"]))
+    deco += sea.rock(a, 300, yat(300) + 44, 420, 230, tc((sea.ROCK, sea.ROCK_L, sea.ROCK_D)), crust=dk("#e98fa6"))
+    deco += sea.zoanthids(a, 300, yat(300) - 168, 8, tc(("#7fe0b0", "#e8fff2", "#3a9a70")))
+    deco += sea.brain_coral(a, 230, yat(230) - 120, 56, tc(sea.CORAL["yellow"]))
+    deco += sea.branch_coral(a, 520, yat(520) + 6, 170, tc(sea.CORAL["pink"]), 5, 4)
+    deco += sea.soft_coral(a, 610, yat(610) + 6, 86, tc(("#f7b26a", "#ffe0b0", "#cf7b3a")))
+    deco += sea.kelp(a, 150, yat(150) + 10, 300, 40, col=tc((sea.KELP, sea.KELP_L, sea.KELP_D)), segs=3, cls="sway")
+    # meadow (centre-left) and a few shells, the middle stays open
+    deco += sea.seagrass(a, 820, yat(820) + 12, 74, 10, col=dk("#6aa04a"), light=dk("#9cc96e"), sway_cls="sway")
+    deco += sea.seagrass(a, 900, yat(900) + 16, 56, 8, col=dk("#6aa04a"), light=dk("#9cc96e"), sway_cls="sway")
+    deco += sea.shell(a, 760, yat(760) + 50, 1.4, dk("#ffd9c0")) + sea.snail_shell(a, 1040, yat(1040) + 70, 1.4, dk("#f6c9a0"))
+    deco += sea.shell(a, 1180, yat(1180) + 80, 1.1, dk("#ffe6b0"))
+    # coral garden, right edge
+    deco += sea.table_coral(a, 1230, yat(1230) + 8, 200, tc(sea.CORAL["teal"]))
+    deco += sea.rock(a, 1400, yat(1400) + 36, 300, 140, tc((sea.ROCK, sea.ROCK_L, sea.ROCK_D)), crust=dk("#c58cf0"))
+    deco += sea.tube_sponge(a, 1330, yat(1330) + 6, 110, tc(sea.CORAL["orange"]))
+    deco += sea.sea_whip(a, 1500, yat(1500) + 6, 200, tc(("#ff7f6a", "#ffd0c4", "#c94f3f")))
+    deco += sea.fan_coral(a, 1560, yat(1560) + 6, 230, tc(sea.CORAL["red"]))
+    deco += sea.kelp(a, 1460, yat(1460) + 10, 320, 43, col=tc((sea.KELP, sea.KELP_L, sea.KELP_D)), segs=3, cls="sway")
     body += deco
+    if night:
+        rng = random.Random(7)
+        gl = ""
+        for _ in range(80):
+            x, y = rng.uniform(0, W), rng.uniform(40, FY + 120)
+            c = rng.choice(("#6ff3ff", "#b9a1ff", "#9dffc8"))
+            gl += f'<circle cx="{f(x)}" cy="{f(y)}" r="{f(rng.uniform(1.6, 3.4))}" fill="{c}" opacity=".8"/>'
+        for x in (300, 1400, 600, 1250):
+            y = yat(x) - rng.uniform(60, 160)
+            gl += "".join(f'<circle cx="{f(x + rng.uniform(-60, 60))}" cy="{f(y + rng.uniform(-40, 40))}" r="2.6" fill="#9dffc8"/>' for _ in range(6))
+        body += grp("glow", gl)
     s = (f'<svg xmlns="http://www.w3.org/2000/svg" class="scene my-sea" data-mode="{"night" if night else "day"}" viewBox="0 0 {W} {H}" '
          f'preserveAspectRatio="xMidYMax slice" data-floor-y="{FY}" role="img" aria-label="Můj kousek moře"><defs>{"".join(a.defs)}</defs>{body}</svg>\n')
     open(os.path.join(ART, f"my-sea-{'night' if night else 'day'}.svg"), "w").write(s)
@@ -335,7 +385,7 @@ def app_icon():
 
 if __name__ == "__main__":
     n = icons()
-    home()
+    # home() is v1 — art/home.svg is now written by build_v2.py (run build_v2 after build_ui)
     my_sea(False)
     my_sea(True)
     cross_section()

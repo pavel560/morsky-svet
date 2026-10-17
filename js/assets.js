@@ -99,9 +99,26 @@ export function applyPivots(svg) {
   }
   return svg;
 }
-/** A creature / diver / turtle instance ready to animate. */
+// Groups the CSS animates. A CSS animation's `transform` REPLACES the group's own transform attribute (a fish placed
+// with translate(...) scale(...), the mirrored far whale, a tilted logo letter) — so that attribute moves onto a new
+// wrapper <g> and the animation runs inside it. The JS-driven dolphin keeps its own (scene.js removes it).
+const ANIMATED = new Set(['tail', 'fin', 'fin-2', 'tentacles', 'legs', 'body', 'lids', 'glow', 'claw', 'claw-2', 'kelp-seg', 'sway', 'hair',
+  'leg-front', 'leg-back', 'arm-front', 'arm-back', 'near-item', 'door-body', 'door-glint', 'door-needle', 'bubble-body', 'bubble-shine',
+  'satellites', 'letter', 'logo-bubble', 'fish', 'whale-far', 'peek', 'school', 'jelly', 'turtle', 'boat', 'flag', 'gull', 'wing', 'cloud',
+  'bubble', 'ray', 'sun-rays', 'sun-glow', 'waves-front', 'refraction', 'kelp']);
+export function liftTransforms(svg) {
+  for (const g of [...svg.querySelectorAll('g[transform]')]) {
+    const tr = g.getAttribute('transform');
+    if (!tr.trim() || g.classList.contains('dolphin') || ![...g.classList].some((c) => ANIMATED.has(c))) continue;
+    const wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    wrap.setAttribute('transform', tr); g.removeAttribute('transform');
+    g.parentNode.insertBefore(wrap, g); wrap.append(g);
+  }
+  return svg;
+}
+/** A creature / diver / turtle / scene instance ready to animate. */
 export function charEl(name) {
-  const el = applyPivots(svgEl(name));
+  const el = applyPivots(liftTransforms(svgEl(name)));
   el.querySelector('title')?.remove();
   el.setAttribute('focusable', 'false'); el.setAttribute('aria-hidden', 'true');
   return el;

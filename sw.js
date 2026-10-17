@@ -3,7 +3,7 @@
 // every photo listed in photos/credits.json and every voice recording listed in voice/index.json.
 // Pages ask for progress with postMessage({type:'status'}) → {type:'status', have, total, version}.
 // Bump VERSION whenever app files change; sw.js is served with Cache-Control: no-cache.
-const VERSION = 'v3';
+const VERSION = 'v5';
 const SCOPE_PATH = new URL(self.registration.scope).pathname;          // '/morsky-svet/'
 const PREFIX = 'morsky-svet-';
 const OWN_CACHE = /^morsky-svet-v\d+$/;
@@ -33,12 +33,14 @@ const CORE = [
   './js/habitat.js',
   './js/home.js',
   './js/i18n.js',
+  './js/langbtn.js',
   './js/levels.js',
   './js/parents.js',
   './js/phrases.js',
   './js/pwa.js',
   './js/quiz.js',
   './js/router.js',
+  './js/scene.js',
   './js/sea.js',
   './js/session.js',
   './js/sound.js',
@@ -60,10 +62,16 @@ const CORE = [
   './art/app-icon.svg',
   './art/cross-section.svg',
   './art/diver.svg',
+  './art/door-habitat.svg',
+  './art/door-quiz.svg',
+  './art/door-sea.svg',
   './art/guide-turtle.svg',
   './art/home.svg',
+  './art/logo-cs.svg',
+  './art/logo-en.svg',
   './art/my-sea-day.svg',
   './art/my-sea-night.svg',
+  './art/play-bubble.svg',
   './art/ponor/bubble.svg',
   './art/ponor/caustics.svg',
   './art/ponor/chaluhy-far.svg',
@@ -96,6 +104,9 @@ const CORE = [
   './art/ponor/utes-floor.svg',
   './art/ponor/utes-mid.svg',
   './art/ponor/utes-near.svg',
+  './art/quiz-bg.svg',
+  './art/summary-bg.svg',
+  './art/title.svg',
   './art/trash-lahev.svg',
   './art/trash-plechovka.svg',
   './art/trash-sacek.svg',
