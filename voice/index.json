@@ -2934,6 +2934,15 @@
    "text": "Rozsvítím čelovku!",
    "voice": "Candy - Young and Sweet"
   },
+  "ui.langHello": {
+   "bytes": 11745,
+   "file": "cs/ui.langHello.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ee2e1ac6a8194c1a9a4aae27a4cd3d686d7d1e9d",
+   "text": "Teď mluvím česky.",
+   "voice": "Candy - Young and Sweet"
+  },
   "ui.level2": {
    "bytes": 29927,
    "file": "cs/ui.level2.mp3",
@@ -5956,6 +5965,14 @@
    "provider": "edge",
    "sha1": "1354889f5234f5035bab5ce0e99e40241bb2cd57",
    "text": "I will switch on my head torch!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.langHello": {
+   "bytes": 15264,
+   "file": "en/ui.langHello.mp3",
+   "provider": "edge",
+   "sha1": "acdbd9e0e0ceee47d4278e820da01ffcba87eb6d",
+   "text": "Now I speak English.",
    "voice": "en-GB-MaisieNeural"
   },
   "ui.level2": {
