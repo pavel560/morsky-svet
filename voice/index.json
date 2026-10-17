@@ -1,4 +1,3354 @@
 {
+ "cs": {
+  "sp.chobotnice.bigger": {
+   "bytes": 11327,
+   "file": "cs/sp.chobotnice.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "23989b7ce2a0794de15b09fade9bc2f5e4ec8ca8",
+   "text": "Chobotnice je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.eats": {
+   "bytes": 16552,
+   "file": "cs/sp.chobotnice.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "06ced4a57aaa9621ce5dc7aebbb67baeb3d78509",
+   "text": "Nejraději jím kraby a mušle.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.fact": {
+   "bytes": 15507,
+   "file": "cs/sp.chobotnice.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2c2b0900fceec9c0ce55bbf4238fec71d93a898f",
+   "text": "Mám tři srdce a modrou krev.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.group": {
+   "bytes": 18433,
+   "file": "cs/sp.chobotnice.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a60520bf1dce3fb68d2bd8f12bc020057206dc93",
+   "text": "Chobotnice není ryba, je to měkkýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.home": {
+   "bytes": 20523,
+   "file": "cs/sp.chobotnice.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "662dd3914136a4affb3fa4610ae6f624800eee28",
+   "text": "Chobotnice bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.isFishA": {
+   "bytes": 22194,
+   "file": "cs/sp.chobotnice.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0fcccbe4d35c80b87894731d6a9416be5e249111",
+   "text": "Ne. Chobotnice není ryba, je to měkkýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.isFishQ": {
+   "bytes": 11327,
+   "file": "cs/sp.chobotnice.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e8a1afa95245e2f7bc8ed38b352a4ffe7a53d80f",
+   "text": "Je chobotnice ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.look.0": {
+   "bytes": 12372,
+   "file": "cs/sp.chobotnice.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5a446edd8f61d6ce13180caab0b513c753eb2292",
+   "text": "Mám osm chapadel.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.look.1": {
+   "bytes": 13626,
+   "file": "cs/sp.chobotnice.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "764eb1f53de7b2fbcd637ab87f1ebfe278a76199",
+   "text": "Na chapadlech mám přísavky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.look.2": {
+   "bytes": 15089,
+   "file": "cs/sp.chobotnice.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0bc11ea75b51e8eecefc96f10e6d574e42508a43",
+   "text": "Mám měkké tělo jako balónek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.name": {
+   "bytes": 12163,
+   "file": "cs/sp.chobotnice.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8f8942f16348ce395887dc26bf6a151f0158cbd3",
+   "text": "Chobotnice pobřežní.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.riddle": {
+   "bytes": 27628,
+   "file": "cs/sp.chobotnice.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "29e1e32e8387d0b04f80ff186e53769d0013b775",
+   "text": "Mám osm chapadel a umím měnit barvu. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.size": {
+   "bytes": 19896,
+   "file": "cs/sp.chobotnice.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "75209a394d055a4cf29f53e59b1aa1da4f6ce090",
+   "text": "I s chapadly jsem velká asi jako kočka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.chobotnice.where": {
+   "bytes": 11327,
+   "file": "cs/sp.chobotnice.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b3ab6274d36a0a8c4e72452ffcd6ffd7a0c93a8e",
+   "text": "Kde je chobotnice?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.bigger": {
+   "bytes": 10492,
+   "file": "cs/sp.das.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "53befc3be1362935a768423c363507eaab12f01e",
+   "text": "Ďas je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.eats": {
+   "bytes": 25538,
+   "file": "cs/sp.das.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d749dd5ab198d8ac1a4bb2494e14852874c4c435",
+   "text": "Svítící lampičkou lákám ve tmě rybky a korýšky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.fact": {
+   "bytes": 26165,
+   "file": "cs/sp.das.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fdc01f3b18f5c3a0829568992700e29999b24323",
+   "text": "Lampičku mi rozsvěcují malinké bakterie, které v ní bydlí.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.group": {
+   "bytes": 9865,
+   "file": "cs/sp.das.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5af8321400176612fbaff1bdb617c1a1b2e79952",
+   "text": "Ďas je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.home": {
+   "bytes": 11745,
+   "file": "cs/sp.das.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cd0058456dd28978e01d1e29a1f18b2abfb504df",
+   "text": "Ďas bydlí v hlubinách.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.isFishA": {
+   "bytes": 11327,
+   "file": "cs/sp.das.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "110171b2a0a8e06dbf081de1b2fb2ba9d5a0d0c2",
+   "text": "Ano! Ďas je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.isFishQ": {
+   "bytes": 9029,
+   "file": "cs/sp.das.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0191fbe33208c01791f3f0f933ea57a08ba33b1e",
+   "text": "Je ďas ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.look.0": {
+   "bytes": 18015,
+   "file": "cs/sp.das.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9e36674a7aeb08dcbe2f213a52316fd8579146a9",
+   "text": "Nad pusou mám svítící lampičku.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.look.1": {
+   "bytes": 12372,
+   "file": "cs/sp.das.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "412585144b88129dfd27ff8c3d51c5c9a9abf853",
+   "text": "Mám velkou pusu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.look.2": {
+   "bytes": 12163,
+   "file": "cs/sp.das.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "57e28f14988c999f7782ed76fda359cf4e221ffd",
+   "text": "Mám kulaté tmavé tělo.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.name": {
+   "bytes": 10909,
+   "file": "cs/sp.das.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "263b44b00407d34339912041ebdc6923b9011d13",
+   "text": "Hlubinný ďas.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.riddle": {
+   "bytes": 27628,
+   "file": "cs/sp.das.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8001607a23d190166544521b0bbd6bf9bcbd8695",
+   "text": "Bydlím ve tmě a nad pusou mi svítí lampička. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.size": {
+   "bytes": 17179,
+   "file": "cs/sp.das.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "21d2bf9d860e834eb84c9cade5d0e1842ede8a15",
+   "text": "Jsem velký asi jako malý meloun.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.das.where": {
+   "bytes": 9865,
+   "file": "cs/sp.das.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7d02fa16e3a74b3dfecfd8d8828da68904547fe4",
+   "text": "Kde je ďas?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.bigger": {
+   "bytes": 12163,
+   "file": "cs/sp.delfin.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4e10ffc912cf3fc06ba93d8e70672d63689184bd",
+   "text": "Delfín je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.eats": {
+   "bytes": 18851,
+   "file": "cs/sp.delfin.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a0f49ae5cc652ed60730c292e49ca5f1c8c436e5",
+   "text": "Jím ryby a olihně, rybu spolknu celou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.fact": {
+   "bytes": 22403,
+   "file": "cs/sp.delfin.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4183f0a3f55c7de40817190cd1afa6073d4ef7f0",
+   "text": "Každý delfín má svůj hvizd. Je to jako jméno.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.group": {
+   "bytes": 29091,
+   "file": "cs/sp.delfin.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "95b4c96781640e92f256f2e465f5f18741edc64d",
+   "text": "Delfín není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.home": {
+   "bytes": 16134,
+   "file": "cs/sp.delfin.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "642c719a9a19c2e3e35d3b304b8f136eb2456505",
+   "text": "Delfín bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.isFishA": {
+   "bytes": 32434,
+   "file": "cs/sp.delfin.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "72f935a0bf1d23d2679cdd7d09c5536b68406b7a",
+   "text": "Ne. Delfín není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.delfin.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3a65e1d3195d5540d36fc5d8245280a883682b93",
+   "text": "Je delfín ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.look.0": {
+   "bytes": 12372,
+   "file": "cs/sp.delfin.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "205f0045860ec996d51b7ef71ab8bdc1a9ef131c",
+   "text": "Mám krátký zobáček.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.look.1": {
+   "bytes": 17179,
+   "file": "cs/sp.delfin.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5bbafba4d28ad930c78e13d41a47b4fb3602f3c6",
+   "text": "Na zádech mám zahnutou ploutev.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.look.2": {
+   "bytes": 15716,
+   "file": "cs/sp.delfin.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0fb1a7904a3274ef7ae0f763ba863aadfa7a8df5",
+   "text": "Na temeni mám dírku na dýchání.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.name": {
+   "bytes": 11745,
+   "file": "cs/sp.delfin.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "094cb9129de3d8c02329da0610af09e37e76c7af",
+   "text": "Delfín skákavý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.riddle": {
+   "bytes": 33688,
+   "file": "cs/sp.delfin.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7acd31830e7fbc4423e504e8e2312f1b460cb55f",
+   "text": "Dýchám vzduch dírkou na hlavě a rád skáču z vody. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.size": {
+   "bytes": 16970,
+   "file": "cs/sp.delfin.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "dbe6ff97d790aa34aa4902cdd0954b2023fcf73f",
+   "text": "Jsem skoro tak dlouhý jako auto.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.delfin.where": {
+   "bytes": 11327,
+   "file": "cs/sp.delfin.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b18be3853de1d8e399202f3bfe6fca0e37c785a8",
+   "text": "Kde je delfín?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.bigger": {
+   "bytes": 10492,
+   "file": "cs/sp.dumbo.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "57862c8e63908be512a5b06992f9c9ba012073a4",
+   "text": "Dumbo je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.eats": {
+   "bytes": 18851,
+   "file": "cs/sp.dumbo.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6681b1f87582978839e7210c32ac1d5262ff2b78",
+   "text": "Polykám drobné korýšky a červíky celé.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.fact": {
+   "bytes": 20314,
+   "file": "cs/sp.dumbo.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "38a72f394527def2958d386bdbd357b15947a681",
+   "text": "Bydlím nejhlouběji ze všech chobotnic.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.group": {
+   "bytes": 18015,
+   "file": "cs/sp.dumbo.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "95be751a50dfe0286cd313d5478200215d6f7d10",
+   "text": "Dumbo není ryba, je to měkkýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.home": {
+   "bytes": 13626,
+   "file": "cs/sp.dumbo.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c6d3e992c50da59df401277600f4cfb72eab4d7b",
+   "text": "Dumbo bydlí v hlubinách.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.isFishA": {
+   "bytes": 19060,
+   "file": "cs/sp.dumbo.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5c8bdb7935ac9327dca21631f97a45e9336f7cea",
+   "text": "Ne. Dumbo není ryba, je to měkkýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.isFishQ": {
+   "bytes": 9865,
+   "file": "cs/sp.dumbo.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "019e5efc7c696be60f68bbd4215f41b2cb68e031",
+   "text": "Je dumbo ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.look.0": {
+   "bytes": 15507,
+   "file": "cs/sp.dumbo.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2a3fca3834b056a64f32bf54a99ab1519888008d",
+   "text": "Mám dvě ploutvičky jako uši.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.look.1": {
+   "bytes": 20940,
+   "file": "cs/sp.dumbo.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ef5475406f28969dedae2ea579abe613f4aade95",
+   "text": "Chapadla mám spojená blánou jako sukýnku.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.look.2": {
+   "bytes": 20314,
+   "file": "cs/sp.dumbo.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3db04600fff511607ddbafa30c375edf912f1db8",
+   "text": "Mám měkké kulaté tělo jako zvoneček.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.name": {
+   "bytes": 11327,
+   "file": "cs/sp.dumbo.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5125f32e517f193cf5809c63f105f619be6dee4b",
+   "text": "Chobotnice dumbo.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.riddle": {
+   "bytes": 43719,
+   "file": "cs/sp.dumbo.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "56a5703c6d812739c2cd11999f3ee8e58916c5f7",
+   "text": "Mám ploutvičky jako sloní uši a bydlím hluboko ve tmě. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.size": {
+   "bytes": 17597,
+   "file": "cs/sp.dumbo.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4b6c0cc96c7b3a2f3e0fc373678b4dd8f4883ed0",
+   "text": "Jsem velká asi jako obrázková knížka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.dumbo.where": {
+   "bytes": 9447,
+   "file": "cs/sp.dumbo.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6e76e30ca5e73888de15b12a0eb5263c4650e5aa",
+   "text": "Kde je dumbo?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.bigger": {
+   "bytes": 12163,
+   "file": "cs/sp.hvezdice.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "84dde5c6d9db9b5468be1b37574127649b5fd2d7",
+   "text": "Hvězdice je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.eats": {
+   "bytes": 28046,
+   "file": "cs/sp.hvezdice.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1c1b0c81921d7ce831175cf884505a2837210ba6",
+   "text": "Vysunu žaludek ven a sním zbytky jídla na dně.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.fact": {
+   "bytes": 19896,
+   "file": "cs/sp.hvezdice.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9a78f47876153aa398f7bfe59228be8ed973d883",
+   "text": "Na konci každého ramena mám malinké oko.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.group": {
+   "bytes": 19896,
+   "file": "cs/sp.hvezdice.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "752546a3efdff862986278c52a8ba0e7cca55b86",
+   "text": "Hvězdice není ryba, je to ostnokožec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.home": {
+   "bytes": 19896,
+   "file": "cs/sp.hvezdice.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "877cbfbf8f48e6de39044827406a68193c62f3d2",
+   "text": "Hvězdice bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.isFishA": {
+   "bytes": 20940,
+   "file": "cs/sp.hvezdice.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9a26e86e0a7943dbd0448d77b919e741fc6a6fa4",
+   "text": "Ne. Hvězdice není ryba, je to ostnokožec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.isFishQ": {
+   "bytes": 12163,
+   "file": "cs/sp.hvezdice.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c7d89c78bb8c764b47a470c2762957f25d859cd5",
+   "text": "Je hvězdice ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.look.0": {
+   "bytes": 10283,
+   "file": "cs/sp.hvezdice.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "151503a11363bc922a445f5abb9483b904c0b78b",
+   "text": "Mám pět ramen.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.look.1": {
+   "bytes": 12372,
+   "file": "cs/sp.hvezdice.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "782ed26b7cc94b65e62280bd5b5105afe0cbdda9",
+   "text": "Jsem celá sytě modrá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.look.2": {
+   "bytes": 20523,
+   "file": "cs/sp.hvezdice.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fa663ed2108af019f4d938c249d29aa998706c81",
+   "text": "Ramena mám dlouhá a kulatá jako párečky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.name": {
+   "bytes": 10909,
+   "file": "cs/sp.hvezdice.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2418b4c5922fb208eaa2463fb78356f95f1e6ad0",
+   "text": "Hvězdice modrá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.riddle": {
+   "bytes": 39958,
+   "file": "cs/sp.hvezdice.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c3b4045729326f390a226c401813abce2af803c9",
+   "text": "Nejsem ryba, mám pět modrých ramen a pomalu lezu po dně. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.size": {
+   "bytes": 19060,
+   "file": "cs/sp.hvezdice.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5c6a1993fc1a007d31b3f103be5865af09357763",
+   "text": "Jsem velká skoro jako tvůj batůžek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.hvezdice.where": {
+   "bytes": 12163,
+   "file": "cs/sp.hvezdice.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8260903b56149fe0b6d806b84e779b53fc29e808",
+   "text": "Kde je hvězdice?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.bigger": {
+   "bytes": 11745,
+   "file": "cs/sp.jezovka.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1c493ab49df7a162960bf553d17553bc424f9543",
+   "text": "Ježovka je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.eats": {
+   "bytes": 15716,
+   "file": "cs/sp.jezovka.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5b52a8765d6cf50afc56472fdbed886c7e619e54",
+   "text": "Okusuji chaluhy a jiné řasy.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.fact": {
+   "bytes": 19478,
+   "file": "cs/sp.jezovka.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "494160e50a76c9888ab26c986835c81d21df90dd",
+   "text": "Pusu mám vespod a v ní pět zoubků.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.group": {
+   "bytes": 20314,
+   "file": "cs/sp.jezovka.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "81abe44d8a1fe8ca5959ee7b6e251ec5f5ddada1",
+   "text": "Ježovka není ryba, je to ostnokožec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.home": {
+   "bytes": 18433,
+   "file": "cs/sp.jezovka.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0ea5667674ff0166dd203e379b5829c82374a939",
+   "text": "Ježovka bydlí v chaluhovém lese.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.isFishA": {
+   "bytes": 22403,
+   "file": "cs/sp.jezovka.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e536ccdbd07403db7f3e909effdbdda392bedcfb",
+   "text": "Ne. Ježovka není ryba, je to ostnokožec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.jezovka.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "78d4e446db67218c90d1b07bee6618f170fd31a2",
+   "text": "Je ježovka ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.look.0": {
+   "bytes": 13208,
+   "file": "cs/sp.jezovka.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ae0cb682a4fb82c51be79de633b06edf748f2e69",
+   "text": "Jsem kulatá jako míček.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.look.1": {
+   "bytes": 15089,
+   "file": "cs/sp.jezovka.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a929cdb3af00c47857520b4fad0b3d8e8704ebf2",
+   "text": "Ostny mám všude kolem dokola.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.look.2": {
+   "bytes": 11745,
+   "file": "cs/sp.jezovka.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6150c90a10949f1912a3c70d9206a9f4dbb2c63a",
+   "text": "Jsem fialová.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.name": {
+   "bytes": 11745,
+   "file": "cs/sp.jezovka.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f168a47c7bbd72bc0d42e58f26351fff12a0fd05",
+   "text": "Ježovka purpurová.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.riddle": {
+   "bytes": 34733,
+   "file": "cs/sp.jezovka.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4ce9b62c49afebab91f30336170a6c6e1fe494b0",
+   "text": "Jsem fialová kulička s ostny a okusuji chaluhy. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.safety": {
+   "bytes": 21358,
+   "file": "cs/sp.jezovka.safety.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "146a7ccbce07cf1744b3448319ff3be7ad5324ce",
+   "text": "Pozor, píchám! Jen se díváme, nesaháme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.size": {
+   "bytes": 16134,
+   "file": "cs/sp.jezovka.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7f32f5e59e2449704ba074f432fa841ada47ef63",
+   "text": "Jsem velká asi jako mandarinka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.jezovka.where": {
+   "bytes": 11745,
+   "file": "cs/sp.jezovka.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b895d1aa0795fa61f46a8a333b9aa47509ed34bf",
+   "text": "Kde je ježovka?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.bigger": {
+   "bytes": 12372,
+   "file": "cs/sp.kapustnak.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "683b2ce228f035328cf2f1456bfcf37e03f7928c",
+   "text": "Kapustňák je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.eats": {
+   "bytes": 25538,
+   "file": "cs/sp.kapustnak.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e7a3fb59139daaa42ebedfbecee80c51db2bac9f",
+   "text": "Říkají mi mořská kráva, protože spásám mořskou trávu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.fact": {
+   "bytes": 20314,
+   "file": "cs/sp.kapustnak.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fb587908bd2aeda90e8a37a8b8e91cc78266c516",
+   "text": "Jsem vzdálený příbuzný slona!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.group": {
+   "bytes": 29509,
+   "file": "cs/sp.kapustnak.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "44a2daf0add6718170b58775202d4bbe655786a3",
+   "text": "Kapustňák není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.home": {
+   "bytes": 19060,
+   "file": "cs/sp.kapustnak.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ad5b402eb42e34592ce0ef97fbb7f6aa884c323c",
+   "text": "Kapustňák bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.isFishA": {
+   "bytes": 34315,
+   "file": "cs/sp.kapustnak.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "63f86c39477171a49b63b99f4dbc280837ef5de8",
+   "text": "Ne. Kapustňák není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.isFishQ": {
+   "bytes": 12790,
+   "file": "cs/sp.kapustnak.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c3e5b74367223a7be5507a7ebabe4896a9b770c6",
+   "text": "Je kapustňák ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.look.0": {
+   "bytes": 21358,
+   "file": "cs/sp.kapustnak.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "64a5f54c5dff1e14868fd413f2222ad0cc098d9e",
+   "text": "Ocas mám kulatý a placatý jako pádlo.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.look.1": {
+   "bytes": 21776,
+   "file": "cs/sp.kapustnak.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2a1631569d365759db1ad516740cf4f1ba01162b",
+   "text": "Na velkém horním pysku mám štětinaté vousky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.look.2": {
+   "bytes": 20314,
+   "file": "cs/sp.kapustnak.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "aa035f032abd72b72880352230850daa0e74fd40",
+   "text": "Na předních ploutvích mám malé nehty.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.name": {
+   "bytes": 11327,
+   "file": "cs/sp.kapustnak.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "157430148e40578848eced1b229558f243cbf398",
+   "text": "Kapustňák širokonosý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.riddle": {
+   "bytes": 40376,
+   "file": "cs/sp.kapustnak.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "26dddb3ed6d5e883ff81e99c80281c7782e385c6",
+   "text": "Jsem pomalý, spásám mořskou trávu a vynořuji se pro vzduch. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.size": {
+   "bytes": 20523,
+   "file": "cs/sp.kapustnak.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "31bca549fb30580f98af910966da1fe0e671bb58",
+   "text": "Jsem dlouhý skoro jako dvě postele za sebou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.kapustnak.where": {
+   "bytes": 11327,
+   "file": "cs/sp.kapustnak.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "704ec4065bef62fdaa23b9abcfa1e30fa432623e",
+   "text": "Kde je kapustňák?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.bigger": {
+   "bytes": 11745,
+   "file": "cs/sp.keporkak.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5c117f92c0446e4ac58ee29906f67b524027dd6c",
+   "text": "Keporkak je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.eats": {
+   "bytes": 21358,
+   "file": "cs/sp.keporkak.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d482736b3633ad434707f1f6797b3d4568e98f03",
+   "text": "Polykám drobné korýše krill a malé rybky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.fact": {
+   "bytes": 28882,
+   "file": "cs/sp.keporkak.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bcb1991a0613fa8e1aec79e8daff3449e92029e5",
+   "text": "Sameček zpívá dlouhé písně a opakuje je i celé hodiny.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.group": {
+   "bytes": 30345,
+   "file": "cs/sp.keporkak.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "71de7d8df110a46c78b829916267477038903331",
+   "text": "Keporkak není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.home": {
+   "bytes": 17597,
+   "file": "cs/sp.keporkak.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "79185840a4665cdb4e9e255e446d0d54cb0fef70",
+   "text": "Keporkak bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.isFishA": {
+   "bytes": 30972,
+   "file": "cs/sp.keporkak.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1c227c831cae90094774ba09be6afb48a1d56086",
+   "text": "Ne. Keporkak není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.isFishQ": {
+   "bytes": 12163,
+   "file": "cs/sp.keporkak.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "de107f81b2a2685903cf28428a3dd214cbd05969",
+   "text": "Je keporkak ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.look.0": {
+   "bytes": 18851,
+   "file": "cs/sp.keporkak.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ac99d226be3d49ab6ed303fbc95f5d50bed06d53",
+   "text": "Mám obrovské dlouhé prsní ploutve.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.look.1": {
+   "bytes": 12163,
+   "file": "cs/sp.keporkak.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "43e3ec99a4d42a01771d58f2c479402c53969978",
+   "text": "Na hlavě mám hrbolky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.look.2": {
+   "bytes": 15507,
+   "file": "cs/sp.keporkak.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ba562469c841d94390ebe8ba302468857416d985",
+   "text": "Pod bradou mám dlouhé rýhy.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.name": {
+   "bytes": 7566,
+   "file": "cs/sp.keporkak.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1f84cf016b594442ace043a04272f68b7007757a",
+   "text": "Keporkak.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.riddle": {
+   "bytes": 29509,
+   "file": "cs/sp.keporkak.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b401c7972c7ac3aede234638d8e43389065f3be6",
+   "text": "Jsem větší než autobus a umím zpívat. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.size": {
+   "bytes": 12790,
+   "file": "cs/sp.keporkak.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0c72239e099aaae7900511633675a8f8bde8873c",
+   "text": "Jsem delší než autobus!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.keporkak.where": {
+   "bytes": 10909,
+   "file": "cs/sp.keporkak.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bc2a227a24646d288688898e266b0496bb8457b9",
+   "text": "Kde je keporkak?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.bigger": {
+   "bytes": 9447,
+   "file": "cs/sp.klaun.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8872c2c4ecdd0e03eaad68b5cb996d84ebe6ed7e",
+   "text": "Klaun je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.eats": {
+   "bytes": 18015,
+   "file": "cs/sp.klaun.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e16f85e77ff81e2fb060310ee4660d8359e4824c",
+   "text": "Jím drobný plankton a trochu řas.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.fact": {
+   "bytes": 27628,
+   "file": "cs/sp.klaun.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "969ccdb657ee80395f6ffac1d85bfb764e6d7f39",
+   "text": "Bydlím v žahavé sasance. Kluzký sliz mě chrání.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.group": {
+   "bytes": 9447,
+   "file": "cs/sp.klaun.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "85643b39e09d223098883f8f750a704d199f61d9",
+   "text": "Klaun je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.home": {
+   "bytes": 17179,
+   "file": "cs/sp.klaun.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "77d896b7bd5fa3292e4742c31a6a2f9daa2910f2",
+   "text": "Klaun bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.isFishA": {
+   "bytes": 12163,
+   "file": "cs/sp.klaun.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9a2823d266a70a2f54361bdb8e922f97d83a9c01",
+   "text": "Ano! Klaun je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.klaun.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f290382e46029e2530769371afe86fa0d6b98716",
+   "text": "Je klaun ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.look.0": {
+   "bytes": 11745,
+   "file": "cs/sp.klaun.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "23b8d281d8bfcfc4fa043ff04cb42fdb4db20cf2",
+   "text": "Mám oranžové tělo.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.look.1": {
+   "bytes": 12372,
+   "file": "cs/sp.klaun.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "14f9ffa5dd741325e7cfbbc39f64469d76793587",
+   "text": "Mám tři bílé pruhy.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.look.2": {
+   "bytes": 21358,
+   "file": "cs/sp.klaun.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "efe3219f6f455d924af91625c4bac5ff99fd5b38",
+   "text": "Pruhy i ploutve mám lemované černou linkou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.name": {
+   "bytes": 10283,
+   "file": "cs/sp.klaun.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "88549faef197df1b098f5c4ff28566ff66609a78",
+   "text": "Klaun očkatý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.riddle": {
+   "bytes": 28046,
+   "file": "cs/sp.klaun.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "71ced199a543dbbc06544e79b1b939aa65cc75fa",
+   "text": "Jsem oranžový s bílými pruhy a bydlím v sasance. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.size": {
+   "bytes": 16970,
+   "file": "cs/sp.klaun.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1e027784c7a0a5d964a043c5c195336b26063c06",
+   "text": "Jsem velký asi jako tvoje dlaň.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.klaun.where": {
+   "bytes": 8820,
+   "file": "cs/sp.klaun.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9fde198507ef082f5d2c775d77102d6cdbd55312",
+   "text": "Kde je klaun?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.bigger": {
+   "bytes": 12163,
+   "file": "cs/sp.konik.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2ad8cb59ff7c88e52019b0764a34a348784a4c57",
+   "text": "Koníček je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.eats": {
+   "bytes": 22194,
+   "file": "cs/sp.konik.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "428adc3dc3da26a7e3d279ed88e8dd17100df90c",
+   "text": "Čumáčkem jako brčkem nasávám drobný plankton.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.fact": {
+   "bytes": 21358,
+   "file": "cs/sp.konik.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7dc21c7f617366d83f41d96e1bcd86c31c9c19cd",
+   "text": "Miminka nosí ve vaku na bříšku tatínek!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.group": {
+   "bytes": 10492,
+   "file": "cs/sp.konik.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b68a28b74ea25ee45d0c85bd3ad0a8f307e6c654",
+   "text": "Koníček je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.home": {
+   "bytes": 19060,
+   "file": "cs/sp.konik.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "07a1c69eb5605e135032cd664a073a3f372664fd",
+   "text": "Koníček bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.isFishA": {
+   "bytes": 13208,
+   "file": "cs/sp.konik.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "feb4ff07c355b057774bd7d72c02dc71b9ddb410",
+   "text": "Ano! Koníček je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.isFishQ": {
+   "bytes": 11327,
+   "file": "cs/sp.konik.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e613491c70d34344931dab6f579fee5ce05b1d09",
+   "text": "Je koníček ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.look.0": {
+   "bytes": 12372,
+   "file": "cs/sp.konik.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "77d6a255e6ecce78505ae3627133d2513472adf0",
+   "text": "Hlavu mám jako koník.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.look.1": {
+   "bytes": 16970,
+   "file": "cs/sp.konik.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "acb8f34caf76ff44a610f1aaf22aa851e4bcec39",
+   "text": "Ocásek mám stočený do kroužku.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.look.2": {
+   "bytes": 22194,
+   "file": "cs/sp.konik.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "479dbd58404c53b238797ebb4c8ac222398a2b47",
+   "text": "Na hlavě a zádech mám střapatou hřívu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.name": {
+   "bytes": 10909,
+   "file": "cs/sp.konik.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e453f36be1e1a5d7b34e141b4e774c92f3b39fbd",
+   "text": "Koníček mořský.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.riddle": {
+   "bytes": 29927,
+   "file": "cs/sp.konik.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "920a4a62f43d21bed46d87a48380a7cdc707a654",
+   "text": "Mám hlavu jako koník a ocáskem se držím řas. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.size": {
+   "bytes": 16134,
+   "file": "cs/sp.konik.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d91a14fe78678e41b1f37d7d3711435428a237e9",
+   "text": "Jsem velký asi jako pastelka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.konik.where": {
+   "bytes": 9865,
+   "file": "cs/sp.konik.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0f461b1e7ebe3266832ab088d9ae864b5721f79f",
+   "text": "Kde je koníček?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.bigger": {
+   "bytes": 10909,
+   "file": "cs/sp.krab.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c21a884f138648f980de09845cd6ccf8ffbc1ab1",
+   "text": "Krab je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.eats": {
+   "bytes": 20940,
+   "file": "cs/sp.krab.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b80bfb874e8c8f9c10bd88d993506ab24d3c7aca",
+   "text": "Jím mušle, šnečky, řasy i zbytky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.fact": {
+   "bytes": 23239,
+   "file": "cs/sp.krab.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f80cd8980d3f4bd30b22ab5fcf1a689d8f3333de",
+   "text": "Když vyrostu, svléknu starý krunýř jako tričko.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.group": {
+   "bytes": 15507,
+   "file": "cs/sp.krab.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b540faecd2bb7d96d848f8e38c5b44c034d35199",
+   "text": "Krab není ryba, je to korýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.home": {
+   "bytes": 18015,
+   "file": "cs/sp.krab.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "91954f021c3df00aacba0e608f5b4b08e1659adb",
+   "text": "Krab bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.isFishA": {
+   "bytes": 20523,
+   "file": "cs/sp.krab.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8fc6393281fcc901662663766c27d3bfa64222e4",
+   "text": "Ne. Krab není ryba, je to korýš.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.krab.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b5ed2b757a86aa4d887ffa47e73b9a972a2e0dd9",
+   "text": "Je krab ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.look.0": {
+   "bytes": 11327,
+   "file": "cs/sp.krab.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "34f930a8ee379bcdd7a8baf933df4159b61c3c54",
+   "text": "Mám dvě klepeta.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.look.1": {
+   "bytes": 18433,
+   "file": "cs/sp.krab.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d802b1673d1ea03fcc49a3278a1a2765ca5e91fd",
+   "text": "Kromě klepet mám osm nohou na chození.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.look.2": {
+   "bytes": 19478,
+   "file": "cs/sp.krab.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c28f476f9182727c31f6c4c41d5b9e15f1daa82c",
+   "text": "Okraj krunýře mám zubatý jako pilka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.name": {
+   "bytes": 10492,
+   "file": "cs/sp.krab.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e738d2932a4afb2479ff2f03b32f3138e84cba1b",
+   "text": "Krab pobřežní.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.riddle": {
+   "bytes": 22821,
+   "file": "cs/sp.krab.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6e8b93ef8bbe3b412d470091bc022d2a8c6bfe67",
+   "text": "Chodím bokem a mám dvě klepeta. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.safety": {
+   "bytes": 22821,
+   "file": "cs/sp.krab.safety.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "20de26e09a4170fb908a2a06d98c0272b892ac51",
+   "text": "Pozor, můžu štípnout klepetem! Jen se díváme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.size": {
+   "bytes": 14671,
+   "file": "cs/sp.krab.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "881d3d4f53c5be6101941577f63438c0f5c2556b",
+   "text": "Jsem velký asi jako sušenka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.krab.where": {
+   "bytes": 8820,
+   "file": "cs/sp.krab.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8b9452f7ce7d8e6322a173ec148c66276c0a0d8d",
+   "text": "Kde je krab?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.bigger": {
+   "bytes": 11327,
+   "file": "cs/sp.manta.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bd290b5918e6c0d803cc04617998737e874ef6e6",
+   "text": "Manta je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.eats": {
+   "bytes": 20314,
+   "file": "cs/sp.manta.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "96947f75a5e14a0701040edff0bbf8b8dd2ea819",
+   "text": "Laloky u pusy si naháním plankton do pusy.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.fact": {
+   "bytes": 21358,
+   "file": "cs/sp.manta.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3d9abe99489ae33a6414332547a87709483027d2",
+   "text": "Každá manta má na bříšku jiné skvrny.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.group": {
+   "bytes": 10909,
+   "file": "cs/sp.manta.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "87e3b93e1933df511623343ebb52a1a95108487e",
+   "text": "Manta je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.home": {
+   "bytes": 14671,
+   "file": "cs/sp.manta.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "12fca3b052f65fede97f6aac3775061eae74b80e",
+   "text": "Manta bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.isFishA": {
+   "bytes": 13835,
+   "file": "cs/sp.manta.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "586b742350a662f0093209411af212ae16a2d438",
+   "text": "Ano! Manta je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.isFishQ": {
+   "bytes": 10492,
+   "file": "cs/sp.manta.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "164252295841736545ffb02a6ba37e3c978d16fb",
+   "text": "Je manta ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.look.0": {
+   "bytes": 17179,
+   "file": "cs/sp.manta.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c523e29600adbc58b56f8a6b7ff83b0b1715c9d2",
+   "text": "Ploutve mám jako trojúhelníková křídla.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.look.1": {
+   "bytes": 18851,
+   "file": "cs/sp.manta.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "244122f4217a7dae2904ded7867e9332b29a31a3",
+   "text": "U pusy mám dva laloky jako rohy.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.look.2": {
+   "bytes": 18851,
+   "file": "cs/sp.manta.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e093feadf425b5d1dc4de96d675f0c84e170479d",
+   "text": "Na tmavém hřbetě mám dvě bílé skvrny.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.name": {
+   "bytes": 10909,
+   "file": "cs/sp.manta.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2fb4df477c2631f34ed70c45a441b25ea38c3cec",
+   "text": "Manta obrovská.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.riddle": {
+   "bytes": 33688,
+   "file": "cs/sp.manta.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "27b7c884358149fa4dd41cb8e9dd355ff036c99d",
+   "text": "Mávám ploutvemi jako křídly a u pusy mám dva laloky. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.size": {
+   "bytes": 24702,
+   "file": "cs/sp.manta.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8a01a4c944ae7efff6ef5cfac8206ad5a1ba12e4",
+   "text": "S roztaženými ploutvemi jsem široká jako auto.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.manta.where": {
+   "bytes": 10283,
+   "file": "cs/sp.manta.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bcb47c90b0479c0130a35789f6c4c4af196c7664",
+   "text": "Kde je manta?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.bigger": {
+   "bytes": 11327,
+   "file": "cs/sp.meduza.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3c68de829794ac08140be60fbeb4c90a65799cc4",
+   "text": "Medúza je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.eats": {
+   "bytes": 25747,
+   "file": "cs/sp.meduza.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a65ff6c25c306749250506186b1ccdb58d73dd19",
+   "text": "Jím drobný plankton, který se mi přilepí na zvon.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.fact": {
+   "bytes": 16552,
+   "file": "cs/sp.meduza.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "806122796ec7b36fb47fafbff8a0f68f54d3de05",
+   "text": "Nemám mozek, srdce ani krev.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.group": {
+   "bytes": 18433,
+   "file": "cs/sp.meduza.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3cc93351bc8c7facaf3384722756a7f643e52764",
+   "text": "Medúza není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.home": {
+   "bytes": 18015,
+   "file": "cs/sp.meduza.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0de899ab38db01b22d37d40188f90d337868be64",
+   "text": "Medúza bydlí v chaluhovém lese.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.isFishA": {
+   "bytes": 20314,
+   "file": "cs/sp.meduza.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "752bee27582db0db51b818d9088f7f4e26b18ef0",
+   "text": "Ne. Medúza není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.isFishQ": {
+   "bytes": 10492,
+   "file": "cs/sp.meduza.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e3f43a3e8aab111cedbe0409fe581c00dfbf6844",
+   "text": "Je medúza ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.look.0": {
+   "bytes": 14671,
+   "file": "cs/sp.meduza.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8790b82ebc7e99dc88333f0071c93119d1f2989c",
+   "text": "Mám průhledný zvon jako talíř.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.look.1": {
+   "bytes": 21358,
+   "file": "cs/sp.meduza.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4ae7b3d12155fc37c8fa6039f4ff45794ea0f56d",
+   "text": "Uvnitř mám čtyři kroužky jako čtyřlístek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.look.2": {
+   "bytes": 22403,
+   "file": "cs/sp.meduza.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "629f3687a24f2676b71e5d707ecba9cfa02cbcb7",
+   "text": "Po okraji mám krátká třásnitá chapadélka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.name": {
+   "bytes": 11327,
+   "file": "cs/sp.meduza.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ee691eb2404de06bd3c31e9b1acceea037fb540b",
+   "text": "Talířovka ušatá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.riddle": {
+   "bytes": 28464,
+   "file": "cs/sp.meduza.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ea0432d88e08317d4ab9ae89a79f2a8868cf7934",
+   "text": "Jsem průhledná jako sklo a plavu jako deštník. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.safety": {
+   "bytes": 26583,
+   "file": "cs/sp.meduza.safety.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "982ab1c4b56d6f9bbebfa763cd44aaa2179e4349",
+   "text": "Žahám jen slabounce, ale stejně se jen díváme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.size": {
+   "bytes": 13208,
+   "file": "cs/sp.meduza.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "acb6d89752a3c5d0aa2776538c8be2fca6ece3f1",
+   "text": "Jsem velká jako talíř.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.meduza.where": {
+   "bytes": 11327,
+   "file": "cs/sp.meduza.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e8478a16481a2d8cfeee0a312ea60ce2803165df",
+   "text": "Kde je medúza?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.bigger": {
+   "bytes": 12163,
+   "file": "cs/sp.papousek.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8a925b778c1fa503712075f23cab1f862c67a257",
+   "text": "Ploskozubec je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.eats": {
+   "bytes": 23239,
+   "file": "cs/sp.papousek.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2353934012fda38987926eaeacbdd1e973ce5a93",
+   "text": "Zobáčkem okusuji řasy z korálů a kamenů.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.fact": {
+   "bytes": 24702,
+   "file": "cs/sp.papousek.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "32746ad302cc8e2925ac6ee8e41907c7cb7b0822",
+   "text": "Z korálů, které rozkoušu, se stane bílý písek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.group": {
+   "bytes": 12163,
+   "file": "cs/sp.papousek.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "aa66bb0882084e3dd88484a2dc76e023da36a75c",
+   "text": "Ploskozubec je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.home": {
+   "bytes": 22403,
+   "file": "cs/sp.papousek.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4bccfdcb6989d1227cba793dded36535036cbde8",
+   "text": "Ploskozubec bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.isFishA": {
+   "bytes": 15507,
+   "file": "cs/sp.papousek.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5ef18649a8c59fb8697ebaf37993be7f856aac94",
+   "text": "Ano! Ploskozubec je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.isFishQ": {
+   "bytes": 11327,
+   "file": "cs/sp.papousek.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ec46489cacc50b4eddcc1ae9f505d8236587fe8d",
+   "text": "Je ploskozubec ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.look.0": {
+   "bytes": 15089,
+   "file": "cs/sp.papousek.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "66e1f3b29858813705c11f1e52efebb2051ea8d0",
+   "text": "Mám zobáček jako papoušek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.look.1": {
+   "bytes": 19478,
+   "file": "cs/sp.papousek.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cfd77fa5c380b1d7875f12ae3aecaaff051124b2",
+   "text": "Mám velké šupiny s modrým lemem.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.look.2": {
+   "bytes": 19478,
+   "file": "cs/sp.papousek.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "984ffadf9680a6eb960d1c09d13ce012e3f6c32c",
+   "text": "Dospělý sameček je pestře zelenomodrý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.name": {
+   "bytes": 13626,
+   "file": "cs/sp.papousek.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fdd5f9e33659b23f3d16bb6241a0d83192ab8851",
+   "text": "Ploskozubec tupohlavý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.riddle": {
+   "bytes": 29509,
+   "file": "cs/sp.papousek.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5d71f13e088db4d3761d14b046fe9f4194c5bb71",
+   "text": "Mám zobáček jako papoušek a dělám bílý písek. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.size": {
+   "bytes": 18433,
+   "file": "cs/sp.papousek.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c47b15a24c367c5e0bd397496107bd3be8f228db",
+   "text": "Jsem dlouhý skoro jako tvoje ruka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.papousek.where": {
+   "bytes": 10909,
+   "file": "cs/sp.papousek.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3bca9e4a8a7c8c328ce039a5d970111ec81cf8c9",
+   "text": "Kde je ploskozubec?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.bigger": {
+   "bytes": 12790,
+   "file": "cs/sp.sardinky.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ae6db6d17c845ae287d48ef70aba227c4d110318",
+   "text": "Sardinky jsou větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.eats": {
+   "bytes": 18851,
+   "file": "cs/sp.sardinky.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d4be0dd130dd65d49739a35db92d534d6740dbf5",
+   "text": "Jím drobné korýšky z planktonu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.fact": {
+   "bytes": 26165,
+   "file": "cs/sp.sardinky.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7e3f34fa66ea2a2d1e088f12c53ffbcf80e249f4",
+   "text": "V hejnu jsme v bezpečí. Plaveme všechny spolu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.group": {
+   "bytes": 12163,
+   "file": "cs/sp.sardinky.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c804041068d38cc5bbafa9ee4840d0fc5d80bec0",
+   "text": "Sardinky jsou ryby.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.home": {
+   "bytes": 15716,
+   "file": "cs/sp.sardinky.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8e7023f536f28e6bb15ab70fd480074e33097e8b",
+   "text": "Sardinky bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.isFishA": {
+   "bytes": 13835,
+   "file": "cs/sp.sardinky.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b5c20c8fdabc66f2d0fc76e090c0bd545c385673",
+   "text": "Ano! Sardinky jsou ryby.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.isFishQ": {
+   "bytes": 11745,
+   "file": "cs/sp.sardinky.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8c1672ba4bb82b2b766a4fbb51a928d389a604b6",
+   "text": "Jsou sardinky ryby?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.look.0": {
+   "bytes": 19478,
+   "file": "cs/sp.sardinky.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cef63f5742d51b1a0db1b04d6b690f668bae7de5",
+   "text": "Boky a bříško se mi stříbřitě lesknou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.look.1": {
+   "bytes": 11745,
+   "file": "cs/sp.sardinky.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6d10d3f68ec6d9b97f8f8dc1f7896708f8f31eca",
+   "text": "Záda mám zelenkavá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.look.2": {
+   "bytes": 16970,
+   "file": "cs/sp.sardinky.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8fece63e68744de675b5348b70391bb78c3e52be",
+   "text": "Na boku mám řadu tmavých teček.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.name": {
+   "bytes": 11745,
+   "file": "cs/sp.sardinky.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bdea6e5d1cf6006b8291565e649c2081c025f8fc",
+   "text": "Sardinka obecná.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.riddle": {
+   "bytes": 36614,
+   "file": "cs/sp.sardinky.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b1150b2e52de9efa16236c37c490fb67ee8389d3",
+   "text": "Jsme malé stříbřité rybky a plaveme v obrovském hejnu. Kdo jsme?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.size": {
+   "bytes": 16134,
+   "file": "cs/sp.sardinky.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9bed7004a16e70fff20f8f7c64e19e6d2bf7cf23",
+   "text": "Jsem dlouhá asi jako tvoje bota.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sardinky.where": {
+   "bytes": 13208,
+   "file": "cs/sp.sardinky.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cdb2405f213fd2518e112041b2bd7084eaefcf88",
+   "text": "Kde jsou sardinky?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.bigger": {
+   "bytes": 11745,
+   "file": "cs/sp.sasanka.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5ebd81b881f2c4e6fa8c2ecfb7e8a80eb290bb81",
+   "text": "Sasanka je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.eats": {
+   "bytes": 28464,
+   "file": "cs/sp.sasanka.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9477e96f819bd9496b7a3162e0a768fc250c2ada",
+   "text": "Chapadly chytám drobné živočichy, kteří kolem proplouvají.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.fact": {
+   "bytes": 32225,
+   "file": "cs/sp.sasanka.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "21b0110d940aa8973b1b23c5595c3e559d1d1f33",
+   "text": "Já a klaun si pomáháme. Chráním ho a on mě čistí.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.group": {
+   "bytes": 17597,
+   "file": "cs/sp.sasanka.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "db92e66769a5ce222f0fa007c06ec20b1fb25a52",
+   "text": "Sasanka není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.home": {
+   "bytes": 18851,
+   "file": "cs/sp.sasanka.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "059c0f8be5061728c17878f494c7d3383dd5b17f",
+   "text": "Sasanka bydlí na korálovém útesu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.isFishA": {
+   "bytes": 20940,
+   "file": "cs/sp.sasanka.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cdb64b6b039555195fa44647aeef1e3427ef41fc",
+   "text": "Ne. Sasanka není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.isFishQ": {
+   "bytes": 10909,
+   "file": "cs/sp.sasanka.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6328faaf13a8bea1823812b1618bccbf0112e253",
+   "text": "Je sasanka ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.look.0": {
+   "bytes": 18015,
+   "file": "cs/sp.sasanka.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "14b0d351cc94eeb0857cfc6df7c94dbe2932b024",
+   "text": "Mám spoustu chapadel jako prstíky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.look.1": {
+   "bytes": 19896,
+   "file": "cs/sp.sasanka.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "de52c43dc46b25f9f72145df830bfbc6aa16ff74",
+   "text": "Špičky chapadel mám světlejší a kulaté.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.look.2": {
+   "bytes": 27628,
+   "file": "cs/sp.sasanka.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4f61d05471b97c78d8c39cd1d948b50a620d2b61",
+   "text": "Moje nožka je pestrá, třeba fialová nebo modrá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.name": {
+   "bytes": 12372,
+   "file": "cs/sp.sasanka.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bce67d50b2f3c089686eb470b31288797ddead29",
+   "text": "Sasanka velkolepá.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.riddle": {
+   "bytes": 39540,
+   "file": "cs/sp.sasanka.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6d24e8bc81cac51a93dd1b2f39aa1864427758bc",
+   "text": "Mám spoustu chapadel, skoro se nehýbu a bydlí u mě klaun. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.safety": {
+   "bytes": 20314,
+   "file": "cs/sp.sasanka.safety.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "2cb69a657717e4175acbb09ce1a958a78c2a594d",
+   "text": "Pozor, žahám! Jen se díváme, nesaháme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.size": {
+   "bytes": 17597,
+   "file": "cs/sp.sasanka.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1043b3f1af725078a08f39dcddf400439f37ccf1",
+   "text": "Jsem široká skoro jako polštář.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.sasanka.where": {
+   "bytes": 10492,
+   "file": "cs/sp.sasanka.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d45f2add161663ec8f17cff2f1a50d4bda022fcc",
+   "text": "Kde je sasanka?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.bigger": {
+   "bytes": 11327,
+   "file": "cs/sp.svetluska.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4bf543d80869a043b07601151c9e438c2d8d31b3",
+   "text": "Atolla je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.eats": {
+   "bytes": 19478,
+   "file": "cs/sp.svetluska.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1ea9d876739008a3507031e6d8e870117571f8be",
+   "text": "Dlouhým chapadlem chytám drobné korýšky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.fact": {
+   "bytes": 39958,
+   "file": "cs/sp.svetluska.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8fe1cd21468447127e318f866586eaccc95213dc",
+   "text": "Když mě něco chytí, zazářím modře. Vědci si myslí, že volám o pomoc.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.group": {
+   "bytes": 17597,
+   "file": "cs/sp.svetluska.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "04b2069ee76eb4603cf6cb7a2f4a6bf6ddbf82fa",
+   "text": "Atolla není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.home": {
+   "bytes": 13208,
+   "file": "cs/sp.svetluska.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "217e5b4d38e7bc98b6eaafc516b02824b5eaa39a",
+   "text": "Atolla bydlí v hlubinách.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.isFishA": {
+   "bytes": 22821,
+   "file": "cs/sp.svetluska.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e4826f691627961e422314f4bcec72347a5a0a5a",
+   "text": "Ne. Atolla není ryba, je to žahavec.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.svetluska.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8ce415370e8061a8c524154ad0677044ab5e2e10",
+   "text": "Je atolla ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.look.0": {
+   "bytes": 12372,
+   "file": "cs/sp.svetluska.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "08fb1adf8c8ff7e47b0fbc990456f3a0d022fe90",
+   "text": "Mám tmavě červený zvon.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.look.1": {
+   "bytes": 21358,
+   "file": "cs/sp.svetluska.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8a105c73efe4635104af406091be1029cfea3ddb",
+   "text": "Jedno chapadlo mám mnohem delší než ostatní.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.look.2": {
+   "bytes": 21358,
+   "file": "cs/sp.svetluska.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "06ef9ee0c5313f27f04d869b5936c023677ea266",
+   "text": "Po okraji zvonu mi svítí modrá světýlka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.name": {
+   "bytes": 10492,
+   "file": "cs/sp.svetluska.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "11bfd7a7fc6eb30a6a91ed6a9c0174dec471b323",
+   "text": "Medúza atolla.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.riddle": {
+   "bytes": 31807,
+   "file": "cs/sp.svetluska.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "04f16d216694b54580322c0f84dc11d030114d27",
+   "text": "Jsem červená medúza z hlubin a umím svítit modře. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.size": {
+   "bytes": 19060,
+   "file": "cs/sp.svetluska.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fde6c545a0dd43006d89ebff653ca483fb03d607",
+   "text": "Jsem velká asi jako talířek pod hrnek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.svetluska.where": {
+   "bytes": 10283,
+   "file": "cs/sp.svetluska.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "926b8e77882c1ef4c4d5b6b14756bfc2eb1e4d73",
+   "text": "Kde je atolla?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.bigger": {
+   "bytes": 10283,
+   "file": "cs/sp.tulen.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "75a8398b0d9e2d00a32842004decfa8325046cca",
+   "text": "Tuleň je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.eats": {
+   "bytes": 20523,
+   "file": "cs/sp.tulen.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e5a6dbe23366aa9236051a490b6af8ad5755346d",
+   "text": "Jím ryby, chobotnice a krabíky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.fact": {
+   "bytes": 19478,
+   "file": "cs/sp.tulen.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ee7064fff53a8a39b26db85091b4430a3fea9ea4",
+   "text": "Vousky ve vodě ucítím, kudy plavala ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.group": {
+   "bytes": 26583,
+   "file": "cs/sp.tulen.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8e835edd0c361e0f0468883c00314f4d698f985c",
+   "text": "Tuleň není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.home": {
+   "bytes": 16970,
+   "file": "cs/sp.tulen.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "66554c9484b0bc8b4247ca4d6069e6ac057d543e",
+   "text": "Tuleň bydlí v chaluhovém lese.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.isFishA": {
+   "bytes": 35778,
+   "file": "cs/sp.tulen.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f715b560f3e405e5a03e2569d6281e8d47a89d61",
+   "text": "Ne. Tuleň není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.tulen.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "763f61372722b0c4cf07db3d1b56e520378f9e39",
+   "text": "Je tuleň ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.look.0": {
+   "bytes": 19060,
+   "file": "cs/sp.tulen.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c2bad21db50dce664994ba95746091687366cb68",
+   "text": "Mám kulatou hlavu a místo uší jen dírky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.look.1": {
+   "bytes": 21358,
+   "file": "cs/sp.tulen.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "53c373341fcf3a3a387c2ca782a38a80441a8923",
+   "text": "Šedý kožich mám posetý tmavými skvrnkami.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.look.2": {
+   "bytes": 18851,
+   "file": "cs/sp.tulen.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7bb160cd7a52505c1c8d9ddc4a70a60334787d92",
+   "text": "Na krátkých předních ploutvích mám drápky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.name": {
+   "bytes": 10283,
+   "file": "cs/sp.tulen.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "81fcf96b7c82b2e283cf60a9e0ddceb0d03ff144",
+   "text": "Tuleň obecný.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.riddle": {
+   "bytes": 33270,
+   "file": "cs/sp.tulen.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b147809371d8fb038416982867809c5632be9423",
+   "text": "Jsem skvrnitý, dýchám vzduch a rád odpočívám na skále. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.size": {
+   "bytes": 19478,
+   "file": "cs/sp.tulen.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5eb2dd9ea0bd7d3c4b996e98a25494de1f48e669",
+   "text": "Jsem dlouhý skoro jako tvoje postel.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.tulen.where": {
+   "bytes": 9029,
+   "file": "cs/sp.tulen.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "eec8c631be321627251d06b2ce70886bbbeef710",
+   "text": "Kde je tuleň?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.bigger": {
+   "bytes": 10283,
+   "file": "cs/sp.vydra.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1bdeae457dac55ce67f626e6c8e4c0414ca45793",
+   "text": "Vydra je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.eats": {
+   "bytes": 28464,
+   "file": "cs/sp.vydra.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "444c819394d1d0bd6d42d66726cd7e709d6f3d92",
+   "text": "Jím ježovky a mušle, skořápky rozbíjím kamenem.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.fact": {
+   "bytes": 32434,
+   "file": "cs/sp.vydra.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1826fda74831b5ce21b880ec650dcb82cbfc92ae",
+   "text": "Mám nejhustší kožich ze všech zvířat. Hřeje mě místo tuku.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.group": {
+   "bytes": 28046,
+   "file": "cs/sp.vydra.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bd3a6b1d476ef1a199f4a50a962300de3f9b8c6d",
+   "text": "Vydra není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.home": {
+   "bytes": 17179,
+   "file": "cs/sp.vydra.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a96a6e8981a7b4208494c8684b66b0db2a639564",
+   "text": "Vydra bydlí v chaluhovém lese.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.isFishA": {
+   "bytes": 31807,
+   "file": "cs/sp.vydra.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "19750b3659a50773e1e6b87d6c1658d2d6ea0c23",
+   "text": "Ne. Vydra není ryba, je to savec. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.isFishQ": {
+   "bytes": 9447,
+   "file": "cs/sp.vydra.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fc8ce3f2e49a07ca877c2122ce246edbc08fb33f",
+   "text": "Je vydra ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.look.0": {
+   "bytes": 11745,
+   "file": "cs/sp.vydra.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7570af298aa0783183cb0d15b3f2e1866456002c",
+   "text": "Plavu na zádech.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.look.1": {
+   "bytes": 12372,
+   "file": "cs/sp.vydra.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7e719d866ef8e61eab23137fa5e3898134937627",
+   "text": "Mám hustý hnědý kožich.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.look.2": {
+   "bytes": 15089,
+   "file": "cs/sp.vydra.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6358e9c9c142f885c036f3861f3ef382491345f7",
+   "text": "Mám dlouhé bílé vousky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.name": {
+   "bytes": 9447,
+   "file": "cs/sp.vydra.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "35bdff91bef4e4eaccffa9fe8447b531c4adc130",
+   "text": "Vydra mořská.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.riddle": {
+   "bytes": 28464,
+   "file": "cs/sp.vydra.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9ad5a6a968fdc5e138b16e496866e75b2b8e19d9",
+   "text": "Plavu na zádech a mušle si rozbíjím kamenem. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.size": {
+   "bytes": 12790,
+   "file": "cs/sp.vydra.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e451d44abf83a638606ff5229f279a0c968e278d",
+   "text": "Jsem dlouhá skoro jako ty.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.vydra.where": {
+   "bytes": 10283,
+   "file": "cs/sp.vydra.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "133a9cd2f3bf30ffe3362614712da37827cf9b44",
+   "text": "Kde je vydra?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.bigger": {
+   "bytes": 11327,
+   "file": "cs/sp.zelva.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "21d92706ccbee0f09dd5c91de03e3c287693b65a",
+   "text": "Želva je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.eats": {
+   "bytes": 20940,
+   "file": "cs/sp.zelva.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fdadd91740427217c14acc27f497e5f735aac75f",
+   "text": "Silnými čelistmi louskám kraby a mušle.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.fact": {
+   "bytes": 27001,
+   "file": "cs/sp.zelva.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a98cc4aa3e1f34c72c4a2c1f45eaf3323305cf64",
+   "text": "Na rozdíl od želv na souši hlavu do krunýře neschovám.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.group": {
+   "bytes": 29509,
+   "file": "cs/sp.zelva.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c65b2dab8d5591fec86c855a936f78b06913dd5a",
+   "text": "Želva není ryba, je to plaz. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.home": {
+   "bytes": 14671,
+   "file": "cs/sp.zelva.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "d3d260f1f6161b3d82452a0bf31c1951d5f09165",
+   "text": "Želva bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.isFishA": {
+   "bytes": 29927,
+   "file": "cs/sp.zelva.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ee1a511ec1d59063047e46dd4bb2d3ca2e2f3c02",
+   "text": "Ne. Želva není ryba, je to plaz. Dýchá vzduch jako my.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.isFishQ": {
+   "bytes": 9865,
+   "file": "cs/sp.zelva.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5e25624a6d34b830b9dcb16c7433674656e58b8b",
+   "text": "Je želva ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.look.0": {
+   "bytes": 11327,
+   "file": "cs/sp.zelva.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "902b5e382156780936b3ab547fe7be40cd9cdf31",
+   "text": "Mám velkou hlavu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.look.1": {
+   "bytes": 12372,
+   "file": "cs/sp.zelva.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8b2b1d5f2085c2c8c1eb2bf4f1d6cfa0ff76b5e1",
+   "text": "Krunýř mám červenohnědý.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.look.2": {
+   "bytes": 12790,
+   "file": "cs/sp.zelva.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "0809d922bfbbbdf3fcde0c0c81e254c4abf98d16",
+   "text": "Místo nohou mám ploutve.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.name": {
+   "bytes": 11745,
+   "file": "cs/sp.zelva.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "298c3723733635d71a1362f040bfe176571bc407",
+   "text": "Kareta obecná.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.riddle": {
+   "bytes": 28464,
+   "file": "cs/sp.zelva.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ea0dfcfd81e3ea6b9439b6fce07b7e6b06a0e87c",
+   "text": "Mám krunýř, ploutve a vajíčka kladu na pláži. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.size": {
+   "bytes": 15507,
+   "file": "cs/sp.zelva.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "42fcf47a9bc4282d8a94e878164c7d80afd8f256",
+   "text": "Jsem skoro tak velká jako ty.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zelva.where": {
+   "bytes": 9447,
+   "file": "cs/sp.zelva.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "22e31a4df2b5b3badb90dac89e049291b36e33fd",
+   "text": "Kde je želva?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.bigger": {
+   "bytes": 12163,
+   "file": "cs/sp.zralok.bigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "efef7511890ae844105f5671546236accb99fd0f",
+   "text": "Žralok je větší.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.eats": {
+   "bytes": 18851,
+   "file": "cs/sp.zralok.eats.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "09cd49a65eb34efb6d4a1f696671ac434c90211b",
+   "text": "Cedím vodu a jím drobný plankton a rybky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.fact": {
+   "bytes": 28882,
+   "file": "cs/sp.zralok.fact.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f8b69a3b4e63b6fee6a278ea294095eca1b047ec",
+   "text": "Jsem největší ryba na světě, ale jím jen drobotinu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.group": {
+   "bytes": 11327,
+   "file": "cs/sp.zralok.group.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9f640c927862a60a7e510002634b7c63445e72a7",
+   "text": "Žralok je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.home": {
+   "bytes": 15716,
+   "file": "cs/sp.zralok.home.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "715efb3a8e4b4bc5ea49ee795f861faf8aa36366",
+   "text": "Žralok bydlí v širém moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.isFishA": {
+   "bytes": 12790,
+   "file": "cs/sp.zralok.isFishA.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ff4d0860781bf20feeefa047abf117077c9df935",
+   "text": "Ano! Žralok je ryba.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.isFishQ": {
+   "bytes": 10283,
+   "file": "cs/sp.zralok.isFishQ.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "89c27fa826ecf38b7218c86821c7022b0e7939a4",
+   "text": "Je žralok ryba?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.look.0": {
+   "bytes": 22403,
+   "file": "cs/sp.zralok.look.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "61caf5521b25c57507cbd8babf5c684085ab80d8",
+   "text": "Na tmavých zádech mám bílé tečky a proužky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.look.1": {
+   "bytes": 18015,
+   "file": "cs/sp.zralok.look.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b4738bfae43fd76f7247a26b8cbcdaf75da695f7",
+   "text": "Širokou tlamu mám úplně vpředu.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.look.2": {
+   "bytes": 16552,
+   "file": "cs/sp.zralok.look.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "91e7e56c7d58491f0c220b5f3b42235230fc59cd",
+   "text": "Po bocích mám podélné hřebeny.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.name": {
+   "bytes": 11745,
+   "file": "cs/sp.zralok.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "04e6b868a020698d465b575396fa65e5f8ef5670",
+   "text": "Žralok obrovský.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.riddle": {
+   "bytes": 28046,
+   "file": "cs/sp.zralok.riddle.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ea02bb8bfdae37811c6207cbc472e251e620e9fc",
+   "text": "Jsem ryba skoro jako autobus a mám bílé tečky. Kdo jsem?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.size": {
+   "bytes": 17179,
+   "file": "cs/sp.zralok.size.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "cbf8c2b664de24080b62aa3a92f68d2c49b426b2",
+   "text": "Jsem dlouhý skoro jako autobus.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "sp.zralok.where": {
+   "bytes": 9447,
+   "file": "cs/sp.zralok.where.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5dc7d5d7c553c813bdc505557d0013c05969380f",
+   "text": "Kde je žralok?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.lahev": {
+   "bytes": 43928,
+   "file": "cs/trash.lahev.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "4c4c6ec3a9c1044edc0e84afd05e731e42384365",
+   "text": "Děkuju! Plast se v moři rozpadne na drobné kousky. Ty můžou zvířátka spolknout.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.lahev.name": {
+   "bytes": 11745,
+   "file": "cs/trash.lahev.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "adab8d7510de5e61bc43625e728f295f9aadda54",
+   "text": "Plastová lahev.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.plechovka": {
+   "bytes": 33897,
+   "file": "cs/trash.plechovka.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "c4383e98a90939ce914815286c81bf5f852e991f",
+   "text": "Děkuju! Z plechovky se dá udělat nová plechovka, pořád dokola.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.plechovka.name": {
+   "bytes": 8402,
+   "file": "cs/trash.plechovka.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "11a03d36e8557386bd67d901ea7507929fb70805",
+   "text": "Plechovka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.sacek": {
+   "bytes": 36614,
+   "file": "cs/trash.sacek.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "725edb475455a00281b9b58002673300838a5847",
+   "text": "Děkuju! Sáček ve vodě vypadá jako medúza a želvy by ho mohly spolknout.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.sacek.name": {
+   "bytes": 11745,
+   "file": "cs/trash.sacek.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5471eaa22abc9561b889593044fb0f71b877eed3",
+   "text": "Igelitový sáček.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.sit": {
+   "bytes": 29927,
+   "file": "cs/trash.sit.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7f927df622633eb5773e02687432df843ae8f263",
+   "text": "Děkuju! Do ztracené sítě by se mohla zamotat zvířátka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "trash.sit.name": {
+   "bytes": 12372,
+   "file": "cs/trash.sit.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "5a59de006ece1ddd981e67251870a1a451ce59a9",
+   "text": "Kus rybářské sítě.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.darker": {
+   "bytes": 20940,
+   "file": "cs/ui.darker.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fac83040779faa8a8a47fd07317dcb066ccc2a28",
+   "text": "Čím hlouběji, tím je větší tma a zima.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.deepDone": {
+   "bytes": 28046,
+   "file": "cs/ui.deepDone.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "59d830040164f14bb0deb90acb86c71344560f48",
+   "text": "Našly jsme kamarády až v hlubinách! Vynoříme se?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.deeper": {
+   "bytes": 11745,
+   "file": "cs/ui.deeper.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "901a5690e927652e6d75cdfaee623c5a58c6dce3",
+   "text": "Poplaveme hlouběji?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.10": {
+   "bytes": 14253,
+   "file": "cs/ui.depth.10.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "962dcbbc74c01df0372e40ec85f951b5431a0aca",
+   "text": "Jsme 10 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.100": {
+   "bytes": 12790,
+   "file": "cs/ui.depth.100.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "690a95d0a4ed751d63be1b3a84716356c4e690fc",
+   "text": "Jsme 100 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.1000": {
+   "bytes": 15089,
+   "file": "cs/ui.depth.1000.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "423a0006003d743dfcb9601e4e314f8675486e3a",
+   "text": "Jsme 1000 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.20": {
+   "bytes": 14253,
+   "file": "cs/ui.depth.20.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "59a35b40246b8c3b66e3ba91d9ec7f74df860447",
+   "text": "Jsme 20 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.200": {
+   "bytes": 15089,
+   "file": "cs/ui.depth.200.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bfdf751c673b1dc7cefd1d25237d35dd8bed6ef3",
+   "text": "Jsme 200 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.2000": {
+   "bytes": 16552,
+   "file": "cs/ui.depth.2000.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "adb36e742a02de103cc6026c10b1cb687ec07fc7",
+   "text": "Jsme 2000 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.30": {
+   "bytes": 15716,
+   "file": "cs/ui.depth.30.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "badb3075a5ba22636ad544f9b1bad7c322069c4b",
+   "text": "Jsme 30 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.depth.3000": {
+   "bytes": 16134,
+   "file": "cs/ui.depth.3000.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "284ad9f3766e3ad3fd1c272b5916244667d0eeff",
+   "text": "Jsme 3000 metrů pod hladinou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.diveIntro": {
+   "bytes": 27210,
+   "file": "cs/ui.diveIntro.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6367fc4ef54dd9c645a26d8a1a763acf4058338f",
+   "text": "Ťukni do vody a já tam připlavu. Najdeme, kdo tu bydlí?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.endFound": {
+   "bytes": 15716,
+   "file": "cs/ui.endFound.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "19023b6cf18c55de806ce81439cbf4be52045f51",
+   "text": "Podívej, koho jsme dnes potkaly!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.endNone": {
+   "bytes": 27210,
+   "file": "cs/ui.endNone.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "1dad581215d1e8b8134ad29126878dc3d0e3a69a",
+   "text": "Dnes jsme se jen rozhlížely. Příště někoho najdeme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.findMore": {
+   "bytes": 22821,
+   "file": "cs/ui.findMore.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fabefc2b15c56d9e401e873af0ab57844c986fbc",
+   "text": "Najdi tu ještě někoho. Ťukni na zvířátko.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.greet": {
+   "bytes": 21358,
+   "file": "cs/ui.greet.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fcadc744b86c8505d6eac2acf0e8fdcbb9062487",
+   "text": "Ahoj! Poplaveme se podívat pod hladinu?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.habitatDone": {
+   "bytes": 11327,
+   "file": "cs/ui.habitatDone.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "33e5dec53109c6640f696c3b76017155528e2cfa",
+   "text": "Všichni jsou doma!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.habitatIntro": {
+   "bytes": 26583,
+   "file": "cs/ui.habitatIntro.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b492a76fee4cd31b95e95565ff8e932492c412a6",
+   "text": "Kdo kde bydlí? Přetáhni zvířátko do jeho patra.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.habitatWrong": {
+   "bytes": 16552,
+   "file": "cs/ui.habitatWrong.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "a730347ed8b88de6c8892c635fe42f4c4bc794c3",
+   "text": "Tady nebydlím. Zkus jiné patro.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.lamp": {
+   "bytes": 11745,
+   "file": "cs/ui.lamp.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "8533045c973c35fac1bb81e6178956b76dfd9682",
+   "text": "Rozsvítím čelovku!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.level2": {
+   "bytes": 29927,
+   "file": "cs/ui.level2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "52931d8d0d44e0a68b1e992ef07e504acedcbe81",
+   "text": "Jsi už opravdová potápěčka! Teď poznáme ještě víc zvířátek.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.no": {
+   "bytes": 6521,
+   "file": "cs/ui.no.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "036b399cedee33f1973a33a53427f3ae1e53d3b3",
+   "text": "Ne.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.parentsHold": {
+   "bytes": 11327,
+   "file": "cs/ui.parentsHold.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f847e1db33cc857cf5b862228eaae71d9debe430",
+   "text": "Tohle je pro rodiče.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.photoMissing": {
+   "bytes": 12372,
+   "file": "cs/ui.photoMissing.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6068f43cbaa521575e1b4acc5c44c4fbc2b9c053",
+   "text": "Fotku zatím nemáme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizBigger": {
+   "bytes": 9865,
+   "file": "cs/ui.quizBigger.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b477caae7bfa41e90d0a867976c13cf16471e7b9",
+   "text": "Kdo je větší?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizDone": {
+   "bytes": 12790,
+   "file": "cs/ui.quizDone.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f34505655be98f0edc696524d08bb0e7f5f4874f",
+   "text": "To bylo krásné hádání!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizIntro": {
+   "bytes": 11745,
+   "file": "cs/ui.quizIntro.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ce37bdb41b3ac0060b3a3dd9bbe721b822878d8a",
+   "text": "Hádej, kdo jsem!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizRight0": {
+   "bytes": 9447,
+   "file": "cs/ui.quizRight0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e5e9c8322c647601c3b98ed9ec9495200ab63447",
+   "text": "Ano, výborně!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizRight1": {
+   "bytes": 9447,
+   "file": "cs/ui.quizRight1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "08508f9a390dacb4f94a92d96c15ede471d2373b",
+   "text": "Přesně tak!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizRight2": {
+   "bytes": 8820,
+   "file": "cs/ui.quizRight2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "9c32ebae9dd976496ab14c39a7aa4154615b5d66",
+   "text": "Správně!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizShow": {
+   "bytes": 21358,
+   "file": "cs/ui.quizShow.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f99743a8495e805d706ba54bf01edf0a20bbdccb",
+   "text": "Ukážu ti to. Vyber z těchhle dvou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.quizTry": {
+   "bytes": 16134,
+   "file": "cs/ui.quizTry.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "200c30930c94892486ce5c9fa16c040046a7c771",
+   "text": "Hmm, zkus to ještě jednou.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.release": {
+   "bytes": 23657,
+   "file": "cs/ui.release.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "955ee6a8784f24a1bc13ef0a726180fbe5fe27d8",
+   "text": "Vypustíme nové kamarády do tvého kousku moře?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.safetyDive": {
+   "bytes": 19896,
+   "file": "cs/ui.safetyDive.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "aab5ff29c2afeba49cf8f75117ca50371eae0baf",
+   "text": "Pod vodu se potápíme jen s dospělým.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.safetyLook": {
+   "bytes": 19896,
+   "file": "cs/ui.safetyLook.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "610080a0531f555b4284eab556db3d963e4006d6",
+   "text": "Na zvířátka nesaháme, jen se díváme.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.seaDay": {
+   "bytes": 11327,
+   "file": "cs/ui.seaDay.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "221d2c5da5eb3e1b93fdc4053cd7a3b2883e14a8",
+   "text": "Dobré ráno, moře!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.seaEmpty": {
+   "bytes": 21358,
+   "file": "cs/ui.seaEmpty.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7f2cb2822654cf4ec7d3c4f76d42c7e2361a4347",
+   "text": "Zatím tu nikdo není. Poplaveme někoho najít?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.seaIntro": {
+   "bytes": 27628,
+   "file": "cs/ui.seaIntro.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "18864ce932d13d80ea6259970eefd37ca277b171",
+   "text": "Tohle je tvůj kousek moře. Přetáhni sem kamaráda.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.seaNight": {
+   "bytes": 22821,
+   "file": "cs/ui.seaNight.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "fb46b9051090d3a1fb3afd5e3b3ae90ab27ff18f",
+   "text": "Dobrou noc, moře. Hlubinná zvířátka svítí.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.seaUnknown": {
+   "bytes": 22821,
+   "file": "cs/ui.seaUnknown.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "18988c60f98b4076d40d1019a9a17cd8538006c7",
+   "text": "Tohohle kamaráda musíme nejdřív najít v moři.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.surface": {
+   "bytes": 20940,
+   "file": "cs/ui.surface.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6a260cb9dc37e4991c7841aa88f8a5223497509d",
+   "text": "Vynořujeme se. Bublinky letí nahoru.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.tired": {
+   "bytes": 28464,
+   "file": "cs/ui.tired.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "560f06eb0a9b05f92ce1d1105c7623a31a1c1669",
+   "text": "Už jsem trochu unavená. Dáme si pauzu a zase příště?",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.0": {
+   "bytes": 18851,
+   "file": "cs/ui.trashCount.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "b7e6aac515d0b363450a9e3758f66b92c2705f86",
+   "text": "Dnes jsme žádný odpadek nenašli.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.1": {
+   "bytes": 19478,
+   "file": "cs/ui.trashCount.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3b7c21a29a2aa61de96fa5d092b6e973cb9cabf2",
+   "text": "Uklidily jsme jeden odpadek. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.10": {
+   "bytes": 18433,
+   "file": "cs/ui.trashCount.10.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "de636854e200b0ae012f5b9bc3eb3db78c73af6b",
+   "text": "Uklidily jsme 10 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.2": {
+   "bytes": 18433,
+   "file": "cs/ui.trashCount.2.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e90c498b96e38462bf77ebe3a65b12ca3d5fa77f",
+   "text": "Uklidily jsme 2 odpadky. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.3": {
+   "bytes": 19060,
+   "file": "cs/ui.trashCount.3.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3a4d50b8910d1bf94bdf881787b13f5d11272f11",
+   "text": "Uklidily jsme 3 odpadky. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.4": {
+   "bytes": 19896,
+   "file": "cs/ui.trashCount.4.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ea5bf8e856448561c9227db152226108a8785ef3",
+   "text": "Uklidily jsme 4 odpadky. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.5": {
+   "bytes": 17179,
+   "file": "cs/ui.trashCount.5.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "bf6ccbd982b0267b12f1cced8f283d5b08c2ac89",
+   "text": "Uklidily jsme 5 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.6": {
+   "bytes": 19060,
+   "file": "cs/ui.trashCount.6.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "80bc6ec3f0ecf0f4ede99a646c358030f4b3622e",
+   "text": "Uklidily jsme 6 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.7": {
+   "bytes": 19896,
+   "file": "cs/ui.trashCount.7.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "679324937e4740f1c1dfa22d34d02071f6d0c941",
+   "text": "Uklidily jsme 7 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.8": {
+   "bytes": 21776,
+   "file": "cs/ui.trashCount.8.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "47b5a615e17424fc5c3368c8e21a736002433bf8",
+   "text": "Uklidily jsme 8 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashCount.9": {
+   "bytes": 20523,
+   "file": "cs/ui.trashCount.9.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "eb942d4770583132069fc730952c727f0b275fb8",
+   "text": "Uklidily jsme 9 odpadků. Děkuju!",
+   "voice": "Candy - Young and Sweet"
+  },
+  "ui.trashTake": {
+   "bytes": 19896,
+   "file": "cs/ui.trashTake.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "73f4521606ffc327abdc0c7df7f0ff6a52c3488b",
+   "text": "Tohle do moře nepatří. Dám to do síťky.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.chaluhy.name": {
+   "bytes": 10909,
+   "file": "cs/zone.chaluhy.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "afbf9784e94c1336771fdff5aa7193d73e73cb83",
+   "text": "Chaluhový les.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.chaluhy.say.0": {
+   "bytes": 17597,
+   "file": "cs/zone.chaluhy.say.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7862808d665f7f81ba96ea9c6ccc635478449475",
+   "text": "Teď jsme doplavaly do studenějšího moře.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.chaluhy.say.1": {
+   "bytes": 25538,
+   "file": "cs/zone.chaluhy.say.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "dfaea128412b6afcf539068afc6f720d0eb1b43f",
+   "text": "Chaluhy rostou ze dna k hladině jako stromy v lese.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.hlubiny.name": {
+   "bytes": 8402,
+   "file": "cs/zone.hlubiny.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f8720bfe08308b2026a08a984580a8e072399733",
+   "text": "Hlubiny.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.hlubiny.say.0": {
+   "bytes": 18851,
+   "file": "cs/zone.hlubiny.say.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "ddae3826123ba96a2592398faff6f464e050ff1a",
+   "text": "Sem už sluníčko nedosvítí, je tu tma.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.hlubiny.say.1": {
+   "bytes": 16970,
+   "file": "cs/zone.hlubiny.say.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "6aadf58c276f3daf5a51be0b90b7bd0546c373d7",
+   "text": "Voda je tu studená jako v lednici.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.sire-more.name": {
+   "bytes": 10492,
+   "file": "cs/zone.sire-more.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "247a36129388731a52296d30bc16893d38181324",
+   "text": "Širé moře.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.sire-more.say.0": {
+   "bytes": 23866,
+   "file": "cs/zone.sire-more.say.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "f47dee6389f5e2cddc7992ee58327f2afed578ad",
+   "text": "Tady už nevidíme dno, všude kolem je modrá voda.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.sire-more.say.1": {
+   "bytes": 26165,
+   "file": "cs/zone.sire-more.say.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "e61822490487fe84851fbbbaf0a4362f7ac34c4f",
+   "text": "Sluníčko sem svítí jen do hloubky asi dvě stě metrů.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.utes.name": {
+   "bytes": 11327,
+   "file": "cs/zone.utes.name.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "3594640fa68ac7f5505147351521eeb0f22aa5fc",
+   "text": "Korálový útes.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.utes.say.0": {
+   "bytes": 19060,
+   "file": "cs/zone.utes.say.0.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "daa90bce390281882cfd014683ad128110f551cc",
+   "text": "Tady je teplá voda a spousta sluníčka.",
+   "voice": "Candy - Young and Sweet"
+  },
+  "zone.utes.say.1": {
+   "bytes": 27001,
+   "file": "cs/zone.utes.say.1.mp3",
+   "model": "eleven_multilingual_v2",
+   "provider": "elevenlabs",
+   "sha1": "7f3ede0e9b1cca463173eae7d18c31fe73c96bf6",
+   "text": "Korály potřebují světlo, proto rostou blízko hladiny.",
+   "voice": "Candy - Young and Sweet"
+  }
+ },
  "en": {
   "sp.chobotnice.bigger": {
    "bytes": 15408,
