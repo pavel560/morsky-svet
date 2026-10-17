@@ -3,7 +3,14 @@
 // every photo listed in photos/credits.json and every voice recording listed in voice/index.json.
 // Pages ask for progress with postMessage({type:'status'}) → {type:'status', have, total, version}.
 // Bump VERSION whenever app files change; sw.js is served with Cache-Control: no-cache.
-const VERSION = 'v5';
+//
+// Never cache a stale CDN copy: GitHub Pages sits behind a CDN (max-age 600) that keeps serving the PREVIOUS file for
+// up to 10 minutes after a deploy, whatever cache mode the browser asks for. So every download goes to a URL with a
+// cache-busting query (?__v=<VERSION> for the app, ?__v=<time> for network-first JSON): a new CDN key the CDN must fetch
+// from the origin. The response is stored under the plain URL (keyOf), so lookups never see __v. Cached app files are
+// served cache-first with no background refresh: a VERSION's cache is filled fresh at install and never overwritten
+// by a plain (possibly stale) fetch.
+const VERSION = 'v6';
 const SCOPE_PATH = new URL(self.registration.scope).pathname;          // '/morsky-svet/'
 const PREFIX = 'morsky-svet-';
 const OWN_CACHE = /^morsky-svet-v\d+$/;
@@ -120,10 +127,27 @@ const CORE = [
 const OPTIONAL = ['./photos/manifest.json', './photos/hidden.json', './photos/credits.json', './voice/index.json', './data/RESEARCH_NOTES.md'];
 
 // Long-lived files: pure cache-first. JSON: network-first (fresh credits/index/data when online).
-const IMMUTABLE = /\/(fonts|art|photos|icons|voice)\/.*\.(woff2|svg|png|jpe?g|webp|mp3)$/;
 const NETWORK_FIRST = /\.json$/;
 const SAFE_ID = /^[a-z0-9-]+$/;
 const SAFE_VOICE = /^[a-z]{2}\/[A-Za-z0-9.-]+\.mp3$/;
+
+const SCOPE_URL = self.registration.scope;
+/** u with ?__v=tag: a CDN cache key nobody has requested yet, so the CDN must go to the origin. */
+function busted(u, tag) { const url = new URL(u, SCOPE_URL); url.searchParams.set('__v', tag); return url.href; }
+/** Cache key: absolute URL without our own __v (other queries, e.g. the voice ?v=<hash>, stay). */
+function keyOf(u) { const url = new URL(u, SCOPE_URL); url.searchParams.delete('__v'); return url.href; }
+/** Download a fresh copy of u (bypassing the CDN's cached one) and store it under the plain key. */
+async function putFresh(cache, u, tag = VERSION) {
+  const res = await fetch(busted(u, tag), { cache: 'no-store' });
+  if (!res || !res.ok || res.status !== 200) throw new Error(`${u}: HTTP ${res ? res.status : '-'}`);
+  await cache.put(keyOf(u), res.clone());
+  return res;
+}
+/** Run fn over the list, n at a time. */
+async function pool(list, n, fn) {
+  const queue = [...list];
+  await Promise.all(Array.from({ length: n }, async () => { while (queue.length) await fn(queue.shift()); }));
+}
 
 async function readJson(cache, url) {
   try { const r = await cache.match(url); return r ? await r.json() : null; } catch { return null; }
@@ -164,8 +188,8 @@ function fillMissing(cache) {
     const worker = async () => {
       while (queue.length) {
         const u = queue.shift();
-        if (await cache.match(u)) continue;
-        try { await cache.add(new Request(u, { cache: 'reload' })); } catch { /* optional or offline: retried on the next status request */ }
+        if (await cache.match(keyOf(u))) continue;
+        try { await putFresh(cache, u); } catch { /* optional or offline: retried on the next status request */ }
       }
     };
     await Promise.all(Array.from({ length: 6 }, worker));
@@ -176,7 +200,7 @@ function fillMissing(cache) {
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    await cache.addAll(CORE.map((u) => new Request(u, { cache: 'reload' })));
+    await pool(CORE, 6, (u) => putFresh(cache, u));          // any failure fails the install (as addAll did)
     await fillMissing(cache);
     await self.skipWaiting();
   })());
@@ -196,7 +220,7 @@ self.addEventListener('message', (event) => {
     const list = await wanted(cache);
     await pruneVoices(cache, list);                 // superseded takes go away even when nothing is missing
     let have = 0;
-    for (const u of list) if (await cache.match(u)) have++;
+    for (const u of list) if (await cache.match(keyOf(u))) have++;
     event.source?.postMessage({ type: 'status', version: VERSION, have, total: list.length });
     if (have < list.length) await fillMissing(cache);
   })());
@@ -209,7 +233,7 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
   if (!url.pathname.startsWith(SCOPE_PATH)) return;
   if (url.searchParams.has('nosw')) return;
-  event.respondWith(handle(req, url, event));
+  event.respondWith(handle(req, url));
 });
 
 /** Safari's <audio> asks for byte ranges; answer 206 from a cached full response. */
@@ -241,29 +265,25 @@ async function handleVoice(req, url) {
   return req.headers.has('range') ? ranged(req, res) : res;
 }
 
-async function handle(req, url, event) {
+async function handle(req, url) {
   if (isVoice(url)) return handleVoice(req, url);
   const cache = await caches.open(CACHE);
-  const key = req.mode === 'navigate' && url.pathname.endsWith('/') ? './' : req;
-  // Created lazily: no eager network request (and no unhandled rejection) when the cached copy is enough.
-  const refresh = () => fetch(req, NETWORK_FIRST.test(url.pathname) ? { cache: 'no-cache' } : undefined).then((res) => {
-    if (res && res.ok && res.status === 200 && res.type === 'basic') cache.put(req, res.clone()).catch(() => {});
-    return res;
-  });
-  if (NETWORK_FIRST.test(url.pathname)) {
-    try { return await refresh(); } catch {
+  const key = req.mode === 'navigate' && url.pathname.endsWith('/') ? keyOf('./') : keyOf(url.href);
+  if (NETWORK_FIRST.test(url.pathname)) {                     // data + voice index: always the newest, never the CDN's
+    try {
+      const res = await fetch(busted(url.href, String(Date.now())), { cache: 'no-store' });
+      if (res && res.ok && res.status === 200) { await cache.put(key, res.clone()).catch(() => {}); return res; }
+      return (await cache.match(key, { ignoreSearch: true })) || res;
+    } catch {
       return (await cache.match(key, { ignoreSearch: true })) || Response.error();
     }
   }
   const cached = await cache.match(key, { ignoreSearch: true });
-  if (cached) {
-    if (!IMMUTABLE.test(url.pathname)) event.waitUntil(refresh().catch(() => {}));
-    return req.headers.has('range') ? ranged(req, cached) : cached;
-  }
-  try {
-    return await refresh();
+  if (cached) return req.headers.has('range') ? ranged(req, cached) : cached;
+  try {                                                       // not precached yet: fetch fresh, keep it
+    return await putFresh(cache, url.href);
   } catch {
-    if (req.mode === 'navigate') return (await cache.match('./index.html')) || Response.error();
-    return Response.error();
+    if (req.mode === 'navigate') return (await cache.match(keyOf('./index.html'))) || Response.error();
+    return fetch(req).catch(() => Response.error());
   }
 }
