@@ -48,12 +48,14 @@ function startScreen() {
   drawLogo();
   const play = layer.querySelector('.play-bubble-btn');
   if (hasArt('play-bubble')) play.append(charEl('play-bubble')); else play.innerHTML = icon('play');
+  const phone = matchMedia('(orientation: landscape) and (max-height: 500px)');
   const place = () => {
     if (!sc) return;
+    if (phone.matches) { play.style.left = ''; play.style.top = ''; return; }     // design/phone.css: 34 % / 70 %
     const p = toScreen(sc, PLAY_AT[0], PLAY_AT[1], innerWidth, innerHeight);
     play.style.left = `${p.x.toFixed(0)}px`; play.style.top = `${p.y.toFixed(0)}px`;
   };
-  place(); addEventListener('resize', place);
+  place(); addEventListener('resize', place); phone.addEventListener?.('change', place);
   const stopDolphin = startDolphin(sc);
   addEventListener('langchange', drawLogo);
   play.addEventListener('click', async () => {
@@ -80,10 +82,16 @@ async function boot() {
   applyI18n(); applyLook();
   addEventListener('store:change', (e) => { if (['hair', 'suit', 'skin', '*'].includes(e.detail?.key)) applyLook(); });
   const rot = document.getElementById('rotate');
+  // phones (≤ 500 px on the short side) say „Otoč telefon…“, tablets „Otoč iPad…“ — both lines in js/phrases.js
+  const isPhone = () => Math.min(innerWidth, innerHeight) <= 500;
+  const rotKey = () => (isPhone() ? 'rotatePhone' : 'rotateTablet');
   const drawRot = () => {
-    rot.innerHTML = `<div class="rotate-card"><div class="rotate-ic">${icon('rotate')}</div><p>${esc(t('rotate.title'))}</p></div>`;
+    rot.dataset.device = isPhone() ? 'phone' : 'tablet';
+    rot.innerHTML = `<div class="rotate-card"><div class="rotate-ic">${icon('rotate')}</div><p>${esc(t(`say.${rotKey()}`).replace(/\.$/, ''))}</p></div>`;
   };
-  drawRot(); addEventListener('langchange', drawRot);
+  drawRot(); addEventListener('langchange', drawRot); addEventListener('resize', drawRot);
+  const portrait = matchMedia('(orientation: portrait) and (max-width: 1100px)');
+  portrait.addEventListener?.('change', (e) => { drawRot(); if (e.matches) say([`ui.${rotKey()}`]); });
   document.documentElement.classList.add('ready');
   document.documentElement.dataset.screen = 'start';
   if (new URLSearchParams(location.search).has('autostart')) { await go('home'); } else startScreen();

@@ -136,12 +136,12 @@ export const FLOOR_AT = 0.76;
 export const DIVER_BAND = [0.24, 0.7];
 export const segAt = (x) => P.segs[clamp(Math.floor(clamp(x, 0, P.width - 1) / TILE_W), 0, P.segs.length - 1)];
 /** Camera (top-left of the view, world units): seabed low in the frame, diver comfortably inside. */
-export function cameraTarget(dx, dy, vw, vh, free = false) {
+export function cameraTarget(dx, dy, vw, vh, free = false, floorAt = FLOOR_AT) {
   const cx = clamp(dx - vw * 0.4, -60, P.width - vw + 60);
   const top = -vh * 0.24;
   if (free) return { x: cx, y: Math.max(dy - vh * 0.52, top) };
   const fx = dx + vw * 0.1;
-  let cy = segAt(fx).floorNone ? dy - vh * 0.5 : floorY(fx) - FLOOR_AT * vh;
+  let cy = segAt(fx).floorNone ? dy - vh * 0.5 : floorY(fx) - floorAt * vh;
   cy = clamp(cy, dy - vh * DIVER_BAND[1], dy - vh * DIVER_BAND[0]);
   return { x: cx, y: Math.max(cy, top) };
 }

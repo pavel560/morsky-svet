@@ -1,0 +1,138 @@
+/* Mořský svět — PHONE LANDSCAPE layout (designer, 2026-10-18). DESIGN.md §11 „Telefon (iPhone na šířku)“.
+   Drop-in: append to css/app.css (or <link> after it). Applies only to landscape viewports ≤ 500 px tall,
+   so iPad layouts are untouched. All sizes come from tokens (phone values in tokens.css) + safe-area tokens. */
+@media (orientation: landscape) and (max-height: 500px) {
+
+  /* ---------------------------------------------------------------- global */
+  .topbar { top: var(--edge); left: calc(var(--safe-l) + var(--edge)); right: calc(var(--safe-r) + var(--edge)); gap: var(--space-2); }
+  .title-pill { padding: var(--space-1) var(--space-4); }
+  /* caption = a short toast: max 2 lines, no speaker name (the voice is the turtle) */
+  #caption { bottom: calc(var(--safe-b) + var(--edge)); max-width: min(58vw, 520px); padding: var(--space-1) var(--space-4); border-radius: var(--r-md);
+    font-size: var(--fs-body); line-height: 1.25; }
+  #caption .cap-who { display: none; }
+  #caption .cap-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #lang-btn { right: calc(var(--safe-r) + var(--edge)); top: calc(var(--edge) * 2 + var(--touch-main)); width: var(--touch-min); height: var(--touch-min); }
+  #lang-btn .lang-swap { width: 18px; height: 18px; } #lang-btn .lang-swap .icon { font-size: 11px; }
+
+  /* ---------------------------------------------------------------- start */
+  .start-logo { left: calc(var(--safe-l) + 2vw); top: var(--edge); transform: none; width: min(40vw, 340px); }
+  .play-bubble-btn { left: 34%; top: 70%; width: 96px; height: 96px; }
+  .start-safety { left: auto; right: calc(var(--safe-r) + var(--edge)); bottom: calc(var(--safe-b) + var(--edge)); transform: none;
+    padding: var(--space-1) var(--space-3); font-size: 12px; }
+  .start-safety .icon { font-size: 18px; }
+  html[data-screen="start"] #lang-btn { left: auto; right: calc(var(--safe-r) + var(--edge)); top: var(--edge); }
+
+  /* ---------------------------------------------------------------- home „Loďka“ */
+  .home-logo { margin: 0 auto 0 calc(var(--touch-min) + var(--space-2)); width: min(24vw, 210px); }
+  html[data-screen="home"] #lang-btn { top: var(--edge); left: calc(var(--safe-l) + var(--edge) * 2 + var(--touch-min)); right: auto; }
+  .home .dive-btn { right: calc(var(--safe-r) + var(--edge)); top: 47%; min-height: 60px; padding: 0 var(--space-4) 0 var(--space-1); gap: var(--space-2); font-size: var(--fs-title); }
+  .home .dive-btn .dive-ic { width: 48px; height: 48px; }
+  .home .doors { left: calc(var(--safe-l) + var(--edge)); bottom: calc(var(--safe-b) + var(--space-1)); gap: var(--space-2); }
+  .home .door { width: 96px; }
+  .door-obj { width: 64px; height: 64px; }
+  .door-label { padding: 2px var(--space-2); font-size: 12px; border-width: 2px; }
+  .home .home-safety { right: calc(var(--safe-r) + var(--edge)); bottom: calc(var(--safe-b) + var(--space-1)); padding: 2px var(--space-3); font-size: 11px; }
+  .home .home-safety .icon { font-size: 16px; }
+  html[data-screen="home"] #caption { left: auto; right: calc(var(--safe-r) + var(--edge)); top: calc(var(--edge) * 2 + var(--touch-main)); bottom: auto;
+    max-width: 36vw; transform: translateY(-20%); }
+  html[data-screen="home"] #caption.show { transform: none; }
+
+  /* ---------------------------------------------------------------- Ponor HUD */
+  .hud-home { left: calc(var(--safe-l) + var(--edge)); top: var(--edge); }
+  .hud-replay { right: calc(var(--safe-r) + var(--edge)); top: var(--edge); }
+  .goal-bar { top: var(--edge); min-height: var(--hud-h); padding: 3px var(--space-3); gap: var(--space-2); max-width: calc(100vw - 2 * (var(--safe-l) + var(--edge) * 2 + var(--touch-main))); }
+  .goal-chips { gap: var(--space-1); }
+  .chip { padding: 2px; border-radius: var(--r-sm); }
+  .goal-zone { width: 30px; height: 30px; }
+  .goal-dots { gap: 4px; } .goal-dots i { width: 10px; height: 10px; border-width: 2px; }
+  .gauge { left: calc(var(--safe-l) + var(--edge)); top: calc(var(--edge) * 2 + var(--touch-min) + var(--space-2));
+    --gauge-h: calc(100vh - var(--edge) * 4 - var(--touch-min) * 2 - var(--space-4) - var(--safe-b)); }
+  .gauge-track { width: 10px; left: calc(var(--gauge-w) / 2 - 5px); border-width: 2px; }
+  .gauge .tick { display: none; }
+  .gauge-mask { width: 28px; height: 28px; left: calc(var(--gauge-w) / 2 - 14px); top: -14px; }
+  .gauge-mask .icon { font-size: 16px; }
+  .gauge-m { left: calc(var(--gauge-w) / 2 + 18px); font-size: 11px; }
+  .hud-back { left: calc(var(--safe-l) + var(--edge)); bottom: calc(var(--safe-b) + var(--edge)); }
+  .hud-net { left: calc(var(--safe-l) + var(--edge) * 2 + var(--touch-min)); bottom: calc(var(--safe-b) + var(--edge)); }
+  .hud-fwd { right: calc(var(--safe-r) + var(--edge)); bottom: calc(var(--safe-b) + var(--edge)); width: 64px; height: 64px; }
+  .hud-fwd .icon { font-size: 34px; }
+  .hud-fwd-label { display: none; }
+  .hud-up { right: calc(var(--safe-r) + var(--edge) * 2 + 64px); bottom: calc(var(--safe-b) + var(--edge)); width: var(--touch-main); height: var(--touch-main); }
+  html[data-screen="dive"] #caption { max-width: calc(100vw - 2 * (var(--safe-l) + var(--edge) * 3 + var(--touch-min) * 2)); }
+
+  /* ---------------------------------------------------------------- creature card (fits 375 px tall, no scrolling) */
+  .card-layer { padding: var(--edge) calc(var(--safe-r) + var(--edge)) calc(var(--safe-b) + var(--edge)) calc(var(--safe-l) + var(--edge)); align-items: stretch; }
+  .card { width: 100%; height: 100%; max-height: none; padding: var(--space-2); gap: var(--space-2); border-radius: var(--r-lg); }
+  .card-front { grid-template-columns: .92fr 1.08fr; gap: var(--space-3); }
+  .card-art { padding: var(--space-1); gap: var(--space-1); }
+  .art-box { width: 96%; max-height: none; }
+  .look-only { left: var(--space-2); top: var(--space-2); min-height: 30px; padding: 0 var(--space-3); font-size: 11px; }
+  .look-only .icon { font-size: 18px; }
+  .size-bar { width: 96%; min-height: 0; padding: 2px var(--space-2); border-radius: var(--r-sm); }
+  .sz-track { height: 30px; gap: var(--space-2); }
+  .card-info { gap: 5px; overflow: hidden; }
+  .sp-name { font-size: var(--fs-title); }
+  .sp-alt { font-size: 12px; gap: var(--space-1); }
+  .card-rows { gap: 5px; }
+  .badge, .row-btn { min-height: 36px; padding: 0 var(--space-3); font-size: 12px; gap: var(--space-1); }
+  .badge .icon, .row-btn .icon { font-size: 20px; }
+  .looks { gap: 4px; }
+  .look { min-height: 40px; padding: 2px var(--space-2); font-size: 13px; gap: var(--space-2); }
+  .look .num { width: 24px; height: 24px; font-size: 13px; }
+  .wow { min-height: 36px; padding: 2px var(--space-3); font-size: 12px; }
+  .wow-q { font-size: 14px; } .wow .icon { font-size: 20px; }
+  .card-actions { gap: var(--space-2); }
+  /* the card shows the name + the three features itself; on a phone the toast would cover it */
+  html:has(.card-layer) #caption { display: none; }
+
+  /* ---------------------------------------------------------------- Můj kousek moře */
+  .sea-scene { bottom: calc(var(--touch-hero) + var(--space-3) + var(--safe-b)); }
+  .drawer { height: calc(var(--touch-hero) + var(--space-3) + var(--safe-b)); padding: var(--space-1) calc(var(--safe-r) + var(--edge)) calc(var(--safe-b) + var(--space-1)) calc(var(--safe-l) + var(--edge)); gap: var(--space-2); }
+  .drawer-item { width: 64px; height: 64px; padding: 4px; }
+  .dn-btn { width: var(--touch-min); height: var(--touch-min); }
+  html[data-screen="sea"] #caption { top: calc(var(--edge) * 2 + var(--touch-main)); bottom: auto; }
+
+  /* ---------------------------------------------------------------- quiz */
+  .quiz-stage { inset: calc(var(--edge) * 2 + var(--touch-main)) calc(var(--safe-r) + var(--space-4)) calc(var(--safe-b) + 46px) calc(var(--safe-l) + var(--space-4)); gap: var(--space-2); }
+  .quiz-progress { padding: var(--space-2) var(--space-4); }
+  .quiz-progress i { width: 12px; height: 12px; }
+  .q-head { max-width: 94%; gap: var(--space-2); }
+  .q-guide { width: 64px; }
+  .q-prompt { padding: var(--space-1) var(--space-4); font-size: var(--fs-label); }
+  .q-opts { gap: var(--space-4); }
+  .q-opt { width: min(24vw, 46vh, 168px); padding: var(--space-2); border-radius: var(--r-md); }
+  .q-art { width: min(36vw, 260px); height: min(40vh, 150px); }
+  .q-yesno { gap: var(--space-6); }
+
+  /* ---------------------------------------------------------------- Kdo kde bydlí? */
+  .hab-body { inset: calc(var(--edge) * 2 + var(--touch-main)) calc(var(--safe-r) + var(--edge)) calc(var(--safe-b) + 46px) calc(var(--safe-l) + var(--edge)); gap: var(--space-3); }
+  .hab-tray { grid-template-columns: repeat(2, 60px); grid-auto-rows: 60px; gap: var(--space-2); }
+  .hab-floor { font-size: var(--fs-label); gap: var(--space-2); padding: 0 var(--space-3); }
+  .hab-floor .icon { font-size: 26px; }
+  .hab-cr.home { width: 44px; height: 44px; }
+
+  /* ---------------------------------------------------------------- end of dive */
+  .dive-summary { padding: var(--edge) calc(var(--safe-r) + var(--edge)) calc(var(--safe-b) + var(--edge)) calc(var(--safe-l) + var(--edge)); }
+  .sum-card { width: min(100%, 760px); max-height: 100%; padding: var(--space-3) var(--space-5); gap: var(--space-2); overflow: hidden; }
+  .sum-title { font-size: var(--fs-title); }
+  .sum-found { gap: var(--space-2); }
+  .sum-cr { width: 84px; font-size: 11.5px; }
+  .sum-art { height: 48px; }
+  .sum-trash, .sum-safety { font-size: 13px; gap: var(--space-2); }
+  .sum-trash .icon, .sum-safety .icon { font-size: 26px; }
+  html[data-screen="dive"] .dive-summary ~ #caption, .dive-summary #caption { display: none; }
+
+  /* ---------------------------------------------------------------- parents' corner */
+  .sheet { inset: calc(var(--edge) * 2 + var(--touch-main)) calc(var(--safe-r) + var(--edge)) 0 calc(var(--safe-l) + var(--edge));
+    padding: 0 var(--space-4) calc(var(--safe-b) + var(--space-6)); font-size: var(--fs-body); }
+  .sheet section { padding: var(--space-2) 0; }
+
+  /* iPhone SE and other ≤ 380 px tall: one more notch down */
+  @media (max-height: 380px) {
+    .look { min-height: 36px; font-size: 12px; line-height: 1.15; }
+    .badge, .row-btn { min-height: 32px; font-size: 11.5px; }
+    .sp-name { font-size: 20px; }
+    .wow { min-height: 32px; }
+    #caption { max-width: min(52vw, 440px); font-size: 14px; }
+  }
+}

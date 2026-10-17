@@ -269,6 +269,9 @@ function layout() {
   const gTrack = S.$('.gauge-track'); S.gaugeH = gTrack.clientHeight || 400; S.gaugeY = -1;
   S.ticks = [...gTrack.querySelectorAll('.tick')].map((el) => ({ el, y: (parseFloat(el.style.getPropertyValue('--at')) / 100) * S.gaugeH, off: false }));
   const gr = S.$('.gauge').getBoundingClientRect(); S.safeLeft = gr.right + 8;
+  // the seabed sits just above the bottom HUD (iPad: W.FLOOR_AT; phone: the HUD takes more of the height)
+  const fwdTop = S.$('.hud-fwd').getBoundingClientRect().top;
+  S.floorAt = Math.max(0.6, Math.min(W.FLOOR_AT, fwdTop / innerHeight - 0.03));
   S.safeTop = S.$('.goal-bar').getBoundingClientRect().bottom + 6;
   // parallax tiles: for zone k, layer factor f, cover layer-space [x0·f − vw, x1·f + vw] with 2048-wide copies
   for (const L of LAYERS) {
@@ -541,7 +544,7 @@ function step(dt) {
   }
 
   // camera
-  const ct = W.cameraTarget(d.x, d.y, S.vw, S.vh, S.free);
+  const ct = W.cameraTarget(d.x, d.y, S.vw, S.vh, S.free, S.floorAt);
   const ck = 1 - Math.exp(-dt * (S.ending ? 3 : 3.2));
   S.cam.x += (ct.x - S.cam.x) * ck; S.cam.y += (ct.y - S.cam.y) * ck;
   const cx = S.cam.x; const cy = S.cam.y; const s = S.s;
@@ -759,7 +762,7 @@ function exposeHooks() {
       creatures: S.creatures.map((c) => ({ id: c.sp.id, x: c.x, y: c.y, zone: c.zone, vis: c.vis })), bars: S.bars.map((b) => b.map((s) => s.id)),
       trashSpots: S.trashSpots.map((tr) => ({ id: tr.id, x: tr.x, y: tr.y, done: tr.done })), particles: S.parts.count }),
     pending: () => S.pending,
-    teleport: (x, y) => { const c = W.clampDiver(x, y, gatesOpen()); Object.assign(S.diver, { x: c.x, y: c.y, tx: c.x, ty: c.y, vx: 0, vy: 0 }); const ct = W.cameraTarget(c.x, c.y, S.vw, S.vh); S.cam.x = ct.x; S.cam.y = ct.y; },
+    teleport: (x, y) => { const c = W.clampDiver(x, y, gatesOpen()); Object.assign(S.diver, { x: c.x, y: c.y, tx: c.x, ty: c.y, vx: 0, vy: 0 }); const ct = W.cameraTarget(c.x, c.y, S.vw, S.vh, false, S.floorAt); S.cam.x = ct.x; S.cam.y = ct.y; },
     find: (id) => { S.found.add(id); store.addFound(id); renderGoal(S.zoneIdx); checkGoal(); },
     screenOf: (id) => { const c = S.creatures.find((x) => x.sp.id === id); if (!c) return null; return { x: (c.x - S.cam.x) * S.s, y: (c.y - (c.c.floorAnchored ? c.elH * 0.4 : 0) - S.cam.y) * S.s }; },
     trashScreen: (i) => { const tr = S.trashSpots[i]; return { x: (tr.x - S.cam.x) * S.s, y: (tr.y - S.cam.y) * S.s }; },

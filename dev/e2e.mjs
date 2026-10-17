@@ -211,7 +211,7 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
       await wait(page, 450);
       { const a = await minTarget(page, '.card-actions .btn'); const b = await minTarget(page, '.card-actions [data-act="speak"]');
         check(`${tag} card: buttons ≥ 64 px, speaker 88 px`, a >= 64 && b >= 88, `${a} / ${b}`); }
-      check(`${tag} card: the caption does not cover the card`, await page.evaluate(() => { const c = document.querySelector('.card').getBoundingClientRect(); const k = document.getElementById('caption').getBoundingClientRect(); return k.top >= c.bottom - 1; }));
+      check(`${tag} card: the turtle's caption is hidden while the card is open (it said the line)`, await page.evaluate(() => getComputedStyle(document.getElementById('caption')).display === 'none'));
       await page.click('.card .look[data-look="1"]'); await wait(page, 150);
       check(`${tag} card: tapping feature 2 says it`, (await ids(page)).includes(`sp.${id}.look.1`));
       await page.click('.card .wow'); await wait(page, 150);
@@ -495,6 +495,89 @@ for (const vp of [{ width: 1024, height: 768 }, { width: 1180, height: 820 }]) {
   check(`${tag}: parents' corner shows English selected; flag hidden there`, (await page.getAttribute('.seg-btn[data-act="lang"][data-v="en"]', 'aria-pressed')) === 'true' && !(await page.isVisible('#lang-btn')));
   await page.click('.seg-btn[data-act="lang"][data-v="cs"]'); await page.click('[data-act="home"]'); await page.waitForSelector('.home .dive-btn');
   check(`${tag}: changing it in the parents' corner updates the flag`, (await page.getAttribute('#lang-btn', 'aria-label')) === 'English');
+  await ctx.close();
+}
+
+// ============================================================ G. iPhone landscape (design/phone.css), simulated safe areas
+const PHONES = [{ width: 667, height: 375, safe: [0, 0, 0], tag: 'SE' }, { width: 844, height: 390, safe: [47, 47, 21], tag: '14' }, { width: 932, height: 430, safe: [59, 59, 21], tag: 'ProMax' }];
+for (const ph of PHONES) {
+  const vp = { width: ph.width, height: ph.height }; const tag = `phone ${ph.width}x${ph.height}`; const pre = `phone-${ph.width}x${ph.height}`;
+  const { ctx, page } = await session(vp);
+  await ctx.addInitScript(([l, r, b]) => { addEventListener('DOMContentLoaded', () => { const st = document.createElement('style'); st.textContent = `:root{--sim-safe-l:${l}px;--sim-safe-r:${r}px;--sim-safe-b:${b}px}`; document.head.append(st); }); }, ph.safe);
+  const [sl, sr, sb] = ph.safe;
+  const insideSafe = (sel) => page.evaluate(([q, l, r, b]) => [...document.querySelectorAll(q)].filter((e) => e.getClientRects().length && getComputedStyle(e).visibility !== 'hidden')
+    .filter((e) => { const x = e.getBoundingClientRect(); return x.left < l - 1 || x.right > innerWidth - r + 1 || x.bottom > innerHeight - b + 1 || x.top < -1; }).map((e) => e.className.baseVal ?? e.className), [sel, sl, sr, sb]);
+  await page.goto(`${BASE}/`); await page.waitForSelector('.start-layer .play-bubble-btn'); await wait(page, 600);
+  check(`${tag} start: phone layout active (touch-min 44 px)`, await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--touch-min').trim() === '44px'));
+  check(`${tag} start: play bubble ≥ 72 px, clear of the logo, safety line and boat`, (await minTarget(page, '.play-bubble-btn')) >= 72 && await page.evaluate(() => {
+    const p = document.querySelector('.play-bubble-btn').getBoundingClientRect(); const ov = (q) => { if (!q) return false; const r = q.getBoundingClientRect(); return p.left < r.right && p.right > r.left && p.top < r.bottom && p.bottom > r.top; };
+    return !ov(document.querySelector('.start-logo')) && !ov(document.querySelector('.start-safety')) && !ov(document.querySelector('.start-layer .scene-live .boat')); }));
+  { const fc = await flagClear(page); check(`${tag} start: language button collides with nothing`, fc.visible && !fc.hits.length, JSON.stringify(fc)); }
+  await shot(page, `${pre}-0-start`);
+  await page.click('.start-layer .play-bubble-btn'); await page.waitForSelector('.home .dive-btn'); await wait(page, 700);
+  check(`${tag} home: every control inside the safe area`, !(await insideSafe('.home .btn, .home .door, #lang-btn')).length, (await insideSafe('.home .btn, .home .door, #lang-btn')).join(','));
+  check(`${tag} home: touch targets ≥ 44 px`, (await minTarget(page, '.home .btn, .home .door, #lang-btn')) >= 44);
+  { const fc = await flagClear(page); check(`${tag} home: language button collides with nothing`, fc.visible && !fc.hits.length, JSON.stringify(fc)); }
+  check(`${tag} home: the caption covers no door or button`, await page.evaluate(() => { const c = document.getElementById('caption'); if (!c.classList.contains('show')) return true; const k = c.getBoundingClientRect();
+    return ![...document.querySelectorAll('.home .btn, .home .door, .home-safety, #lang-btn')].some((b) => { const r = b.getBoundingClientRect(); return k.left < r.right && k.right > r.left && k.top < r.bottom && k.bottom > r.top; }); }));
+  await shot(page, `${pre}-1-home`);
+  // dive
+  await page.click('.dive-btn'); await page.waitForFunction(() => window.__morsky.dive?.state()); await wait(page, 2200);
+  let st = await dive(page, 'D.state()');
+  check(`${tag} dive: seabed framed at ${Math.round(st.floorScreen * 100)} % (60–80 %)`, st.floorScreen >= 0.6 && st.floorScreen <= 0.8);
+  { const off = await hudOffenders(page); check(`${tag} dive: no visible creature under the HUD`, !off.length, off.join(',')); }
+  check(`${tag} dive: HUD inside the safe area`, !(await insideSafe('.dv-hud .btn, .goal-bar, .gauge, #lang-btn')).length, (await insideSafe('.dv-hud .btn, .goal-bar, .gauge, #lang-btn')).join(','));
+  check(`${tag} dive: HUD targets ≥ 44 px`, (await minTarget(page, '.dv-hud .btn:not([hidden])')) >= 44);
+  await shot(page, `${pre}-2-dive`);
+  const fbp = await page.locator('.hud-fwd').boundingBox(); await page.mouse.click(fbp.x + fbp.width / 2, fbp.y + fbp.height / 2); await wait(page, 2400);
+  st = await dive(page, 'D.state()');
+  { const off = await hudOffenders(page); check(`${tag} dive after „Plav dál“: seabed ${Math.round(st.floorScreen * 100)} %, no creature under the HUD`, st.floorScreen >= 0.6 && st.floorScreen <= 0.8 && !off.length, off.join(',')); }
+  // cards: a normal one, the sting variant, the longest names
+  for (const id of ['klaun', 'meduza', 'papousek', 'kapustnak', 'chobotnice'].filter((x) => species.some((s) => s.id === x))) {
+    const r = await cardFits(page, id);
+    check(`${tag} card ${id}: fits without scrolling (${r.sh} ≤ ${r.ch})`, r.sh <= r.ch + 1 && r.inside);
+  }
+  await page.evaluate(() => { window.__morsky.openCard('meduza'); }); await page.waitForSelector('.card-layer'); await wait(page, 500);
+  check(`${tag} card: 3 pins, look-only mark, caption hidden, inside the safe area`, (await page.locator('.card .pin').count()) === 3 && (await page.locator('.card .look-only').count()) === 1
+    && await page.evaluate(() => getComputedStyle(document.getElementById('caption')).display === 'none') && !(await insideSafe('.card')).length);
+  await shot(page, `${pre}-3-card-sting`);
+  await page.evaluate(() => window.__morsky.closeCard());
+  // summary
+  await dive(page, 'D.find("klaun")'); await dive(page, 'D.find("konik")'); await dive(page, 'D.surface()'); await page.waitForSelector('.dive-summary', { timeout: 9000 }); await wait(page, 500);
+  check(`${tag} summary: fits without scrolling, buttons inside the safe area`, await page.evaluate(() => { const c = document.querySelector('.sum-card'); return c.scrollHeight <= c.clientHeight + 1; }) && !(await insideSafe('.sum-actions .btn')).length);
+  await shot(page, `${pre}-4-summary`);
+  await page.click('.dive-summary [data-act="home"]'); await page.waitForSelector('.home .dive-btn');
+  await page.evaluate(() => window.__morsky.go('sea')); await page.waitForSelector('.sea .drawer-item'); await wait(page, 500);
+  await page.locator('.drawer-item:not(.unknown)').first().click(); await wait(page, 150); await page.mouse.click(vp.width * 0.5, vp.height * 0.45); await wait(page, 500);
+  const drawerPad = await page.evaluate(() => { const d = document.querySelector('.drawer'); const cs = getComputedStyle(d); const first = d.querySelector('.drawer-item').getBoundingClientRect();
+    return { first: first.left, padR: parseFloat(cs.paddingRight), bottom: d.getBoundingClientRect().bottom - first.bottom }; });
+  check(`${tag} sea: tap + tap releases a creature; toggles inside the safe area; drawer content clear of the notch + home indicator`, (await page.evaluate(() => window.__morsky.sea.placed().length)) >= 1
+    && !(await insideSafe('.dn-btn, .sea .topbar .btn')).length && drawerPad.first >= sl && drawerPad.padR >= sr - 1 && drawerPad.bottom >= sb - 1, JSON.stringify(drawerPad));
+  await shot(page, `${pre}-5-sea`);
+  await page.evaluate(() => window.__morsky.go('quiz')); await page.waitForSelector('.q-prompt'); await wait(page, 600);
+  check(`${tag} quiz: prompt + 3 options visible, nothing overlaps`, await page.evaluate(() => {
+    const els = [document.querySelector('.q-prompt'), ...document.querySelectorAll('.q-opt')]; const rs = els.map((e) => e.getBoundingClientRect());
+    if (rs.length !== 4 || rs.some((r) => r.bottom > innerHeight || r.top < 0)) return false;
+    for (let i = 0; i < rs.length; i++) for (let j = i + 1; j < rs.length; j++) { const a = rs[i]; const b = rs[j]; if (a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top) return false; }
+    return true; }) && (await minTarget(page, '.q-opt')) >= 88);
+  await shot(page, `${pre}-6-quiz`);
+  await page.evaluate(() => window.__morsky.go('habitat')); await page.waitForSelector('.hab-cr'); await wait(page, 400);
+  for (const s of await page.evaluate(() => window.__morsky.habitat.six())) await page.evaluate(([i, z]) => window.__morsky.habitat.drop(i, z), [s.id, s.zone]);
+  await wait(page, 300);
+  check(`${tag} habitat: all six home; floors + tray on screen`, (await page.locator('.hab-cr.home').count()) === 6 && !(await insideSafe('.hab-cut, .hab-tray')).length);
+  await shot(page, `${pre}-7-habitat`);
+  await page.evaluate(() => window.__morsky.go('parents')); await page.waitForSelector('.parents-screen'); await wait(page, 300);
+  check(`${tag} parents: sheet sides + buttons inside the safe area (the sheet scrolls under the home indicator)`, !(await insideSafe('.parents-screen .topbar .btn')).length
+    && await page.evaluate(([l, r]) => { const x = document.querySelector('.sheet').getBoundingClientRect(); return x.left >= l - 1 && x.right <= innerWidth - r + 1; }, [sl, sr]));
+  check(`${tag} parents: no caption left over from the previous screen`, !(await page.evaluate(() => document.getElementById('caption').classList.contains('show'))));
+  await shot(page, `${pre}-8-parents`);
+  await ctx.close();
+}
+{
+  const { ctx, page } = await session({ width: 390, height: 844 });
+  await page.goto(`${BASE}/`); await page.waitForSelector('.start-layer .play-bubble-btn');
+  check('phone portrait: „Otoč telefon na šířku“ covers the game', await page.evaluate(() => getComputedStyle(document.getElementById('rotate')).display !== 'none' && document.getElementById('rotate').textContent.includes('Otoč telefon')));
+  await shot(page, 'phone-390x844-portrait');
   await ctx.close();
 }
 

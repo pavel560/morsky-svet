@@ -656,3 +656,6 @@ html[data-screen="home"] #lang-btn { top: var(--space-3); left: calc(var(--space
 .dn-btn.on[data-act="day"] { background: var(--primary); color: var(--primary-ink); }
 .dn-btn.on[data-act="night"] { background: var(--hlubiny-top); color: var(--on-deep); }
 .sea .topbar .btn[data-act="home"] + .sr-only + .daynight-seg { margin-left: auto; }
+
+/* the turtle's caption never covers a creature card (the card shows the same text) — iPad and phone */
+html:has(.card-layer) #caption { display: none; }

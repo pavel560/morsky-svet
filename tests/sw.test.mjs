@@ -17,5 +17,7 @@ const want = [...list('js', /\.js$/), ...list('js/dive', /\.js$/), ...list('art'
 const notCached = [...new Set(want)].filter((p) => !core.includes(p));
 t(`every module, scene/ponor art and font is precached (${want.length})`, !notCached.length, notCached.join(', '));
 t('species art fetched from data at run time', /art\/\$\{id\}\.svg/.test(sw));
+const links = [...fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map((m) => m[1]);
+t(`every stylesheet linked in index.html is precached (${links.join(', ')})`, links.every((l) => core.includes(l)), links.filter((l) => !core.includes(l)).join(', '));
 t('VERSION is set', /const VERSION = 'v\d+'/.test(sw));
 done('sw');

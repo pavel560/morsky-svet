@@ -82,5 +82,6 @@ export function mountCaption() {
     clearTimeout(tm);
     tm = setTimeout(() => el.classList.remove('show'), 2400 + e.detail.text.length * 65);
   });
+  document.addEventListener('screen:leave', () => { clearTimeout(tm); el.classList.remove('show'); });   // a new screen starts clean
   return el;
 }

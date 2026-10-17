@@ -440,3 +440,51 @@ at 1180 × 820 it is 80–1520, at 16:10 the full width; the full height is alwa
   gorgonians in place; the open sea's "dark oval" turned out to be the old whale silhouette → redrawn.
 - **Unverified:** motion (no real-time capture), 1180 × 820 / 16:10 v2 screenshots, and the engine wiring of the new
   files (title, logo, doors, quiz/summary backgrounds) — those need the programmer's pass.
+
+---
+
+## 11. Telefon (iPhone na šířku) — 2026-10-18
+
+**Verdict.** One extra layer, no new layout system: the phone is the iPad layout with **smaller tokens, safe-area
+edges and a handful of per-screen moves**, switched on by viewport **height** (`(orientation: landscape) and
+(max-height: 500px)`; a second notch at `max-height: 380px` for the iPhone SE). Portrait keeps the „otoč“ prompt.
+iPad (≥ 744 px tall) never matches, so its layout is untouched (checked: `1024×768` home + card render as before).
+
+**Files.** `design/tokens.css` (phone token block + safe-area tokens) and **`design/phone.css`** — every rule below,
+ready to use. Programmer: `<link rel="stylesheet" href="design/phone.css">` **after** `css/app.css` (or paste it at the
+end of app.css), and add it to the service-worker precache. Selectors are the real ones from `css/app.css` / `js/`.
+
+**Safe areas.** `--safe-l/-r/-t/-b` = `env(safe-area-inset-*)` (the viewport meta already has `viewport-fit=cover`).
+In landscape the notch / Dynamic Island is on the left **or** right, so every left-anchored control uses
+`calc(var(--safe-l) + var(--edge))` and every right one `calc(var(--safe-r) + var(--edge))`; bottom controls add
+`--safe-b` (home indicator). Scenes (backgrounds) still bleed full-screen. `--sim-safe-*` is a screenshot test hook
+only (undefined in the app).
+
+**Phone tokens** (inside the media query): `--touch-min 44px` (HIG minimum) · `--touch-main 56px` · `--touch-hero 72px`
+· „Plav dál“ 64 px · type `--fs-hero 28 / -title 22 / -label 17 / -body 15 / -small 12.5px` · spacing 4–40 px ·
+`--edge 8px` · `--hud-h 48` · `--silhouette-chip 36` · `--gauge-w 30` · `--lamp-radius 40vh`.
+
+### Per screen (all in `phone.css`)
+| Screen | Rules |
+|---|---|
+| **Global** | `.topbar` inside the safe edges. **Caption = toast**: max 2 lines (`-webkit-line-clamp: 2`), no „Želvička“ label (the voice is hers), max `58vw`, bottom above the home indicator. Hidden while a card is open (`html:has(.card-layer) #caption`) — the card shows the same text. Language button 44 px under the speaker. |
+| **Start** | Logo top-left (`width: min(40vw, 340px)`) so it clears the boat and the girl; play bubble 96 px at 34 % / 70 % (in the water, left of the school); safety pill bottom-right, 12 px; language button top-right. The title scene is `xMidYMid slice`: at 2.2:1 it crops top/bottom only — boat, girl, turtle, island stay in. |
+| **Home** | Parents 44 + flag 44 top-left, logo next to them (`min(24vw, 210px)`), speaker 56 top-right. „Ponořit se!“ 60 px tall, right edge, at the waterline. Doors: objects 64 px + label 12 px, button 96 px wide, bottom-left above the home indicator. Safety pill bottom-right 11 px. Home caption = top-right toast under the speaker. |
+| **Ponor HUD** | Home 44 · speaker 56 · silhouette bar 48 tall with 36 px chips (fits 6 + dots at 667 px; capped to the space between the corner buttons) · depth gauge 10 px track with no tick labels, mask marker 28 px + metres pill · back 44 + net 44 bottom-left · „Plav dál“ 64 px bottom-right without the text label · „Nahoru“ 56 px left of it. Result at 844×390: the sea gets ~80 % of the screen. |
+| **Kartička** | Full-screen card inside the safe edges, two columns `.92fr / 1.08fr`: drawing + pins + look-only pill + small size bar (30 px) left; name 22 px, EN + Latin 12 px, chips 36 px (wrap), three feature rows 40 px with 24 px number chips, „Víš, že…?“ 36 px right; actions column 56/56/44. Fits 390 px **and** 375 px (SE: rows 36 px, chips 32 px, name 20 px) with no scrolling. |
+| **Můj kousek moře** | Drawer = 72 px + safe bottom, items 64 px; day/night 44 px each; caption at the top under the bar. |
+| **Kvíz** | Stage between top bar and a 46 px caption band; turtle 64 px; prompt 17 px; three option cards `min(24vw, 46vh, 168px)`. |
+| **Kdo kde bydlí?** | Tray 2 × 60 px; four floors 17 px labels with 26 px icons; placed animals 44 px. |
+| **Konec ponoru** | Card fills the safe area (max 760 px wide); found animals 84 × 48 px; trash + safety lines 13 px; no scrolling for ≤ 7 finds (more wrap into a second row). |
+| **Koutek pro rodiče** | Sheet inside the safe edges, 15 px text, tighter sections; it scrolls (allowed: adults only). |
+
+### Verification (real engine + `phone.css` injected; Playwright + Chrome against `serve.py`, safe areas simulated 47/47/21 px)
+- verified against screenshot at `design/comp-phone-start.png`, `comp-phone-home.png`, `comp-phone-dive.png`,
+  `comp-phone-card.png`, `comp-phone-quiz.png`, `comp-phone-sea.png` (844×390 @3×).
+- Also looked at: 667×375 (start, home, dive, card), 932×430 (start, home), 844×390 (Kdo kde bydlí?, konec ponoru,
+  koutek pro rodiče), 1024×768 (home, card — unchanged).
+- Found and fixed on the way: the caption covered the card's name and chips → hidden while a card is open; the SE card
+  overflowed by one row → second notch at 380 px; a `nowrap` chip row clipped „plankton“ → reverted to wrapping.
+- **Unverified:** a real iPhone (true `env()` insets, Safari's dynamic toolbar in a non-PWA tab), motion, and the
+  iPad caption-over-card overlap that already exists in v2 (not caused by this pass; suggest the same `:has(.card-layer)`
+  rule for iPad).

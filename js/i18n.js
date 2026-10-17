@@ -140,6 +140,8 @@ export const strings = {
     'group.say.zahavec': '{N} není ryba, je to žahavec.',
     'say.no': 'Ne.',
     'say.langHello': 'Teď mluvím česky.',
+    'say.rotatePhone': 'Otoč telefon na šířku.',
+    'say.rotateTablet': 'Otoč iPad na šířku.',
     'zoneIn.utes': 'na korálovém útesu', 'zoneIn.chaluhy': 'v chaluhovém lese', 'zoneIn.sire-more': 'v širém moři', 'zoneIn.hlubiny': 'v hlubinách',
   },
   en: {
@@ -246,6 +248,8 @@ export const strings = {
     'group.say.zahavec': 'The {n} is not a fish, it is a cnidarian, like a jellyfish.',
     'say.no': 'No.',
     'say.langHello': 'Now I speak English.',
+    'say.rotatePhone': 'Turn the phone sideways.',
+    'say.rotateTablet': 'Turn the iPad sideways.',
     'zoneIn.utes': 'on the coral reef', 'zoneIn.chaluhy': 'in the kelp forest', 'zoneIn.sire-more': 'in the open ocean', 'zoneIn.hlubiny': 'in the deep sea',
   },
 };

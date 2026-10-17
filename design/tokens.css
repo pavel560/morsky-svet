@@ -203,6 +203,43 @@
   --z-ui: 20; --z-drag: 30; --z-card: 40; --z-celebrate: 50; --z-parents: 60;
 }
 
+/* ------------------------------------------------------------------ phone landscape (iPhone SE 667x375 … Pro Max 932x430)
+   Breakpoint by HEIGHT, not by device: every landscape viewport ≤ 500 px tall. iPad (≥ 744 px tall) is untouched.
+   Safe areas: notch / Dynamic Island sits on the left OR right in landscape, the home indicator at the bottom.
+   (--sim-safe-* is only a test hook for desktop screenshots; undefined in the app → 0.) Layout rules: design/phone.css. */
+:root {
+  --safe-l: max(env(safe-area-inset-left, 0px), var(--sim-safe-l, 0px));
+  --safe-r: max(env(safe-area-inset-right, 0px), var(--sim-safe-r, 0px));
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: max(env(safe-area-inset-bottom, 0px), var(--sim-safe-b, 0px));
+  --edge: var(--space-3);     /* distance from the safe edge to the first control */
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --touch-min:  44px;       /* Apple HIG minimum; every tappable thing */
+    --touch-main: 56px;       /* speaker, „Plav dál“, card actions */
+    --touch-hero: 72px;       /* drawer items, quiz „again“, big round actions */
+    --hud-h:      48px;
+    --gauge-w:    30px;
+    --silhouette-chip: 36px;
+    --badge-card: 36px;
+    --char-card:  60vh;
+    --diver-h:    22vh;
+    --turtle-h:   52px;
+    --fs-hero:    28px;
+    --fs-title:   22px;
+    --fs-label:   17px;
+    --fs-body:    15px;
+    --fs-small:   12.5px;
+    --lh-text:    1.25;
+    --space-4: 12px; --space-5: 16px; --space-6: 20px; --space-7: 28px; --space-8: 40px;
+    --edge: 8px;
+    --r-lg: 22px; --r-md: 14px;
+    --stroke-ink: 2.5px; --stroke-ink-heavy: 3px;
+    --lamp-radius: 40vh;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   :root {
     --t-react: 1ms; --t-card: 1ms; --t-flip: 1ms; --t-view: 1ms;
