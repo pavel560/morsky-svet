@@ -3,7 +3,7 @@
 // every photo listed in photos/credits.json and every voice recording listed in voice/index.json.
 // Pages ask for progress with postMessage({type:'status'}) → {type:'status', have, total, version}.
 // Bump VERSION whenever app files change; sw.js is served with Cache-Control: no-cache.
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SCOPE_PATH = new URL(self.registration.scope).pathname;          // '/morsky-svet/'
 const PREFIX = 'morsky-svet-';
 const OWN_CACHE = /^morsky-svet-v\d+$/;
@@ -235,7 +235,7 @@ async function handle(req, url, event) {
   const cache = await caches.open(CACHE);
   const key = req.mode === 'navigate' && url.pathname.endsWith('/') ? './' : req;
   // Created lazily: no eager network request (and no unhandled rejection) when the cached copy is enough.
-  const refresh = () => fetch(req).then((res) => {
+  const refresh = () => fetch(req, NETWORK_FIRST.test(url.pathname) ? { cache: 'no-cache' } : undefined).then((res) => {
     if (res && res.ok && res.status === 200 && res.type === 'basic') cache.put(req, res.clone()).catch(() => {});
     return res;
   });

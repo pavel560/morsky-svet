@@ -17,7 +17,8 @@ export const artSource = new Map();                                     // name 
 const svgText = new Map();
 
 async function get(url, type = 'text') {
-  const r = await fetch(url);
+  // JSON (data, voice/index.json) must bypass the HTTP cache: GitHub Pages lets browsers keep it ~10 min.
+  const r = await fetch(url, type === 'json' ? { cache: 'no-cache' } : undefined);
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
   return type === 'json' ? r.json() : r.text();
 }
