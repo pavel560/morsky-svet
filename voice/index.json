@@ -1,0 +1,2980 @@
+{
+ "en": {
+  "sp.chobotnice.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.chobotnice.bigger.mp3",
+   "provider": "edge",
+   "sha1": "ae02395ceb1cde07c628db4a6646252058cce820",
+   "text": "The octopus is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.eats": {
+   "bytes": 18720,
+   "file": "en/sp.chobotnice.eats.mp3",
+   "provider": "edge",
+   "sha1": "b8496571f356c3e62f5bdbd5843b277a86c7812c",
+   "text": "I like crabs and clams best.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.fact": {
+   "bytes": 18864,
+   "file": "en/sp.chobotnice.fact.mp3",
+   "provider": "edge",
+   "sha1": "38dbe7683f5c7a1b16a0ab2b6cdb64881d9f31ac",
+   "text": "I have three hearts and blue blood.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.group": {
+   "bytes": 24912,
+   "file": "en/sp.chobotnice.group.mp3",
+   "provider": "edge",
+   "sha1": "b2374db6cd20246df6355e11cff8d1b1729b2c1d",
+   "text": "The octopus is not a fish, it is a mollusc.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.home": {
+   "bytes": 20880,
+   "file": "en/sp.chobotnice.home.mp3",
+   "provider": "edge",
+   "sha1": "a752e94e1779fd495ccae7ee034f8d69a227ca3c",
+   "text": "The octopus lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.isFishA": {
+   "bytes": 33408,
+   "file": "en/sp.chobotnice.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "1ce9782fea2d9e954c6433386954f3c68cf50f5e",
+   "text": "No. The octopus is not a fish, it is a mollusc.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.isFishQ": {
+   "bytes": 15552,
+   "file": "en/sp.chobotnice.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "1306904112ce0204acdae822842029a432b5e011",
+   "text": "Is the octopus a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.look.0": {
+   "bytes": 13536,
+   "file": "en/sp.chobotnice.look.0.mp3",
+   "provider": "edge",
+   "sha1": "a5237758aebf37848145b29d769bcca8184f3844",
+   "text": "I have eight arms.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.look.1": {
+   "bytes": 14976,
+   "file": "en/sp.chobotnice.look.1.mp3",
+   "provider": "edge",
+   "sha1": "fc6d522f296bf73ade13c3d5332108d2e037c4fe",
+   "text": "My arms have suckers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.look.2": {
+   "bytes": 18720,
+   "file": "en/sp.chobotnice.look.2.mp3",
+   "provider": "edge",
+   "sha1": "c9eb84956459e92880de91f4ed24932bc01b5fb0",
+   "text": "My soft body looks like a balloon.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.name": {
+   "bytes": 13536,
+   "file": "en/sp.chobotnice.name.mp3",
+   "provider": "edge",
+   "sha1": "abfb0a8d17a54395780a65a8839d4cbfcd2b686a",
+   "text": "Common octopus.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.riddle": {
+   "bytes": 30096,
+   "file": "en/sp.chobotnice.riddle.mp3",
+   "provider": "edge",
+   "sha1": "311f28daa3e9ae13fd6876d8ef18ee5b2274ceb2",
+   "text": "I have eight arms and I can change colour. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.size": {
+   "bytes": 24048,
+   "file": "en/sp.chobotnice.size.mp3",
+   "provider": "edge",
+   "sha1": "e98b9a426e6337948be1d93484a53016a4a6dbed",
+   "text": "With my arms, I am about as big as a cat.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.chobotnice.where": {
+   "bytes": 14256,
+   "file": "en/sp.chobotnice.where.mp3",
+   "provider": "edge",
+   "sha1": "669868138d51218356be9df1fb670bd8d799dbde",
+   "text": "Where is the octopus?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.bigger": {
+   "bytes": 15984,
+   "file": "en/sp.das.bigger.mp3",
+   "provider": "edge",
+   "sha1": "925b03bc0edb3de88e8055063c65b1273d91fa11",
+   "text": "The anglerfish is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.eats": {
+   "bytes": 24624,
+   "file": "en/sp.das.eats.mp3",
+   "provider": "edge",
+   "sha1": "b2599f67a7e560209ab95004f9980be5b681031c",
+   "text": "My glowing lure tempts fish and shrimps in the dark.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.fact": {
+   "bytes": 24768,
+   "file": "en/sp.das.fact.mp3",
+   "provider": "edge",
+   "sha1": "9337d3a6fee7a094945a05b3837a18639120ca68",
+   "text": "Tiny bacteria living in my lure make it glow.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.group": {
+   "bytes": 16560,
+   "file": "en/sp.das.group.mp3",
+   "provider": "edge",
+   "sha1": "13aebeb2799240c1a6a15893f8fba9df0e7830d3",
+   "text": "The anglerfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.home": {
+   "bytes": 20016,
+   "file": "en/sp.das.home.mp3",
+   "provider": "edge",
+   "sha1": "6286980fdc89728fc0f2663352e8c0698ebebb8d",
+   "text": "The anglerfish lives in the deep sea.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.isFishA": {
+   "bytes": 25344,
+   "file": "en/sp.das.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "055c3d696398eb2e79b08a66ad75be443627d323",
+   "text": "Yes! The anglerfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.isFishQ": {
+   "bytes": 16128,
+   "file": "en/sp.das.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "1f61ba36d43633cb37e105b640473222f6202458",
+   "text": "Is the anglerfish a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.look.0": {
+   "bytes": 19728,
+   "file": "en/sp.das.look.0.mp3",
+   "provider": "edge",
+   "sha1": "540bc42e4d88ed23a4f25c5d1ae539447638192a",
+   "text": "I have a glowing lure above my mouth.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.look.1": {
+   "bytes": 14256,
+   "file": "en/sp.das.look.1.mp3",
+   "provider": "edge",
+   "sha1": "cf61f4d92de58adc6a9346d1ed34c546c0fa04b7",
+   "text": "I have a big mouth.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.look.2": {
+   "bytes": 17712,
+   "file": "en/sp.das.look.2.mp3",
+   "provider": "edge",
+   "sha1": "13f389cdcd4366faf9ec28f3ff7fefd2306eb59d",
+   "text": "My body is round and dark.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.name": {
+   "bytes": 14976,
+   "file": "en/sp.das.name.mp3",
+   "provider": "edge",
+   "sha1": "52d978ac4d2376a81b756665ba0a64385d61c3c2",
+   "text": "Humpback anglerfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.riddle": {
+   "bytes": 36720,
+   "file": "en/sp.das.riddle.mp3",
+   "provider": "edge",
+   "sha1": "86a6673108b84bbf00738213962cc9b6ff57fd1a",
+   "text": "I live in the dark and a little lamp glows above my mouth. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.size": {
+   "bytes": 20448,
+   "file": "en/sp.das.size.mp3",
+   "provider": "edge",
+   "sha1": "9b301a0a1f2327484dc35e0a85b4e5d294087b86",
+   "text": "I am about as big as a small melon.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.das.where": {
+   "bytes": 14544,
+   "file": "en/sp.das.where.mp3",
+   "provider": "edge",
+   "sha1": "39f6f7e33a941ba304e935571a67459836724011",
+   "text": "Where is the anglerfish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.delfin.bigger.mp3",
+   "provider": "edge",
+   "sha1": "d79c0672482c0830d72c11d4215329b57b4f5e76",
+   "text": "The dolphin is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.eats": {
+   "bytes": 24624,
+   "file": "en/sp.delfin.eats.mp3",
+   "provider": "edge",
+   "sha1": "e6b8dd2ab229e7c9e83cf999542452588bd1669e",
+   "text": "I eat fish and squid, and swallow fish whole.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.fact": {
+   "bytes": 32544,
+   "file": "en/sp.delfin.fact.mp3",
+   "provider": "edge",
+   "sha1": "400693a232af02ab2f99dc84458354ac1afcde84",
+   "text": "Every dolphin has its own whistle. It is like a name.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.group": {
+   "bytes": 38880,
+   "file": "en/sp.delfin.group.mp3",
+   "provider": "edge",
+   "sha1": "55eb4c2709624071892e361556be871ec3914e38",
+   "text": "The dolphin is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.home": {
+   "bytes": 20160,
+   "file": "en/sp.delfin.home.mp3",
+   "provider": "edge",
+   "sha1": "f4b9215e40765129e6f54e68b4fe75214fef4b7b",
+   "text": "The dolphin lives in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.isFishA": {
+   "bytes": 47376,
+   "file": "en/sp.delfin.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "04c985a390cc7d157393f26f387cb0d0fe411d67",
+   "text": "No. The dolphin is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.isFishQ": {
+   "bytes": 15264,
+   "file": "en/sp.delfin.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "bde0ef0bc5439d7bdb3f7f7e1b19c0591d8e3276",
+   "text": "Is the dolphin a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.look.0": {
+   "bytes": 13968,
+   "file": "en/sp.delfin.look.0.mp3",
+   "provider": "edge",
+   "sha1": "257e748f9a5e11fd45d13a5c7230c229ee5dfbb3",
+   "text": "I have a short beak.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.look.1": {
+   "bytes": 18432,
+   "file": "en/sp.delfin.look.1.mp3",
+   "provider": "edge",
+   "sha1": "ff256e3e6c29bfe40e2617e1458513b1991357e4",
+   "text": "I have a curved fin on my back.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.look.2": {
+   "bytes": 20880,
+   "file": "en/sp.delfin.look.2.mp3",
+   "provider": "edge",
+   "sha1": "3c58ca8cda577ff9b75e330783b1d2bc79e8dec5",
+   "text": "I have a breathing hole on top of my head.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.name": {
+   "bytes": 17136,
+   "file": "en/sp.delfin.name.mp3",
+   "provider": "edge",
+   "sha1": "ba9ee0117aba1fcc3dc558b0d85af0db8aa9ed66",
+   "text": "Common bottlenose dolphin.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.riddle": {
+   "bytes": 34416,
+   "file": "en/sp.delfin.riddle.mp3",
+   "provider": "edge",
+   "sha1": "d2dfb714606d885ba7af7a59fe8bc15b15ccf723",
+   "text": "I breathe through a hole on my head and love jumping. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.size": {
+   "bytes": 18000,
+   "file": "en/sp.delfin.size.mp3",
+   "provider": "edge",
+   "sha1": "993802aeaf5b3afe5f151a772c1adba31445edd9",
+   "text": "I am almost as long as a car.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.delfin.where": {
+   "bytes": 13824,
+   "file": "en/sp.delfin.where.mp3",
+   "provider": "edge",
+   "sha1": "e3a5164eea74cf766448374f0b6e353302d0b0a7",
+   "text": "Where is the dolphin?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.bigger": {
+   "bytes": 18144,
+   "file": "en/sp.dumbo.bigger.mp3",
+   "provider": "edge",
+   "sha1": "1d7b9f86821a7922cf8718b9a1843de16b833643",
+   "text": "The dumbo octopus is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.eats": {
+   "bytes": 21600,
+   "file": "en/sp.dumbo.eats.mp3",
+   "provider": "edge",
+   "sha1": "30106ecddd5056d53fe82c66ed8e5c4a649cbef3",
+   "text": "I swallow tiny shrimps and worms whole.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.fact": {
+   "bytes": 20592,
+   "file": "en/sp.dumbo.fact.mp3",
+   "provider": "edge",
+   "sha1": "2071456d49edf6fb7e5a6461f2a94c29b365f68d",
+   "text": "I live deeper than any other octopus.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.group": {
+   "bytes": 27792,
+   "file": "en/sp.dumbo.group.mp3",
+   "provider": "edge",
+   "sha1": "07f2912168099ec8dfe6b1d8eecfbc0f9afeb801",
+   "text": "The dumbo octopus is not a fish, it is a mollusc.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.home": {
+   "bytes": 22176,
+   "file": "en/sp.dumbo.home.mp3",
+   "provider": "edge",
+   "sha1": "41328d2c44ade16e81cff1b87177a7297eee5cab",
+   "text": "The dumbo octopus lives in the deep sea.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.isFishA": {
+   "bytes": 36288,
+   "file": "en/sp.dumbo.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "db57c9f71c6eabc13607d4465b92ec02fec22cb8",
+   "text": "No. The dumbo octopus is not a fish, it is a mollusc.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.isFishQ": {
+   "bytes": 18432,
+   "file": "en/sp.dumbo.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "609c8eb6c9c997afd2eedc43f7ddc70f77c3a637",
+   "text": "Is the dumbo octopus a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.look.0": {
+   "bytes": 19152,
+   "file": "en/sp.dumbo.look.0.mp3",
+   "provider": "edge",
+   "sha1": "af3272d361cb28e67f4dca2e5c3768f92c887802",
+   "text": "I have two fins that look like ears.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.look.1": {
+   "bytes": 24192,
+   "file": "en/sp.dumbo.look.1.mp3",
+   "provider": "edge",
+   "sha1": "4ae38567bdb49ba2540425adfd672b45e40b117d",
+   "text": "My arms are joined by skin, like a skirt.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.look.2": {
+   "bytes": 22608,
+   "file": "en/sp.dumbo.look.2.mp3",
+   "provider": "edge",
+   "sha1": "3cbc187e22b142b12cc421ac6ac80311614e4d7d",
+   "text": "My soft round body looks like a little bell.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.name": {
+   "bytes": 13824,
+   "file": "en/sp.dumbo.name.mp3",
+   "provider": "edge",
+   "sha1": "711019b6ec30268510780e3fe324dcbb9f5b40fa",
+   "text": "Dumbo octopus.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.riddle": {
+   "bytes": 37872,
+   "file": "en/sp.dumbo.riddle.mp3",
+   "provider": "edge",
+   "sha1": "ee28c278c13a6997d2c1d88a549bcc09dac903cb",
+   "text": "My fins look like elephant ears and I live deep in the dark. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.size": {
+   "bytes": 19584,
+   "file": "en/sp.dumbo.size.mp3",
+   "provider": "edge",
+   "sha1": "470c022f9c00234009e256eba00ceed342b285ef",
+   "text": "I am about as big as a picture book.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.dumbo.where": {
+   "bytes": 16848,
+   "file": "en/sp.dumbo.where.mp3",
+   "provider": "edge",
+   "sha1": "acfc584115581ffe4c42e0afd8236c1ba10b2f5d",
+   "text": "Where is the dumbo octopus?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.hvezdice.bigger.mp3",
+   "provider": "edge",
+   "sha1": "3f2b37864dea4d1723dccf535db605e40d120787",
+   "text": "The sea star is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.eats": {
+   "bytes": 24768,
+   "file": "en/sp.hvezdice.eats.mp3",
+   "provider": "edge",
+   "sha1": "1cb8e9c58ce5a2372627c4d033b61b41154ad15d",
+   "text": "I push my stomach out and eat scraps on the seabed.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.fact": {
+   "bytes": 21024,
+   "file": "en/sp.hvezdice.fact.mp3",
+   "provider": "edge",
+   "sha1": "cc01d6e56ad6101b188f5a55dbeb42257d02178c",
+   "text": "I have a tiny eye at the tip of each arm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.group": {
+   "bytes": 26640,
+   "file": "en/sp.hvezdice.group.mp3",
+   "provider": "edge",
+   "sha1": "e4f1c4c828543b7416a8a9c973b526b375f87074",
+   "text": "The sea star is not a fish, it is an echinoderm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.home": {
+   "bytes": 20448,
+   "file": "en/sp.hvezdice.home.mp3",
+   "provider": "edge",
+   "sha1": "b5bbf62fc320407fa38d5920d1d3d7ec6da723d2",
+   "text": "The sea star lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.isFishA": {
+   "bytes": 35136,
+   "file": "en/sp.hvezdice.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "f324df95d196c7293e697bee6bede68bc13e36b7",
+   "text": "No. The sea star is not a fish, it is an echinoderm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.isFishQ": {
+   "bytes": 15984,
+   "file": "en/sp.hvezdice.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "35e1da464f99d0f54f55997cdc33a11de9ef2bdd",
+   "text": "Is the sea star a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.look.0": {
+   "bytes": 14256,
+   "file": "en/sp.hvezdice.look.0.mp3",
+   "provider": "edge",
+   "sha1": "c71ecb2e94ad6b9cb08694c0a5bfed49d6a09535",
+   "text": "I have five arms.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.look.1": {
+   "bytes": 17280,
+   "file": "en/sp.hvezdice.look.1.mp3",
+   "provider": "edge",
+   "sha1": "742e2aedc2020a2bd48a35697f8e9c92e62cda69",
+   "text": "I am bright blue all over.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.look.2": {
+   "bytes": 23472,
+   "file": "en/sp.hvezdice.look.2.mp3",
+   "provider": "edge",
+   "sha1": "fcf0d6c790d370abd41f8e335ad94975e5a8ad89",
+   "text": "My arms are long and round, like sausages.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.name": {
+   "bytes": 12816,
+   "file": "en/sp.hvezdice.name.mp3",
+   "provider": "edge",
+   "sha1": "d678c75232515385105e3338e45843d3c79a5e82",
+   "text": "Blue sea star.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.riddle": {
+   "bytes": 44352,
+   "file": "en/sp.hvezdice.riddle.mp3",
+   "provider": "edge",
+   "sha1": "2b5dd8dfad1ff1cb0ee8e5c99732dfbdacce497a",
+   "text": "I am not a fish, I have five blue arms and crawl slowly on the seabed. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.size": {
+   "bytes": 22896,
+   "file": "en/sp.hvezdice.size.mp3",
+   "provider": "edge",
+   "sha1": "a10da1d90a2852a3e307c83c6843c15083b5790f",
+   "text": "I am almost as big as your little backpack.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.hvezdice.where": {
+   "bytes": 14256,
+   "file": "en/sp.hvezdice.where.mp3",
+   "provider": "edge",
+   "sha1": "72ee7a67368717c251f3532759843d00502c035b",
+   "text": "Where is the sea star?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.bigger": {
+   "bytes": 16704,
+   "file": "en/sp.jezovka.bigger.mp3",
+   "provider": "edge",
+   "sha1": "83182bcdd6bf6e992e18444301991b63e7f28e0d",
+   "text": "The sea urchin is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.eats": {
+   "bytes": 18720,
+   "file": "en/sp.jezovka.eats.mp3",
+   "provider": "edge",
+   "sha1": "292dab277b53600ef66a677fe27c6328a1c7f596",
+   "text": "I nibble kelp and other seaweed.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.fact": {
+   "bytes": 24480,
+   "file": "en/sp.jezovka.fact.mp3",
+   "provider": "edge",
+   "sha1": "0597daf87ea36967c3ad22ee6b25e054eea581cb",
+   "text": "My mouth is underneath and has five little teeth.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.group": {
+   "bytes": 27648,
+   "file": "en/sp.jezovka.group.mp3",
+   "provider": "edge",
+   "sha1": "39f8af9d0ac38b9b9e0f07ad2f132a69697d2011",
+   "text": "The sea urchin is not a fish, it is an echinoderm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.home": {
+   "bytes": 22032,
+   "file": "en/sp.jezovka.home.mp3",
+   "provider": "edge",
+   "sha1": "eef46e8ea217a6b375829b10499a1aa97b06e2b4",
+   "text": "The sea urchin lives in the kelp forest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.isFishA": {
+   "bytes": 36000,
+   "file": "en/sp.jezovka.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "1dbebaa33fd895c776be936df5e6780f6626701d",
+   "text": "No. The sea urchin is not a fish, it is an echinoderm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.isFishQ": {
+   "bytes": 16848,
+   "file": "en/sp.jezovka.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "3af836eb457865eefc8f3b91806e93b4a950bc72",
+   "text": "Is the sea urchin a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.look.0": {
+   "bytes": 15696,
+   "file": "en/sp.jezovka.look.0.mp3",
+   "provider": "edge",
+   "sha1": "f2fdde41357153efbff0a277612dccf501912dd8",
+   "text": "I am round like a ball.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.look.1": {
+   "bytes": 17424,
+   "file": "en/sp.jezovka.look.1.mp3",
+   "provider": "edge",
+   "sha1": "ae1e4dacd7d36bfeb6acecf317467ec7967dcf4d",
+   "text": "I have spines all around me.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.look.2": {
+   "bytes": 12096,
+   "file": "en/sp.jezovka.look.2.mp3",
+   "provider": "edge",
+   "sha1": "e00de8a7aeca3245720e5d381ef2fd32192a9922",
+   "text": "I am purple.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.name": {
+   "bytes": 14976,
+   "file": "en/sp.jezovka.name.mp3",
+   "provider": "edge",
+   "sha1": "c3a163b5ffaa19e1d1802e8b6f7fa6bf9e05dc3a",
+   "text": "Purple sea urchin.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.riddle": {
+   "bytes": 34704,
+   "file": "en/sp.jezovka.riddle.mp3",
+   "provider": "edge",
+   "sha1": "f7fb998554574670ce27ebf254fb0de47b15e91e",
+   "text": "I am a purple ball with spines and I nibble kelp. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.safety": {
+   "bytes": 35136,
+   "file": "en/sp.jezovka.safety.mp3",
+   "provider": "edge",
+   "sha1": "bc48ecb89ddbb821a722e5b38c59223ea3ef6c62",
+   "text": "Careful, I'm prickly! We only look, we don't touch.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.size": {
+   "bytes": 19584,
+   "file": "en/sp.jezovka.size.mp3",
+   "provider": "edge",
+   "sha1": "09444c7b2322615bea623b48d6512ace03f2e04d",
+   "text": "I am about as big as a tangerine.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.jezovka.where": {
+   "bytes": 15264,
+   "file": "en/sp.jezovka.where.mp3",
+   "provider": "edge",
+   "sha1": "d03d9b9b0346713769b090cf40df4493a5ed04c5",
+   "text": "Where is the sea urchin?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.kapustnak.bigger.mp3",
+   "provider": "edge",
+   "sha1": "dbaa3d8d63b4cb1f831028e79304e28fd78d2372",
+   "text": "The manatee is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.eats": {
+   "bytes": 29088,
+   "file": "en/sp.kapustnak.eats.mp3",
+   "provider": "edge",
+   "sha1": "ef553675fe0aacc27f81a176942c69bcf477afa0",
+   "text": "People call me a sea cow, because I graze on seagrass.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.fact": {
+   "bytes": 21888,
+   "file": "en/sp.kapustnak.fact.mp3",
+   "provider": "edge",
+   "sha1": "7d10bad9c926ee54fcfb64f91cf15ec2596a5b1f",
+   "text": "I am a distant relative of the elephant!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.group": {
+   "bytes": 38880,
+   "file": "en/sp.kapustnak.group.mp3",
+   "provider": "edge",
+   "sha1": "c542a9332c416b28e6b24ef5c3ea0726d11511ea",
+   "text": "The manatee is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.home": {
+   "bytes": 20448,
+   "file": "en/sp.kapustnak.home.mp3",
+   "provider": "edge",
+   "sha1": "860ca59976bdd033b7806447b3b0fbc6dbbb91c6",
+   "text": "The manatee lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.isFishA": {
+   "bytes": 47376,
+   "file": "en/sp.kapustnak.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "6e1dce713d30783fc70b37dc7731ca9fcb7d795f",
+   "text": "No. The manatee is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.isFishQ": {
+   "bytes": 15552,
+   "file": "en/sp.kapustnak.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "d26032c28377d25da9185e01b593a31f4b83e92f",
+   "text": "Is the manatee a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.look.0": {
+   "bytes": 23616,
+   "file": "en/sp.kapustnak.look.0.mp3",
+   "provider": "edge",
+   "sha1": "3bb8bc13dbdd51edb9423185b707abc6a9c778eb",
+   "text": "My tail is round and flat, like a paddle.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.look.1": {
+   "bytes": 21168,
+   "file": "en/sp.kapustnak.look.1.mp3",
+   "provider": "edge",
+   "sha1": "bd9f9adf1cb61eeb49c82b6a2b51043a075c8098",
+   "text": "My big upper lip has bristly whiskers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.look.2": {
+   "bytes": 20160,
+   "file": "en/sp.kapustnak.look.2.mp3",
+   "provider": "edge",
+   "sha1": "093417fc0e2db1253302294103468e016cb087c2",
+   "text": "My front flippers have little nails.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.name": {
+   "bytes": 16272,
+   "file": "en/sp.kapustnak.name.mp3",
+   "provider": "edge",
+   "sha1": "acb0a0cb83a7faeb9e8e903f5b28bed2161629f2",
+   "text": "West Indian manatee.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.riddle": {
+   "bytes": 37152,
+   "file": "en/sp.kapustnak.riddle.mp3",
+   "provider": "edge",
+   "sha1": "aa44a30fa6388201f6161487814b711971fe984b",
+   "text": "I am slow, I graze on seagrass and come up for air. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.size": {
+   "bytes": 22464,
+   "file": "en/sp.kapustnak.size.mp3",
+   "provider": "edge",
+   "sha1": "460213dd236619e9e8ec205015a1ccfc1a6bb12a",
+   "text": "I am almost as long as two beds in a row.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.kapustnak.where": {
+   "bytes": 14256,
+   "file": "en/sp.kapustnak.where.mp3",
+   "provider": "edge",
+   "sha1": "cef16482a8a56a319105df9a8c52d9105273597b",
+   "text": "Where is the manatee?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.bigger": {
+   "bytes": 17424,
+   "file": "en/sp.keporkak.bigger.mp3",
+   "provider": "edge",
+   "sha1": "1853f12a265dedd14994e695597751ddb47fee8e",
+   "text": "The humpback whale is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.eats": {
+   "bytes": 21168,
+   "file": "en/sp.keporkak.eats.mp3",
+   "provider": "edge",
+   "sha1": "fb1a384917b96ba79a24aa1ee1a16d9748bd226a",
+   "text": "I gulp tiny krill and small fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.fact": {
+   "bytes": 24624,
+   "file": "en/sp.keporkak.fact.mp3",
+   "provider": "edge",
+   "sha1": "ccacec5a0703abdb4e53787d5dbf98f98a77550f",
+   "text": "Males sing long songs and repeat them for hours.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.group": {
+   "bytes": 40896,
+   "file": "en/sp.keporkak.group.mp3",
+   "provider": "edge",
+   "sha1": "7802b1b6f542903c4da75f5449df8291f4723641",
+   "text": "The humpback whale is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.home": {
+   "bytes": 22320,
+   "file": "en/sp.keporkak.home.mp3",
+   "provider": "edge",
+   "sha1": "bccb80bbd79da9be161f17761eacc77be6a96e93",
+   "text": "The humpback whale lives in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.isFishA": {
+   "bytes": 49392,
+   "file": "en/sp.keporkak.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "e6c2e8a351cb78ff8b0bc2b53cd2b31f3b05446e",
+   "text": "No. The humpback whale is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.isFishQ": {
+   "bytes": 17856,
+   "file": "en/sp.keporkak.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "ecfa4441ebc7b7b9366efa5b34a65ca758f24a4b",
+   "text": "Is the humpback whale a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.look.0": {
+   "bytes": 20592,
+   "file": "en/sp.keporkak.look.0.mp3",
+   "provider": "edge",
+   "sha1": "2746eadafbacd0d2195bbfcf9d76a41757f2be21",
+   "text": "I have huge, long side flippers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.look.1": {
+   "bytes": 15696,
+   "file": "en/sp.keporkak.look.1.mp3",
+   "provider": "edge",
+   "sha1": "eb909613aa166814fc79310776f03cb72619089c",
+   "text": "I have bumps on my head.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.look.2": {
+   "bytes": 18576,
+   "file": "en/sp.keporkak.look.2.mp3",
+   "provider": "edge",
+   "sha1": "73d48330d2983ec2b6a71b791a07b20f1debe29a",
+   "text": "I have long grooves under my chin.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.name": {
+   "bytes": 13104,
+   "file": "en/sp.keporkak.name.mp3",
+   "provider": "edge",
+   "sha1": "d4ff99b19231263d8658d797889a4fd7bf2a9f9d",
+   "text": "Humpback whale.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.riddle": {
+   "bytes": 29808,
+   "file": "en/sp.keporkak.riddle.mp3",
+   "provider": "edge",
+   "sha1": "ef1a48eb5a220b6d502efda4c71e098694a5f8e8",
+   "text": "I am bigger than a bus and I can sing. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.size": {
+   "bytes": 16128,
+   "file": "en/sp.keporkak.size.mp3",
+   "provider": "edge",
+   "sha1": "9b95a490e702e45bbef7691402e392b8f23f013a",
+   "text": "I am longer than a bus!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.keporkak.where": {
+   "bytes": 16272,
+   "file": "en/sp.keporkak.where.mp3",
+   "provider": "edge",
+   "sha1": "80ee5e025c453044518773c5e9e28ce5ee4abfff",
+   "text": "Where is the humpback whale?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.bigger": {
+   "bytes": 15984,
+   "file": "en/sp.klaun.bigger.mp3",
+   "provider": "edge",
+   "sha1": "76dea68070240675b34f78d1d50718500fb8f9bd",
+   "text": "The clownfish is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.eats": {
+   "bytes": 22320,
+   "file": "en/sp.klaun.eats.mp3",
+   "provider": "edge",
+   "sha1": "2e21077fed4799667404a5575de69afa840439e6",
+   "text": "I eat tiny plankton and a little algae.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.fact": {
+   "bytes": 36432,
+   "file": "en/sp.klaun.fact.mp3",
+   "provider": "edge",
+   "sha1": "1e14f2cc9366e180b71737c690a50f2e94ac6476",
+   "text": "I live in a stinging anemone. Slimy mucus keeps me safe.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.group": {
+   "bytes": 16560,
+   "file": "en/sp.klaun.group.mp3",
+   "provider": "edge",
+   "sha1": "b5badfd1beebafc8b254e6497fab19ca76ed3023",
+   "text": "The clownfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.home": {
+   "bytes": 20736,
+   "file": "en/sp.klaun.home.mp3",
+   "provider": "edge",
+   "sha1": "5ee62b815f4e8dcb90db5be5e25031c440f41cb2",
+   "text": "The clownfish lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.isFishA": {
+   "bytes": 25344,
+   "file": "en/sp.klaun.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "548087bf2b32f1856114874cff4dc6b04645f7d6",
+   "text": "Yes! The clownfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.isFishQ": {
+   "bytes": 16128,
+   "file": "en/sp.klaun.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "eb94232278bda248df712caea8737885547397fc",
+   "text": "Is the clownfish a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.look.0": {
+   "bytes": 14544,
+   "file": "en/sp.klaun.look.0.mp3",
+   "provider": "edge",
+   "sha1": "904e5fb4138cd82106b095fb1d472c922ca75fdf",
+   "text": "My body is orange.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.look.1": {
+   "bytes": 16560,
+   "file": "en/sp.klaun.look.1.mp3",
+   "provider": "edge",
+   "sha1": "81a2d4d3f33578bfa7f62305c348557e53bff7c7",
+   "text": "I have three white stripes.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.look.2": {
+   "bytes": 22896,
+   "file": "en/sp.klaun.look.2.mp3",
+   "provider": "edge",
+   "sha1": "c00360db402ee68595d3f896b5e8f15700b71cb7",
+   "text": "My stripes and fins have thin black edges.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.name": {
+   "bytes": 16128,
+   "file": "en/sp.klaun.name.mp3",
+   "provider": "edge",
+   "sha1": "be5e4067e16b1207ffd5eec88f9f3b3dfd7a926c",
+   "text": "Ocellaris clownfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.riddle": {
+   "bytes": 34992,
+   "file": "en/sp.klaun.riddle.mp3",
+   "provider": "edge",
+   "sha1": "8ca6eeefec484cafdf41849049baa0cf55daf723",
+   "text": "I am orange with white stripes and I live in an anemone. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.size": {
+   "bytes": 18144,
+   "file": "en/sp.klaun.size.mp3",
+   "provider": "edge",
+   "sha1": "e28bb038097bb5228169497b7f33c25f31124c3f",
+   "text": "I am about as big as your hand.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.klaun.where": {
+   "bytes": 14544,
+   "file": "en/sp.klaun.where.mp3",
+   "provider": "edge",
+   "sha1": "5754de8a08135b247d4831256dd3d7f039405db6",
+   "text": "Where is the clownfish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.bigger": {
+   "bytes": 14976,
+   "file": "en/sp.konik.bigger.mp3",
+   "provider": "edge",
+   "sha1": "bae8891deb6da7085144a8ef4498124a01309ac5",
+   "text": "The seahorse is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.eats": {
+   "bytes": 28800,
+   "file": "en/sp.konik.eats.mp3",
+   "provider": "edge",
+   "sha1": "2d426f1d82f41a0be20ecc60f96a0f287b621c65",
+   "text": "I suck up tiny plankton through my snout, like a straw.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.fact": {
+   "bytes": 25056,
+   "file": "en/sp.konik.fact.mp3",
+   "provider": "edge",
+   "sha1": "5208f742c340f751d4d3de10f95b0f17c1217ca7",
+   "text": "The dad carries the babies in a pouch on his tummy!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.group": {
+   "bytes": 15408,
+   "file": "en/sp.konik.group.mp3",
+   "provider": "edge",
+   "sha1": "1fd54040020d1e57d99649ae8b7f80723f8e3582",
+   "text": "The seahorse is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.home": {
+   "bytes": 20160,
+   "file": "en/sp.konik.home.mp3",
+   "provider": "edge",
+   "sha1": "941a0c43905a2a89d0bc83aa5ab7b63c209b5fcc",
+   "text": "The seahorse lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.isFishA": {
+   "bytes": 24336,
+   "file": "en/sp.konik.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "af237decbf2eec22e55f2b7b91407e43cda599f6",
+   "text": "Yes! The seahorse is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.isFishQ": {
+   "bytes": 15408,
+   "file": "en/sp.konik.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "2d655470c442a1f8b663ab5f6e2f374f753c22d3",
+   "text": "Is the seahorse a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.look.0": {
+   "bytes": 18000,
+   "file": "en/sp.konik.look.0.mp3",
+   "provider": "edge",
+   "sha1": "2f036cd42e88d39655b4c1b2a2dd533f91a5afc4",
+   "text": "My head looks like a horse's head.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.look.1": {
+   "bytes": 18144,
+   "file": "en/sp.konik.look.1.mp3",
+   "provider": "edge",
+   "sha1": "273eb73bb9d59c34e66b608ba8fcfb6bd265f242",
+   "text": "My tail curls into a ring.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.look.2": {
+   "bytes": 21312,
+   "file": "en/sp.konik.look.2.mp3",
+   "provider": "edge",
+   "sha1": "063036abf6186589a62d9b939c54a137acadc4b0",
+   "text": "I have a shaggy mane on my head and back.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.name": {
+   "bytes": 15984,
+   "file": "en/sp.konik.name.mp3",
+   "provider": "edge",
+   "sha1": "ab07578a90f7966bf80cad32cedf7367e2a524ab",
+   "text": "Long-snouted seahorse.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.riddle": {
+   "bytes": 36288,
+   "file": "en/sp.konik.riddle.mp3",
+   "provider": "edge",
+   "sha1": "22b1008bd8de60ccf194ce1ecd2036966e10fd13",
+   "text": "My head looks like a horse and my tail holds on to seaweed. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.size": {
+   "bytes": 21024,
+   "file": "en/sp.konik.size.mp3",
+   "provider": "edge",
+   "sha1": "264d7c4e0e86881ab7cdabd34837f1b830ae6c43",
+   "text": "I am about as long as a colouring pencil.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.konik.where": {
+   "bytes": 14112,
+   "file": "en/sp.konik.where.mp3",
+   "provider": "edge",
+   "sha1": "9f7716e10b9e2eac030d76f65c907f77e2727e9b",
+   "text": "Where is the seahorse?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.bigger": {
+   "bytes": 13824,
+   "file": "en/sp.krab.bigger.mp3",
+   "provider": "edge",
+   "sha1": "9fcac03895034a3a173a1911c93236c4096254fd",
+   "text": "The crab is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.eats": {
+   "bytes": 28944,
+   "file": "en/sp.krab.eats.mp3",
+   "provider": "edge",
+   "sha1": "6389000e75ea2889d9be15c2890d5946dc0543a2",
+   "text": "I eat mussels, snails, seaweed and leftovers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.fact": {
+   "bytes": 28080,
+   "file": "en/sp.krab.fact.mp3",
+   "provider": "edge",
+   "sha1": "e48834b13bd2002f4d1de34e656dfaa85dce7809",
+   "text": "When I grow, I slip out of my old shell like a T-shirt.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.group": {
+   "bytes": 25200,
+   "file": "en/sp.krab.group.mp3",
+   "provider": "edge",
+   "sha1": "a166253ed344552d96fe9aaee30e7e36b0bf1f3f",
+   "text": "The crab is not a fish, it is a crustacean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.home": {
+   "bytes": 19296,
+   "file": "en/sp.krab.home.mp3",
+   "provider": "edge",
+   "sha1": "dee888f1c7dd504ecd73597091e38acf28541692",
+   "text": "The crab lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.isFishA": {
+   "bytes": 33552,
+   "file": "en/sp.krab.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "ef37bca214354ce368162d2b68fa476ed526efff",
+   "text": "No. The crab is not a fish, it is a crustacean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.isFishQ": {
+   "bytes": 14112,
+   "file": "en/sp.krab.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "97b1855e0b0611edb3320f7ec7aeaf32000100df",
+   "text": "Is the crab a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.look.0": {
+   "bytes": 14112,
+   "file": "en/sp.krab.look.0.mp3",
+   "provider": "edge",
+   "sha1": "216e6f672f28f5013f3cefd8d15554cca1e26919",
+   "text": "I have two claws.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.look.1": {
+   "bytes": 24480,
+   "file": "en/sp.krab.look.1.mp3",
+   "provider": "edge",
+   "sha1": "8ec0d9ca2295f1228907886f6ff03b7e86bddc49",
+   "text": "Besides my claws, I have eight walking legs.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.look.2": {
+   "bytes": 22032,
+   "file": "en/sp.krab.look.2.mp3",
+   "provider": "edge",
+   "sha1": "502d357f6ca5293fce03e9d6e1a7710647e2fecc",
+   "text": "The edge of my shell is jagged like a saw.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.name": {
+   "bytes": 15984,
+   "file": "en/sp.krab.name.mp3",
+   "provider": "edge",
+   "sha1": "29f137af8e1650824e724697cc29963e2d7c17b3",
+   "text": "European green crab.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.riddle": {
+   "bytes": 31104,
+   "file": "en/sp.krab.riddle.mp3",
+   "provider": "edge",
+   "sha1": "1310c1b7801ffda070ec7ae7e6b5b77d1ee52d9a",
+   "text": "I walk sideways and I have two claws. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.safety": {
+   "bytes": 31824,
+   "file": "en/sp.krab.safety.mp3",
+   "provider": "edge",
+   "sha1": "fd1734a9ed93a93dd0d0450b1dc16029285ec288",
+   "text": "Careful, my claws can pinch! We only look.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.size": {
+   "bytes": 18000,
+   "file": "en/sp.krab.size.mp3",
+   "provider": "edge",
+   "sha1": "96944d2ce6694cff3de78511060782aa9d89395e",
+   "text": "I am about as big as a biscuit.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.krab.where": {
+   "bytes": 12384,
+   "file": "en/sp.krab.where.mp3",
+   "provider": "edge",
+   "sha1": "f99794543be2062fe946fdf4561f66ea446ebb9a",
+   "text": "Where is the crab?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.bigger": {
+   "bytes": 15696,
+   "file": "en/sp.manta.bigger.mp3",
+   "provider": "edge",
+   "sha1": "ed7220351d01eef364dc6663b42208d1734fc714",
+   "text": "The manta ray is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.eats": {
+   "bytes": 23760,
+   "file": "en/sp.manta.eats.mp3",
+   "provider": "edge",
+   "sha1": "190753eaf55e4f48f24ea0d7a798dc67f68629a5",
+   "text": "The flaps by my mouth steer plankton inside.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.fact": {
+   "bytes": 24912,
+   "file": "en/sp.manta.fact.mp3",
+   "provider": "edge",
+   "sha1": "60ae0ecf9e51661837ebffc5f5b8a159ce35b4da",
+   "text": "Every manta has its own pattern of belly spots.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.group": {
+   "bytes": 16416,
+   "file": "en/sp.manta.group.mp3",
+   "provider": "edge",
+   "sha1": "b2fc72eea77176ca7b90997da8b8b145b93f9ecf",
+   "text": "The manta ray is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.home": {
+   "bytes": 21024,
+   "file": "en/sp.manta.home.mp3",
+   "provider": "edge",
+   "sha1": "f40821008a9b18c1a105a5b7e5b581297f872a9c",
+   "text": "The manta ray lives in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.isFishA": {
+   "bytes": 25344,
+   "file": "en/sp.manta.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "2e053b1fb667b75b753a64e020a4df41e0d182e5",
+   "text": "Yes! The manta ray is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.isFishQ": {
+   "bytes": 16128,
+   "file": "en/sp.manta.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "2091eae779a2dee894c127a7609a20b57d0ee886",
+   "text": "Is the manta ray a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.look.0": {
+   "bytes": 20448,
+   "file": "en/sp.manta.look.0.mp3",
+   "provider": "edge",
+   "sha1": "9447b496f079e4ee7b8eecd4098357c362c19c5a",
+   "text": "My fins look like triangle wings.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.look.1": {
+   "bytes": 24768,
+   "file": "en/sp.manta.look.1.mp3",
+   "provider": "edge",
+   "sha1": "904be7e798501af2cc89d2b8a0032d0ca1aa1533",
+   "text": "I have two flaps by my mouth, like horns.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.look.2": {
+   "bytes": 20592,
+   "file": "en/sp.manta.look.2.mp3",
+   "provider": "edge",
+   "sha1": "69888cb1685f4ea2839cc27a2ba4690a8aa8ca05",
+   "text": "My dark back has two white patches.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.name": {
+   "bytes": 14400,
+   "file": "en/sp.manta.name.mp3",
+   "provider": "edge",
+   "sha1": "41738636a70b9dc99390049810e583f6eca6de13",
+   "text": "Giant manta ray.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.riddle": {
+   "bytes": 38016,
+   "file": "en/sp.manta.riddle.mp3",
+   "provider": "edge",
+   "sha1": "1ed4b94ddd5686a03b6c48a2a5d8c3cce0dae7ec",
+   "text": "I flap my fins like wings and have two flaps by my mouth. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.size": {
+   "bytes": 24624,
+   "file": "en/sp.manta.size.mp3",
+   "provider": "edge",
+   "sha1": "001ae07c5874632350df48a6ae1584cb9949f13f",
+   "text": "With my fins spread, I am as wide as a car.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.manta.where": {
+   "bytes": 14832,
+   "file": "en/sp.manta.where.mp3",
+   "provider": "edge",
+   "sha1": "72667072bfc3a63965a036ecb0e4b323ceb3cfbd",
+   "text": "Where is the manta ray?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.bigger": {
+   "bytes": 15552,
+   "file": "en/sp.meduza.bigger.mp3",
+   "provider": "edge",
+   "sha1": "6f0e9aff410517f20bc1f624e0c94366a12862cc",
+   "text": "The jellyfish is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.eats": {
+   "bytes": 22608,
+   "file": "en/sp.meduza.eats.mp3",
+   "provider": "edge",
+   "sha1": "30088dd6f8cc9a97f2e38793fe2c6f3ff1d3bfc5",
+   "text": "I eat tiny plankton that sticks to my bell.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.fact": {
+   "bytes": 24624,
+   "file": "en/sp.meduza.fact.mp3",
+   "provider": "edge",
+   "sha1": "14f46d5af5c245258ebfa9609e182f7a39327163",
+   "text": "I have no brain, no heart and no blood.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.group": {
+   "bytes": 34128,
+   "file": "en/sp.meduza.group.mp3",
+   "provider": "edge",
+   "sha1": "4e3f450a3253600eb07849cc77bf8f2413b1a3f7",
+   "text": "The jellyfish is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.home": {
+   "bytes": 21024,
+   "file": "en/sp.meduza.home.mp3",
+   "provider": "edge",
+   "sha1": "84a2e1aa93f0f5efc152ade4b3781aa77e57691b",
+   "text": "The jellyfish lives in the kelp forest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.isFishA": {
+   "bytes": 42624,
+   "file": "en/sp.meduza.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "aca0a6e303e1d180f8955a94ef0f819988631ccf",
+   "text": "No. The jellyfish is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.isFishQ": {
+   "bytes": 15696,
+   "file": "en/sp.meduza.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "780996f92300dd5d6bef816c97d1bef5def0bb83",
+   "text": "Is the jellyfish a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.look.0": {
+   "bytes": 19296,
+   "file": "en/sp.meduza.look.0.mp3",
+   "provider": "edge",
+   "sha1": "fe015212843e27f6ff2a3f56a630c4e3bddd9681",
+   "text": "My see-through bell looks like a plate.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.look.1": {
+   "bytes": 25488,
+   "file": "en/sp.meduza.look.1.mp3",
+   "provider": "edge",
+   "sha1": "a2367ac8347b039497088c50bf086c6e2875a954",
+   "text": "Inside I have four rings, like a four-leaf clover.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.look.2": {
+   "bytes": 23904,
+   "file": "en/sp.meduza.look.2.mp3",
+   "provider": "edge",
+   "sha1": "8934b294383c8fb74804355cafab903e67b45999",
+   "text": "Short fringy tentacles hang around my edge.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.name": {
+   "bytes": 13680,
+   "file": "en/sp.meduza.name.mp3",
+   "provider": "edge",
+   "sha1": "01230145ff3c7e7fcf3cc5f06e6d45590280dcde",
+   "text": "Moon jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.riddle": {
+   "bytes": 33840,
+   "file": "en/sp.meduza.riddle.mp3",
+   "provider": "edge",
+   "sha1": "ea7691ea47f8d73c662540e21f13be101a138983",
+   "text": "I am clear as glass and I swim like an umbrella. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.safety": {
+   "bytes": 25776,
+   "file": "en/sp.meduza.safety.mp3",
+   "provider": "edge",
+   "sha1": "233b749e5344af1d3544fec3e68a80f8bbe9db87",
+   "text": "My sting is very weak, but we still only look.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.size": {
+   "bytes": 18000,
+   "file": "en/sp.meduza.size.mp3",
+   "provider": "edge",
+   "sha1": "5cc2817ece8f1cfa657ecebdeec0e680d0c5525f",
+   "text": "I am as big as a dinner plate.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.meduza.where": {
+   "bytes": 14400,
+   "file": "en/sp.meduza.where.mp3",
+   "provider": "edge",
+   "sha1": "aed11c82d8f6ad075c16d402368e824bcd1d878f",
+   "text": "Where is the jellyfish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.bigger": {
+   "bytes": 15696,
+   "file": "en/sp.papousek.bigger.mp3",
+   "provider": "edge",
+   "sha1": "5981ca1521f45d144d60242a677aa30535b074d3",
+   "text": "The parrotfish is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.eats": {
+   "bytes": 25344,
+   "file": "en/sp.papousek.eats.mp3",
+   "provider": "edge",
+   "sha1": "0537770a6cb1a1465c12497a40f36c78543f37c6",
+   "text": "With my beak I nibble algae off coral and rocks.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.fact": {
+   "bytes": 23616,
+   "file": "en/sp.papousek.fact.mp3",
+   "provider": "edge",
+   "sha1": "6bb9dd99ca6dffd3a74f79687decaf858099bf49",
+   "text": "The coral I crunch turns into white sand.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.group": {
+   "bytes": 16272,
+   "file": "en/sp.papousek.group.mp3",
+   "provider": "edge",
+   "sha1": "a1c90379eb0aa1926d3413e3ca3884e0456a9e84",
+   "text": "The parrotfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.home": {
+   "bytes": 20880,
+   "file": "en/sp.papousek.home.mp3",
+   "provider": "edge",
+   "sha1": "90ff46b9dda95ee61549d2884a1bf4fbe91ed5f5",
+   "text": "The parrotfish lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.isFishA": {
+   "bytes": 25200,
+   "file": "en/sp.papousek.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "744f691bf389a4ec6096fb94426cd4c19dda4b70",
+   "text": "Yes! The parrotfish is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.isFishQ": {
+   "bytes": 15696,
+   "file": "en/sp.papousek.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "18bbe9b7eb007368ffdbbd0b63e5bd2c8f112714",
+   "text": "Is the parrotfish a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.look.0": {
+   "bytes": 16704,
+   "file": "en/sp.papousek.look.0.mp3",
+   "provider": "edge",
+   "sha1": "179489db1b8f421430d276b0f1b44d467681b2ef",
+   "text": "I have a beak like a parrot.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.look.1": {
+   "bytes": 18720,
+   "file": "en/sp.papousek.look.1.mp3",
+   "provider": "edge",
+   "sha1": "c09cb07396bf0880c64b4512a7c7ad0a3e314cda",
+   "text": "My big scales have blue edges.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.look.2": {
+   "bytes": 21168,
+   "file": "en/sp.papousek.look.2.mp3",
+   "provider": "edge",
+   "sha1": "39a64a704b5a2ea056f5feefb468e2d7bb9dd61a",
+   "text": "Grown-up males are bright green and blue.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.name": {
+   "bytes": 15120,
+   "file": "en/sp.papousek.name.mp3",
+   "provider": "edge",
+   "sha1": "7ee848ecf6b615057b4b0e0fda3debf5cdb66a66",
+   "text": "Bullethead parrotfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.riddle": {
+   "bytes": 33408,
+   "file": "en/sp.papousek.riddle.mp3",
+   "provider": "edge",
+   "sha1": "88905e7fd3c8e655746dd567abd986d877685aae",
+   "text": "I have a beak like a parrot and I make white sand. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.size": {
+   "bytes": 18432,
+   "file": "en/sp.papousek.size.mp3",
+   "provider": "edge",
+   "sha1": "0f5ca7ef7f85bbe8ea3338309e45192fb6f5d54c",
+   "text": "I am almost as long as your arm.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.papousek.where": {
+   "bytes": 14400,
+   "file": "en/sp.papousek.where.mp3",
+   "provider": "edge",
+   "sha1": "1f646f80598276bc7b9353d2a0888c7df7a0ca2e",
+   "text": "Where is the parrotfish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.sardinky.bigger.mp3",
+   "provider": "edge",
+   "sha1": "0431de92d76c5eeecfc3cdab7a8e53a65805d58c",
+   "text": "The sardines are bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.eats": {
+   "bytes": 18576,
+   "file": "en/sp.sardinky.eats.mp3",
+   "provider": "edge",
+   "sha1": "660f33edc01c9c58ee469f2cb02f84e781cfc5ef",
+   "text": "I eat tiny plankton shrimps.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.fact": {
+   "bytes": 26064,
+   "file": "en/sp.sardinky.fact.mp3",
+   "provider": "edge",
+   "sha1": "c20faa71e4968db8ff77e5594e6f9576be26e787",
+   "text": "We are safer in a school, so we all swim together.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.group": {
+   "bytes": 15264,
+   "file": "en/sp.sardinky.group.mp3",
+   "provider": "edge",
+   "sha1": "42d3db1dc2ff8fc7546a58690f01c46706bdc70d",
+   "text": "The sardines are fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.home": {
+   "bytes": 20880,
+   "file": "en/sp.sardinky.home.mp3",
+   "provider": "edge",
+   "sha1": "387af8dde762fa2e276adfcbb0f91f6a6f68ee5c",
+   "text": "The sardines live in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.isFishA": {
+   "bytes": 24048,
+   "file": "en/sp.sardinky.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "e1b77e67eafcbf58f6418b9a385d0015196b86fc",
+   "text": "Yes! The sardines are fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.isFishQ": {
+   "bytes": 14976,
+   "file": "en/sp.sardinky.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "9adb4a92a2cebacf6eadf1c4cb0e98d88b78e6e8",
+   "text": "Are the sardines fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.look.0": {
+   "bytes": 19584,
+   "file": "en/sp.sardinky.look.0.mp3",
+   "provider": "edge",
+   "sha1": "2990e9b081575d2ed676d7ed4d8cd1f8af30b218",
+   "text": "My sides and belly shine silver.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.look.1": {
+   "bytes": 14832,
+   "file": "en/sp.sardinky.look.1.mp3",
+   "provider": "edge",
+   "sha1": "8717ad33423cfe4645f6305ed56e1b1d579cbb33",
+   "text": "My back is greenish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.look.2": {
+   "bytes": 21024,
+   "file": "en/sp.sardinky.look.2.mp3",
+   "provider": "edge",
+   "sha1": "f5359843874c4d81769636d66b815299d63df0ce",
+   "text": "I have a row of dark dots on my side.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.name": {
+   "bytes": 19872,
+   "file": "en/sp.sardinky.name.mp3",
+   "provider": "edge",
+   "sha1": "9c5477e3e84701d909175ba7723d6b1066576dd6",
+   "text": "European pilchard (sardine).",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.riddle": {
+   "bytes": 35136,
+   "file": "en/sp.sardinky.riddle.mp3",
+   "provider": "edge",
+   "sha1": "6b9fc29ee4f0165206ccbd4369d87d058fb40baa",
+   "text": "We are small silver fish swimming in a huge school. Who are we?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.size": {
+   "bytes": 17424,
+   "file": "en/sp.sardinky.size.mp3",
+   "provider": "edge",
+   "sha1": "3e885432d78a575beffb42697e50384c5b96301c",
+   "text": "I am about as long as your shoe.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sardinky.where": {
+   "bytes": 14688,
+   "file": "en/sp.sardinky.where.mp3",
+   "provider": "edge",
+   "sha1": "78aac2667b951d4ab645c2941bcf0858b72c5d8b",
+   "text": "Where are the sardines?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.bigger": {
+   "bytes": 16704,
+   "file": "en/sp.sasanka.bigger.mp3",
+   "provider": "edge",
+   "sha1": "f18f61129346e9b418859e343856072d73a1f7a6",
+   "text": "The sea anemone is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.eats": {
+   "bytes": 27936,
+   "file": "en/sp.sasanka.eats.mp3",
+   "provider": "edge",
+   "sha1": "4ea544f46be9508e0f9eb56cd8e5a454118a6607",
+   "text": "My tentacles catch tiny animals that float past.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.fact": {
+   "bytes": 37296,
+   "file": "en/sp.sasanka.fact.mp3",
+   "provider": "edge",
+   "sha1": "5b6b86e403bfa74a8dccd013c047f8dfdc2d5076",
+   "text": "The clownfish and I help each other. I protect it, it cleans me.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.group": {
+   "bytes": 34992,
+   "file": "en/sp.sasanka.group.mp3",
+   "provider": "edge",
+   "sha1": "fda98bdec6671673c5ebfff89e97fb70dfe8c263",
+   "text": "The sea anemone is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.home": {
+   "bytes": 22176,
+   "file": "en/sp.sasanka.home.mp3",
+   "provider": "edge",
+   "sha1": "7cef80aab9ddd261b44e132a3a0cf317d52fe6e1",
+   "text": "The sea anemone lives on the coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.isFishA": {
+   "bytes": 43344,
+   "file": "en/sp.sasanka.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "91788bb0006cab67a13c79ef6cdaf43869b710da",
+   "text": "No. The sea anemone is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.isFishQ": {
+   "bytes": 17280,
+   "file": "en/sp.sasanka.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "dda2e372d24fe30c4eece6b3e63745df3cd8623f",
+   "text": "Is the sea anemone a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.look.0": {
+   "bytes": 23472,
+   "file": "en/sp.sasanka.look.0.mp3",
+   "provider": "edge",
+   "sha1": "4d6135e7f31d4b515368be05a7fb87e49f8518ff",
+   "text": "I have lots of tentacles like little fingers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.look.1": {
+   "bytes": 20880,
+   "file": "en/sp.sasanka.look.1.mp3",
+   "provider": "edge",
+   "sha1": "a0aa102a6ee7e99a3664d8504faba8f971314b1d",
+   "text": "My tentacle tips are paler and round.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.look.2": {
+   "bytes": 26640,
+   "file": "en/sp.sasanka.look.2.mp3",
+   "provider": "edge",
+   "sha1": "3984b81b6da91f260275639d67632aaaae3cfdc3",
+   "text": "My stalk is bright, for example purple or blue.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.name": {
+   "bytes": 16848,
+   "file": "en/sp.sasanka.name.mp3",
+   "provider": "edge",
+   "sha1": "098a5d079a9278a94359ff93ab70cf1d42d3a3c4",
+   "text": "Magnificent sea anemone.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.riddle": {
+   "bytes": 45504,
+   "file": "en/sp.sasanka.riddle.mp3",
+   "provider": "edge",
+   "sha1": "4ea3131ba6819a35ec282fb14cd27f7a5e459a20",
+   "text": "I have lots of tentacles, I hardly move, and a clownfish lives with me. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.safety": {
+   "bytes": 33696,
+   "file": "en/sp.sasanka.safety.mp3",
+   "provider": "edge",
+   "sha1": "2de833c9cfb3956c2f78575352a0cc751888d36c",
+   "text": "Careful, I sting! We only look, we don't touch.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.size": {
+   "bytes": 18576,
+   "file": "en/sp.sasanka.size.mp3",
+   "provider": "edge",
+   "sha1": "46f6301c65d3fca891d49f32717ad8222d41e769",
+   "text": "I am almost as wide as a pillow.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.sasanka.where": {
+   "bytes": 15120,
+   "file": "en/sp.sasanka.where.mp3",
+   "provider": "edge",
+   "sha1": "914bea08e8b2f999333c65fdb42476385466f35b",
+   "text": "Where is the sea anemone?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.bigger": {
+   "bytes": 14832,
+   "file": "en/sp.svetluska.bigger.mp3",
+   "provider": "edge",
+   "sha1": "1c29b6278a5e44f71f726236de6aa72fedf82de2",
+   "text": "The atolla is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.eats": {
+   "bytes": 22752,
+   "file": "en/sp.svetluska.eats.mp3",
+   "provider": "edge",
+   "sha1": "f52fc65b8e4be6e58ea3807460a451e849121571",
+   "text": "I catch tiny shrimps with my long tentacle.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.fact": {
+   "bytes": 42624,
+   "file": "en/sp.svetluska.fact.mp3",
+   "provider": "edge",
+   "sha1": "b01bb5798f75e82af65ecb26f5f4e3f7d76908b4",
+   "text": "If something grabs me, I flash blue. Scientists think I'm calling for help.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.group": {
+   "bytes": 33696,
+   "file": "en/sp.svetluska.group.mp3",
+   "provider": "edge",
+   "sha1": "c54c02367cca0a449bd90fd167b648168511cf76",
+   "text": "The atolla is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.home": {
+   "bytes": 19152,
+   "file": "en/sp.svetluska.home.mp3",
+   "provider": "edge",
+   "sha1": "2a093f67a277fb4434df2c060b0a874ffb9e6a66",
+   "text": "The atolla lives in the deep sea.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.isFishA": {
+   "bytes": 42192,
+   "file": "en/sp.svetluska.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "db3d518c7a124776b44f5d2b9f22ab18c53e1e85",
+   "text": "No. The atolla is not a fish, it is a cnidarian, like a jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.isFishQ": {
+   "bytes": 14976,
+   "file": "en/sp.svetluska.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "89bd0093b672e6b0e4144a6eadd02455832d34be",
+   "text": "Is the atolla a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.look.0": {
+   "bytes": 15408,
+   "file": "en/sp.svetluska.look.0.mp3",
+   "provider": "edge",
+   "sha1": "09b1d58979fccd4d5723e6aa41955d5e3e1dc65d",
+   "text": "My bell is dark red.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.look.1": {
+   "bytes": 25344,
+   "file": "en/sp.svetluska.look.1.mp3",
+   "provider": "edge",
+   "sha1": "ec990c54b8e65aa316b9accd280912c386638ab6",
+   "text": "One of my tentacles is much longer than the rest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.look.2": {
+   "bytes": 22032,
+   "file": "en/sp.svetluska.look.2.mp3",
+   "provider": "edge",
+   "sha1": "670e44b6ce34a6554a127dc44d9e6ffb132a9828",
+   "text": "Blue lights glow around the edge of my bell.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.name": {
+   "bytes": 14544,
+   "file": "en/sp.svetluska.name.mp3",
+   "provider": "edge",
+   "sha1": "a767c7a1734cd0d9f811be2bbae8f4cb1dbd73f5",
+   "text": "Atolla jellyfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.riddle": {
+   "bytes": 35856,
+   "file": "en/sp.svetluska.riddle.mp3",
+   "provider": "edge",
+   "sha1": "0554bc37588e2d635a4e77f24f90c2a7b0b3d617",
+   "text": "I am a red jellyfish from the deep and I can glow blue. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.size": {
+   "bytes": 18000,
+   "file": "en/sp.svetluska.size.mp3",
+   "provider": "edge",
+   "sha1": "4a4a1f7498f5500dd7b157bbf1d7b094e0380ec7",
+   "text": "I am about as big as a saucer.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.svetluska.where": {
+   "bytes": 13104,
+   "file": "en/sp.svetluska.where.mp3",
+   "provider": "edge",
+   "sha1": "0c407b9818dae89534ad7c24b93298b96169f0bc",
+   "text": "Where is the atolla?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.bigger": {
+   "bytes": 13680,
+   "file": "en/sp.tulen.bigger.mp3",
+   "provider": "edge",
+   "sha1": "c5253865270754451b74d111784f691debd5f883",
+   "text": "The seal is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.eats": {
+   "bytes": 24912,
+   "file": "en/sp.tulen.eats.mp3",
+   "provider": "edge",
+   "sha1": "204aa8b2cc6c05d8d41cdc3e63eb701717ff489b",
+   "text": "I eat fish, octopuses and little crabs.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.fact": {
+   "bytes": 22896,
+   "file": "en/sp.tulen.fact.mp3",
+   "provider": "edge",
+   "sha1": "004086b3d3c1db53c7aac9542e05ef7fefb64534",
+   "text": "My whiskers can feel where a fish swam by.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.group": {
+   "bytes": 37152,
+   "file": "en/sp.tulen.group.mp3",
+   "provider": "edge",
+   "sha1": "9ae998a0676c2120e2eba5ac514c34ada9c9e6e5",
+   "text": "The seal is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.home": {
+   "bytes": 19728,
+   "file": "en/sp.tulen.home.mp3",
+   "provider": "edge",
+   "sha1": "b849e8c991f52583525ab63da583f22d085b3821",
+   "text": "The seal lives in the kelp forest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.isFishA": {
+   "bytes": 45648,
+   "file": "en/sp.tulen.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "6256cdea4b0b935a2961ee96900de25937feadb0",
+   "text": "No. The seal is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.isFishQ": {
+   "bytes": 14112,
+   "file": "en/sp.tulen.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "ccc8b108bd8c3aa50e80c9207d5b4021ab47ac51",
+   "text": "Is the seal a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.look.0": {
+   "bytes": 22752,
+   "file": "en/sp.tulen.look.0.mp3",
+   "provider": "edge",
+   "sha1": "1708d902c0953c11794b7d7e138ba8da7e4b65cd",
+   "text": "I have a round head with just little ear holes.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.look.1": {
+   "bytes": 22608,
+   "file": "en/sp.tulen.look.1.mp3",
+   "provider": "edge",
+   "sha1": "0d1864f0803eb445382a47505117684bad796217",
+   "text": "My grey fur is covered in dark spots.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.look.2": {
+   "bytes": 20016,
+   "file": "en/sp.tulen.look.2.mp3",
+   "provider": "edge",
+   "sha1": "fd402a86211bf724130275176635606a1cd904f8",
+   "text": "My short front flippers have claws.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.name": {
+   "bytes": 11952,
+   "file": "en/sp.tulen.name.mp3",
+   "provider": "edge",
+   "sha1": "c72d37d9b6466c4926ddd562530ddc66d48666c2",
+   "text": "Harbour seal.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.riddle": {
+   "bytes": 37440,
+   "file": "en/sp.tulen.riddle.mp3",
+   "provider": "edge",
+   "sha1": "758220efb9d406fc3ab00e7736313487793ad868",
+   "text": "I am spotty, I breathe air and I like resting on rocks. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.size": {
+   "bytes": 18000,
+   "file": "en/sp.tulen.size.mp3",
+   "provider": "edge",
+   "sha1": "f96152070d265c4adad0eaeb68e7ba25365e768d",
+   "text": "I am almost as long as your bed.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.tulen.where": {
+   "bytes": 12672,
+   "file": "en/sp.tulen.where.mp3",
+   "provider": "edge",
+   "sha1": "777addba26803575e745639c1c0b5599f36728ac",
+   "text": "Where is the seal?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.bigger": {
+   "bytes": 15408,
+   "file": "en/sp.vydra.bigger.mp3",
+   "provider": "edge",
+   "sha1": "0dcfcbeb6f3bf2bf22abdad5f7217e71a685b5ee",
+   "text": "The sea otter is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.eats": {
+   "bytes": 26640,
+   "file": "en/sp.vydra.eats.mp3",
+   "provider": "edge",
+   "sha1": "deba28362bcd5d06f390fcfaa7647029ab26e2e6",
+   "text": "I eat urchins and clams and crack shells with a stone.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.fact": {
+   "bytes": 39024,
+   "file": "en/sp.vydra.fact.mp3",
+   "provider": "edge",
+   "sha1": "5091e9738734b97327727cb3ec5ae426f2c1fcdb",
+   "text": "I have the thickest fur of any animal. It keeps me warm instead of fat.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.group": {
+   "bytes": 39168,
+   "file": "en/sp.vydra.group.mp3",
+   "provider": "edge",
+   "sha1": "220d7c78f392c2bc27604558e44bdbbdce55e8d8",
+   "text": "The sea otter is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.home": {
+   "bytes": 20592,
+   "file": "en/sp.vydra.home.mp3",
+   "provider": "edge",
+   "sha1": "24c04743ca6d275f22dcc356258ad7bbd5b8e216",
+   "text": "The sea otter lives in the kelp forest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.isFishA": {
+   "bytes": 47520,
+   "file": "en/sp.vydra.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "a1441fa4a6216a4f0ac028bccac71bfa2e3ec182",
+   "text": "No. The sea otter is not a fish, it is a mammal. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.isFishQ": {
+   "bytes": 15552,
+   "file": "en/sp.vydra.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "b08bb63ce9e687841c96dfdba3ae1bab17d2e7bd",
+   "text": "Is the sea otter a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.look.0": {
+   "bytes": 14976,
+   "file": "en/sp.vydra.look.0.mp3",
+   "provider": "edge",
+   "sha1": "d349dd34428f8f357921a7b9bcd5206ce78dfeae",
+   "text": "I float on my back.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.look.1": {
+   "bytes": 15552,
+   "file": "en/sp.vydra.look.1.mp3",
+   "provider": "edge",
+   "sha1": "793cae84b1c3f40eca2c20a92f55e1cac200b84f",
+   "text": "I have thick brown fur.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.look.2": {
+   "bytes": 16416,
+   "file": "en/sp.vydra.look.2.mp3",
+   "provider": "edge",
+   "sha1": "68442d07005d1ed45b3fdb0239f88044f55fa644",
+   "text": "I have long white whiskers.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.name": {
+   "bytes": 11232,
+   "file": "en/sp.vydra.name.mp3",
+   "provider": "edge",
+   "sha1": "5c463e2cfe342e65eb2554b473063b6d2db01275",
+   "text": "Sea otter.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.riddle": {
+   "bytes": 34416,
+   "file": "en/sp.vydra.riddle.mp3",
+   "provider": "edge",
+   "sha1": "6ac6d04ed45693f39b9797449f92028c3aa80fa3",
+   "text": "I float on my back and crack clams with a stone. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.size": {
+   "bytes": 19584,
+   "file": "en/sp.vydra.size.mp3",
+   "provider": "edge",
+   "sha1": "5d5eb2025147adafd1a8999ad9505fa7fd100b24",
+   "text": "I am almost as long as you are tall.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.vydra.where": {
+   "bytes": 13824,
+   "file": "en/sp.vydra.where.mp3",
+   "provider": "edge",
+   "sha1": "85ff298984867cdffc777597ba4390fc384caad8",
+   "text": "Where is the sea otter?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.bigger": {
+   "bytes": 16704,
+   "file": "en/sp.zelva.bigger.mp3",
+   "provider": "edge",
+   "sha1": "565f769d28dfe042bb709ff4d61e95133d7f5f3d",
+   "text": "The sea turtle is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.eats": {
+   "bytes": 23472,
+   "file": "en/sp.zelva.eats.mp3",
+   "provider": "edge",
+   "sha1": "f83cc96c313559bf52615f2ac74183610b9e7e20",
+   "text": "My strong jaws crack crabs and shellfish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.fact": {
+   "bytes": 29808,
+   "file": "en/sp.zelva.fact.mp3",
+   "provider": "edge",
+   "sha1": "0392f3c17dafe2b07b6943eeb19687b9e1db6af8",
+   "text": "Unlike turtles on land, I can't pull my head into my shell.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.group": {
+   "bytes": 41472,
+   "file": "en/sp.zelva.group.mp3",
+   "provider": "edge",
+   "sha1": "666427cd9b471921abdb61d547d4cdd241b79ff1",
+   "text": "The sea turtle is not a fish, it is a reptile. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.home": {
+   "bytes": 22032,
+   "file": "en/sp.zelva.home.mp3",
+   "provider": "edge",
+   "sha1": "aa2992e1fc4d5e7686ea959365469b6f76d93d78",
+   "text": "The sea turtle lives in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.isFishA": {
+   "bytes": 49968,
+   "file": "en/sp.zelva.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "0c394d32194d9f0200a1dfbdcaf2224762c7d98d",
+   "text": "No. The sea turtle is not a fish, it is a reptile. It breathes air like us.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.isFishQ": {
+   "bytes": 16992,
+   "file": "en/sp.zelva.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "feabf8629507d62d0b7ee03a5a384e0f13158da3",
+   "text": "Is the sea turtle a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.look.0": {
+   "bytes": 13392,
+   "file": "en/sp.zelva.look.0.mp3",
+   "provider": "edge",
+   "sha1": "7f6e4e4508531d587e97cb85199defaa07b7a6ef",
+   "text": "I have a big head.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.look.1": {
+   "bytes": 16272,
+   "file": "en/sp.zelva.look.1.mp3",
+   "provider": "edge",
+   "sha1": "81597d23c5313463938f67a4dba9c1daf35215f2",
+   "text": "My shell is reddish brown.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.look.2": {
+   "bytes": 18432,
+   "file": "en/sp.zelva.look.2.mp3",
+   "provider": "edge",
+   "sha1": "8de8cd67a31430eb023ea933b4739b6f15b7b28c",
+   "text": "I have flippers instead of feet.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.name": {
+   "bytes": 15552,
+   "file": "en/sp.zelva.name.mp3",
+   "provider": "edge",
+   "sha1": "2d6ed70ce92aa8a4ee44346976327cc504d2383b",
+   "text": "Loggerhead sea turtle.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.riddle": {
+   "bytes": 36000,
+   "file": "en/sp.zelva.riddle.mp3",
+   "provider": "edge",
+   "sha1": "00addf2f000d5a39c5a588aacbc056bc90d4f671",
+   "text": "I have a shell and flippers, and I lay eggs on a beach. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.size": {
+   "bytes": 17424,
+   "file": "en/sp.zelva.size.mp3",
+   "provider": "edge",
+   "sha1": "67b45f79b398394e8c2e734a5be88fc987120ad7",
+   "text": "I am almost as big as you.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zelva.where": {
+   "bytes": 15264,
+   "file": "en/sp.zelva.where.mp3",
+   "provider": "edge",
+   "sha1": "bd855f21e5fbf539f3cc90a950d988452f469a4f",
+   "text": "Where is the sea turtle?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.bigger": {
+   "bytes": 16416,
+   "file": "en/sp.zralok.bigger.mp3",
+   "provider": "edge",
+   "sha1": "4536fbee44de4d60c9d74d6dc8f58345b1c1779b",
+   "text": "The whale shark is bigger.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.eats": {
+   "bytes": 24192,
+   "file": "en/sp.zralok.eats.mp3",
+   "provider": "edge",
+   "sha1": "3e0da193a55facf07fd580e44ff94030af6a7c06",
+   "text": "I sieve the water and eat plankton and tiny fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.fact": {
+   "bytes": 28800,
+   "file": "en/sp.zralok.fact.mp3",
+   "provider": "edge",
+   "sha1": "1f664e178d847b4bbb4714dbfbed8330b78b27ad",
+   "text": "I am the biggest fish in the world, but I eat tiny food.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.group": {
+   "bytes": 16848,
+   "file": "en/sp.zralok.group.mp3",
+   "provider": "edge",
+   "sha1": "1a5075dfe378507b6e880c6ca0d2108ac917756c",
+   "text": "The whale shark is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.home": {
+   "bytes": 21456,
+   "file": "en/sp.zralok.home.mp3",
+   "provider": "edge",
+   "sha1": "02e20107ef42a2ac9dd462d20e7b09075d74e32b",
+   "text": "The whale shark lives in the open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.isFishA": {
+   "bytes": 25776,
+   "file": "en/sp.zralok.isFishA.mp3",
+   "provider": "edge",
+   "sha1": "dd1ebb6be91b1df0ee9b8b740b7b58cd57269b81",
+   "text": "Yes! The whale shark is a fish.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.isFishQ": {
+   "bytes": 16848,
+   "file": "en/sp.zralok.isFishQ.mp3",
+   "provider": "edge",
+   "sha1": "8074a85f045f0402348cd77da6495a88f304e6ad",
+   "text": "Is the whale shark a fish?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.look.0": {
+   "bytes": 22032,
+   "file": "en/sp.zralok.look.0.mp3",
+   "provider": "edge",
+   "sha1": "4334ff92ed2763cf085f1a2edb76658c7915d7f8",
+   "text": "My dark back has white spots and stripes.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.look.1": {
+   "bytes": 19008,
+   "file": "en/sp.zralok.look.1.mp3",
+   "provider": "edge",
+   "sha1": "b80bf57281560eb96bc0a9a763ac791c0e488369",
+   "text": "My wide mouth is right at the front.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.look.2": {
+   "bytes": 19584,
+   "file": "en/sp.zralok.look.2.mp3",
+   "provider": "edge",
+   "sha1": "05077f8f841ef850d32fdfd266401ef6827d6310",
+   "text": "I have long ridges along my sides.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.name": {
+   "bytes": 12096,
+   "file": "en/sp.zralok.name.mp3",
+   "provider": "edge",
+   "sha1": "d5c9f2b5c891d7b8fd2b85f6c3991cc6b765ca92",
+   "text": "Whale shark.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.riddle": {
+   "bytes": 38592,
+   "file": "en/sp.zralok.riddle.mp3",
+   "provider": "edge",
+   "sha1": "10155418b2624dc0085f7f9010ca99386900f75a",
+   "text": "I am a fish almost as long as a bus, with white spots. Who am I?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.size": {
+   "bytes": 18432,
+   "file": "en/sp.zralok.size.mp3",
+   "provider": "edge",
+   "sha1": "a7402ffeea2df9b6fd4bddfded1e80e617b9ab1a",
+   "text": "I am almost as long as a bus.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "sp.zralok.where": {
+   "bytes": 15408,
+   "file": "en/sp.zralok.where.mp3",
+   "provider": "edge",
+   "sha1": "1e916357a057bf5a6bce84fb2f86924db08720ae",
+   "text": "Where is the whale shark?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.lahev": {
+   "bytes": 49248,
+   "file": "en/trash.lahev.mp3",
+   "provider": "edge",
+   "sha1": "55dbe9af2bde20754ea573cc3e673dd6be771d94",
+   "text": "Thank you! Plastic breaks into tiny bits in the sea. Animals can swallow them.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.lahev.name": {
+   "bytes": 12816,
+   "file": "en/trash.lahev.name.mp3",
+   "provider": "edge",
+   "sha1": "b241dee80a54a30da4d7bfc7b0843e0caaf40a42",
+   "text": "Plastic bottle.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.plechovka": {
+   "bytes": 38880,
+   "file": "en/trash.plechovka.mp3",
+   "provider": "edge",
+   "sha1": "6291585a19b2c2a71bdf81977f6a0d07731c561f",
+   "text": "Thank you! An old can can be made into a new can, again and again.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.plechovka.name": {
+   "bytes": 11952,
+   "file": "en/trash.plechovka.name.mp3",
+   "provider": "edge",
+   "sha1": "364cdb114b173ac19d182f2eff32193290deb639",
+   "text": "Drink can.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.sacek": {
+   "bytes": 40464,
+   "file": "en/trash.sacek.mp3",
+   "provider": "edge",
+   "sha1": "17e8521de5af05d0937125f1f12b72d532e62070",
+   "text": "Thank you! A bag looks like a jellyfish, and turtles might swallow it.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.sacek.name": {
+   "bytes": 12384,
+   "file": "en/trash.sacek.name.mp3",
+   "provider": "edge",
+   "sha1": "738170069d2ebc7e26408fb4d2e7e2b645239b05",
+   "text": "Plastic bag.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.sit": {
+   "bytes": 32688,
+   "file": "en/trash.sit.mp3",
+   "provider": "edge",
+   "sha1": "8421cb85e32f1f130465b041dfb1126b41d507a0",
+   "text": "Thank you! Animals could get tangled in a lost net.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "trash.sit.name": {
+   "bytes": 14688,
+   "file": "en/trash.sit.name.mp3",
+   "provider": "edge",
+   "sha1": "45db70e2a9f0307224e350367bbe2ec4b3c67c26",
+   "text": "Piece of fishing net.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.darker": {
+   "bytes": 26064,
+   "file": "en/ui.darker.mp3",
+   "provider": "edge",
+   "sha1": "0d4d38cf9ead7f3f4cfac1684b5840c9936ec1a3",
+   "text": "The deeper we go, the darker and colder it gets.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.deepDone": {
+   "bytes": 35568,
+   "file": "en/ui.deepDone.mp3",
+   "provider": "edge",
+   "sha1": "a76072a2855adc45d5b445db90a5aea7368c04b0",
+   "text": "We found friends all the way down in the deep! Shall we swim up?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.deeper": {
+   "bytes": 14400,
+   "file": "en/ui.deeper.mp3",
+   "provider": "edge",
+   "sha1": "b9e7015b989dc03821a7f1ac89c5c10789ff7b89",
+   "text": "Shall we swim deeper?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.10": {
+   "bytes": 19008,
+   "file": "en/ui.depth.10.mp3",
+   "provider": "edge",
+   "sha1": "4bcbb12464d3c8c9ffa748d8441a1b5b3ea28da4",
+   "text": "We are 10 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.100": {
+   "bytes": 21456,
+   "file": "en/ui.depth.100.mp3",
+   "provider": "edge",
+   "sha1": "868a91be51ee477bc6d72bf7ad6e738200410169",
+   "text": "We are 100 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.1000": {
+   "bytes": 22320,
+   "file": "en/ui.depth.1000.mp3",
+   "provider": "edge",
+   "sha1": "bda9b5ad275307801d8461e3e3c814a319cd13c7",
+   "text": "We are 1000 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.20": {
+   "bytes": 19728,
+   "file": "en/ui.depth.20.mp3",
+   "provider": "edge",
+   "sha1": "16a277fd540da7d0c7583957ddfe475823f33527",
+   "text": "We are 20 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.200": {
+   "bytes": 21456,
+   "file": "en/ui.depth.200.mp3",
+   "provider": "edge",
+   "sha1": "58cc8d565151c8b1f73790be0a227baaa983892c",
+   "text": "We are 200 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.2000": {
+   "bytes": 22032,
+   "file": "en/ui.depth.2000.mp3",
+   "provider": "edge",
+   "sha1": "96b38244c43e6d97b560916876ea3f8d8ff54a25",
+   "text": "We are 2000 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.30": {
+   "bytes": 19584,
+   "file": "en/ui.depth.30.mp3",
+   "provider": "edge",
+   "sha1": "9ee016a663ac6b5a0a675b02637f277762d6f3c9",
+   "text": "We are 30 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.depth.3000": {
+   "bytes": 22896,
+   "file": "en/ui.depth.3000.mp3",
+   "provider": "edge",
+   "sha1": "12c5be6ef297e7faaf3a73dc78d293e9075f9947",
+   "text": "We are 3000 metres under the water.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.diveIntro": {
+   "bytes": 36000,
+   "file": "en/ui.diveIntro.mp3",
+   "provider": "edge",
+   "sha1": "356b7d46a4be68f8047996fa2e5ab3fbcbf92634",
+   "text": "Tap the water and I will swim there. Shall we find out who lives here?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.endFound": {
+   "bytes": 15696,
+   "file": "en/ui.endFound.mp3",
+   "provider": "edge",
+   "sha1": "78f8b0d71389126206c508286f5d7018774149be",
+   "text": "Look who we met today!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.endNone": {
+   "bytes": 36144,
+   "file": "en/ui.endNone.mp3",
+   "provider": "edge",
+   "sha1": "cc6239a12a2109afb5a57fc7543a6dcd754e2be5",
+   "text": "Today we just looked around. Next time we will find someone.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.findMore": {
+   "bytes": 28224,
+   "file": "en/ui.findMore.mp3",
+   "provider": "edge",
+   "sha1": "a870dbed24b66bd6f324b9ddefe1fa8c2fa23dab",
+   "text": "Find someone else here. Tap an animal.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.greet": {
+   "bytes": 28224,
+   "file": "en/ui.greet.mp3",
+   "provider": "edge",
+   "sha1": "958a8d9b52cd495eea117be284df2bbeeafcb52f",
+   "text": "Hello! Shall we take a look under the waves?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.habitatDone": {
+   "bytes": 14400,
+   "file": "en/ui.habitatDone.mp3",
+   "provider": "edge",
+   "sha1": "fb5e650e38a7577af2142dc84b9fc6946b170349",
+   "text": "Everybody is home!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.habitatIntro": {
+   "bytes": 33120,
+   "file": "en/ui.habitatIntro.mp3",
+   "provider": "edge",
+   "sha1": "caedb50aab94e5f41d7ca6824ce2d0a265f856a5",
+   "text": "Who lives where? Drag each animal to its floor of the sea.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.habitatWrong": {
+   "bytes": 27936,
+   "file": "en/ui.habitatWrong.mp3",
+   "provider": "edge",
+   "sha1": "8bd9c17f247dc8844392cfa568e0481681d904a7",
+   "text": "I do not live here. Try another floor.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.lamp": {
+   "bytes": 18144,
+   "file": "en/ui.lamp.mp3",
+   "provider": "edge",
+   "sha1": "1354889f5234f5035bab5ce0e99e40241bb2cd57",
+   "text": "I will switch on my head torch!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.level2": {
+   "bytes": 35424,
+   "file": "en/ui.level2.mp3",
+   "provider": "edge",
+   "sha1": "e97d268c16f6a5b1ed98c7d2956ebc52f1d584b6",
+   "text": "You are a real diver now! Let us meet even more animals.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.no": {
+   "bytes": 9216,
+   "file": "en/ui.no.mp3",
+   "provider": "edge",
+   "sha1": "2fcd89a3c597f411b83ad0598880a1ac4bf3b5f0",
+   "text": "No.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.parentsHold": {
+   "bytes": 14544,
+   "file": "en/ui.parentsHold.mp3",
+   "provider": "edge",
+   "sha1": "a80001ff9cd0710de713cfd7a9a872d52f6060d0",
+   "text": "This is for grown-ups.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.photoMissing": {
+   "bytes": 18144,
+   "file": "en/ui.photoMissing.mp3",
+   "provider": "edge",
+   "sha1": "f22e4f2d5e11acaa31c03c28613070d057167b38",
+   "text": "We do not have a photo yet.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizBigger": {
+   "bytes": 11520,
+   "file": "en/ui.quizBigger.mp3",
+   "provider": "edge",
+   "sha1": "2348cbfa6c66e541a777bccc7c8f781c5a0cc616",
+   "text": "Who is bigger?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizDone": {
+   "bytes": 16272,
+   "file": "en/ui.quizDone.mp3",
+   "provider": "edge",
+   "sha1": "126772cb1f861ed43b4ba4c85bedaf856ec0a2e0",
+   "text": "That was lovely guessing!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizIntro": {
+   "bytes": 12816,
+   "file": "en/ui.quizIntro.mp3",
+   "provider": "edge",
+   "sha1": "f2c1a8b1a8ceb1e2edcf08ee7824e4adefaeb943",
+   "text": "Guess who I am!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizRight0": {
+   "bytes": 15552,
+   "file": "en/ui.quizRight0.mp3",
+   "provider": "edge",
+   "sha1": "63489c22ab8af7063a77778990248325987f9a73",
+   "text": "Yes, well done!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizRight1": {
+   "bytes": 12384,
+   "file": "en/ui.quizRight1.mp3",
+   "provider": "edge",
+   "sha1": "1b2d4eb2a525402997dfa6d6810203ce7233cec8",
+   "text": "That is right!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizRight2": {
+   "bytes": 11232,
+   "file": "en/ui.quizRight2.mp3",
+   "provider": "edge",
+   "sha1": "0d3a86628c3221077042eb195fce90918cdda7a9",
+   "text": "Correct!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizShow": {
+   "bytes": 26352,
+   "file": "en/ui.quizShow.mp3",
+   "provider": "edge",
+   "sha1": "3b6d8e6e46ac891e626b8600d8789b1a0b5a4b95",
+   "text": "Let me help. Pick one of these two.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.quizTry": {
+   "bytes": 15264,
+   "file": "en/ui.quizTry.mp3",
+   "provider": "edge",
+   "sha1": "c214850fecf0e23ecee22fcf7fd333438c4c1eb4",
+   "text": "Hmm, try again.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.release": {
+   "bytes": 24480,
+   "file": "en/ui.release.mp3",
+   "provider": "edge",
+   "sha1": "3c695bb97a8390629a51524f033a89c06f3a28ac",
+   "text": "Shall we let the new friends into your piece of sea?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.safetyDive": {
+   "bytes": 17424,
+   "file": "en/ui.safetyDive.mp3",
+   "provider": "edge",
+   "sha1": "e5aab37f91b53f119608ca43af35f6f3ab37b81c",
+   "text": "We only dive with a grown-up.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.safetyLook": {
+   "bytes": 24192,
+   "file": "en/ui.safetyLook.mp3",
+   "provider": "edge",
+   "sha1": "7f622a67c0b61daeae581e8bf3bbd31efba4410f",
+   "text": "We do not touch the animals, we only look.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.seaDay": {
+   "bytes": 15840,
+   "file": "en/ui.seaDay.mp3",
+   "provider": "edge",
+   "sha1": "06f9f3578506cc497d6c263f1fd29fe6c23f9fff",
+   "text": "Good morning, sea!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.seaEmpty": {
+   "bytes": 33696,
+   "file": "en/ui.seaEmpty.mp3",
+   "provider": "edge",
+   "sha1": "ec8944fddecf2770c4eae57f4b7f55ac3902a2e2",
+   "text": "Nobody lives here yet. Shall we go and find someone?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.seaIntro": {
+   "bytes": 30240,
+   "file": "en/ui.seaIntro.mp3",
+   "provider": "edge",
+   "sha1": "5ed36bf3fe4fcf6bc605d8de21782a58dc37e160",
+   "text": "This is your piece of sea. Drag a friend in here.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.seaNight": {
+   "bytes": 32544,
+   "file": "en/ui.seaNight.mp3",
+   "provider": "edge",
+   "sha1": "d983607a94c466d97abad4bea6387a50223048d7",
+   "text": "Good night, sea. The deep-sea animals are glowing.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.seaUnknown": {
+   "bytes": 23616,
+   "file": "en/ui.seaUnknown.mp3",
+   "provider": "edge",
+   "sha1": "766dd2d591bae9b8d1d97e9447dc22b2a7f7c016",
+   "text": "We need to find this friend in the sea first.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.surface": {
+   "bytes": 26784,
+   "file": "en/ui.surface.mp3",
+   "provider": "edge",
+   "sha1": "b1c9443bfdbe33f48b5558de80f906556cdceaf7",
+   "text": "Swimming up. The bubbles go up too.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.tired": {
+   "bytes": 36864,
+   "file": "en/ui.tired.mp3",
+   "provider": "edge",
+   "sha1": "6deef7873dd2cfed5dcc294698a668d0f2f29e2c",
+   "text": "I am a little tired. Shall we have a break and play again next time?",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.0": {
+   "bytes": 20592,
+   "file": "en/ui.trashCount.0.mp3",
+   "provider": "edge",
+   "sha1": "70f4dde572b17d12c971027533db0a856248088b",
+   "text": "We did not find any rubbish today.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.1": {
+   "bytes": 30384,
+   "file": "en/ui.trashCount.1.mp3",
+   "provider": "edge",
+   "sha1": "157518b2d78467e1bf50cc39ff0cf7cb238b1b24",
+   "text": "We cleaned up one piece of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.10": {
+   "bytes": 30672,
+   "file": "en/ui.trashCount.10.mp3",
+   "provider": "edge",
+   "sha1": "9be159ee325626b8b7563026344d1932f50da698",
+   "text": "We cleaned up 10 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.2": {
+   "bytes": 30528,
+   "file": "en/ui.trashCount.2.mp3",
+   "provider": "edge",
+   "sha1": "fdb67474c655b01e155115dcde8370991b53e8f7",
+   "text": "We cleaned up 2 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.3": {
+   "bytes": 30816,
+   "file": "en/ui.trashCount.3.mp3",
+   "provider": "edge",
+   "sha1": "0305bfd51a11ef0a9c563d6ba33e6dd22989ecfe",
+   "text": "We cleaned up 3 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.4": {
+   "bytes": 30240,
+   "file": "en/ui.trashCount.4.mp3",
+   "provider": "edge",
+   "sha1": "95ad62648c286646fccb8663f2701fca224a6e2f",
+   "text": "We cleaned up 4 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.5": {
+   "bytes": 30960,
+   "file": "en/ui.trashCount.5.mp3",
+   "provider": "edge",
+   "sha1": "7c28a212f5bef2a387ca3d76be6422b339487bbf",
+   "text": "We cleaned up 5 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.6": {
+   "bytes": 30960,
+   "file": "en/ui.trashCount.6.mp3",
+   "provider": "edge",
+   "sha1": "08911562df9ef06cd4398494f2cff4255b342faa",
+   "text": "We cleaned up 6 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.7": {
+   "bytes": 31536,
+   "file": "en/ui.trashCount.7.mp3",
+   "provider": "edge",
+   "sha1": "febdf75e06fd8c38622282a26e7c14827e4e2a13",
+   "text": "We cleaned up 7 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.8": {
+   "bytes": 30096,
+   "file": "en/ui.trashCount.8.mp3",
+   "provider": "edge",
+   "sha1": "85ff3bfd902a09c48985c88997649e42f653fc82",
+   "text": "We cleaned up 8 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashCount.9": {
+   "bytes": 30960,
+   "file": "en/ui.trashCount.9.mp3",
+   "provider": "edge",
+   "sha1": "584cdfe7917e56da9be8abfe029f39415134b0b1",
+   "text": "We cleaned up 9 pieces of rubbish. Thank you!",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "ui.trashTake": {
+   "bytes": 32832,
+   "file": "en/ui.trashTake.mp3",
+   "provider": "edge",
+   "sha1": "2237d5c5a19ffb71b5f2178036d0d82af1a2a1e0",
+   "text": "This does not belong in the sea. Into the net it goes.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.chaluhy.name": {
+   "bytes": 12816,
+   "file": "en/zone.chaluhy.name.mp3",
+   "provider": "edge",
+   "sha1": "bdc1b502aa66ae449376d59974890dfb0d26efbe",
+   "text": "Kelp forest.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.chaluhy.say.0": {
+   "bytes": 20880,
+   "file": "en/zone.chaluhy.say.0.mp3",
+   "provider": "edge",
+   "sha1": "e1c78ddd38f4b70d4449a6c9a8a4c78877c6707d",
+   "text": "Now we have swum into a colder sea.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.chaluhy.say.1": {
+   "bytes": 27648,
+   "file": "en/zone.chaluhy.say.1.mp3",
+   "provider": "edge",
+   "sha1": "1009fed0495ce7f05f5fc9b75fa76259e1f2bdf6",
+   "text": "Kelp grows from the seabed to the surface, like trees.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.hlubiny.name": {
+   "bytes": 11232,
+   "file": "en/zone.hlubiny.name.mp3",
+   "provider": "edge",
+   "sha1": "8d3256c886f05ee251947f97485784f14c485eb0",
+   "text": "The deep.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.hlubiny.say.0": {
+   "bytes": 26208,
+   "file": "en/zone.hlubiny.say.0.mp3",
+   "provider": "edge",
+   "sha1": "4cb35a5528a80e9611b28e507236fa44dba3e594",
+   "text": "Sunlight can't reach down here, so it is dark.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.hlubiny.say.1": {
+   "bytes": 24336,
+   "file": "en/zone.hlubiny.say.1.mp3",
+   "provider": "edge",
+   "sha1": "b0da18f9359154856384672d30b9554b8584d896",
+   "text": "The water here is as cold as inside a fridge.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.sire-more.name": {
+   "bytes": 12384,
+   "file": "en/zone.sire-more.name.mp3",
+   "provider": "edge",
+   "sha1": "451eff70f6180202a583cf7630d51ca8ba17b869",
+   "text": "Open ocean.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.sire-more.say.0": {
+   "bytes": 30096,
+   "file": "en/zone.sire-more.say.0.mp3",
+   "provider": "edge",
+   "sha1": "aadfe8f4b93002fdc1efe8411d9653a185eb2227",
+   "text": "We can't see the seabed here, just blue water all around.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.sire-more.say.1": {
+   "bytes": 26640,
+   "file": "en/zone.sire-more.say.1.mp3",
+   "provider": "edge",
+   "sha1": "c215dbb92d48c0fb40c413d7d550315d3916758a",
+   "text": "Sunlight only reaches down about two hundred metres.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.utes.name": {
+   "bytes": 12240,
+   "file": "en/zone.utes.name.mp3",
+   "provider": "edge",
+   "sha1": "d248700fd9dd270903cfad242f220c24a8f10854",
+   "text": "Coral reef.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.utes.say.0": {
+   "bytes": 22896,
+   "file": "en/zone.utes.say.0.mp3",
+   "provider": "edge",
+   "sha1": "7533e6bf345fb0aa4675fda04c80ff88b44445d3",
+   "text": "The water here is warm and full of sunshine.",
+   "voice": "en-GB-MaisieNeural"
+  },
+  "zone.utes.say.1": {
+   "bytes": 26064,
+   "file": "en/zone.utes.say.1.mp3",
+   "provider": "edge",
+   "sha1": "13b02d7ddf0d6fbc993be4e917ca8c91124ce5cd",
+   "text": "Corals need light, so they grow near the surface.",
+   "voice": "en-GB-MaisieNeural"
+  }
+ }
+}
