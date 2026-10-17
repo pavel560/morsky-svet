@@ -1,0 +1,217 @@
+/* Mořský svět — design tokens (designer, 2026-10-17)
+   Personal family surface, outside the fleet registers (no ph.json / LIVE_REGISTER row).
+   Concept: „Obrázková kniha pod hladinou“ — a gouache storybook page that gets deeper, darker and
+   more magical as she swims. Colour carries DEPTH: sunlit turquoise → kelp gold-green → deep blue →
+   midnight with living light. Everything visual in the app resolves to a var(--token) from this file.
+   Fonts: Grandstander (display 700/800) + Andika (text 400/700), self-hosted, SIL OFL, shared with the
+   sister game Houbičky (Czech coverage verified glyph-by-glyph there; see DESIGN.md §5). */
+
+:root {
+  /* ------------------------------------------------------------------ paper + ink (UI surfaces) */
+  --paper:          #fdf6e9;   /* card / sheet ground — warm sand paper */
+  --paper-deep:     #f4e6cb;   /* pressed areas, drawer, pill tracks */
+  --paper-edge:     #dcc8a2;   /* paper thickness / lower edge */
+  --ink:            #33243a;   /* warm aubergine ink: outlines + text (never pure black) */
+  --ink-soft:       #67546b;   /* secondary text, captions */
+  --ink-faint:      rgb(51 36 58 / .35);
+  --on-color:       #ffffff;
+  --on-deep:        #f3f0ff;   /* text / glyphs on the dark deep */
+
+  /* ------------------------------------------------------------------ the surface (home, end) */
+  --sky-top:        #9fd6e8;
+  --sky-mid:        #d3eef1;
+  --sky-low:        #ffeccc;
+  --sun:            #fff7de;
+  --sun-core:       #ffe39a;
+  --surface-line:   #e9fbff;   /* the bright water line */
+  --boat-hull:      #e9724f;
+  --boat-hull-dark: #b5503a;
+  --boat-wood:      #d9a464;
+
+  /* ------------------------------------------------------------------ water by depth (engine interpolates
+     the screen background between the stops of the zone the camera is in; DESIGN.md §4.2) */
+  --utes-top:       #8fe3dc;   /* 0 m — sunlit turquoise */
+  --utes-mid:       #3fc0c4;
+  --utes-low:       #239fb0;   /* ~20 m */
+  --chaluhy-top:    #6fc3b4;   /* kelp water: green-teal, warmer */
+  --chaluhy-mid:    #3c9a94;
+  --chaluhy-low:    #237479;
+  --sire-top:       #3a9fd6;   /* open ocean: clear deep blue */
+  --sire-mid:       #2276b8;
+  --sire-low:       #164f8c;
+  --hlubiny-top:    #12305d;   /* the deep: midnight, never black */
+  --hlubiny-mid:    #0c1f42;
+  --hlubiny-low:    #08142e;
+
+  /* zone identity (badges, depth-gauge bands, zone icons) */
+  --zone-utes:      #3fc0c4;
+  --zone-chaluhy:   #c49a2c;
+  --zone-sire-more: #2276b8;
+  --zone-hlubiny:   #2a2466;
+
+  /* ------------------------------------------------------------------ sea life palette (matches the art) */
+  --sand:           #f1d9a6;
+  --sand-deep:      #d8b77a;
+  --rock:           #8a8aa0;
+  --rock-deep:      #5e5e78;
+  --coral-pink:     #ff8a8a;
+  --coral-orange:   #ff9f4a;
+  --coral-violet:   #b77de0;
+  --coral-yellow:   #ffd25a;
+  --coral-dull:     #b9ab9c;   /* before cleanup: greyed, never dead-white */
+  --kelp:           #c49a2c;
+  --kelp-light:     #e2c35a;
+  --kelp-dark:      #7d5f1c;
+  --seagrass:       #6aa04a;
+
+  /* light */
+  --ray:            rgb(255 252 225 / .55);
+  --caustic:        rgb(255 255 240 / .55);
+  --bubble:         rgb(235 252 255 / .85);
+  --bubble-rim:     rgb(255 255 255 / .95);
+  --snow:           rgb(220 230 255 / .55);   /* marine snow, the deep only */
+
+  /* bioluminescence — only in the deep, only on living things. Pulses ≤ 1 Hz (see motion). */
+  --glow-cyan:      #6ff3ff;
+  --glow-violet:    #b9a1ff;
+  --glow-green:     #9dffc8;
+  --lamp:           #fff3c4;   /* the headlamp: warm, so it reads "mine" against the cold glows */
+  --lamp-radius:    min(42vh, 330px);   /* lit circle around the diver in the deep */
+  --deep-dim:       rgb(4 9 24 / .86);  /* darkness outside the lamp circle */
+
+  /* ------------------------------------------------------------------ the diver (parents' corner can change these) */
+  --hair:           #6b4226;   /* default: brown */
+  --suit:           #ef6f6c;   /* default: coral pink */
+  --hair-options:   #6b4226 #2c1d18 #c7843f #f0cf7e #a5402a;  /* brown, black, ginger, blonde, auburn */
+  --suit-options:   #ef6f6c #f2a33a #6fbf73 #4f8fdc #9b6fd6 #e75ea0;  /* coral, mango, green, blue, violet, pink */
+  --skin:           #f6c9a5;   /* default; no real-child likeness */
+  --skin-options:   #f6c9a5 #e8b48c #c68863 #8d5a3f;  /* light, warm, tan, deep — proposal, parent decides */
+  --mask-glass:     rgb(190 240 255 / .55);
+  --gear:           #ffd25a;   /* tank, snorkel, fins (sun yellow — visible in every zone) */
+  --gear-dark:      #d39a1f;
+
+  /* ------------------------------------------------------------------ group language (kartička badge)
+     Shape first (silhouette icon in ui-icons.svg), colour second, the spoken word always. */
+  --grp-ryba:       #2f8fd0;   /* fish — blue */
+  --grp-savec:      #e2763c;   /* mammal „dýchá vzduch jako my“ — warm orange, like us */
+  --grp-plaz:       #5aa04f;   /* reptile — green */
+  --grp-korys:      #e0645a;   /* crustacean — crab red-coral */
+  --grp-mekkys:     #9b6fd6;   /* mollusc — violet */
+  --grp-ostnokozec: #e9a72f;   /* echinoderm — star gold */
+  --grp-zahavec:    #d564a8;   /* cnidarian — jelly pink */
+
+  /* „Jen se díváme“ (sting / spines / pinch). Calm amber hand in a circle — not red, not a skull. */
+  --look-only:      #f2a33a;
+  --look-only-ink:  #8a5310;   /* text on paper, 6.1:1 */
+  --look-only-soft: #fde9c7;
+
+  /* game feedback — no red, no "wrong" */
+  --good:           #3fb68b;   /* found / right: sea green */
+  --try-again:      #f2a33a;   /* gentle amber hint */
+  --primary:        #ffc845;   /* sun yellow primary buttons („Ponořit se!“, „Plav dál“) */
+  --primary-ink:    #33243a;
+  --primary-edge:   #d99a1f;
+  --secondary:      #fdf6e9;
+  --level-1:        #7fd4d0;   /* Malá potápěčka — shell turquoise */
+  --level-2:        #ffc845;   /* Potápěčka — sun gold */
+  --locked:         #8d8296;
+  --locked-fill:    #e6e0ea;
+  --silhouette:     rgb(23 38 64 / .55);   /* undiscovered creature in the HUD / drawer */
+  --silhouette-deep: rgb(200 210 255 / .28);
+
+  /* ------------------------------------------------------------------ typography */
+  --font-display:   "Grandstander", "Baloo 2", "Comic Sans MS", system-ui, sans-serif;
+  --font-text:      "Andika", "Nunito", system-ui, sans-serif;  /* single-storey a/g like Year-1 handwriting */
+  --fw-text:        400;
+  --fw-text-bold:   700;
+  --fw-display:     800;
+  --fw-display-alt: 700;
+  --fs-hero:        clamp(2.75rem, 1.6rem + 3.6vw, 4.5rem);    /* species name on the card */
+  --fs-title:       clamp(2rem, 1.3rem + 2.2vw, 3.25rem);      /* screen title, quiz prompt */
+  --fs-label:       clamp(1.5rem, 1.1rem + 1.2vw, 2.125rem);   /* button labels, EN name */
+  --fs-body:        clamp(1.25rem, 1rem + .8vw, 1.625rem);     /* look-for captions, parents' text */
+  --fs-small:       clamp(1rem, .9rem + .3vw, 1.125rem);       /* latin name, photo credit, depth numbers */
+  --lh-tight:       1.05;
+  --lh-text:        1.35;
+
+  /* ------------------------------------------------------------------ space, size, touch */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --touch-min:      64px;      /* every tappable thing; gaps ≥ --space-3 */
+  --touch-main:     88px;      /* primary round buttons (speaker, „Plav dál“, home) */
+  --touch-hero:     120px;     /* „Ponořit se!“ and the home doors */
+  --hud-h:          88px;      /* top HUD band (home · silhouettes · speaker) */
+  --gauge-w:        64px;      /* depth gauge on the left edge */
+  --silhouette-chip: 64px;     /* one creature in the zone bar */
+  --char-card:      min(48vh, 400px);  /* creature height on the card */
+  --diver-h:        min(24vh, 190px);  /* diver height in Ponor (nose-to-fin ≈ 1.6× this) */
+  --turtle-h:       min(15vh, 118px);
+  --badge-card:     64px;
+
+  /* ------------------------------------------------------------------ shape */
+  --r-xs: 6px; --r-sm: 12px; --r-md: 20px; --r-lg: 32px; --r-pill: 999px;
+  --stroke-ink:       3px;
+  --stroke-ink-heavy: 4px;
+
+  /* ------------------------------------------------------------------ depth */
+  --shadow-paper:   0 2px 0 var(--paper-edge), 0 6px 14px rgb(20 30 60 / .18);
+  --shadow-lift:    0 4px 0 var(--paper-edge), 0 14px 28px rgb(20 30 60 / .26);
+  --shadow-press:   inset 0 3px 0 rgb(51 36 58 / .18);
+  --shadow-char:    drop-shadow(0 10px 12px rgb(10 30 60 / .25));
+  --halo-found:     0 0 0 6px rgb(63 182 139 / .35), 0 0 28px 6px rgb(63 182 139 / .35);
+  --veil:           rgb(10 40 70 / .45);    /* behind overlays (card, drawer) */
+  --veil-deep:      rgb(3 8 22 / .62);
+
+  /* ------------------------------------------------------------------ motion
+     Rule: local response 100–180 ms; celebration 600–900 ms only at the end of a dive;
+     nothing flashes or pulses faster than 1 Hz (bioluminescence ≥ 1600 ms per cycle). */
+  --t-tap:        120ms;
+  --t-react:      160ms;   /* creature turns / waves / bubbles on tap */
+  --t-quick:      200ms;
+  --t-base:       320ms;
+  --t-card:       420ms;   /* card in */
+  --t-flip:       700ms;   /* card flip to photo */
+  --t-view:       450ms;
+  --t-celebrate:  800ms;   /* end-of-dive only */
+  --t-blink:      140ms;
+  --idle-blink-min: 2800ms;
+  --idle-blink-max: 6500ms;
+  --t-kick:       900ms;   /* one fin-kick cycle while swimming (legs ±14°) */
+  --t-kick-hover: 2400ms;  /* lazy kick while hovering */
+  --t-hair:       2600ms;  /* ponytail wave */
+  --t-sway-kelp:  6000ms;  /* kelp / anemone sway (each stalk phase-shifted) */
+  --t-pulse-jelly: 2200ms; /* jellyfish bell */
+  --t-glow:       2400ms;  /* bioluminescent breathe (opacity .55 ↔ 1), never < 1600ms */
+  --t-caustic:    9000ms;  /* caustic layer drift */
+  --t-ray:        11000ms; /* light-ray slow sway */
+  --t-bubble-rise: 3200ms; /* a bubble from the diver to off-screen */
+  --t-lamp-on:    1400ms;  /* headlamp fades on when entering the deep */
+  --t-zone-shift: 2400ms;  /* water colour cross-fade between zones */
+  --t-cleanup:    900ms;   /* dull coral → bright after trash is collected */
+  --parallax-far:  .25;    /* layer speed relative to the camera */
+  --parallax-mid:  .55;
+  --parallax-near: 1.25;
+  --ease-out:     cubic-bezier(.22, 1, .36, 1);
+  --ease-in:      cubic-bezier(.55, 0, 1, .45);
+  --ease-in-out:  cubic-bezier(.65, 0, .35, 1);
+  --ease-swim:    cubic-bezier(.37, 0, .63, 1);   /* sine-like for every idle loop */
+  --ease-spring:  linear(0, .009, .035 2.1%, .141 4.4%, .723 12.9%, .938 16.7%, 1.017 19.4%, 1.067, 1.099 24.3%,
+                         1.108 26%, 1.103, 1.088 30.6%, 1.025 38.5%, 1.004 42.7%, .992 48.1%, 1.001 59.7%, 1);
+
+  /* ------------------------------------------------------------------ layering */
+  --z-water: 0; --z-far: 1; --z-mid: 2; --z-floor: 3; --z-chars: 10; --z-near: 12; --z-dark: 14;
+  --z-ui: 20; --z-drag: 30; --z-card: 40; --z-celebrate: 50; --z-parents: 60;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-react: 1ms; --t-card: 1ms; --t-flip: 1ms; --t-view: 1ms;
+    --t-celebrate: 1200ms;          /* keep a static "done" state visible */
+    --t-kick: 2400ms;               /* slow kick only, no bob */
+    --t-hair: 0ms; --t-sway-kelp: 0ms; --t-ray: 0ms; --t-caustic: 0ms;   /* JS: 0 = do not loop */
+    --t-pulse-jelly: 4000ms; --t-glow: 0ms;   /* glows stay lit, steady */
+    --t-lamp-on: 1ms; --t-zone-shift: 1ms; --t-cleanup: 1ms;
+    --parallax-far: 0; --parallax-mid: 0; --parallax-near: 1;   /* one plane: no differential motion */
+    --ease-spring: linear;
+  }
+}

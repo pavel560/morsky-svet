@@ -1,0 +1,301 @@
+{
+  "_note": "Compiled 2026-10-17 by the researcher. Every commonsFile and alt was confirmed to exist through the Wikimedia Commons API (imageinfo + extmetadata: author, licence, assessments). verified=true means a 360 px thumbnail was looked at and judged sharp, child-appropriate and matching the species and the card's lookFor; verified=false = only the Featured/Quality status and description were checked. Author names are the photographers' Commons credits (CC BY / CC BY-SA require attribution). Rule applied: no photo of a person holding or touching the animal, no dead animals, no food photos. fetch_photos.py re-reads author and licence from Commons extmetadata at download time and flags mismatches.",
+  "photos": [
+    {
+      "id": "klaun",
+      "commonsFile": "File:Amphiprion ocellaris (Clown anemonefish) by Nick Hobgood.jpg",
+      "author": "Nick Hobgood",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAmphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg",
+      "verified": true,
+      "evidence": "Commons Featured + Quality picture, Picture of the Day; A. ocellaris in its anemone; pixels checked (thumbnail).",
+      "alt": [
+        "File:Pez payaso común (Amphiprion ocellaris) en una anémona magnífica (Heteractis magnifica), Anilao, Filipinas, 2023-08-22, DD 08.jpg"
+      ],
+      "altNote": "Diego Delso, CC BY-SA 4.0, Featured + Quality; A. ocellaris in R. magnifica, Anilao (PH) 2023."
+    },
+    {
+      "id": "sasanka",
+      "commonsFile": "File:Anemone purple anemonefish.jpg",
+      "author": "Nhobgood - Nick Hobgood",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAnemone_purple_anemonefish.jpg",
+      "verified": true,
+      "evidence": "Featured + Quality picture; magnificent sea anemone with purple column and two A. ocellaris (description: Heteractis magnifica, now Radianthus magnifica); pixels checked.",
+      "alt": [
+        "File:Anémona magnífica (Heteractis magnifica), Anilao, Filipinas, 2023-08-22, DD 71.jpg"
+      ],
+      "altNote": "Diego Delso, CC BY-SA 4.0, Quality image; anemone alone."
+    },
+    {
+      "id": "konik",
+      "commonsFile": "File:Hippocampus guttulatus.102 - Aquarium Finisterrae.jpg",
+      "author": "Fernando Losada Rodríguez",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHippocampus_guttulatus.102_-_Aquarium_Finisterrae.jpg",
+      "verified": true,
+      "evidence": "Aquarium Finisterrae (A Coruña, ES); full body side view, mane and curled tail on seaweed clearly visible; pixels checked. No diver holding the animal (the Ifremer series shows divers handling seahorses — deliberately avoided).",
+      "alt": [
+        "File:Hippocampus guttulatus.101 - Aquarium Finisterrae.jpg",
+        "File:Long-snouted Seahorse - Hippocampus guttulatus.jpg"
+      ],
+      "altNote": "Same author/aquarium (CC BY-SA 4.0); second alt prilfish, CC BY 2.0, wild animal camouflaged in algae."
+    },
+    {
+      "id": "hvezdice",
+      "commonsFile": "File:Estrella de mar azul (Linckia laevigata), Anilao, Filipinas, 2023-08-25, DD 63.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEstrella_de_mar_azul_%28Linckia_laevigata%29%2C_Anilao%2C_Filipinas%2C_2023-08-25%2C_DD_63.jpg",
+      "verified": true,
+      "evidence": "Quality image; whole blue five-armed star on reef, top view; pixels checked.",
+      "alt": [
+        "File:Estrella de mar azul (Linckia laevigata), Anilao, Filipinas, 2023-08-25, DD 238.jpg"
+      ],
+      "altNote": "Diego Delso, CC BY-SA 4.0, Quality image."
+    },
+    {
+      "id": "krab",
+      "commonsFile": "File:Carcinus maenas (Strandkrabbe, shore crab) (28179285974).jpg",
+      "author": "Lars Behnke",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACarcinus_maenas_%28Strandkrabbe%2C_shore_crab%29_%2828179285974%29.jpg",
+      "verified": true,
+      "evidence": "Live crab underwater among sea stars, claws and legs visible; pixels checked. Avoided photos of a crab held in a hand ('Carcinus maenas 07.2025').",
+      "alt": [
+        "File:European Green Crab (Carcinus maenas) - Kristiansund, Norway 2022-07-12.jpg"
+      ],
+      "altNote": "Ryan Hodnett, CC BY-SA 4.0; top view of carapace on a rock (jagged rim visible)."
+    },
+    {
+      "id": "chobotnice",
+      "commonsFile": "File:Pulpo común (Octopus vulgaris), franja marina Teno-Rasca, Tenerife, España, 2022-01-08, DD 53.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3APulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_franja_marina_Teno-Rasca%2C_Tenerife%2C_Espa%C3%B1a%2C_2022-01-08%2C_DD_53.jpg",
+      "verified": true,
+      "evidence": "Featured + Quality picture; all eight arms spread, easy to count; pixels checked. (DD 46 Arrábida is also FP but the octopus is camouflaged and hard for a child to see.)",
+      "alt": [
+        "File:Octopus vulgaris 03.jpg"
+      ],
+      "altNote": "H. Zell, CC BY-SA 3.0, Quality image; aquarium, suckers clearly visible."
+    },
+    {
+      "id": "papousek",
+      "commonsFile": "File:Pez loro (Chlorurus sordidus), Zanzíbar, Tanzania, 2024-05-30, DD 22.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3APez_loro_%28Chlorurus_sordidus%29%2C_Zanz%C3%ADbar%2C_Tanzania%2C_2024-05-30%2C_DD_22.jpg",
+      "verified": true,
+      "evidence": "Quality image; colourful terminal-phase male with beak, matches lookFor; pixels checked.",
+      "alt": [
+        "File:Pez loro (Chlorurus sordidus), islas Ad Dimaniyat, Omán, 2024-08-13, DD 12.jpg"
+      ],
+      "altNote": "Diego Delso, CC BY-SA 4.0, Quality image; initial phase (dark with white dots) — colours differ from the drawing."
+    },
+    {
+      "id": "vydra",
+      "commonsFile": "File:Northern sea otters (Enhydra lutris kenyoni) Tofino 2.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ANorthern_sea_otters_%28Enhydra_lutris_kenyoni%29_Tofino_2.jpg",
+      "verified": true,
+      "evidence": "Quality + Valued image; two otters floating on their backs; pixels checked.",
+      "alt": [
+        "File:Sea Otter (24810660828).jpg"
+      ],
+      "altNote": "BLM California (US government), public domain."
+    },
+    {
+      "id": "tulen",
+      "commonsFile": "File:Close-up portrait of a harbor seal, Children's Pool Beach, San Diego, California.jpg",
+      "author": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AClose-up_portrait_of_a_harbor_seal%2C_Children%27s_Pool_Beach%2C_San_Diego%2C_California.jpg",
+      "verified": true,
+      "evidence": "Quality image; spotted coat, ear hole, whiskers and clawed front flipper visible; pixels checked.",
+      "alt": [
+        "File:Harbor seal hauled out on the rocks, Children's Pool Beach, San Diego, California.jpg"
+      ],
+      "altNote": "Christian David, CC BY-SA 4.0, Quality image."
+    },
+    {
+      "id": "jezovka",
+      "commonsFile": "File:GFNMS - purple urchins (27703864430).jpg",
+      "author": "National Marine Sanctuaries",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGFNMS_-_purple_urchins_%2827703864430%29.jpg",
+      "verified": true,
+      "evidence": "NOAA National Marine Sanctuaries (public domain); several purple urchins underwater, Greater Farallones NMS 2015; pixels checked.",
+      "alt": [
+        "File:Strongylocentrotus purpuratus (3107768089).jpg"
+      ],
+      "altNote": "Jerry Kirkhart, CC BY 2.0; close-up macro of spines."
+    },
+    {
+      "id": "meduza",
+      "commonsFile": "File:Moon jellyfish at Gota Sagher.JPG",
+      "author": "Alexander Vasenin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMoon_jellyfish_at_Gota_Sagher.JPG",
+      "verified": true,
+      "evidence": "Featured picture; moon jelly with the four rings clearly visible (matches lookFor 1); pixels checked.",
+      "alt": [
+        "File:Aurelia aurita (aka).jpg"
+      ],
+      "altNote": "André Karwath, CC BY-SA 2.5, Quality image."
+    },
+    {
+      "id": "delfin",
+      "commonsFile": "File:010 Atlantic bottlenose dolphin jumping at Pelican point Photo by Giles Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3A010_Atlantic_bottlenose_dolphin_jumping_at_Pelican_point_Photo_by_Giles_Laurent.jpg",
+      "verified": true,
+      "evidence": "Featured + Quality + Valued picture, Picture of the Day; bottlenose dolphin mid-jump (Pelican Point, Namibia), short beak and dorsal fin visible; pixels checked.",
+      "alt": [
+        "File:Common bottlenose dolphins (Tursiops truncatus) Sagres.jpg"
+      ],
+      "altNote": "Charles J. Sharp, CC BY-SA 4.0, Quality image."
+    },
+    {
+      "id": "zelva",
+      "commonsFile": "File:Parque Nacional Marinho de Fernando de Noronha - João Paulo Marques DAndretta 12.jpg",
+      "author": "João D'Andretta",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AParque_Nacional_Marinho_de_Fernando_de_Noronha_-_Jo%C3%A3o_Paulo_Marques_DAndretta_12.jpg",
+      "verified": true,
+      "evidence": "Featured picture; loggerhead on the reef with a diver watching from a distance (nobody touches it — fits the game rule); pixels checked.",
+      "alt": [
+        "File:Loggerhead turtle reflection.jpg"
+      ],
+      "altNote": "Public domain; National Aquarium, Washington DC."
+    },
+    {
+      "id": "keporkak",
+      "commonsFile": "File:Humpback whale (Megaptera novaeangliae) with calf Moorea 2.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHumpback_whale_%28Megaptera_novaeangliae%29_with_calf_Moorea_2.jpg",
+      "verified": true,
+      "evidence": "Featured + Quality picture; mother and calf underwater, long white pectoral fins visible; pixels checked.",
+      "alt": [
+        "File:Humpback whale (Megaptera novaeangliae) calf Moorea 2.jpg"
+      ],
+      "altNote": "Charles J. Sharp, CC BY-SA 4.0, Featured, Picture of the Year finalist."
+    },
+    {
+      "id": "zralok",
+      "commonsFile": "File:Male whale shark at Georgia Aquarium.jpg",
+      "author": "Zac Wolf",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMale_whale_shark_at_Georgia_Aquarium.jpg",
+      "verified": true,
+      "evidence": "Featured picture (POTY/POTD); whole whale shark from the side with people silhouetted below — shows size vs. humans; pixels checked. Chosen over 'Whale Shark AdF.jpg' (night shot with a wide-open mouth, more intimidating).",
+      "alt": [
+        "File:Whale Shark AdF.jpg"
+      ],
+      "altNote": "Arturo de Frias Marques, CC BY-SA 4.0, Featured; wild 8 m individual feeding at night."
+    },
+    {
+      "id": "manta",
+      "commonsFile": "File:Giant Manta AdF.jpg",
+      "author": "Arturo de Frias Marques",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGiant_Manta_AdF.jpg",
+      "verified": true,
+      "evidence": "Featured picture, Picture of the Year; wild giant manta seen from the front with mouth open and both cephalic lobes ('horns') visible; pixels checked. Front view is less obvious as a silhouette — if the programmer/parent prefers a top view, try the alt.",
+      "alt": [
+        "File:Giant oceanic manta ray.jpg"
+      ],
+      "altNote": "Daniel Sasse, CC BY-SA 4.0."
+    },
+    {
+      "id": "sardinky",
+      "commonsFile": "File:Sardina pilchardus.jpg",
+      "author": "Etrusko25",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ASardina_pilchardus.jpg",
+      "verified": true,
+      "evidence": "Public domain; live school of Sardina pilchardus in the Ligurian Sea (photographer Alessandro Duci, uploaded by Etrusko25); pixels checked. Most other files in the category show fish on markets or plates — avoided.",
+      "alt": [
+        "File:Sardina pilchardus 2011.jpg"
+      ],
+      "altNote": "Citron, CC BY-SA 3.0; single live sardine in an aquarium."
+    },
+    {
+      "id": "das",
+      "commonsFile": "File:Hal - Melanocetus johnsonii - 3.jpg",
+      "author": "Emőke Dénes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHal_-_Melanocetus_johnsonii_-_3.jpg",
+      "verified": true,
+      "evidence": "Museum MODEL of Melanocetus johnsonii (Natural History Museum, London), round body, lure visible; pixels checked. No free live photo of this species exists on Commons; NOAA file is a dead trawl specimen (not child-appropriate). Small teeth are visible — the card shows the drawing first, the photo only on 'otočit'.",
+      "alt": [
+        "File:Hal - Melanocetus johnsonii - 4.jpg",
+        "File:MelanocetusJohnsoniiFord.jpg"
+      ],
+      "altNote": "Same model, other angle (open mouth); then G. H. Ford's 19th-century public-domain drawing (open mouth with teeth)."
+    },
+    {
+      "id": "dumbo",
+      "commonsFile": "File:Dumbo-hires.jpg",
+      "author": "NOAA Okeanos Explorer",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ADumbo-hires.jpg",
+      "verified": true,
+      "evidence": "NOAA Okeanos Explorer (public domain); live Grimpoteuthis swimming with ear-like fins on black background; pixels checked.",
+      "alt": [
+        "File:Grimpoteuthis bathynectes.jpg"
+      ],
+      "altNote": "NOAA Okeanos Explorer, public domain."
+    },
+    {
+      "id": "svetluska",
+      "commonsFile": "File:Atolla wyvillei (Operation Deep Scope 2004).jpg",
+      "author": "NOAA Ocean Explorer from USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAtolla_wyvillei_%28Operation_Deep_Scope_2004%29.jpg",
+      "verified": true,
+      "evidence": "NOAA Ocean Explorer (Edith Widder, Operation Deep Scope), CC BY-SA 2.0 via Flickr; live red Atolla on black; only 600 px wide (the largest free live photo available); pixels checked.",
+      "alt": [
+        "File:Atolla wyvillei.jpg"
+      ],
+      "altNote": "Same NOAA photo, another upload (CC BY-SA 4.0 tag). 'Atolla wyvillei 2.jpg' avoided — its description says the ID still needs checking ('à vérifier')."
+    },
+    {
+      "id": "kapustnak",
+      "commonsFile": "File:Manatee photo.jpg",
+      "author": "NASA",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Manatee_photo.jpg",
+      "verified": true,
+      "evidence": "Commons Picture of the Day; West Indian manatee at Merritt Island National Wildlife Refuge (Florida), whole body from the side with paddle tail and flipper visible; NASA, public domain; pixels checked. Only 1050 px wide.",
+      "alt": [
+        "File:Close up image of manatee underwater.jpg"
+      ],
+      "altNote": "Ryan Hagerty (US FWS), public domain; close-up of the snout with whiskers (4932 px)."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cs": {
+    "provider": "elevenlabs",
+    "voice_name": "Candy - Young and Sweet",
+    "model_id": "eleven_multilingual_v2",
+    "language_code": "cs",
+    "voice_settings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true}
+  },
+  "en": {"provider": "edge", "voice": "en-GB-MaisieNeural", "rate": "-8%"}
+}

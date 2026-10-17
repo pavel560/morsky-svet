@@ -1,0 +1,99 @@
+# Record the spoken lines with ElevenLabs (the same Czech voice as Houbičky, voice/config.json) and COMMIT them
+# (voice/<lang>/*.mp3 + voice/index.json), then re-deploy. Only new or changed lines are recorded.
+# Needs the repository secret ELEVENLABS_API_KEY (Settings → Secrets and variables → Actions). Without it the step
+# records nothing and the game keeps using the browser's own voice.
+#   - manual: Actions → "Record voices" → Run workflow
+#   - automatic when the lines, the data or the voice config change on main
+name: Record voices
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - voice/config.json
+      - js/phrases.js
+      - js/i18n.js
+      - data/species.json
+      - data/zones.json
+      - data/trash.json
+
+permissions:
+  contents: write     # commit the recordings
+  actions: write      # re-deploy (dispatch pages.yml)
+
+concurrency:
+  group: record-voices
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Is the ElevenLabs key there?
+        id: key
+        env:
+          K: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ -n "$K" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; echo "::notice::No ELEVENLABS_API_KEY secret yet: nothing recorded, the game uses the browser voice."; fi
+
+      - name: Install edge-tts (English voice; may be blocked on runners)
+        if: steps.key.outputs.ok == 'true'
+        run: pip install edge-tts
+        continue-on-error: true
+
+      - name: Export the phrase catalogue
+        if: steps.key.outputs.ok == 'true'
+        run: node dev/export_phrases.mjs
+
+      - name: Record missing / changed lines
+        if: steps.key.outputs.ok == 'true'
+        run: python make_voice.py
+        continue-on-error: true          # lines that cannot be recorded fall back to the browser voice; commit the rest
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+
+      - name: Check the recordings before committing
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          idx = json.load(open("voice/index.json", encoding="utf-8")) if os.path.exists("voice/index.json") else {}
+          missing = [e["file"] for lang in idx.values() for e in lang.values() if not os.path.isfile(os.path.join("voice", e["file"]))]
+          print(f"index: {sum(len(v) for v in idx.values())} recordings")
+          for f in missing: print(f"::error::index.json points to a missing file: {f}")
+          sys.exit(1 if missing else 0)
+          PY
+
+      - name: Commit the recordings
+        id: commit
+        if: steps.key.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          mkdir -p voice/cs voice/en
+          git add -f voice/cs voice/en
+          [ -f voice/index.json ] && git add -f voice/index.json
+          if git diff --cached --quiet; then echo "Nothing new to commit."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -q -m "Hlasy: nahrávky v gitu [record-voices]"
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+            git pull --rebase origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+      - name: Re-deploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"

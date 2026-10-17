@@ -1,0 +1,10 @@
+{ "batchcomplete": true, "query": { "normalized": [{"fromencoded": false, "from": "File:Boletus_edulis_EtgHollande_041031_091.jpg", "to": "File:Boletus edulis EtgHollande 041031 091.jpg"}],
+  "pages": [ { "ns": 6, "title": "File:Boletus edulis EtgHollande 041031 091.jpg", "missing": false, "known": true, "imagerepository": "local",
+    "imageinfo": [ { "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Boletus.jpg/1000px-Boletus.jpg", "thumbwidth": 1000, "thumbheight": 750,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Boletus.jpg", "descriptionurl": "https://commons.wikimedia.org/wiki/File:Boletus_edulis_EtgHollande_041031_091.jpg",
+      "extmetadata": {
+        "Artist": {"value": "<a href=\"//commons.wikimedia.org/wiki/User:Eric_Steinert\" title=\"User:Eric Steinert\">Eric&nbsp;Steinert</a>\n", "source": "commons-desc-page"},
+        "LicenseShortName": {"value": "CC BY-SA 3.0", "source": "commons-desc-page"},
+        "LicenseUrl": {"value": "https://creativecommons.org/licenses/by-sa/3.0", "source": "commons-desc-page"},
+        "AttributionRequired": {"value": "true"},
+        "Credit": {"value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"} } } ] } ] } }

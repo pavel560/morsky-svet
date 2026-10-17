@@ -1,0 +1,53 @@
+{
+ "_note": "DEV PLACEHOLDER",
+ "trash": [
+  {
+   "id": "lahev",
+   "name": {
+    "cs": "Lahev",
+    "en": "Bottle"
+   },
+   "turtle": {
+    "cs": "[zástupný text] Děkuju! Lahev do moře nepatří.",
+    "en": "[placeholder] Thank you! A bottle does not belong in the sea."
+   },
+   "sources": []
+  },
+  {
+   "id": "sacek",
+   "name": {
+    "cs": "Sáček",
+    "en": "Bag"
+   },
+   "turtle": {
+    "cs": "[zástupný text] Děkuju! Sáček do moře nepatří.",
+    "en": "[placeholder] Thank you! A bag does not belong in the sea."
+   },
+   "sources": []
+  },
+  {
+   "id": "plechovka",
+   "name": {
+    "cs": "Plechovka",
+    "en": "Can"
+   },
+   "turtle": {
+    "cs": "[zástupný text] Děkuju! Plechovka do moře nepatří.",
+    "en": "[placeholder] Thank you! A can does not belong in the sea."
+   },
+   "sources": []
+  },
+  {
+   "id": "sit",
+   "name": {
+    "cs": "Síť",
+    "en": "Net"
+   },
+   "turtle": {
+    "cs": "[zástupný text] Děkuju! Síť do moře nepatří.",
+    "en": "[placeholder] Thank you! A net does not belong in the sea."
+   },
+   "sources": []
+  }
+ ]
+}

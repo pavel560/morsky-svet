@@ -1,0 +1,64 @@
+[
+  {
+    "id": "lahev",
+    "name": {
+      "cs": "Plastová lahev",
+      "en": "Plastic bottle"
+    },
+    "turtle": {
+      "cs": "Děkuju! Plast se v moři rozpadne na drobné kousky. Ty můžou zvířátka spolknout.",
+      "en": "Thank you! Plastic breaks into tiny bits in the sea. Animals can swallow them."
+    },
+    "sources": [
+      "https://oceanservice.noaa.gov/hazards/marinedebris/plastics-in-the-ocean.html",
+      "https://marinedebris.noaa.gov/why-marine-debris-problem/ingestion"
+    ]
+  },
+  {
+    "id": "sacek",
+    "name": {
+      "cs": "Igelitový sáček",
+      "en": "Plastic bag"
+    },
+    "turtle": {
+      "cs": "Děkuju! Sáček ve vodě vypadá jako medúza a želvy by ho mohly spolknout.",
+      "en": "Thank you! A bag looks like a jellyfish, and turtles might swallow it."
+    },
+    "sources": [
+      "https://marinedebris.noaa.gov/why-marine-debris-problem/ingestion",
+      "https://www.fisheries.noaa.gov/species/loggerhead-turtle",
+      "https://www.seeturtles.org/sea-turtles-plastic"
+    ]
+  },
+  {
+    "id": "plechovka",
+    "name": {
+      "cs": "Plechovka",
+      "en": "Drink can"
+    },
+    "turtle": {
+      "cs": "Děkuju! Z plechovky se dá udělat nová plechovka, pořád dokola.",
+      "en": "Thank you! An old can can be made into a new can, again and again."
+    },
+    "sources": [
+      "https://www.aluminum.org/news/aluminum-beverage-can-moves-recycling-bin-newly-formed-can-less-60-days",
+      "https://www.aluminum.org/Recycling"
+    ]
+  },
+  {
+    "id": "sit",
+    "name": {
+      "cs": "Kus rybářské sítě",
+      "en": "Piece of fishing net"
+    },
+    "turtle": {
+      "cs": "Děkuju! Do ztracené sítě by se mohla zamotat zvířátka.",
+      "en": "Thank you! Animals could get tangled in a lost net."
+    },
+    "sources": [
+      "https://marinedebris.noaa.gov/why-marine-debris-problem/wildlife-entanglement-and-ghost-fishing",
+      "https://oceanservice.noaa.gov/facts/ghostfishing.html",
+      "https://marinedebris.noaa.gov/what-marine-debris/derelict-fishing-gear"
+    ]
+  }
+]

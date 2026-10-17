@@ -1,0 +1,4 @@
+{ "batchcomplete": true, "query": { "pages": [ { "ns": 6, "title": "File:Cantharellus cibarius.jpg",
+    "imageinfo": [ { "thumburl": "https://upload.wikimedia.org/thumb/Cantharellus.jpg/1000px-Cantharellus.jpg", "thumbwidth": 1000, "thumbheight": 667,
+      "url": "https://upload.wikimedia.org/Cantharellus.jpg", "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cantharellus_cibarius.jpg",
+      "extmetadata": { "Artist": {"value": "<bdi>Jan &amp; Petra Nováková</bdi>"}, "UsageTerms": {"value": "Public domain"}, "AttributionRequired": {"value": "false"} } } ] } ] } }

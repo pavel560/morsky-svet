@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.DS_Store
+photos/*.part
+# Kořenový .gitignore nadřazeného repa ignoruje output/**/*.svg a *.png; herní obrázky ale patří do repa.
+!art/*.svg
+!art/**/*.svg
+!icons/*.png
+!design/*.png
+!dev/placeholders/*.svg
+# generované (CI / skripty): fotky z Wikimedia Commons se nikdy necommitují
+photos/*.jpg
+photos/credits.json
+# hlasy: voice/cs a voice/en commituje workflow record-voices.yml; export a dočasné složky ne
+voice/.staging-*/
+voice/phrases.json
+*.part.mp3
+_site/
+# snímky z e2e testů (generované)
+dev/screens/
+node_modules/
+.claude/

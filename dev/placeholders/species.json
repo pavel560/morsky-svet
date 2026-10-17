@@ -1,0 +1,1121 @@
+{
+ "_note": "DEV PLACEHOLDER — replaced by data/species.json",
+ "species": [
+  {
+   "id": "klaun",
+   "zone": "utes",
+   "level": 1,
+   "group": "ryba",
+   "name": {
+    "cs": "Klaun očkatý",
+    "en": "Clownfish"
+   },
+   "short": {
+    "cs": "klaun",
+    "en": "clownfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 11,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem klaun očkatý.",
+    "en": "[riddle] Who am I? I am a clownfish."
+   },
+   "motion": "swim",
+   "sources": []
+  },
+  {
+   "id": "sasanka",
+   "zone": "utes",
+   "level": 2,
+   "group": "žahavec",
+   "name": {
+    "cs": "Sasanka",
+    "en": "Sea anemone"
+   },
+   "short": {
+    "cs": "sasanka",
+    "en": "anemone"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 30,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "sting",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem sasanka.",
+    "en": "[riddle] Who am I? I am a sea anemone."
+   },
+   "motion": "sway",
+   "sources": [],
+   "safety": {
+    "cs": "[zástupný text] Pozor, jen se díváme.",
+    "en": "[placeholder] Careful, we only look."
+   }
+  },
+  {
+   "id": "konik",
+   "zone": "utes",
+   "level": 1,
+   "group": "ryba",
+   "name": {
+    "cs": "Koníček mořský",
+    "en": "Seahorse"
+   },
+   "short": {
+    "cs": "koníček",
+    "en": "seahorse"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 15,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem koníček mořský.",
+    "en": "[riddle] Who am I? I am a seahorse."
+   },
+   "motion": "hover",
+   "sources": []
+  },
+  {
+   "id": "hvezdice",
+   "zone": "utes",
+   "level": 1,
+   "group": "ostnokožec",
+   "name": {
+    "cs": "Hvězdice",
+    "en": "Starfish"
+   },
+   "short": {
+    "cs": "hvězdice",
+    "en": "starfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 25,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "shellfish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem hvězdice.",
+    "en": "[riddle] Who am I? I am a starfish."
+   },
+   "motion": "crawl",
+   "sources": []
+  },
+  {
+   "id": "krab",
+   "zone": "utes",
+   "level": 1,
+   "group": "korýš",
+   "name": {
+    "cs": "Krab",
+    "en": "Crab"
+   },
+   "short": {
+    "cs": "krab",
+    "en": "crab"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 20,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "mixed",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "pinch",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem krab.",
+    "en": "[riddle] Who am I? I am a crab."
+   },
+   "motion": "crawl-side",
+   "sources": [],
+   "safety": {
+    "cs": "[zástupný text] Pozor, jen se díváme.",
+    "en": "[placeholder] Careful, we only look."
+   }
+  },
+  {
+   "id": "chobotnice",
+   "zone": "utes",
+   "level": 1,
+   "group": "měkkýš",
+   "name": {
+    "cs": "Chobotnice pobřežní",
+    "en": "Octopus"
+   },
+   "short": {
+    "cs": "chobotnice",
+    "en": "octopus"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 60,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "shellfish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem chobotnice pobřežní.",
+    "en": "[riddle] Who am I? I am a octopus."
+   },
+   "motion": "jet",
+   "sources": []
+  },
+  {
+   "id": "papousek",
+   "zone": "utes",
+   "level": 2,
+   "group": "ryba",
+   "name": {
+    "cs": "Ploskozubec",
+    "en": "Parrotfish"
+   },
+   "short": {
+    "cs": "ploskozubec",
+    "en": "parrotfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 50,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "algae",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem ploskozubec.",
+    "en": "[riddle] Who am I? I am a parrotfish."
+   },
+   "motion": "swim",
+   "sources": []
+  },
+  {
+   "id": "vydra",
+   "zone": "chaluhy",
+   "level": 2,
+   "group": "savec",
+   "name": {
+    "cs": "Vydra mořská",
+    "en": "Sea otter"
+   },
+   "short": {
+    "cs": "vydra",
+    "en": "otter"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 120,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "shellfish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": true,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem vydra mořská.",
+    "en": "[riddle] Who am I? I am a sea otter."
+   },
+   "motion": "surface",
+   "sources": []
+  },
+  {
+   "id": "tulen",
+   "zone": "chaluhy",
+   "level": 2,
+   "group": "savec",
+   "name": {
+    "cs": "Tuleň obecný",
+    "en": "Harbour seal"
+   },
+   "short": {
+    "cs": "tuleň",
+    "en": "seal"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 160,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "fish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": true,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem tuleň obecný.",
+    "en": "[riddle] Who am I? I am a harbour seal."
+   },
+   "motion": "swim",
+   "sources": []
+  },
+  {
+   "id": "jezovka",
+   "zone": "chaluhy",
+   "level": 2,
+   "group": "ostnokožec",
+   "name": {
+    "cs": "Ježovka",
+    "en": "Sea urchin"
+   },
+   "short": {
+    "cs": "ježovka",
+    "en": "urchin"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 10,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "algae",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "spines",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem ježovka.",
+    "en": "[riddle] Who am I? I am a sea urchin."
+   },
+   "motion": "crawl",
+   "sources": [],
+   "safety": {
+    "cs": "[zástupný text] Pozor, jen se díváme.",
+    "en": "[placeholder] Careful, we only look."
+   }
+  },
+  {
+   "id": "meduza",
+   "zone": "chaluhy",
+   "level": 1,
+   "group": "žahavec",
+   "name": {
+    "cs": "Talířovka ušatá",
+    "en": "Moon jellyfish"
+   },
+   "short": {
+    "cs": "talířovka",
+    "en": "jellyfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 30,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "sting",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem talířovka ušatá.",
+    "en": "[riddle] Who am I? I am a moon jellyfish."
+   },
+   "motion": "pulse",
+   "sources": [],
+   "safety": {
+    "cs": "[zástupný text] Pozor, jen se díváme.",
+    "en": "[placeholder] Careful, we only look."
+   }
+  },
+  {
+   "id": "delfin",
+   "zone": "sire-more",
+   "level": 1,
+   "group": "savec",
+   "name": {
+    "cs": "Delfín skákavý",
+    "en": "Bottlenose dolphin"
+   },
+   "short": {
+    "cs": "delfín",
+    "en": "dolphin"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 300,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "fish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": true,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem delfín skákavý.",
+    "en": "[riddle] Who am I? I am a bottlenose dolphin."
+   },
+   "motion": "swim + jump",
+   "sources": []
+  },
+  {
+   "id": "zelva",
+   "zone": "sire-more",
+   "level": 1,
+   "group": "plaz",
+   "name": {
+    "cs": "Kareta obecná",
+    "en": "Loggerhead turtle"
+   },
+   "short": {
+    "cs": "kareta",
+    "en": "turtle"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 90,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "jellyfish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": true,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem kareta obecná.",
+    "en": "[riddle] Who am I? I am a loggerhead turtle."
+   },
+   "motion": "glide",
+   "sources": []
+  },
+  {
+   "id": "keporkak",
+   "zone": "sire-more",
+   "level": 1,
+   "group": "savec",
+   "name": {
+    "cs": "Keporkak",
+    "en": "Humpback whale"
+   },
+   "short": {
+    "cs": "keporkak",
+    "en": "whale"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 1500,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "krill",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": true,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem keporkak.",
+    "en": "[riddle] Who am I? I am a humpback whale."
+   },
+   "motion": "glide",
+   "sources": []
+  },
+  {
+   "id": "zralok",
+   "zone": "sire-more",
+   "level": 1,
+   "group": "ryba",
+   "name": {
+    "cs": "Žralok velrybí",
+    "en": "Whale shark"
+   },
+   "short": {
+    "cs": "žralok",
+    "en": "shark"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 1200,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem žralok velrybí.",
+    "en": "[riddle] Who am I? I am a whale shark."
+   },
+   "motion": "glide",
+   "sources": []
+  },
+  {
+   "id": "manta",
+   "zone": "sire-more",
+   "level": 2,
+   "group": "ryba",
+   "name": {
+    "cs": "Manta obrovská",
+    "en": "Giant manta ray"
+   },
+   "short": {
+    "cs": "manta",
+    "en": "ray"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 500,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem manta obrovská.",
+    "en": "[riddle] Who am I? I am a giant manta ray."
+   },
+   "motion": "glide",
+   "sources": []
+  },
+  {
+   "id": "sardinky",
+   "zone": "sire-more",
+   "level": 2,
+   "group": "ryba",
+   "name": {
+    "cs": "Sardinky",
+    "en": "Sardines"
+   },
+   "short": {
+    "cs": "sardinka",
+    "en": "sardines"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 20,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem sardinky.",
+    "en": "[riddle] Who am I? I am a sardines."
+   },
+   "motion": "school",
+   "sources": []
+  },
+  {
+   "id": "das",
+   "zone": "hlubiny",
+   "level": 1,
+   "group": "ryba",
+   "name": {
+    "cs": "Ďas",
+    "en": "Anglerfish"
+   },
+   "short": {
+    "cs": "ďas",
+    "en": "anglerfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 20,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "fish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem ďas.",
+    "en": "[riddle] Who am I? I am a anglerfish."
+   },
+   "motion": "hover",
+   "sources": []
+  },
+  {
+   "id": "dumbo",
+   "zone": "hlubiny",
+   "level": 2,
+   "group": "měkkýš",
+   "name": {
+    "cs": "Chobotnice dumbo",
+    "en": "Dumbo octopus"
+   },
+   "short": {
+    "cs": "chobotnice",
+    "en": "octopus"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 20,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "shellfish",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem chobotnice dumbo.",
+    "en": "[riddle] Who am I? I am a dumbo octopus."
+   },
+   "motion": "flap",
+   "sources": []
+  },
+  {
+   "id": "svetluska",
+   "zone": "hlubiny",
+   "level": 2,
+   "group": "ryba",
+   "name": {
+    "cs": "Světlonoška",
+    "en": "Lanternfish"
+   },
+   "short": {
+    "cs": "světlonoška",
+    "en": "lanternfish"
+   },
+   "latin": "Placeholder placeholder",
+   "sizeCm": 8,
+   "sizeSay": {
+    "cs": "[zástupný text] Jsem malý.",
+    "en": "[placeholder] I am small."
+   },
+   "depthM": [
+    1,
+    20
+   ],
+   "eats": "plankton",
+   "eatsSay": {
+    "cs": "[zástupný text] Jím plankton.",
+    "en": "[placeholder] I eat plankton."
+   },
+   "lookFor": [
+    {
+     "cs": "[znak 1]",
+     "en": "[feature 1]"
+    },
+    {
+     "cs": "[znak 2]",
+     "en": "[feature 2]"
+    },
+    {
+     "cs": "[znak 3]",
+     "en": "[feature 3]"
+    }
+   ],
+   "fact": {
+    "cs": "[zástupný text] Zajímavost doplní výzkumník.",
+    "en": "[placeholder] The researcher adds the fact."
+   },
+   "breathesAir": false,
+   "touch": "look",
+   "riddle": {
+    "cs": "[hádanka] Kdo jsem? Jsem světlonoška.",
+    "en": "[riddle] Who am I? I am a lanternfish."
+   },
+   "motion": "school",
+   "sources": []
+  }
+ ]
+}

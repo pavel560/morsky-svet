@@ -1,0 +1,20 @@
+{
+  "name": "Mořský svět",
+  "short_name": "Mořský svět",
+  "description": "Hra pro děti: potápíme se do moře a poznáváme, kdo kde bydlí.",
+  "lang": "cs",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#8fe3dc",
+  "theme_color": "#2276b8",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

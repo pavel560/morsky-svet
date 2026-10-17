@@ -1,0 +1,1323 @@
+[
+  {
+    "id": "klaun",
+    "zone": "utes",
+    "level": 1,
+    "group": "ryba",
+    "name": {
+      "cs": "Klaun očkatý",
+      "en": "Ocellaris clownfish"
+    },
+    "short": {
+      "cs": "klaun",
+      "en": "clownfish"
+    },
+    "latin": "Amphiprion ocellaris",
+    "sizeCm": 11,
+    "sizeSay": {
+      "cs": "Jsem velký asi jako tvoje dlaň.",
+      "en": "I am about as big as your hand."
+    },
+    "depthM": [
+      1,
+      15
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Jím drobný plankton a trochu řas.",
+      "en": "I eat tiny plankton and a little algae."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám oranžové tělo.",
+        "en": "My body is orange."
+      },
+      {
+        "cs": "Mám tři bílé pruhy.",
+        "en": "I have three white stripes."
+      },
+      {
+        "cs": "Pruhy i ploutve mám lemované černou linkou.",
+        "en": "My stripes and fins have thin black edges."
+      }
+    ],
+    "fact": {
+      "cs": "Bydlím v žahavé sasance. Kluzký sliz mě chrání.",
+      "en": "I live in a stinging anemone. Slimy mucus keeps me safe."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem oranžový s bílými pruhy a bydlím v sasance. Kdo jsem?",
+      "en": "I am orange with white stripes and I live in an anemone. Who am I?"
+    },
+    "motion": "swim",
+    "sources": [
+      "https://www.fishbase.se/summary/Amphiprion-ocellaris.html",
+      "https://www.nationalgeographic.com/animals/fish/facts/clownfish",
+      "https://en.wikipedia.org/wiki/Amphiprion_ocellaris",
+      "https://www.aquatab.net/system/prehled-druhu/?search=Amphiprion%20ocellaris",
+      "https://cs.wikipedia.org/wiki/Klaun_o%C4%8Dkat%C3%BD",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=278400"
+    ]
+  },
+  {
+    "id": "sasanka",
+    "zone": "utes",
+    "level": 2,
+    "group": "zahavec",
+    "name": {
+      "cs": "Sasanka velkolepá",
+      "en": "Magnificent sea anemone"
+    },
+    "short": {
+      "cs": "sasanka",
+      "en": "sea anemone"
+    },
+    "latin": "Radianthus magnifica",
+    "sizeCm": 40,
+    "sizeSay": {
+      "cs": "Jsem široká skoro jako polštář.",
+      "en": "I am almost as wide as a pillow."
+    },
+    "depthM": [
+      1,
+      50
+    ],
+    "eats": "mixed",
+    "eatsSay": {
+      "cs": "Chapadly chytám drobné živočichy, kteří kolem proplouvají.",
+      "en": "My tentacles catch tiny animals that float past."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám spoustu chapadel jako prstíky.",
+        "en": "I have lots of tentacles like little fingers."
+      },
+      {
+        "cs": "Špičky chapadel mám světlejší a kulaté.",
+        "en": "My tentacle tips are paler and round."
+      },
+      {
+        "cs": "Moje nožka je pestrá, třeba fialová nebo modrá.",
+        "en": "My stalk is bright, for example purple or blue."
+      }
+    ],
+    "fact": {
+      "cs": "Já a klaun si pomáháme. Chráním ho a on mě čistí.",
+      "en": "The clownfish and I help each other. I protect it, it cleans me."
+    },
+    "breathesAir": false,
+    "touch": "sting",
+    "safety": {
+      "cs": "Pozor, žahám! Jen se díváme, nesaháme.",
+      "en": "Careful, I sting! We only look, we don't touch."
+    },
+    "riddle": {
+      "cs": "Mám spoustu chapadel, skoro se nehýbu a bydlí u mě klaun. Kdo jsem?",
+      "en": "I have lots of tentacles, I hardly move, and a clownfish lives with me. Who am I?"
+    },
+    "motion": "sway",
+    "sources": [
+      "https://animaldiversity.org/accounts/Heteractis_magnifica/",
+      "https://en.wikipedia.org/wiki/Heteractis_magnifica",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=854493",
+      "https://www.fishbase.se/summary/Amphiprion-ocellaris.html",
+      "https://www.nationalgeographic.com/animals/fish/facts/clownfish",
+      "https://cs.wikipedia.org/wiki/Sasanka_velkolep%C3%A1"
+    ]
+  },
+  {
+    "id": "konik",
+    "zone": "utes",
+    "level": 1,
+    "group": "ryba",
+    "name": {
+      "cs": "Koníček mořský",
+      "en": "Long-snouted seahorse"
+    },
+    "short": {
+      "cs": "koníček",
+      "en": "seahorse"
+    },
+    "latin": "Hippocampus guttulatus",
+    "sizeCm": 15,
+    "sizeSay": {
+      "cs": "Jsem velký asi jako pastelka.",
+      "en": "I am about as long as a colouring pencil."
+    },
+    "depthM": [
+      0,
+      30
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Čumáčkem jako brčkem nasávám drobný plankton.",
+      "en": "I suck up tiny plankton through my snout, like a straw."
+    },
+    "lookFor": [
+      {
+        "cs": "Hlavu mám jako koník.",
+        "en": "My head looks like a horse's head."
+      },
+      {
+        "cs": "Ocásek mám stočený do kroužku.",
+        "en": "My tail curls into a ring."
+      },
+      {
+        "cs": "Na hlavě a zádech mám střapatou hřívu.",
+        "en": "I have a shaggy mane on my head and back."
+      }
+    ],
+    "fact": {
+      "cs": "Miminka nosí ve vaku na bříšku tatínek!",
+      "en": "The dad carries the babies in a pouch on his tummy!"
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mám hlavu jako koník a ocáskem se držím řas. Kdo jsem?",
+      "en": "My head looks like a horse and my tail holds on to seaweed. Who am I?"
+    },
+    "motion": "hover",
+    "sources": [
+      "https://www.fishbase.se/summary/Hippocampus-guttulatus.html",
+      "https://www.nationalgeographic.com/animals/fish/facts/seahorses",
+      "https://en.wikipedia.org/wiki/Hippocampus_guttulatus",
+      "https://cs.wikipedia.org/wiki/Kon%C3%AD%C4%8Dek_mo%C5%99sk%C3%BD",
+      "https://www.aquatab.net/system/prehled-druhu/?search=Hippocampus%20guttulatus",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=154776"
+    ]
+  },
+  {
+    "id": "hvezdice",
+    "zone": "utes",
+    "level": 1,
+    "group": "ostnokozec",
+    "name": {
+      "cs": "Hvězdice modrá",
+      "en": "Blue sea star"
+    },
+    "short": {
+      "cs": "hvězdice",
+      "en": "sea star"
+    },
+    "latin": "Linckia laevigata",
+    "sizeCm": 30,
+    "sizeSay": {
+      "cs": "Jsem velká skoro jako tvůj batůžek.",
+      "en": "I am almost as big as your little backpack."
+    },
+    "depthM": [
+      0,
+      60
+    ],
+    "eats": "mixed",
+    "eatsSay": {
+      "cs": "Vysunu žaludek ven a sním zbytky jídla na dně.",
+      "en": "I push my stomach out and eat scraps on the seabed."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám pět ramen.",
+        "en": "I have five arms."
+      },
+      {
+        "cs": "Jsem celá sytě modrá.",
+        "en": "I am bright blue all over."
+      },
+      {
+        "cs": "Ramena mám dlouhá a kulatá jako párečky.",
+        "en": "My arms are long and round, like sausages."
+      }
+    ],
+    "fact": {
+      "cs": "Na konci každého ramena mám malinké oko.",
+      "en": "I have a tiny eye at the tip of each arm."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Nejsem ryba, mám pět modrých ramen a pomalu lezu po dně. Kdo jsem?",
+      "en": "I am not a fish, I have five blue arms and crawl slowly on the seabed. Who am I?"
+    },
+    "motion": "crawl",
+    "sources": [
+      "https://animaldiversity.org/accounts/Linckia_laevigata/",
+      "https://en.wikipedia.org/wiki/Linckia_laevigata",
+      "https://www.nationalgeographic.com/science/article/starfish-spot-the-way-home-with-eyes-on-their-arms",
+      "https://royalsocietypublishing.org/doi/10.1098/rspb.2013.3011",
+      "https://oceanservice.noaa.gov/facts/starfish.html",
+      "https://cs.wikipedia.org/wiki/Hv%C4%9Bzdice_modr%C3%A1",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=207610"
+    ]
+  },
+  {
+    "id": "krab",
+    "zone": "utes",
+    "level": 1,
+    "group": "korys",
+    "name": {
+      "cs": "Krab pobřežní",
+      "en": "European green crab"
+    },
+    "short": {
+      "cs": "krab",
+      "en": "crab"
+    },
+    "latin": "Carcinus maenas",
+    "sizeCm": 8,
+    "sizeSay": {
+      "cs": "Jsem velký asi jako sušenka.",
+      "en": "I am about as big as a biscuit."
+    },
+    "depthM": [
+      0,
+      60
+    ],
+    "eats": "mixed",
+    "eatsSay": {
+      "cs": "Jím mušle, šnečky, řasy i zbytky.",
+      "en": "I eat mussels, snails, seaweed and leftovers."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám dvě klepeta.",
+        "en": "I have two claws."
+      },
+      {
+        "cs": "Kromě klepet mám osm nohou na chození.",
+        "en": "Besides my claws, I have eight walking legs."
+      },
+      {
+        "cs": "Okraj krunýře mám zubatý jako pilka.",
+        "en": "The edge of my shell is jagged like a saw."
+      }
+    ],
+    "fact": {
+      "cs": "Když vyrostu, svléknu starý krunýř jako tričko.",
+      "en": "When I grow, I slip out of my old shell like a T-shirt."
+    },
+    "breathesAir": false,
+    "touch": "pinch",
+    "safety": {
+      "cs": "Pozor, můžu štípnout klepetem! Jen se díváme.",
+      "en": "Careful, my claws can pinch! We only look."
+    },
+    "riddle": {
+      "cs": "Chodím bokem a mám dvě klepeta. Kdo jsem?",
+      "en": "I walk sideways and I have two claws. Who am I?"
+    },
+    "motion": "crawl-side",
+    "sources": [
+      "https://www.marlin.ac.uk/species/detail/1497",
+      "https://en.wikipedia.org/wiki/Carcinus_maenas",
+      "https://www.britannica.com/animal/Why-Do-Crabs-Walk-Sideways",
+      "https://cs.wikipedia.org/wiki/Krabi",
+      "https://cs.wikipedia.org/wiki/Zoea",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=107381"
+    ]
+  },
+  {
+    "id": "chobotnice",
+    "zone": "utes",
+    "level": 1,
+    "group": "mekkys",
+    "name": {
+      "cs": "Chobotnice pobřežní",
+      "en": "Common octopus"
+    },
+    "short": {
+      "cs": "chobotnice",
+      "en": "octopus"
+    },
+    "latin": "Octopus vulgaris",
+    "sizeCm": 60,
+    "sizeSay": {
+      "cs": "I s chapadly jsem velká asi jako kočka.",
+      "en": "With my arms, I am about as big as a cat."
+    },
+    "depthM": [
+      0,
+      100
+    ],
+    "eats": "shellfish",
+    "eatsSay": {
+      "cs": "Nejraději jím kraby a mušle.",
+      "en": "I like crabs and clams best."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám osm chapadel.",
+        "en": "I have eight arms."
+      },
+      {
+        "cs": "Na chapadlech mám přísavky.",
+        "en": "My arms have suckers."
+      },
+      {
+        "cs": "Mám měkké tělo jako balónek.",
+        "en": "My soft body looks like a balloon."
+      }
+    ],
+    "fact": {
+      "cs": "Mám tři srdce a modrou krev.",
+      "en": "I have three hearts and blue blood."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mám osm chapadel a umím měnit barvu. Kdo jsem?",
+      "en": "I have eight arms and I can change colour. Who am I?"
+    },
+    "motion": "jet",
+    "sources": [
+      "https://www.nationalgeographic.com/animals/invertebrates/facts/common-octopus",
+      "https://www.sealifebase.se/summary/Octopus-vulgaris.html",
+      "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
+      "https://www.britannica.com/animal/coleoid",
+      "https://en.wikipedia.org/wiki/Common_octopus",
+      "https://cs.wikipedia.org/wiki/Chobotnice_pob%C5%99e%C5%BEn%C3%AD"
+    ]
+  },
+  {
+    "id": "papousek",
+    "zone": "utes",
+    "level": 2,
+    "group": "ryba",
+    "name": {
+      "cs": "Ploskozubec tupohlavý",
+      "en": "Bullethead parrotfish"
+    },
+    "short": {
+      "cs": "ploskozubec",
+      "en": "parrotfish"
+    },
+    "latin": "Chlorurus sordidus",
+    "sizeCm": 40,
+    "sizeSay": {
+      "cs": "Jsem dlouhý skoro jako tvoje ruka.",
+      "en": "I am almost as long as your arm."
+    },
+    "depthM": [
+      0,
+      50
+    ],
+    "eats": "algae",
+    "eatsSay": {
+      "cs": "Zobáčkem okusuji řasy z korálů a kamenů.",
+      "en": "With my beak I nibble algae off coral and rocks."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám zobáček jako papoušek.",
+        "en": "I have a beak like a parrot."
+      },
+      {
+        "cs": "Mám velké šupiny s modrým lemem.",
+        "en": "My big scales have blue edges."
+      },
+      {
+        "cs": "Dospělý sameček je pestře zelenomodrý.",
+        "en": "Grown-up males are bright green and blue."
+      }
+    ],
+    "fact": {
+      "cs": "Z korálů, které rozkoušu, se stane bílý písek.",
+      "en": "The coral I crunch turns into white sand."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mám zobáček jako papoušek a dělám bílý písek. Kdo jsem?",
+      "en": "I have a beak like a parrot and I make white sand. Who am I?"
+    },
+    "motion": "swim",
+    "sources": [
+      "https://www.fishbase.se/summary/Chlorurus-sordidus.html",
+      "https://www.nationalgeographic.com/animals/fish/facts/parrotfish",
+      "https://oceanservice.noaa.gov/podcast/july23/nop67-sand.html",
+      "https://cs.wikipedia.org/wiki/Ploskozubec_tupohlav%C3%BD",
+      "https://www.aquatab.net/system/prehled-druhu/?search=Chlorurus%20sordidus",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=219082"
+    ]
+  },
+  {
+    "id": "vydra",
+    "zone": "chaluhy",
+    "level": 1,
+    "group": "savec",
+    "name": {
+      "cs": "Vydra mořská",
+      "en": "Sea otter"
+    },
+    "short": {
+      "cs": "vydra",
+      "en": "sea otter"
+    },
+    "latin": "Enhydra lutris",
+    "sizeCm": 120,
+    "sizeSay": {
+      "cs": "Jsem dlouhá skoro jako ty.",
+      "en": "I am almost as long as you are tall."
+    },
+    "depthM": [
+      1,
+      25
+    ],
+    "eats": "shellfish",
+    "eatsSay": {
+      "cs": "Jím ježovky a mušle, skořápky rozbíjím kamenem.",
+      "en": "I eat urchins and clams and crack shells with a stone."
+    },
+    "lookFor": [
+      {
+        "cs": "Plavu na zádech.",
+        "en": "I float on my back."
+      },
+      {
+        "cs": "Mám hustý hnědý kožich.",
+        "en": "I have thick brown fur."
+      },
+      {
+        "cs": "Mám dlouhé bílé vousky.",
+        "en": "I have long white whiskers."
+      }
+    ],
+    "fact": {
+      "cs": "Mám nejhustší kožich ze všech zvířat. Hřeje mě místo tuku.",
+      "en": "I have the thickest fur of any animal. It keeps me warm instead of fat."
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Plavu na zádech a mušle si rozbíjím kamenem. Kdo jsem?",
+      "en": "I float on my back and crack clams with a stone. Who am I?"
+    },
+    "motion": "surface",
+    "sources": [
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/sea-otter",
+      "https://en.wikipedia.org/wiki/Sea_otter",
+      "https://www.nps.gov/kefj/learn/nature/sea-otter.htm",
+      "https://www.fws.gov/sites/default/files/documents/SEA%20OTTER%20REINTRO%20REPORT%202022%20508%20compliant%20-%20FINAL%2007082022%20with%20cover.pdf",
+      "https://cs.wikipedia.org/wiki/Vydra_mo%C5%99sk%C3%A1"
+    ]
+  },
+  {
+    "id": "tulen",
+    "zone": "chaluhy",
+    "level": 1,
+    "group": "savec",
+    "name": {
+      "cs": "Tuleň obecný",
+      "en": "Harbour seal"
+    },
+    "short": {
+      "cs": "tuleň",
+      "en": "seal"
+    },
+    "latin": "Phoca vitulina",
+    "sizeCm": 170,
+    "sizeSay": {
+      "cs": "Jsem dlouhý skoro jako tvoje postel.",
+      "en": "I am almost as long as your bed."
+    },
+    "depthM": [
+      0,
+      50
+    ],
+    "eats": "fish",
+    "eatsSay": {
+      "cs": "Jím ryby, chobotnice a krabíky.",
+      "en": "I eat fish, octopuses and little crabs."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám kulatou hlavu a místo uší jen dírky.",
+        "en": "I have a round head with just little ear holes."
+      },
+      {
+        "cs": "Šedý kožich mám posetý tmavými skvrnkami.",
+        "en": "My grey fur is covered in dark spots."
+      },
+      {
+        "cs": "Na krátkých předních ploutvích mám drápky.",
+        "en": "My short front flippers have claws."
+      }
+    ],
+    "fact": {
+      "cs": "Vousky ve vodě ucítím, kudy plavala ryba.",
+      "en": "My whiskers can feel where a fish swam by."
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem skvrnitý, dýchám vzduch a rád odpočívám na skále. Kdo jsem?",
+      "en": "I am spotty, I breathe air and I like resting on rocks. Who am I?"
+    },
+    "motion": "swim",
+    "sources": [
+      "https://www.fisheries.noaa.gov/species/harbor-seal",
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/harbor-seal",
+      "https://www.nhm.ac.uk/discover/how-seals-whiskers-help-them-hunt-underwater.html",
+      "https://tethys.pnnl.gov/publications/hydrodynamic-trail-following-harbor-seals-phoca-vitulina",
+      "https://newsrelease.adfg.alaska.gov/index.cfm?adfg=harborseal.printerfriendly",
+      "https://seaworld.org/animals/all-about/harbor-seal/characteristics/",
+      "https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD"
+    ]
+  },
+  {
+    "id": "jezovka",
+    "zone": "chaluhy",
+    "level": 2,
+    "group": "ostnokozec",
+    "name": {
+      "cs": "Ježovka purpurová",
+      "en": "Purple sea urchin"
+    },
+    "short": {
+      "cs": "ježovka",
+      "en": "sea urchin"
+    },
+    "latin": "Strongylocentrotus purpuratus",
+    "sizeCm": 7,
+    "sizeSay": {
+      "cs": "Jsem velká asi jako mandarinka.",
+      "en": "I am about as big as a tangerine."
+    },
+    "depthM": [
+      0,
+      160
+    ],
+    "eats": "algae",
+    "eatsSay": {
+      "cs": "Okusuji chaluhy a jiné řasy.",
+      "en": "I nibble kelp and other seaweed."
+    },
+    "lookFor": [
+      {
+        "cs": "Jsem kulatá jako míček.",
+        "en": "I am round like a ball."
+      },
+      {
+        "cs": "Ostny mám všude kolem dokola.",
+        "en": "I have spines all around me."
+      },
+      {
+        "cs": "Jsem fialová.",
+        "en": "I am purple."
+      }
+    ],
+    "fact": {
+      "cs": "Pusu mám vespod a v ní pět zoubků.",
+      "en": "My mouth is underneath and has five little teeth."
+    },
+    "breathesAir": false,
+    "touch": "spines",
+    "safety": {
+      "cs": "Pozor, píchám! Jen se díváme, nesaháme.",
+      "en": "Careful, I'm prickly! We only look, we don't touch."
+    },
+    "riddle": {
+      "cs": "Jsem fialová kulička s ostny a okusuji chaluhy. Kdo jsem?",
+      "en": "I am a purple ball with spines and I nibble kelp. Who am I?"
+    },
+    "motion": "crawl",
+    "sources": [
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/purple-sea-urchin",
+      "https://www.sealifebase.se/summary/Strongylocentrotus-purpuratus.html",
+      "https://en.wikipedia.org/wiki/Strongylocentrotus_purpuratus",
+      "https://cs.wikipedia.org/wiki/Aristotelova_lucerna",
+      "https://cs.wikipedia.org/wiki/Je%C5%BEovky",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=240747"
+    ]
+  },
+  {
+    "id": "meduza",
+    "zone": "chaluhy",
+    "level": 1,
+    "group": "zahavec",
+    "name": {
+      "cs": "Talířovka ušatá",
+      "en": "Moon jellyfish"
+    },
+    "short": {
+      "cs": "medúza",
+      "en": "jellyfish"
+    },
+    "latin": "Aurelia aurita",
+    "sizeCm": 25,
+    "sizeSay": {
+      "cs": "Jsem velká jako talíř.",
+      "en": "I am as big as a dinner plate."
+    },
+    "depthM": [
+      0,
+      200
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Jím drobný plankton, který se mi přilepí na zvon.",
+      "en": "I eat tiny plankton that sticks to my bell."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám průhledný zvon jako talíř.",
+        "en": "My see-through bell looks like a plate."
+      },
+      {
+        "cs": "Uvnitř mám čtyři kroužky jako čtyřlístek.",
+        "en": "Inside I have four rings, like a four-leaf clover."
+      },
+      {
+        "cs": "Po okraji mám krátká třásnitá chapadélka.",
+        "en": "Short fringy tentacles hang around my edge."
+      }
+    ],
+    "fact": {
+      "cs": "Nemám mozek, srdce ani krev.",
+      "en": "I have no brain, no heart and no blood."
+    },
+    "breathesAir": false,
+    "touch": "sting",
+    "safety": {
+      "cs": "Žahám jen slabounce, ale stejně se jen díváme.",
+      "en": "My sting is very weak, but we still only look."
+    },
+    "riddle": {
+      "cs": "Jsem průhledná jako sklo a plavu jako deštník. Kdo jsem?",
+      "en": "I am clear as glass and I swim like an umbrella. Who am I?"
+    },
+    "motion": "pulse",
+    "sources": [
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/moon-jelly",
+      "https://www.sealifebase.se/summary/Aurelia-aurita.html",
+      "https://oceanservice.noaa.gov/facts/jellyfish.html",
+      "https://www.nhm.ac.uk/discover/what-is-a-jellyfish.html",
+      "https://en.wikipedia.org/wiki/Aurelia_aurita",
+      "https://cs.wikipedia.org/wiki/Med%C3%BAzovci",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=135306"
+    ]
+  },
+  {
+    "id": "delfin",
+    "zone": "sire-more",
+    "level": 1,
+    "group": "savec",
+    "name": {
+      "cs": "Delfín skákavý",
+      "en": "Common bottlenose dolphin"
+    },
+    "short": {
+      "cs": "delfín",
+      "en": "dolphin"
+    },
+    "latin": "Tursiops truncatus",
+    "sizeCm": 300,
+    "sizeSay": {
+      "cs": "Jsem skoro tak dlouhý jako auto.",
+      "en": "I am almost as long as a car."
+    },
+    "depthM": [
+      0,
+      50
+    ],
+    "eats": "fish",
+    "eatsSay": {
+      "cs": "Jím ryby a olihně, rybu spolknu celou.",
+      "en": "I eat fish and squid, and swallow fish whole."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám krátký zobáček.",
+        "en": "I have a short beak."
+      },
+      {
+        "cs": "Na zádech mám zahnutou ploutev.",
+        "en": "I have a curved fin on my back."
+      },
+      {
+        "cs": "Na temeni mám dírku na dýchání.",
+        "en": "I have a breathing hole on top of my head."
+      }
+    ],
+    "fact": {
+      "cs": "Každý delfín má svůj hvizd. Je to jako jméno.",
+      "en": "Every dolphin has its own whistle. It is like a name."
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Dýchám vzduch dírkou na hlavě a rád skáču z vody. Kdo jsem?",
+      "en": "I breathe through a hole on my head and love jumping. Who am I?"
+    },
+    "motion": "swim",
+    "sources": [
+      "https://www.fisheries.noaa.gov/species/common-bottlenose-dolphin",
+      "https://www.pnas.org/doi/10.1073/pnas.0509918103",
+      "https://www.pnas.org/doi/10.1073/pnas.1304459110",
+      "https://seaworld.org/animals/all-about/bottlenose-dolphin/adaptations/",
+      "https://en.wikipedia.org/wiki/Common_bottlenose_dolphin",
+      "https://cs.wikipedia.org/wiki/Delf%C3%ADn_sk%C3%A1kav%C3%BD"
+    ]
+  },
+  {
+    "id": "zelva",
+    "zone": "sire-more",
+    "level": 1,
+    "group": "plaz",
+    "name": {
+      "cs": "Kareta obecná",
+      "en": "Loggerhead sea turtle"
+    },
+    "short": {
+      "cs": "želva",
+      "en": "sea turtle"
+    },
+    "latin": "Caretta caretta",
+    "sizeCm": 90,
+    "sizeSay": {
+      "cs": "Jsem skoro tak velká jako ty.",
+      "en": "I am almost as big as you."
+    },
+    "depthM": [
+      0,
+      50
+    ],
+    "eats": "shellfish",
+    "eatsSay": {
+      "cs": "Silnými čelistmi louskám kraby a mušle.",
+      "en": "My strong jaws crack crabs and shellfish."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám velkou hlavu.",
+        "en": "I have a big head."
+      },
+      {
+        "cs": "Krunýř mám červenohnědý.",
+        "en": "My shell is reddish brown."
+      },
+      {
+        "cs": "Místo nohou mám ploutve.",
+        "en": "I have flippers instead of feet."
+      }
+    ],
+    "fact": {
+      "cs": "Na rozdíl od želv na souši hlavu do krunýře neschovám.",
+      "en": "Unlike turtles on land, I can't pull my head into my shell."
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mám krunýř, ploutve a vajíčka kladu na pláži. Kdo jsem?",
+      "en": "I have a shell and flippers, and I lay eggs on a beach. Who am I?"
+    },
+    "motion": "glide",
+    "sources": [
+      "https://www.fisheries.noaa.gov/species/loggerhead-turtle",
+      "https://www.fisheries.noaa.gov/feature-story/10-tremendous-turtle-facts",
+      "https://ocean.si.edu/ocean-life/reptiles/sea-turtles",
+      "https://pubs.usgs.gov/publication/70204917",
+      "https://en.wikipedia.org/wiki/Loggerhead_sea_turtle",
+      "https://cs.wikipedia.org/wiki/Kareta_obecn%C3%A1"
+    ]
+  },
+  {
+    "id": "keporkak",
+    "zone": "sire-more",
+    "level": 1,
+    "group": "savec",
+    "name": {
+      "cs": "Keporkak",
+      "en": "Humpback whale"
+    },
+    "short": {
+      "cs": "keporkak",
+      "en": "humpback whale"
+    },
+    "latin": "Megaptera novaeangliae",
+    "sizeCm": 1400,
+    "sizeSay": {
+      "cs": "Jsem delší než autobus!",
+      "en": "I am longer than a bus!"
+    },
+    "depthM": [
+      0,
+      100
+    ],
+    "eats": "krill",
+    "eatsSay": {
+      "cs": "Polykám drobné korýše krill a malé rybky.",
+      "en": "I gulp tiny krill and small fish."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám obrovské dlouhé prsní ploutve.",
+        "en": "I have huge, long side flippers."
+      },
+      {
+        "cs": "Na hlavě mám hrbolky.",
+        "en": "I have bumps on my head."
+      },
+      {
+        "cs": "Pod bradou mám dlouhé rýhy.",
+        "en": "I have long grooves under my chin."
+      }
+    ],
+    "fact": {
+      "cs": "Sameček zpívá dlouhé písně a opakuje je i celé hodiny.",
+      "en": "Males sing long songs and repeat them for hours."
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem větší než autobus a umím zpívat. Kdo jsem?",
+      "en": "I am bigger than a bus and I can sing. Who am I?"
+    },
+    "motion": "glide",
+    "sources": [
+      "https://www.fisheries.noaa.gov/species/humpback-whale",
+      "https://www.nps.gov/kefj/learn/nature/humpback-whale.htm",
+      "https://en.wikipedia.org/wiki/Humpback_whale",
+      "https://cs.wikipedia.org/wiki/Keporkak",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=137092"
+    ]
+  },
+  {
+    "id": "zralok",
+    "zone": "sire-more",
+    "level": 1,
+    "group": "ryba",
+    "name": {
+      "cs": "Žralok obrovský",
+      "en": "Whale shark"
+    },
+    "short": {
+      "cs": "žralok",
+      "en": "whale shark"
+    },
+    "latin": "Rhincodon typus",
+    "sizeCm": 900,
+    "sizeSay": {
+      "cs": "Jsem dlouhý skoro jako autobus.",
+      "en": "I am almost as long as a bus."
+    },
+    "depthM": [
+      0,
+      100
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Cedím vodu a jím drobný plankton a rybky.",
+      "en": "I sieve the water and eat plankton and tiny fish."
+    },
+    "lookFor": [
+      {
+        "cs": "Na tmavých zádech mám bílé tečky a proužky.",
+        "en": "My dark back has white spots and stripes."
+      },
+      {
+        "cs": "Širokou tlamu mám úplně vpředu.",
+        "en": "My wide mouth is right at the front."
+      },
+      {
+        "cs": "Po bocích mám podélné hřebeny.",
+        "en": "I have long ridges along my sides."
+      }
+    ],
+    "fact": {
+      "cs": "Jsem největší ryba na světě, ale jím jen drobotinu.",
+      "en": "I am the biggest fish in the world, but I eat tiny food."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem ryba skoro jako autobus a mám bílé tečky. Kdo jsem?",
+      "en": "I am a fish almost as long as a bus, with white spots. Who am I?"
+    },
+    "motion": "glide",
+    "sources": [
+      "https://www.fishbase.se/summary/Rhincodon-typus.html",
+      "https://www.georgiaaquarium.org/resource-center/deep-dive/whale-sharks/",
+      "https://en.wikipedia.org/wiki/Whale_shark",
+      "https://www.aquatab.net/system/genus/3992/",
+      "https://cs.wikipedia.org/wiki/%C5%BDralok_obrovsk%C3%BD",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=105847"
+    ]
+  },
+  {
+    "id": "manta",
+    "zone": "sire-more",
+    "level": 2,
+    "group": "ryba",
+    "name": {
+      "cs": "Manta obrovská",
+      "en": "Giant manta ray"
+    },
+    "short": {
+      "cs": "manta",
+      "en": "manta ray"
+    },
+    "latin": "Mobula birostris",
+    "sizeCm": 450,
+    "sizeSay": {
+      "cs": "S roztaženými ploutvemi jsem široká jako auto.",
+      "en": "With my fins spread, I am as wide as a car."
+    },
+    "depthM": [
+      0,
+      200
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Laloky u pusy si naháním plankton do pusy.",
+      "en": "The flaps by my mouth steer plankton inside."
+    },
+    "lookFor": [
+      {
+        "cs": "Ploutve mám jako trojúhelníková křídla.",
+        "en": "My fins look like triangle wings."
+      },
+      {
+        "cs": "U pusy mám dva laloky jako rohy.",
+        "en": "I have two flaps by my mouth, like horns."
+      },
+      {
+        "cs": "Na tmavém hřbetě mám dvě bílé skvrny.",
+        "en": "My dark back has two white patches."
+      }
+    ],
+    "fact": {
+      "cs": "Každá manta má na bříšku jiné skvrny.",
+      "en": "Every manta has its own pattern of belly spots."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mávám ploutvemi jako křídly a u pusy mám dva laloky. Kdo jsem?",
+      "en": "I flap my fins like wings and have two flaps by my mouth. Who am I?"
+    },
+    "motion": "glide",
+    "sources": [
+      "https://www.fisheries.noaa.gov/species/giant-manta-ray",
+      "https://www.mantatrust.org/idthemanta",
+      "https://marinemegafauna.org/species/manta-rays/guide/anatomy",
+      "https://en.wikipedia.org/wiki/Giant_oceanic_manta_ray",
+      "https://cs.wikipedia.org/wiki/Manta_obrovsk%C3%A1",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1026118"
+    ]
+  },
+  {
+    "id": "sardinky",
+    "zone": "sire-more",
+    "level": 2,
+    "group": "ryba",
+    "name": {
+      "cs": "Sardinka obecná",
+      "en": "European pilchard (sardine)"
+    },
+    "short": {
+      "cs": "sardinky",
+      "en": "sardines"
+    },
+    "latin": "Sardina pilchardus",
+    "sizeCm": 20,
+    "sizeSay": {
+      "cs": "Jsem dlouhá asi jako tvoje bota.",
+      "en": "I am about as long as your shoe."
+    },
+    "depthM": [
+      10,
+      100
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Jím drobné korýšky z planktonu.",
+      "en": "I eat tiny plankton shrimps."
+    },
+    "lookFor": [
+      {
+        "cs": "Boky a bříško se mi stříbřitě lesknou.",
+        "en": "My sides and belly shine silver."
+      },
+      {
+        "cs": "Záda mám zelenkavá.",
+        "en": "My back is greenish."
+      },
+      {
+        "cs": "Na boku mám řadu tmavých teček.",
+        "en": "I have a row of dark dots on my side."
+      }
+    ],
+    "fact": {
+      "cs": "V hejnu jsme v bezpečí. Plaveme všechny spolu.",
+      "en": "We are safer in a school, so we all swim together."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsme malé stříbřité rybky a plaveme v obrovském hejnu. Kdo jsme?",
+      "en": "We are small silver fish swimming in a huge school. Who are we?"
+    },
+    "motion": "school",
+    "sources": [
+      "https://www.fishbase.se/summary/Sardina-pilchardus.html",
+      "https://www.fao.org/fi/static-media/FI/CDrom/ARTFIMED/ArtFiWeb/descript/Species/CLUSAPIL.HTML",
+      "https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/1977/752/major.pdf",
+      "https://www.nationalgeographic.com/science/article/to-work-out-why-fish-swim-together-tempt-a-predator-with-virtual-prey",
+      "https://www.aquatab.net/system/prehled-druhu/?search=Sardina%20pilchardus",
+      "https://cs.wikipedia.org/wiki/Sardinka_obecn%C3%A1"
+    ]
+  },
+  {
+    "id": "das",
+    "zone": "hlubiny",
+    "level": 1,
+    "group": "ryba",
+    "name": {
+      "cs": "Hlubinný ďas",
+      "en": "Humpback anglerfish"
+    },
+    "short": {
+      "cs": "ďas",
+      "en": "anglerfish"
+    },
+    "latin": "Melanocetus johnsonii",
+    "sizeCm": 18,
+    "sizeSay": {
+      "cs": "Jsem velký asi jako malý meloun.",
+      "en": "I am about as big as a small melon."
+    },
+    "depthM": [
+      100,
+      1500
+    ],
+    "eats": "fish",
+    "eatsSay": {
+      "cs": "Svítící lampičkou lákám ve tmě rybky a korýšky.",
+      "en": "My glowing lure tempts fish and shrimps in the dark."
+    },
+    "lookFor": [
+      {
+        "cs": "Nad pusou mám svítící lampičku.",
+        "en": "I have a glowing lure above my mouth."
+      },
+      {
+        "cs": "Mám velkou pusu.",
+        "en": "I have a big mouth."
+      },
+      {
+        "cs": "Mám kulaté tmavé tělo.",
+        "en": "My body is round and dark."
+      }
+    ],
+    "fact": {
+      "cs": "Lampičku mi rozsvěcují malinké bakterie, které v ní bydlí.",
+      "en": "Tiny bacteria living in my lure make it glow."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Bydlím ve tmě a nad pusou mi svítí lampička. Kdo jsem?",
+      "en": "I live in the dark and a little lamp glows above my mouth. Who am I?"
+    },
+    "motion": "hover",
+    "sources": [
+      "https://www.fishbase.se/summary/Melanocetus-johnsonii.html",
+      "https://www.mbari.org/animal/deep-sea-anglerfish/",
+      "https://ocean.si.edu/ocean-life/fish/meet-tiny-bacteria-give-anglerfishes-their-spooky-glow",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020299/",
+      "https://en.wikipedia.org/wiki/Melanocetus_johnsonii",
+      "https://www.aquatab.net/system/prehled-druhu/?search=Melanocetus%20johnsonii",
+      "https://cs.wikipedia.org/wiki/%C4%8Easov%C3%A9"
+    ]
+  },
+  {
+    "id": "dumbo",
+    "zone": "hlubiny",
+    "level": 1,
+    "group": "mekkys",
+    "name": {
+      "cs": "Chobotnice dumbo",
+      "en": "Dumbo octopus"
+    },
+    "short": {
+      "cs": "dumbo",
+      "en": "dumbo octopus"
+    },
+    "latin": "Grimpoteuthis",
+    "sizeCm": 20,
+    "sizeSay": {
+      "cs": "Jsem velká asi jako obrázková knížka.",
+      "en": "I am about as big as a picture book."
+    },
+    "depthM": [
+      1000,
+      4000
+    ],
+    "eats": "shellfish",
+    "eatsSay": {
+      "cs": "Polykám drobné korýšky a červíky celé.",
+      "en": "I swallow tiny shrimps and worms whole."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám dvě ploutvičky jako uši.",
+        "en": "I have two fins that look like ears."
+      },
+      {
+        "cs": "Chapadla mám spojená blánou jako sukýnku.",
+        "en": "My arms are joined by skin, like a skirt."
+      },
+      {
+        "cs": "Mám měkké kulaté tělo jako zvoneček.",
+        "en": "My soft round body looks like a little bell."
+      }
+    ],
+    "fact": {
+      "cs": "Bydlím nejhlouběji ze všech chobotnic.",
+      "en": "I live deeper than any other octopus."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Mám ploutvičky jako sloní uši a bydlím hluboko ve tmě. Kdo jsem?",
+      "en": "My fins look like elephant ears and I live deep in the dark. Who am I?"
+    },
+    "motion": "flap",
+    "sources": [
+      "https://www.aquariumofpacific.org/onlinelearningcenter/species/dumbo_octopus",
+      "https://www.nationalgeographic.com/animals/invertebrates/facts/dumbo-octopus",
+      "https://utmsi.utexas.edu/science-and-the-sea/radio-program/dumbo-octopus/",
+      "https://en.wikipedia.org/wiki/Grimpoteuthis",
+      "https://ct24.ceskatelevize.cz/clanek/veda/hloubeji-jeste-chobotnici-nikdo-nevidel-vedci-nafilmovali-bizarni-tvory-tisice-metru-pod-hladinou-49363",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=138293"
+    ]
+  },
+  {
+    "id": "svetluska",
+    "zone": "hlubiny",
+    "level": 1,
+    "group": "zahavec",
+    "name": {
+      "cs": "Medúza atolla",
+      "en": "Atolla jellyfish"
+    },
+    "short": {
+      "cs": "atolla",
+      "en": "atolla"
+    },
+    "latin": "Atolla wyvillei",
+    "sizeCm": 15,
+    "sizeSay": {
+      "cs": "Jsem velká asi jako talířek pod hrnek.",
+      "en": "I am about as big as a saucer."
+    },
+    "depthM": [
+      500,
+      4000
+    ],
+    "eats": "plankton",
+    "eatsSay": {
+      "cs": "Dlouhým chapadlem chytám drobné korýšky.",
+      "en": "I catch tiny shrimps with my long tentacle."
+    },
+    "lookFor": [
+      {
+        "cs": "Mám tmavě červený zvon.",
+        "en": "My bell is dark red."
+      },
+      {
+        "cs": "Jedno chapadlo mám mnohem delší než ostatní.",
+        "en": "One of my tentacles is much longer than the rest."
+      },
+      {
+        "cs": "Po okraji zvonu mi svítí modrá světýlka.",
+        "en": "Blue lights glow around the edge of my bell."
+      }
+    ],
+    "fact": {
+      "cs": "Když mě něco chytí, zazářím modře. Vědci si myslí, že volám o pomoc.",
+      "en": "If something grabs me, I flash blue. Scientists think I'm calling for help."
+    },
+    "breathesAir": false,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem červená medúza z hlubin a umím svítit modře. Kdo jsem?",
+      "en": "I am a red jellyfish from the deep and I can glow blue. Who am I?"
+    },
+    "motion": "pulse",
+    "sources": [
+      "https://www.mbari.org/animal/deep-sea-crown-jelly/",
+      "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/red-crown-jelly",
+      "https://ocean.si.edu/ocean-life/invertebrates/atolla-jellyfish-waters-japan",
+      "https://oceanexplorer.noaa.gov/explorations/15biolum/background/medusa/medusa.html",
+      "https://en.wikipedia.org/wiki/Atolla_wyvillei",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=135282"
+    ]
+  },
+  {
+    "id": "kapustnak",
+    "zone": "utes",
+    "level": 1,
+    "group": "savec",
+    "name": {
+      "cs": "Kapustňák širokonosý",
+      "en": "West Indian manatee"
+    },
+    "short": {
+      "cs": "kapustňák",
+      "en": "manatee"
+    },
+    "latin": "Trichechus manatus",
+    "sizeCm": 300,
+    "sizeSay": {
+      "cs": "Jsem dlouhý skoro jako dvě postele za sebou.",
+      "en": "I am almost as long as two beds in a row."
+    },
+    "depthM": [
+      1,
+      5
+    ],
+    "eats": "seagrass",
+    "eatsSay": {
+      "cs": "Říkají mi mořská kráva, protože spásám mořskou trávu.",
+      "en": "People call me a sea cow, because I graze on seagrass."
+    },
+    "lookFor": [
+      {
+        "cs": "Ocas mám kulatý a placatý jako pádlo.",
+        "en": "My tail is round and flat, like a paddle."
+      },
+      {
+        "cs": "Na velkém horním pysku mám štětinaté vousky.",
+        "en": "My big upper lip has bristly whiskers."
+      },
+      {
+        "cs": "Na předních ploutvích mám malé nehty.",
+        "en": "My front flippers have little nails."
+      }
+    ],
+    "fact": {
+      "cs": "Jsem vzdálený příbuzný slona!",
+      "en": "I am a distant relative of the elephant!"
+    },
+    "breathesAir": true,
+    "touch": "look",
+    "riddle": {
+      "cs": "Jsem pomalý, spásám mořskou trávu a vynořuji se pro vzduch. Kdo jsem?",
+      "en": "I am slow, I graze on seagrass and come up for air. Who am I?"
+    },
+    "motion": "glide",
+    "sources": [
+      "https://www.fws.gov/species/west-indian-manatee-trichechus-manatus",
+      "https://oceantoday.noaa.gov/manateeanatomy/",
+      "https://savethemanatee.org/manatees/manatee-faq/",
+      "https://www.usgs.gov/publications/diving-and-foraging-behaviors",
+      "https://www.nps.gov/ever/learn/nature/manateepage.htm",
+      "https://cs.wikipedia.org/wiki/Kapust%C5%88%C3%A1k_%C5%A1irokonos%C3%BD",
+      "https://www.marinespecies.org/aphia.php?p=taxdetails&id=159509"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+# Mořský svět → GitHub Pages (one site, main only).
+# Photos (Wikimedia Commons, photos/manifest.json) are downloaded here on every deploy and never committed.
+# Voice recordings come from git (record-voices.yml); this deploy never calls a paid TTS service.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Unit tests (Node + Python)
+        run: |
+          for t in tests/*.test.mjs; do node "$t"; done
+          python -m unittest discover -s tests -t .
+
+      - name: Restore photos
+        uses: actions/cache@v4
+        with:
+          path: |
+            photos/*.jpg
+            photos/credits.json
+          key: photos-${{ hashFiles('photos/manifest.json') }}
+          restore-keys: photos-
+
+      - name: Fetch photos (only missing ones)
+        run: python fetch_photos.py
+        continue-on-error: true          # a missing photo shows „Fotku zatím nemáme“; never block a deploy
+        env:
+          MORSKY_SVET_CONTACT: ${{ vars.MORSKY_SVET_CONTACT }}
+
+      - name: Assemble the site
+        run: |
+          rm -rf _site && mkdir -p _site
+          rsync -a \
+            --exclude '.git' --exclude '.github' --exclude '.gitignore' \
+            --exclude 'dev/' --exclude 'tests/' --exclude '__pycache__/' \
+            --exclude 'design/*.png' --exclude 'design/*.md' --exclude 'design/*.py' --exclude '*.py' \
+            --exclude 'BRIEF*.md' --exclude 'README.md' --exclude 'start.command' --exclude 'package.json' \
+            --exclude 'voice/phrases.json' --exclude '*.part' --exclude '*.part.mp3' \
+            ./ _site/
+          echo "_site: $(find _site -type f | wc -l) files, photos $(ls _site/photos/*.jpg 2>/dev/null | wc -l), voices $(find _site/voice -name '*.mp3' 2>/dev/null | wc -l)"
+
+      - name: Smoke test (every service-worker core file exists)
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+          sw = open("_site/sw.js", encoding="utf-8").read()
+          core = re.search(r"const CORE = \[(.*?)\];", sw, re.S).group(1)
+          paths = [p for p in re.findall(r"'\./([^']*)'", core) if p]
+          bad = [p for p in paths if not os.path.isfile(os.path.join("_site", p))]
+          for p in bad: print(f"::error::missing {p} (offline install would fail)")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

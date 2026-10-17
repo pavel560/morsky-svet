@@ -1,0 +1,93 @@
+{
+ "_note": "DEV PLACEHOLDER",
+ "zones": [
+  {
+   "id": "utes",
+   "name": {
+    "cs": "Korálový útes",
+    "en": "Coral reef"
+   },
+   "depthM": [
+    0,
+    20
+   ],
+   "say": [
+    {
+     "cs": "[zástupný text o světle]",
+     "en": "[placeholder about light]"
+    },
+    {
+     "cs": "[zástupný text o teplotě]",
+     "en": "[placeholder about temperature]"
+    }
+   ],
+   "sources": []
+  },
+  {
+   "id": "chaluhy",
+   "name": {
+    "cs": "Chaluhový les",
+    "en": "Kelp forest"
+   },
+   "depthM": [
+    5,
+    30
+   ],
+   "say": [
+    {
+     "cs": "[zástupný text o světle]",
+     "en": "[placeholder about light]"
+    },
+    {
+     "cs": "[zástupný text o teplotě]",
+     "en": "[placeholder about temperature]"
+    }
+   ],
+   "sources": []
+  },
+  {
+   "id": "sire-more",
+   "name": {
+    "cs": "Širé moře",
+    "en": "Open ocean"
+   },
+   "depthM": [
+    0,
+    200
+   ],
+   "say": [
+    {
+     "cs": "[zástupný text o světle]",
+     "en": "[placeholder about light]"
+    },
+    {
+     "cs": "[zástupný text o teplotě]",
+     "en": "[placeholder about temperature]"
+    }
+   ],
+   "sources": []
+  },
+  {
+   "id": "hlubiny",
+   "name": {
+    "cs": "Hlubiny",
+    "en": "The deep"
+   },
+   "depthM": [
+    200,
+    4000
+   ],
+   "say": [
+    {
+     "cs": "[zástupný text o světle]",
+     "en": "[placeholder about light]"
+    },
+    {
+     "cs": "[zástupný text o teplotě]",
+     "en": "[placeholder about temperature]"
+    }
+   ],
+   "sources": []
+  }
+ ]
+}

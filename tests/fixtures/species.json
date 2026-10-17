@@ -1,0 +1,6 @@
+{ "version": 1, "species": [
+  { "id": "hrib-smrkovy", "latin": "Boletus edulis" },
+  { "id": "liska", "latin": "Cantharellus cibarius" },
+  { "id": "bedla", "latin": "Macrolepiota procera" },
+  { "id": "kozak", "latin": "Leccinum scabrum" }
+] }

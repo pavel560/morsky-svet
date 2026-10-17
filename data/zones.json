@@ -1,0 +1,132 @@
+[
+  {
+    "id": "utes",
+    "name": {
+      "cs": "Korálový útes",
+      "en": "Coral reef"
+    },
+    "depthM": [
+      0,
+      30
+    ],
+    "say": [
+      {
+        "cs": "Tady je teplá voda a spousta sluníčka.",
+        "en": "The water here is warm and full of sunshine."
+      },
+      {
+        "cs": "Korály potřebují světlo, proto rostou blízko hladiny.",
+        "en": "Corals need light, so they grow near the surface."
+      }
+    ],
+    "who": {
+      "cs": "Bydlí tu klauni, koníčci, hvězdice a chobotnice.",
+      "en": "Clownfish, seahorses, sea stars and octopuses live here."
+    },
+    "tempC": [
+      23,
+      29
+    ],
+    "sources": [
+      "https://oceanservice.noaa.gov/education/tutorial_corals/coral05_distribution.html",
+      "https://oceanservice.noaa.gov/education/tutorial_corals/coral02_zooxanthellae.html",
+      "https://ocean.si.edu/ocean-life/invertebrates/corals-and-coral-reefs"
+    ]
+  },
+  {
+    "id": "chaluhy",
+    "name": {
+      "cs": "Chaluhový les",
+      "en": "Kelp forest"
+    },
+    "depthM": [
+      5,
+      40
+    ],
+    "say": [
+      {
+        "cs": "Teď jsme doplavaly do studenějšího moře.",
+        "en": "Now we have swum into a colder sea."
+      },
+      {
+        "cs": "Chaluhy rostou ze dna k hladině jako stromy v lese.",
+        "en": "Kelp grows from the seabed to the surface, like trees."
+      }
+    ],
+    "who": {
+      "cs": "Bydlí tu vydry, tuleni, ježovky a medúzy.",
+      "en": "Sea otters, seals, sea urchins and jellyfish live here."
+    },
+    "extra": {
+      "cs": "Chaluha umí za jeden den vyrůst skoro o délku tvé ruky.",
+      "en": "In one day, kelp can grow almost as long as your arm."
+    },
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/kelp.html",
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-kelp"
+    ]
+  },
+  {
+    "id": "sire-more",
+    "name": {
+      "cs": "Širé moře",
+      "en": "Open ocean"
+    },
+    "depthM": [
+      0,
+      200
+    ],
+    "say": [
+      {
+        "cs": "Tady už nevidíme dno, všude kolem je modrá voda.",
+        "en": "We can't see the seabed here, just blue water all around."
+      },
+      {
+        "cs": "Sluníčko sem svítí jen do hloubky asi dvě stě metrů.",
+        "en": "Sunlight only reaches down about two hundred metres."
+      }
+    ],
+    "who": {
+      "cs": "Plavou tu delfíni, želvy, velryby, žraloci a hejna rybek.",
+      "en": "Dolphins, turtles, whales, sharks and schools of fish swim here."
+    },
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+      "https://oceanservice.noaa.gov/facts/light_travel.html"
+    ]
+  },
+  {
+    "id": "hlubiny",
+    "name": {
+      "cs": "Hlubiny",
+      "en": "The deep"
+    },
+    "depthM": [
+      200,
+      4000
+    ],
+    "say": [
+      {
+        "cs": "Sem už sluníčko nedosvítí, je tu tma.",
+        "en": "Sunlight can't reach down here, so it is dark."
+      },
+      {
+        "cs": "Voda je tu studená jako v lednici.",
+        "en": "The water here is as cold as inside a fridge."
+      }
+    ],
+    "who": {
+      "cs": "Spousta zvířátek si tu svítí sama.",
+      "en": "Many animals here make their own light."
+    },
+    "tempC": [
+      4,
+      4
+    ],
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/layers-of-ocean",
+      "https://oceanexplorer.noaa.gov/facts/bioluminescence.html",
+      "https://oceanservice.noaa.gov/facts/light_travel.html"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{ "photos": [
+  { "id": "hrib-smrkovy", "commonsFile": "File:Boletus_edulis_EtgHollande_041031_091.jpg", "license": "CC BY-SA 3.0", "verified": true },
+  { "id": "liska", "commonsFile": "File:Missing_file_xyz.jpg", "alt": ["", "https://commons.wikimedia.org/wiki/File:Cantharellus_cibarius.jpg"], "verified": true },
+  { "id": "bedla", "commonsFile": "File:Also_missing.jpg", "alt": "File:Still_missing.jpg" },
+  { "id": "kozak", "commonsFile": "Leccinum_scabrum.jpg", "verified": false }
+] }
