@@ -61,7 +61,7 @@ Bezplatné hlasy Microsoft Edge (edge-tts) se nepoužívají, protože je Micros
 
 **Evidence licence:** `voice/index.json` u každé nahrávky uvádí službu (`provider`), licenci (`licence`) a čas nahrání (`recorded`, UTC); `voice/config.json` u jazyka uvádí tarif a začátek licence (`licence.since`). Příkaz `python3 make_voice.py --audit` vypíše, které věty ještě nejsou nahrané licencovanou službou a kolik znaků by přenahrání stálo. Spouští ho workflow „Record voices“ (bez nálezu skončí zeleně) i nasazení stránky (jen upozorní). Doklad o tarifu (fakturu) vede provozovatel mimo tento veřejný repozitář.
 
-**Přenahrání:** Actions → Record voices → Run workflow. Volba `force` přenahraje celý jazyk i bez změny (`en`, `cs`, `all`); bez ní se nahrají jen nové, změněné a nelicencované věty. Workflow nahrávky commitne a stránku znovu nasadí. Jazyk se přepne jen tehdy, když se podaří nahrát všechny jeho věty, takže se ve hře nikdy nemíchají dva hlasy. U ElevenLabs workflow předem ověří, že zbývá dost kreditů; jinak nenahraje nic. Jazyk, kterému chybí klíč, se nenahrává a jeho stávající nahrávky zůstanou.
+**Přenahrání:** Actions → Record voices → Run workflow. Volba `force` přenahraje celý jazyk i bez změny (`en`, `cs`, `all`); bez ní se nahrají jen nové, změněné a nelicencované věty. Workflow nahrávky uloží do gitu a stránku znovu nasadí. Jazyk se přepne jen tehdy, když se podaří nahrát všechny jeho věty, takže se ve hře nikdy nemíchají dva hlasy. U ElevenLabs workflow předem ověří, že zbývá dost kreditů; jinak nenahraje nic. Jazyk, kterému chybí klíč, se nenahrává a jeho stávající nahrávky zůstanou.
 
 Na počítači: `node dev/export_phrases.mjs` a `python3 make_voice.py` (s proměnnými prostředí uvedenými výše).
 
