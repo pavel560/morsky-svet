@@ -23,13 +23,13 @@ function credRows() {
 }
 
 // The free games link to the paid series only here, behind the parents' hold — never from the child's screens, never
-// as a purchase button. Empty until the series has its name and web address; the section is then hidden.
-const SERIES = { name: '', url: '' };
+// as a purchase button. Empty until the series has its name and web address (seriesUrl); the section is then hidden.
+const SERIES = { contract: 1, series: '', seriesUrl: '' };   // same shape as the series core's series.json
 
 function aboutSection() {
-  const more = SERIES.url
+  const more = SERIES.seriesUrl
     ? `<section class="more-games"><h2>${esc(t('parents.moreGames'))}</h2><p>${t('parents.moreGamesText', {
-      name: `<a href="${esc(SERIES.url)}" target="_blank" rel="noopener">${esc(SERIES.name || SERIES.url)}</a>` })}</p></section>`
+      name: `<a href="${esc(SERIES.seriesUrl)}" target="_blank" rel="noopener">${esc(SERIES.series || SERIES.seriesUrl)}</a>` })}</p></section>`
     : '';
   return `<section class="about"><h2>${esc(t('parents.about'))}</h2>
       <p>${esc(t('parents.aboutMade'))}</p><p class="muted">${esc(t('parents.aboutVoices'))}<br>${esc(t('parents.aboutFonts'))}</p>
