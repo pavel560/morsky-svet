@@ -530,6 +530,9 @@ html[data-screen="start"] #lang-btn { z-index: calc(var(--z-parents) + 1); }
 .start-safety { position: absolute; left: 50%; bottom: var(--space-4); transform: translateX(-50%); margin: 0; display: flex; align-items: center; gap: var(--space-2);
   padding: var(--space-2) var(--space-5); border-radius: var(--r-pill); background: color-mix(in srgb, var(--paper) 88%, transparent); box-shadow: var(--shadow-paper);
   font-size: var(--fs-small); font-weight: var(--fw-text-bold); white-space: nowrap; }
+/* AI notice (AI Act art. 50) under the safety line: shown on every start, never spoken */
+.start-safety-text { display: flex; flex-direction: column; }
+.start-ai { font-size: .8em; font-weight: var(--fw-text); color: var(--ink-soft); }
 .start-safety .icon, .home-safety .icon { font-size: var(--space-6); color: var(--zone-sire-more); }
 
 /* home */

@@ -10,11 +10,18 @@
       "style": 0.35,
       "use_speaker_boost": true
     },
-    "voice_id": "Nggzl2QAXh3OijoXD116"
+    "voice_id": "Nggzl2QAXh3OijoXD116",
+    "licence": {
+      "plan": "ElevenLabs Starter",
+      "since": "2026-10-12T15:15:00Z"
+    }
   },
   "en": {
-    "provider": "edge",
+    "provider": "azure",
     "voice": "en-GB-MaisieNeural",
-    "rate": "-8%"
+    "rate": "-8%",
+    "licence": {
+      "plan": "Azure AI Speech"
+    }
   }
 }

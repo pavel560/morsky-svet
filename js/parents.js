@@ -22,6 +22,20 @@ function credRows() {
   }).join('');
 }
 
+// The free games link to the paid series only here, behind the parents' hold — never from the child's screens, never
+// as a purchase button. Empty until the series has its name and web address (seriesUrl); the section is then hidden.
+const SERIES = { contract: 1, series: '', seriesUrl: '' };   // same shape as the series core's series.json
+
+function aboutSection() {
+  const more = SERIES.seriesUrl
+    ? `<section class="more-games"><h2>${esc(t('parents.moreGames'))}</h2><p>${t('parents.moreGamesText', {
+      name: `<a href="${esc(SERIES.seriesUrl)}" target="_blank" rel="noopener">${esc(SERIES.series || SERIES.seriesUrl)}</a>` })}</p></section>`
+    : '';
+  return `<section class="about"><h2>${esc(t('parents.about'))}</h2>
+      <p>${esc(t('parents.aboutMade'))}</p><p class="muted">${esc(t('parents.aboutVoices'))}<br>${esc(t('parents.aboutFonts'))}</p>
+      <p>${esc(t('parents.aboutPrivacy'))}</p></section>${more}`;
+}
+
 function render() {
   const hair = cssVar('--hair-options').split(/\s+/).filter(Boolean);
   const suit = cssVar('--suit-options').split(/\s+/).filter(Boolean);
@@ -57,8 +71,9 @@ function render() {
           <div class="btn-row"><label class="btn text-btn file-btn">${esc(t('parents.import'))}…<input type="file" accept="application/json,.json,.txt" hidden></label>
           <button class="btn text-btn" data-act="import-go">${esc(t('parents.ok'))}</button></div></div>
         <p class="backup-msg muted" role="status"></p></section>
-      <section><h2>${esc(t('parents.credits'))}</h2><ul class="credits">${credRows()}</ul></section>
+      <section><h2>${esc(t('parents.credits'))}</h2><p class="muted">${esc(t('parents.photosNote'))}</p><ul class="credits">${credRows()}</ul></section>
       <section><p><a href="data/RESEARCH_NOTES.md" target="_blank" rel="noopener">${esc(t('parents.notes'))}</a></p></section>
+      ${aboutSection()}
       <section class="reset"><h2>${esc(t('parents.reset'))}</h2><div class="reset-row"><button class="btn text-btn" data-act="reset">${esc(t('parents.reset'))}</button></div></section>
       ${store.persistent ? '' : `<p class="muted">${esc(t('parents.noStorage'))}</p>`}
     </article></div>`));
