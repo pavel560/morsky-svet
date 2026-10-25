@@ -10,7 +10,7 @@
 // from the origin. The response is stored under the plain URL (keyOf), so lookups never see __v. Cached app files are
 // served cache-first with no background refresh: a VERSION's cache is filled fresh at install and never overwritten
 // by a plain (possibly stale) fetch.
-const VERSION = 'v7';
+const VERSION = 'v8';
 const SCOPE_PATH = new URL(self.registration.scope).pathname;          // '/morsky-svet/'
 const PREFIX = 'morsky-svet-';
 const OWN_CACHE = /^morsky-svet-v\d+$/;
