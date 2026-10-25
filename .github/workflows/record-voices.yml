@@ -1,13 +1,21 @@
-# Record the spoken lines with ElevenLabs (the same Czech voice as Houbičky, voice/config.json) and COMMIT them
-# (voice/<lang>/*.mp3 + voice/index.json), then re-deploy. Only new or changed lines are recorded.
-# Needs the repository secret ELEVENLABS_API_KEY (Settings → Secrets and variables → Actions). Without it the step
-# records nothing and the game keeps using the browser's own voice.
-#   - manual: Actions → "Record voices" → Run workflow
+# Record the spoken lines with LICENSED services only and COMMIT them (voice/<lang>/*.mp3 + voice/index.json), then
+# re-deploy. voice/config.json decides the service and the voice per language; the free edge-tts voices are never used.
+#   Czech:   ElevenLabs, paid plan  → repository secret ELEVENLABS_API_KEY (the whole key sk_…, not its id)
+#   English: Azure AI Speech        → repository secret AZURE_SPEECH_KEY + repository variable AZURE_SPEECH_REGION (e.g. westeurope)
+# A language whose key is missing records nothing (its current recordings stay); the others still record.
+#   - manual: Actions → "Record voices" → Run workflow; "force" re-records a whole language even if nothing changed
 #   - automatic when the lines, the data or the voice config change on main
+# The last step is the licence audit (make_voice.py --audit): the run stays red while any line is unlicensed.
 name: Record voices
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-record even unchanged lines (none = only new, changed or unlicensed lines)'
+        type: choice
+        options: [none, en, cs, all]
+        default: none
   push:
     branches: [main]
     paths:
@@ -40,31 +48,30 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Is the ElevenLabs key there?
-        id: key
-        env:
-          K: ${{ secrets.ELEVENLABS_API_KEY }}
-        run: |
-          if [ -n "$K" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; echo "::notice::No ELEVENLABS_API_KEY secret yet: nothing recorded, the game uses the browser voice."; fi
-
-      - name: Install edge-tts (English voice; may be blocked on runners)
-        if: steps.key.outputs.ok == 'true'
-        run: pip install edge-tts
-        continue-on-error: true
-
       - name: Export the phrase catalogue
-        if: steps.key.outputs.ok == 'true'
         run: node dev/export_phrases.mjs
 
-      - name: Record missing / changed lines
-        if: steps.key.outputs.ok == 'true'
-        run: python make_voice.py
-        continue-on-error: true          # lines that cannot be recorded fall back to the browser voice; commit the rest
+      - name: Licence audit before recording (what will be recorded and how many characters)
+        run: python make_voice.py --audit || true
+
+      - name: Record new, changed and unlicensed lines
+        run: |
+          rc=0
+          case "$FORCE" in
+            all)   python make_voice.py --force || rc=1 ;;
+            cs|en) python make_voice.py --lang "$FORCE" --force || rc=1
+                   python make_voice.py || rc=1 ;;
+            *)     python make_voice.py || rc=1 ;;
+          esac
+          exit $rc
+        continue-on-error: true          # a language that fails keeps its current recordings; commit the rest
         env:
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'none' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ vars.AZURE_SPEECH_REGION }}
 
       - name: Check the recordings before committing
-        if: steps.key.outputs.ok == 'true'
         run: |
           python3 - <<'PY'
           import json, os, sys
@@ -77,12 +84,11 @@ jobs:
 
       - name: Commit the recordings
         id: commit
-        if: steps.key.outputs.ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
           mkdir -p voice/cs voice/en
-          git add -f voice/cs voice/en
+          git add -f --all voice/cs voice/en
           [ -f voice/index.json ] && git add -f voice/index.json
           if git diff --cached --quiet; then echo "Nothing new to commit."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -q -m "Hlasy: nahrávky v gitu [record-voices]"
@@ -97,3 +103,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+
+      - name: Licence audit (fails while any line is not recorded by a licensed service)
+        run: python make_voice.py --audit

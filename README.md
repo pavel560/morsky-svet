@@ -52,11 +52,28 @@ Server vypíše adresu pro tento počítač (`http://localhost:8642/`) a adresu 
 
 Každá věta, kterou hra říká, je v pevném katalogu `js/phrases.js` (česky i anglicky). Hra přehrává nahrávky z `voice/` a kde nahrávka chybí, použije hlas prohlížeče. Bez hlasu prohlížeče se věta aspoň zobrazí v bublině dole.
 
-Nahrávky vytváří workflow **Record voices** (ElevenLabs, stejný český hlas jako v Houbičkách, nastavení ve `voice/config.json`). Funguje až po přidání tajemství `ELEVENLABS_API_KEY` v nastavení repozitáře (Settings → Secrets and variables → Actions). Workflow nahraje jen nové nebo změněné věty, nahrávky commitne a znovu nasadí web. Do té doby hra mluví hlasem prohlížeče.
+Nahrávky smějí pocházet jen ze služeb, které dovolují komerční užití. Hlas pro každý jazyk určuje `voice/config.json`:
+
+- `"provider": "elevenlabs"` (čeština, hlas „Candy - Young and Sweet“ z knihovny hlasů ElevenLabs): nahrává se jen na placeném tarifu. Klíč je v tajemství repozitáře `ELEVENLABS_API_KEY` (celý klíč `sk_…`).
+- `"provider": "azure"` (angličtina, hlas `en-GB-MaisieNeural` z Azure AI Speech): klíč je v tajemství `AZURE_SPEECH_KEY`, oblast v proměnné repozitáře `AZURE_SPEECH_REGION` (například `westeurope`).
+
+Bezplatné hlasy Microsoft Edge (edge-tts) se nepoužívají, protože je Microsoft pro komerční užití nelicencuje.
+
+**Evidence licence:** `voice/index.json` u každé nahrávky uvádí službu (`provider`), licenci (`licence`) a čas nahrání (`recorded`, UTC); `voice/config.json` u jazyka uvádí tarif a začátek licence (`licence.since`). Příkaz `python3 make_voice.py --audit` vypíše, které věty ještě nejsou nahrané licencovanou službou a kolik znaků by přenahrání stálo. Spouští ho workflow „Record voices“ (bez nálezu skončí zeleně) i nasazení stránky (jen upozorní). Doklad o tarifu (fakturu) vede provozovatel mimo tento veřejný repozitář.
+
+**Přenahrání:** Actions → Record voices → Run workflow. Volba `force` přenahraje celý jazyk i bez změny (`en`, `cs`, `all`); bez ní se nahrají jen nové, změněné a nelicencované věty. Workflow nahrávky commitne a stránku znovu nasadí. Jazyk se přepne jen tehdy, když se podaří nahrát všechny jeho věty, takže se ve hře nikdy nemíchají dva hlasy. U ElevenLabs workflow předem ověří, že zbývá dost kreditů; jinak nenahraje nic. Jazyk, kterému chybí klíč, se nenahrává a jeho stávající nahrávky zůstanou.
+
+Na počítači: `node dev/export_phrases.mjs` a `python3 make_voice.py` (s proměnnými prostředí uvedenými výše).
 
 ## Fotky
 
 `photos/manifest.json` (soubor z Wikimedia Commons pro každý druh) připravuje výzkumník. Fotky stahuje `fetch_photos.py` při každém nasazení na GitHub Pages; do gitu se necommitují. Autor a licence se zobrazují na kartičce a v Koutku pro rodiče.
+
+## Licence a autoři
+
+- **Fotky:** Wikimedia Commons, licence CC BY, CC BY-SA a volné dílo. Autor, licence a odkaz na zdroj jsou u každé fotky v `photos/manifest.json` a ve hře v koutku pro rodiče. Fotky jsou zmenšené a ve hře oříznuté; jiné úpravy nemají.
+- **Písma:** Andika a Grandstander, SIL Open Font License 1.1 (`fonts/LICENSE-*.txt`).
+- **Hlasy:** vytvořené umělou inteligencí (ElevenLabs, Azure AI Speech), podrobnosti v části o hlasech.
 
 ## Pro vývojáře
 

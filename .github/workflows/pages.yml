@@ -51,6 +51,15 @@ jobs:
         env:
           MORSKY_SVET_CONTACT: ${{ vars.MORSKY_SVET_CONTACT }}
 
+      - name: Export the phrase catalogue
+        run: node dev/export_phrases.mjs
+
+      # Recordings come from git only (record-voices.yml). The audit just reports lines that are not yet recorded by a
+      # licensed service; it never blocks a deploy (such lines keep their current recording or use the browser voice).
+      - name: Voice licence audit (report only)
+        run: |
+          python make_voice.py --audit || echo "::warning::Some voice lines are not recorded by a licensed service yet (Actions → Record voices)"
+
       - name: Assemble the site
         run: |
           rm -rf _site && mkdir -p _site
