@@ -39,7 +39,7 @@ function startScreen() {
     <div class="start-scene"></div>
     <div class="logo-wrap start-logo" role="img" data-ta="app.name" aria-label="${esc(t('app.name'))}"></div>
     <button class="play-bubble-btn" data-ta="start.play" aria-label="${esc(t('start.play'))}"></button>
-    <p class="start-safety">${icon('parents')}<span data-t="say.safetyDive">${esc(t('say.safetyDive'))}</span></p>
+    <p class="start-safety">${icon('parents')}<span class="start-safety-text"><span data-t="say.safetyDive">${esc(t('say.safetyDive'))}</span><small class="start-ai" data-t="start.ai">${esc(t('start.ai'))}</small></span></p>
   </div>`);
   document.getElementById('overlay').append(layer);
   const sc = mountScene(layer.querySelector('.start-scene'), 'title', TITLE_ANIM);

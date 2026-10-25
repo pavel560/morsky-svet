@@ -7,6 +7,7 @@ export const strings = {
   cs: {
     'app.name': 'Mořský svět',
     'start.play': 'Začneme?',
+    'start.ai': 'Hlasy a některé obrázky v této hře vytvořila umělá inteligence.',
     'home.dive': 'Ponořit se!',
     'home.sea': 'Můj kousek moře',
     'home.quiz': 'Kvíz',
@@ -155,6 +156,7 @@ export const strings = {
   en: {
     'app.name': 'Ocean World',
     'start.play': 'Shall we start?',
+    'start.ai': 'The voices and some pictures in this game were made with artificial intelligence.',
     'home.dive': 'Dive in!',
     'home.sea': 'My piece of sea',
     'home.quiz': 'Quiz',
